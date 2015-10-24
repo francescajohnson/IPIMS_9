@@ -60,10 +60,7 @@
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutOfIPIMSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.group9_ipimsDataSet1 = new IPIMS_Group_9.group9_ipimsDataSet1();
             this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.user_dataTableAdapter = new IPIMS_Group_9.group9_ipimsDataSet1TableAdapters.user_dataTableAdapter();
-            this.tableAdapterManager = new IPIMS_Group_9.group9_ipimsDataSet1TableAdapters.TableAdapterManager();
             this.user_dataBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
@@ -97,11 +94,6 @@
             this.tabPageUpcomingAppointments.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.menuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.group9_ipimsDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).BeginInit();
-            this.user_dataBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // listBoxPatientProfileInformation
@@ -336,179 +328,6 @@
             this.logoutOfIPIMSToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.logoutOfIPIMSToolStripMenuItem.Text = "Logout of IPIMS";
             // 
-            // group9_ipimsDataSet1
-            // 
-            this.group9_ipimsDataSet1.DataSetName = "group9_ipimsDataSet1";
-            this.group9_ipimsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // user_dataBindingSource
-            // 
-            this.user_dataBindingSource.DataMember = "user_data";
-            this.user_dataBindingSource.DataSource = this.group9_ipimsDataSet1;
-            // 
-            // user_dataTableAdapter
-            // 
-            this.user_dataTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.appointment_dataTableAdapter = null;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.update_healthcare_dataTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.group9_ipimsDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.user_dataTableAdapter = this.user_dataTableAdapter;
-            // 
-            // user_dataBindingNavigator
-            // 
-            this.user_dataBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.user_dataBindingNavigator.BindingSource = this.user_dataBindingSource;
-            this.user_dataBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.user_dataBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.user_dataBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.user_dataBindingNavigatorSaveItem});
-            this.user_dataBindingNavigator.Location = new System.Drawing.Point(0, 24);
-            this.user_dataBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.user_dataBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.user_dataBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.user_dataBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.user_dataBindingNavigator.Name = "user_dataBindingNavigator";
-            this.user_dataBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.user_dataBindingNavigator.Size = new System.Drawing.Size(594, 25);
-            this.user_dataBindingNavigator.TabIndex = 39;
-            this.user_dataBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // user_dataBindingNavigatorSaveItem
-            // 
-            this.user_dataBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.user_dataBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("user_dataBindingNavigatorSaveItem.Image")));
-            this.user_dataBindingNavigatorSaveItem.Name = "user_dataBindingNavigatorSaveItem";
-            this.user_dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
-            this.user_dataBindingNavigatorSaveItem.Text = "Save Data";
-            this.user_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.user_dataBindingNavigatorSaveItem_Click);
-            // 
-            // user_dataDataGridView
-            // 
-            this.user_dataDataGridView.AutoGenerateColumns = false;
-            this.user_dataDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.user_dataDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16});
-            this.user_dataDataGridView.DataSource = this.user_dataBindingSource;
-            this.user_dataDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.user_dataDataGridView.Name = "user_dataDataGridView";
-            this.user_dataDataGridView.Size = new System.Drawing.Size(566, 395);
-            this.user_dataDataGridView.TabIndex = 1;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "classification";
@@ -617,17 +436,11 @@
             this.Name = "ViewPatientInformation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
-            this.Load += new System.EventHandler(this.ViewPatientInformation_Load);
+            //this.Load += new System.EventHandler(this.ViewPatientInformation_Load);
             this.tabPageUpcomingAppointments.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.group9_ipimsDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).EndInit();
-            this.user_dataBindingNavigator.ResumeLayout(false);
-            this.user_dataBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -665,10 +478,7 @@
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem logoutOfIPIMSToolStripMenuItem;
-        private group9_ipimsDataSet1 group9_ipimsDataSet1;
         private System.Windows.Forms.BindingSource user_dataBindingSource;
-        private group9_ipimsDataSet1TableAdapters.user_dataTableAdapter user_dataTableAdapter;
-        private group9_ipimsDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator user_dataBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

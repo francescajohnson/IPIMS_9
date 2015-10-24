@@ -26,10 +26,10 @@ namespace IPIMS_Group_9.Forms
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
                 // Register user and then show the LoggingIn form
-                this.Validate();
-                this.user_dataBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.group9_ipimsDataSet);
-                this.user_dataTableAdapter.Fill(this.group9_ipimsDataSet.user_data);
+        //        this.Validate();
+          //      this.user_dataBindingSource.EndEdit();
+            //    this.tableAdapterManager.UpdateAll(this.group9_ipimsDataSet);
+              //  this.user_dataTableAdapter.Fill(this.group9_ipimsDataSet.user_data);
                 this.Hide();
                 LoggingIn formLI = new LoggingIn();
                 formLI.Visible = true;
@@ -37,29 +37,16 @@ namespace IPIMS_Group_9.Forms
             else if (result == System.Windows.Forms.DialogResult.No)
             {
                 // Register user and then show the Welcome form
-                this.Validate();
-                this.user_dataBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.group9_ipimsDataSet);
-                this.user_dataTableAdapter.Fill(this.group9_ipimsDataSet.user_data);
+//                this.Validate();
+  //              this.user_dataBindingSource.EndEdit();
+    //            this.tableAdapterManager.UpdateAll(this.group9_ipimsDataSet);
+      //          this.user_dataTableAdapter.Fill(this.group9_ipimsDataSet.user_data);
                 this.Hide();
             }
             else if (result == System.Windows.Forms.DialogResult.Cancel)
             {
                 // Do Nothing, and return to registration form
             }
-        }
-
-        private void user_dataBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.user_dataBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.group9_ipimsDataSet);
-        }
-
-        private void Registration_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'group9_ipimsDataSet.user_data' table. You can move, or remove it, as needed.
-            this.user_dataTableAdapter.Fill(this.group9_ipimsDataSet.user_data);
         }
 
         private void classificationComboBox_SelectedIndexChanged(object sender, EventArgs e)

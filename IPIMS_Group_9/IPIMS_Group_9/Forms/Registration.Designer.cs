@@ -440,7 +440,7 @@
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
-            this.Load += new System.EventHandler(this.Registration_Load);
+            //this.Load += new System.EventHandler(this.Registration_Load);
             this.groupBoxContactInformation.ResumeLayout(false);
             this.groupBoxContactInformation.PerformLayout();
             this.groupBox2.ResumeLayout(false);
