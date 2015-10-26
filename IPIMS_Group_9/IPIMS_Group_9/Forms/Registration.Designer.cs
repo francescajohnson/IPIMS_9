@@ -521,6 +521,7 @@
             this.user_dataBindingSource1BindingNavigator.Size = new System.Drawing.Size(602, 25);
             this.user_dataBindingSource1BindingNavigator.TabIndex = 26;
             this.user_dataBindingSource1BindingNavigator.Text = "bindingNavigator1";
+            this.user_dataBindingSource1BindingNavigator.Visible = false;
             // 
             // toolStripButton5
             // 
