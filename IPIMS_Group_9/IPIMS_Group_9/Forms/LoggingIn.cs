@@ -16,5 +16,29 @@ namespace IPIMS_Group_9.Forms
         {
             InitializeComponent();
         }
+
+        /*private void user_dataBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.user_dataBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.iPIMS_9DataSet);
+
+        }*/
+
+        private void LoggingIn_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'iPIMS_9DataSet.user_data' table. You can move, or remove it, as needed.
+            // this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
+
+        }
+
+        private void buttonContinue_Click(object sender, EventArgs e)
+        {
+            if(checkBoxNewUser.Checked == true)
+            {
+                // Do something
+            }
+
+        }
     }
 }

@@ -26,22 +26,11 @@ namespace IPIMS_Group_9.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=127.0.0.1;user id=root;password=Group9IPIMS;persistsecurityinfo=True;datab" +
-            "ase=group9_ipims;allowuservariables=True")]
-        public string group9_ipimsConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\IPIMS_9.mdf;Integrat" +
+            "ed Security=True")]
+        public string IPIMS_9ConnectionString {
             get {
-                return ((string)(this["group9_ipimsConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\v11.0;AttachDbFilename=|DataDirectory|\\group9_ipims.mdf;Int" +
-            "egrated Security=True")]
-        public string group9_ipimsConnectionString1 {
-            get {
-                return ((string)(this["group9_ipimsConnectionString1"]));
+                return ((string)(this["IPIMS_9ConnectionString"]));
             }
         }
     }

@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("IPIMS_Group_9")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Honeywell")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("IPIMS_Group_9")]
-[assembly: AssemblyCopyright("Copyright © Honeywell 2015")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
