@@ -361,9 +361,9 @@ namespace IPIMS_Group_9 {
             
             private global::System.Data.DataColumn columnappointment_time;
             
-            private global::System.Data.DataColumn columndoctor;
+            private global::System.Data.DataColumn columndoctor_name;
             
-            private global::System.Data.DataColumn columnalert;
+            private global::System.Data.DataColumn columnweakness;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -448,17 +448,17 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn doctorColumn {
+            public global::System.Data.DataColumn doctor_nameColumn {
                 get {
-                    return this.columndoctor;
+                    return this.columndoctor_name;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn alertColumn {
+            public global::System.Data.DataColumn weaknessColumn {
                 get {
-                    return this.columnalert;
+                    return this.columnweakness;
                 }
             }
             
@@ -499,7 +499,7 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public scheduled_appointment_dataRow Addscheduled_appointment_dataRow(string first_name, string last_name, string date_of_birth, string symptoms, System.DateTime appointment_date, System.TimeSpan appointment_time, string doctor, string alert) {
+            public scheduled_appointment_dataRow Addscheduled_appointment_dataRow(string first_name, string last_name, string date_of_birth, string symptoms, System.DateTime appointment_date, System.TimeSpan appointment_time, string doctor_name, bool weakness) {
                 scheduled_appointment_dataRow rowscheduled_appointment_dataRow = ((scheduled_appointment_dataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         first_name,
@@ -508,8 +508,8 @@ namespace IPIMS_Group_9 {
                         symptoms,
                         appointment_date,
                         appointment_time,
-                        doctor,
-                        alert};
+                        doctor_name,
+                        weakness};
                 rowscheduled_appointment_dataRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowscheduled_appointment_dataRow);
                 return rowscheduled_appointment_dataRow;
@@ -547,8 +547,8 @@ namespace IPIMS_Group_9 {
                 this.columnsymptoms = base.Columns["symptoms"];
                 this.columnappointment_date = base.Columns["appointment_date"];
                 this.columnappointment_time = base.Columns["appointment_time"];
-                this.columndoctor = base.Columns["doctor"];
-                this.columnalert = base.Columns["alert"];
+                this.columndoctor_name = base.Columns["doctor_name"];
+                this.columnweakness = base.Columns["weakness"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -566,10 +566,10 @@ namespace IPIMS_Group_9 {
                 base.Columns.Add(this.columnappointment_date);
                 this.columnappointment_time = new global::System.Data.DataColumn("appointment_time", typeof(global::System.TimeSpan), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnappointment_time);
-                this.columndoctor = new global::System.Data.DataColumn("doctor", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndoctor);
-                this.columnalert = new global::System.Data.DataColumn("alert", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnalert);
+                this.columndoctor_name = new global::System.Data.DataColumn("doctor_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndoctor_name);
+                this.columnweakness = new global::System.Data.DataColumn("weakness", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnweakness);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnfirst_name,
                                 this.columnlast_name,
@@ -584,9 +584,8 @@ namespace IPIMS_Group_9 {
                 this.columnsymptoms.MaxLength = 100;
                 this.columnappointment_date.AllowDBNull = false;
                 this.columnappointment_time.AllowDBNull = false;
-                this.columndoctor.AllowDBNull = false;
-                this.columndoctor.MaxLength = 45;
-                this.columnalert.MaxLength = 1;
+                this.columndoctor_name.AllowDBNull = false;
+                this.columndoctor_name.MaxLength = 45;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -730,7 +729,7 @@ namespace IPIMS_Group_9 {
             
             private global::System.Data.DataColumn columnalert;
             
-            private global::System.Data.DataColumn columndoctor;
+            private global::System.Data.DataColumn columndoctor_name;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -807,9 +806,9 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn doctorColumn {
+            public global::System.Data.DataColumn doctor_nameColumn {
                 get {
-                    return this.columndoctor;
+                    return this.columndoctor_name;
                 }
             }
             
@@ -850,7 +849,7 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public update_healthcare_dataRow Addupdate_healthcare_dataRow(string first_name, string last_name, string date_of_birth, string symptoms, string alert, string doctor) {
+            public update_healthcare_dataRow Addupdate_healthcare_dataRow(string first_name, string last_name, System.DateTime date_of_birth, string symptoms, short alert, string doctor_name) {
                 update_healthcare_dataRow rowupdate_healthcare_dataRow = ((update_healthcare_dataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         first_name,
@@ -858,7 +857,7 @@ namespace IPIMS_Group_9 {
                         date_of_birth,
                         symptoms,
                         alert,
-                        doctor};
+                        doctor_name};
                 rowupdate_healthcare_dataRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowupdate_healthcare_dataRow);
                 return rowupdate_healthcare_dataRow;
@@ -866,7 +865,7 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public update_healthcare_dataRow FindByfirst_namelast_namedate_of_birth(string first_name, string last_name, string date_of_birth) {
+            public update_healthcare_dataRow FindByfirst_namelast_namedate_of_birth(string first_name, string last_name, System.DateTime date_of_birth) {
                 return ((update_healthcare_dataRow)(this.Rows.Find(new object[] {
                             first_name,
                             last_name,
@@ -895,7 +894,7 @@ namespace IPIMS_Group_9 {
                 this.columndate_of_birth = base.Columns["date_of_birth"];
                 this.columnsymptoms = base.Columns["symptoms"];
                 this.columnalert = base.Columns["alert"];
-                this.columndoctor = base.Columns["doctor"];
+                this.columndoctor_name = base.Columns["doctor_name"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -905,14 +904,14 @@ namespace IPIMS_Group_9 {
                 base.Columns.Add(this.columnfirst_name);
                 this.columnlast_name = new global::System.Data.DataColumn("last_name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnlast_name);
-                this.columndate_of_birth = new global::System.Data.DataColumn("date_of_birth", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columndate_of_birth = new global::System.Data.DataColumn("date_of_birth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndate_of_birth);
                 this.columnsymptoms = new global::System.Data.DataColumn("symptoms", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsymptoms);
-                this.columnalert = new global::System.Data.DataColumn("alert", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnalert = new global::System.Data.DataColumn("alert", typeof(short), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnalert);
-                this.columndoctor = new global::System.Data.DataColumn("doctor", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndoctor);
+                this.columndoctor_name = new global::System.Data.DataColumn("doctor_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndoctor_name);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnfirst_name,
                                 this.columnlast_name,
@@ -922,12 +921,10 @@ namespace IPIMS_Group_9 {
                 this.columnlast_name.AllowDBNull = false;
                 this.columnlast_name.MaxLength = 45;
                 this.columndate_of_birth.AllowDBNull = false;
-                this.columndate_of_birth.MaxLength = 45;
                 this.columnsymptoms.AllowDBNull = false;
-                this.columnsymptoms.MaxLength = 45;
-                this.columnalert.MaxLength = 1;
-                this.columndoctor.AllowDBNull = false;
-                this.columndoctor.MaxLength = 45;
+                this.columnsymptoms.MaxLength = 100;
+                this.columndoctor_name.AllowDBNull = false;
+                this.columndoctor_name.MaxLength = 45;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1421,7 +1418,7 @@ namespace IPIMS_Group_9 {
                                 this.columnemail,
                                 this.columnusername}, true));
                 this.columnclassification.AllowDBNull = false;
-                this.columnclassification.MaxLength = 1;
+                this.columnclassification.MaxLength = 15;
                 this.columnfirst_name.AllowDBNull = false;
                 this.columnfirst_name.MaxLength = 45;
                 this.columnlast_name.AllowDBNull = false;
@@ -1432,11 +1429,11 @@ namespace IPIMS_Group_9 {
                 this.columnsocial_security_number.AllowDBNull = false;
                 this.columnsocial_security_number.MaxLength = 11;
                 this.columnstreet_address.MaxLength = 45;
-                this.columncity.MaxLength = 45;
-                this.columnstate.MaxLength = 2;
-                this.columnzip_code.MaxLength = 5;
+                this.columncity.MaxLength = 25;
+                this.columnstate.MaxLength = 15;
+                this.columnzip_code.MaxLength = 12;
                 this.columnphone_number.AllowDBNull = false;
-                this.columnphone_number.MaxLength = 15;
+                this.columnphone_number.MaxLength = 20;
                 this.columnemail.AllowDBNull = false;
                 this.columnemail.MaxLength = 64;
                 this.columnusername.AllowDBNull = false;
@@ -1444,7 +1441,7 @@ namespace IPIMS_Group_9 {
                 this.columnpassword.AllowDBNull = false;
                 this.columnpassword.MaxLength = 45;
                 this.columninsurance_provider.MaxLength = 45;
-                this.columninsurance_contact.MaxLength = 15;
+                this.columninsurance_contact.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1653,41 +1650,41 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string doctor {
+            public string doctor_name {
                 get {
-                    return ((string)(this[this.tablescheduled_appointment_data.doctorColumn]));
+                    return ((string)(this[this.tablescheduled_appointment_data.doctor_nameColumn]));
                 }
                 set {
-                    this[this.tablescheduled_appointment_data.doctorColumn] = value;
+                    this[this.tablescheduled_appointment_data.doctor_nameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string alert {
+            public bool weakness {
                 get {
                     try {
-                        return ((string)(this[this.tablescheduled_appointment_data.alertColumn]));
+                        return ((bool)(this[this.tablescheduled_appointment_data.weaknessColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'alert\' in table \'scheduled_appointment_data\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'weakness\' in table \'scheduled_appointment_data\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablescheduled_appointment_data.alertColumn] = value;
+                    this[this.tablescheduled_appointment_data.weaknessColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsalertNull() {
-                return this.IsNull(this.tablescheduled_appointment_data.alertColumn);
+            public bool IsweaknessNull() {
+                return this.IsNull(this.tablescheduled_appointment_data.weaknessColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetalertNull() {
-                this[this.tablescheduled_appointment_data.alertColumn] = global::System.Convert.DBNull;
+            public void SetweaknessNull() {
+                this[this.tablescheduled_appointment_data.weaknessColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1729,9 +1726,9 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string date_of_birth {
+            public System.DateTime date_of_birth {
                 get {
-                    return ((string)(this[this.tableupdate_healthcare_data.date_of_birthColumn]));
+                    return ((global::System.DateTime)(this[this.tableupdate_healthcare_data.date_of_birthColumn]));
                 }
                 set {
                     this[this.tableupdate_healthcare_data.date_of_birthColumn] = value;
@@ -1751,10 +1748,10 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string alert {
+            public short alert {
                 get {
                     try {
-                        return ((string)(this[this.tableupdate_healthcare_data.alertColumn]));
+                        return ((short)(this[this.tableupdate_healthcare_data.alertColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'alert\' in table \'update_healthcare_data\' is DBNull.", e);
@@ -1767,12 +1764,12 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string doctor {
+            public string doctor_name {
                 get {
-                    return ((string)(this[this.tableupdate_healthcare_data.doctorColumn]));
+                    return ((string)(this[this.tableupdate_healthcare_data.doctor_nameColumn]));
                 }
                 set {
-                    this[this.tableupdate_healthcare_data.doctorColumn] = value;
+                    this[this.tableupdate_healthcare_data.doctor_nameColumn] = value;
                 }
             }
             
@@ -2315,8 +2312,8 @@ namespace IPIMS_Group_9.IPIMS_9DataSetTableAdapters {
             tableMapping.ColumnMappings.Add("symptoms", "symptoms");
             tableMapping.ColumnMappings.Add("appointment_date", "appointment_date");
             tableMapping.ColumnMappings.Add("appointment_time", "appointment_time");
-            tableMapping.ColumnMappings.Add("doctor", "doctor");
-            tableMapping.ColumnMappings.Add("alert", "alert");
+            tableMapping.ColumnMappings.Add("doctor_name", "doctor_name");
+            tableMapping.ColumnMappings.Add("alert", "weakness");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -2809,7 +2806,7 @@ SELECT first_name, last_name, date_of_birth, symptoms, appointment_date, appoint
             tableMapping.ColumnMappings.Add("date_of_birth", "date_of_birth");
             tableMapping.ColumnMappings.Add("symptoms", "symptoms");
             tableMapping.ColumnMappings.Add("alert", "alert");
-            tableMapping.ColumnMappings.Add("doctor", "doctor");
+            tableMapping.ColumnMappings.Add("doctor", "doctor_name");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IPIMS_Group_9
+namespace IPIMS_Group_9.Forms
 {
-    public partial class EditProfile : Form
+    public partial class Reporting : Form
     {
-        public EditProfile()
+        public Reporting()
         {
             InitializeComponent();
         }
@@ -25,10 +25,15 @@ namespace IPIMS_Group_9
 
         }
 
-        private void EditProfile_Load(object sender, EventArgs e)
+        private void Reporting_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'iPIMS_9DataSet.user_data' table. You can move, or remove it, as needed.
             this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
+
+        }
+
+        private void user_dataDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

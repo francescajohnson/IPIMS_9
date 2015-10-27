@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditProfile));
             this.textBoxZipCode = new System.Windows.Forms.TextBox();
             this.labelZipCode = new System.Windows.Forms.Label();
-            this.textBoxState = new System.Windows.Forms.TextBox();
             this.labelState = new System.Windows.Forms.Label();
-            this.textBoxCity = new System.Windows.Forms.TextBox();
             this.labelCity = new System.Windows.Forms.Label();
-            this.textBoxStreetAddress = new System.Windows.Forms.TextBox();
             this.labelEmailAddress = new System.Windows.Forms.Label();
             this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.labelPhoneNumber = new System.Windows.Forms.Label();
@@ -56,37 +55,32 @@
             this.labelEditProfile = new System.Windows.Forms.Label();
             this.groupBoxAddressInformation = new System.Windows.Forms.GroupBox();
             this.labelStreetAddress = new System.Windows.Forms.Label();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.patientServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchForPatientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updatePatientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewAppointmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewApptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.scheduleApptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ePrescriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createNewEPrescribeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewExistingEPrescribeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editExistingEPrescribeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printExistingEPrescribeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewPatientProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchRecordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editLabRequestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editLabRecordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editProfileInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.report2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.analysisOfTypeOfPatientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.analysisOfPatientPopulationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutOfIPIMSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
+            this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
+            this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
+            this.user_dataBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.user_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.street_addressTextBox = new System.Windows.Forms.TextBox();
             this.groupBoxLoginInformation.SuspendLayout();
             this.groupBoxMedicalInformation.SuspendLayout();
             this.groupBoxContactInformation.SuspendLayout();
             this.groupBoxAddressInformation.SuspendLayout();
-            this.menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).BeginInit();
+            this.user_dataBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxZipCode
@@ -106,14 +100,6 @@
             this.labelZipCode.TabIndex = 13;
             this.labelZipCode.Text = "Zip Code:";
             // 
-            // textBoxState
-            // 
-            this.textBoxState.Location = new System.Drawing.Point(219, 46);
-            this.textBoxState.Name = "textBoxState";
-            this.textBoxState.Size = new System.Drawing.Size(82, 20);
-            this.textBoxState.TabIndex = 9;
-            this.textBoxState.Text = "Arizona";
-            // 
             // labelState
             // 
             this.labelState.AutoSize = true;
@@ -123,14 +109,6 @@
             this.labelState.TabIndex = 8;
             this.labelState.Text = "State:";
             // 
-            // textBoxCity
-            // 
-            this.textBoxCity.Location = new System.Drawing.Point(92, 46);
-            this.textBoxCity.Name = "textBoxCity";
-            this.textBoxCity.Size = new System.Drawing.Size(82, 20);
-            this.textBoxCity.TabIndex = 7;
-            this.textBoxCity.Text = "Tempe";
-            // 
             // labelCity
             // 
             this.labelCity.AutoSize = true;
@@ -139,14 +117,6 @@
             this.labelCity.Size = new System.Drawing.Size(27, 13);
             this.labelCity.TabIndex = 6;
             this.labelCity.Text = "City:";
-            // 
-            // textBoxStreetAddress
-            // 
-            this.textBoxStreetAddress.Location = new System.Drawing.Point(92, 17);
-            this.textBoxStreetAddress.Name = "textBoxStreetAddress";
-            this.textBoxStreetAddress.Size = new System.Drawing.Size(464, 20);
-            this.textBoxStreetAddress.TabIndex = 4;
-            this.textBoxStreetAddress.Text = "1234 West Main Street";
             // 
             // labelEmailAddress
             // 
@@ -328,13 +298,11 @@
             // 
             // groupBoxAddressInformation
             // 
+            this.groupBoxAddressInformation.Controls.Add(this.street_addressTextBox);
             this.groupBoxAddressInformation.Controls.Add(this.textBoxZipCode);
             this.groupBoxAddressInformation.Controls.Add(this.labelZipCode);
-            this.groupBoxAddressInformation.Controls.Add(this.textBoxState);
             this.groupBoxAddressInformation.Controls.Add(this.labelState);
-            this.groupBoxAddressInformation.Controls.Add(this.textBoxCity);
             this.groupBoxAddressInformation.Controls.Add(this.labelCity);
-            this.groupBoxAddressInformation.Controls.Add(this.textBoxStreetAddress);
             this.groupBoxAddressInformation.Controls.Add(this.labelStreetAddress);
             this.groupBoxAddressInformation.Location = new System.Drawing.Point(12, 172);
             this.groupBoxAddressInformation.Name = "groupBoxAddressInformation";
@@ -352,204 +320,168 @@
             this.labelStreetAddress.TabIndex = 0;
             this.labelStreetAddress.Text = "Street Address:";
             // 
-            // menuStrip
+            // iPIMS_9DataSet
             // 
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.patientServicesToolStripMenuItem,
-            this.reportsToolStripMenuItem,
-            this.toolsToolStripMenuItem,
-            this.logoutToolStripMenuItem,
-            this.logoutToolStripMenuItem1});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(594, 24);
-            this.menuStrip.TabIndex = 39;
-            this.menuStrip.Text = "menuStrip1";
+            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
+            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // patientServicesToolStripMenuItem
+            // user_dataBindingSource
             // 
-            this.patientServicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.searchForPatientToolStripMenuItem,
-            this.updatePatientToolStripMenuItem,
-            this.viewAppointmentsToolStripMenuItem,
-            this.ePrescriptionToolStripMenuItem,
-            this.viewPatientProfileToolStripMenuItem});
-            this.patientServicesToolStripMenuItem.Name = "patientServicesToolStripMenuItem";
-            this.patientServicesToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.patientServicesToolStripMenuItem.Text = "Patient Services";
+            this.user_dataBindingSource.DataMember = "user_data";
+            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
             // 
-            // searchForPatientToolStripMenuItem
+            // user_dataTableAdapter
             // 
-            this.searchForPatientToolStripMenuItem.Name = "searchForPatientToolStripMenuItem";
-            this.searchForPatientToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.searchForPatientToolStripMenuItem.Text = "Emergency Alerts";
+            this.user_dataTableAdapter.ClearBeforeFill = true;
             // 
-            // updatePatientToolStripMenuItem
+            // tableAdapterManager
             // 
-            this.updatePatientToolStripMenuItem.Name = "updatePatientToolStripMenuItem";
-            this.updatePatientToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.updatePatientToolStripMenuItem.Text = "Update Patient Healthcare";
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.scheduled_appointment_dataTableAdapter = null;
+            this.tableAdapterManager.update_healthcare_dataTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.user_dataTableAdapter = this.user_dataTableAdapter;
             // 
-            // viewAppointmentsToolStripMenuItem
+            // user_dataBindingNavigator
             // 
-            this.viewAppointmentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewApptToolStripMenuItem,
-            this.scheduleApptToolStripMenuItem});
-            this.viewAppointmentsToolStripMenuItem.Name = "viewAppointmentsToolStripMenuItem";
-            this.viewAppointmentsToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.viewAppointmentsToolStripMenuItem.Text = "Appointments";
+            this.user_dataBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.user_dataBindingNavigator.BindingSource = this.user_dataBindingSource;
+            this.user_dataBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.user_dataBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.user_dataBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.user_dataBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.user_dataBindingNavigatorSaveItem});
+            this.user_dataBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.user_dataBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.user_dataBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.user_dataBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.user_dataBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.user_dataBindingNavigator.Name = "user_dataBindingNavigator";
+            this.user_dataBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.user_dataBindingNavigator.Size = new System.Drawing.Size(602, 25);
+            this.user_dataBindingNavigator.TabIndex = 39;
+            this.user_dataBindingNavigator.Text = "bindingNavigator1";
+            this.user_dataBindingNavigator.Visible = false;
             // 
-            // viewApptToolStripMenuItem
+            // bindingNavigatorMoveFirstItem
             // 
-            this.viewApptToolStripMenuItem.Name = "viewApptToolStripMenuItem";
-            this.viewApptToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.viewApptToolStripMenuItem.Text = "View";
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
-            // scheduleApptToolStripMenuItem
+            // bindingNavigatorMovePreviousItem
             // 
-            this.scheduleApptToolStripMenuItem.Name = "scheduleApptToolStripMenuItem";
-            this.scheduleApptToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.scheduleApptToolStripMenuItem.Text = "Schedule";
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
-            // ePrescriptionToolStripMenuItem
+            // bindingNavigatorSeparator
             // 
-            this.ePrescriptionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.createNewEPrescribeToolStripMenuItem,
-            this.viewExistingEPrescribeToolStripMenuItem,
-            this.editExistingEPrescribeToolStripMenuItem,
-            this.printExistingEPrescribeToolStripMenuItem});
-            this.ePrescriptionToolStripMenuItem.Name = "ePrescriptionToolStripMenuItem";
-            this.ePrescriptionToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.ePrescriptionToolStripMenuItem.Text = "E-Prescription (Medicine/Lab)";
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
             // 
-            // createNewEPrescribeToolStripMenuItem
+            // bindingNavigatorPositionItem
             // 
-            this.createNewEPrescribeToolStripMenuItem.Name = "createNewEPrescribeToolStripMenuItem";
-            this.createNewEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.createNewEPrescribeToolStripMenuItem.Text = "Create New";
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // viewExistingEPrescribeToolStripMenuItem
+            // bindingNavigatorCountItem
             // 
-            this.viewExistingEPrescribeToolStripMenuItem.Name = "viewExistingEPrescribeToolStripMenuItem";
-            this.viewExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.viewExistingEPrescribeToolStripMenuItem.Text = "View Existing";
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
-            // editExistingEPrescribeToolStripMenuItem
+            // bindingNavigatorSeparator1
             // 
-            this.editExistingEPrescribeToolStripMenuItem.Name = "editExistingEPrescribeToolStripMenuItem";
-            this.editExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.editExistingEPrescribeToolStripMenuItem.Text = "Edit Existing";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
-            // printExistingEPrescribeToolStripMenuItem
+            // bindingNavigatorMoveNextItem
             // 
-            this.printExistingEPrescribeToolStripMenuItem.Name = "printExistingEPrescribeToolStripMenuItem";
-            this.printExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.printExistingEPrescribeToolStripMenuItem.Text = "Print Existing";
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
-            // viewPatientProfileToolStripMenuItem
+            // bindingNavigatorMoveLastItem
             // 
-            this.viewPatientProfileToolStripMenuItem.Name = "viewPatientProfileToolStripMenuItem";
-            this.viewPatientProfileToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.viewPatientProfileToolStripMenuItem.Text = "View Patient Profile Information";
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
-            // reportsToolStripMenuItem
+            // bindingNavigatorSeparator2
             // 
-            this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.searchRecordsToolStripMenuItem,
-            this.editLabRequestToolStripMenuItem,
-            this.editLabRecordToolStripMenuItem});
-            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
-            this.reportsToolStripMenuItem.Text = "Lab Records";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
             // 
-            // searchRecordsToolStripMenuItem
+            // bindingNavigatorAddNewItem
             // 
-            this.searchRecordsToolStripMenuItem.Name = "searchRecordsToolStripMenuItem";
-            this.searchRecordsToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.searchRecordsToolStripMenuItem.Text = "Add Lab Record";
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
-            // editLabRequestToolStripMenuItem
+            // bindingNavigatorDeleteItem
             // 
-            this.editLabRequestToolStripMenuItem.Name = "editLabRequestToolStripMenuItem";
-            this.editLabRequestToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.editLabRequestToolStripMenuItem.Text = "View Lab Record";
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
-            // editLabRecordToolStripMenuItem
+            // user_dataBindingNavigatorSaveItem
             // 
-            this.editLabRecordToolStripMenuItem.Name = "editLabRecordToolStripMenuItem";
-            this.editLabRecordToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.editLabRecordToolStripMenuItem.Text = "Edit Lab Record";
+            this.user_dataBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.user_dataBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("user_dataBindingNavigatorSaveItem.Image")));
+            this.user_dataBindingNavigatorSaveItem.Name = "user_dataBindingNavigatorSaveItem";
+            this.user_dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.user_dataBindingNavigatorSaveItem.Text = "Save Data";
+            this.user_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.user_dataBindingNavigatorSaveItem_Click);
             // 
-            // toolsToolStripMenuItem
+            // street_addressTextBox
             // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editProfileInformationToolStripMenuItem,
-            this.report2ToolStripMenuItem,
-            this.analysisOfTypeOfPatientsToolStripMenuItem,
-            this.analysisOfPatientPopulationToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.toolsToolStripMenuItem.Text = "Reporting";
-            // 
-            // editProfileInformationToolStripMenuItem
-            // 
-            this.editProfileInformationToolStripMenuItem.Name = "editProfileInformationToolStripMenuItem";
-            this.editProfileInformationToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.editProfileInformationToolStripMenuItem.Text = "Analysis of health outcomes";
-            // 
-            // report2ToolStripMenuItem
-            // 
-            this.report2ToolStripMenuItem.Name = "report2ToolStripMenuItem";
-            this.report2ToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.report2ToolStripMenuItem.Text = "Tracking of the admission rates";
-            // 
-            // analysisOfTypeOfPatientsToolStripMenuItem
-            // 
-            this.analysisOfTypeOfPatientsToolStripMenuItem.Name = "analysisOfTypeOfPatientsToolStripMenuItem";
-            this.analysisOfTypeOfPatientsToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.analysisOfTypeOfPatientsToolStripMenuItem.Text = "Analysis of type of patients";
-            // 
-            // analysisOfPatientPopulationToolStripMenuItem
-            // 
-            this.analysisOfPatientPopulationToolStripMenuItem.Name = "analysisOfPatientPopulationToolStripMenuItem";
-            this.analysisOfPatientPopulationToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.analysisOfPatientPopulationToolStripMenuItem.Text = "Analysis of patient population";
-            // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editProfileToolStripMenuItem});
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.logoutToolStripMenuItem.Text = "Profile Tools";
-            // 
-            // editProfileToolStripMenuItem
-            // 
-            this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.editProfileToolStripMenuItem.Text = "Edit Profile";
-            // 
-            // logoutToolStripMenuItem1
-            // 
-            this.logoutToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logoutOfIPIMSToolStripMenuItem});
-            this.logoutToolStripMenuItem1.Name = "logoutToolStripMenuItem1";
-            this.logoutToolStripMenuItem1.Size = new System.Drawing.Size(57, 20);
-            this.logoutToolStripMenuItem1.Text = "Logout";
-            // 
-            // logoutOfIPIMSToolStripMenuItem
-            // 
-            this.logoutOfIPIMSToolStripMenuItem.Name = "logoutOfIPIMSToolStripMenuItem";
-            this.logoutOfIPIMSToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.logoutOfIPIMSToolStripMenuItem.Text = "Logout of IPIMS";
+            this.street_addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "street_address", true));
+            this.street_addressTextBox.Location = new System.Drawing.Point(92, 17);
+            this.street_addressTextBox.Name = "street_addressTextBox";
+            this.street_addressTextBox.Size = new System.Drawing.Size(466, 20);
+            this.street_addressTextBox.TabIndex = 40;
             // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 502);
-            this.Controls.Add(this.menuStrip);
+            this.ClientSize = new System.Drawing.Size(602, 516);
+            this.Controls.Add(this.user_dataBindingNavigator);
             this.Controls.Add(this.groupBoxLoginInformation);
             this.Controls.Add(this.groupBoxMedicalInformation);
             this.Controls.Add(this.buttonEditProfile);
@@ -559,6 +491,7 @@
             this.Name = "EditProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
+            this.Load += new System.EventHandler(this.EditProfile_Load);
             this.groupBoxLoginInformation.ResumeLayout(false);
             this.groupBoxLoginInformation.PerformLayout();
             this.groupBoxMedicalInformation.ResumeLayout(false);
@@ -567,8 +500,11 @@
             this.groupBoxContactInformation.PerformLayout();
             this.groupBoxAddressInformation.ResumeLayout(false);
             this.groupBoxAddressInformation.PerformLayout();
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).EndInit();
+            this.user_dataBindingNavigator.ResumeLayout(false);
+            this.user_dataBindingNavigator.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -578,11 +514,8 @@
 
         private System.Windows.Forms.TextBox textBoxZipCode;
         private System.Windows.Forms.Label labelZipCode;
-        private System.Windows.Forms.TextBox textBoxState;
         private System.Windows.Forms.Label labelState;
-        private System.Windows.Forms.TextBox textBoxCity;
         private System.Windows.Forms.Label labelCity;
-        private System.Windows.Forms.TextBox textBoxStreetAddress;
         private System.Windows.Forms.Label labelEmailAddress;
         private System.Windows.Forms.TextBox textBoxPhoneNumber;
         private System.Windows.Forms.Label labelPhoneNumber;
@@ -604,31 +537,23 @@
         private System.Windows.Forms.Label labelEditProfile;
         private System.Windows.Forms.GroupBox groupBoxAddressInformation;
         private System.Windows.Forms.Label labelStreetAddress;
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem patientServicesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchForPatientToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updatePatientToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewAppointmentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewApptToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem scheduleApptToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ePrescriptionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createNewEPrescribeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewExistingEPrescribeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editExistingEPrescribeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem printExistingEPrescribeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewPatientProfileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchRecordsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editLabRequestToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editLabRecordToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editProfileInformationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem report2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem analysisOfTypeOfPatientsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem analysisOfPatientPopulationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem logoutOfIPIMSToolStripMenuItem;
+        private IPIMS_9DataSet iPIMS_9DataSet;
+        private System.Windows.Forms.BindingSource user_dataBindingSource;
+        private IPIMS_9DataSetTableAdapters.user_dataTableAdapter user_dataTableAdapter;
+        private IPIMS_9DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator user_dataBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton user_dataBindingNavigatorSaveItem;
+        private System.Windows.Forms.TextBox street_addressTextBox;
     }
 }

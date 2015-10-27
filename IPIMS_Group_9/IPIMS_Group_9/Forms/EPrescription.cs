@@ -16,5 +16,17 @@ namespace IPIMS_Group_9.Forms
         {
             InitializeComponent();
         }
+
+        private void EPrescription_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'iPIMS_9DataSet.update_healthcare_data' table. You can move, or remove it, as needed.
+            this.update_healthcare_dataTableAdapter.Fill(this.iPIMS_9DataSet.update_healthcare_data);
+
+        }
+
+        private void buttonPrint_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

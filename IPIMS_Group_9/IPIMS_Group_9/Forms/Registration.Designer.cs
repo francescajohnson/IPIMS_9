@@ -498,6 +498,7 @@
             this.user_dataBindingSource1BindingNavigator.BindingSource = this.user_dataBindingSource1;
             this.user_dataBindingSource1BindingNavigator.CountItem = this.toolStripLabel1;
             this.user_dataBindingSource1BindingNavigator.DeleteItem = this.toolStripButton6;
+            this.user_dataBindingSource1BindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.user_dataBindingSource1BindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
