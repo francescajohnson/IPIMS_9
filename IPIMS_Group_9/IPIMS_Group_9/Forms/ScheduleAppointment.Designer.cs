@@ -41,17 +41,16 @@
             this.labelFirstName = new System.Windows.Forms.Label();
             this.labelScheduleAppointment = new System.Windows.Forms.Label();
             this.comboBoxDoctorSelection = new System.Windows.Forms.ComboBox();
-            this.monthCalendarScheduling = new System.Windows.Forms.MonthCalendar();
             this.buttonScheduleAppointment = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.scheduled_appointment_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
             this.checkBoxSuicide = new System.Windows.Forms.CheckBox();
             this.checkBoxWheezing = new System.Windows.Forms.CheckBox();
             this.checkBoxBloodUrine = new System.Windows.Forms.CheckBox();
             this.checkBoxTenderness = new System.Windows.Forms.CheckBox();
             this.checkBoxChestPains = new System.Windows.Forms.CheckBox();
+            this.scheduled_appointment_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.patientServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchForPatientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,6 +92,7 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.scheduled_appointment_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.appointment_dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBoxPatientInformation.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -214,12 +214,6 @@
             this.comboBoxDoctorSelection.TabIndex = 2;
             this.comboBoxDoctorSelection.Text = "Select the Doctor for the Appointment";
             // 
-            // monthCalendarScheduling
-            // 
-            this.monthCalendarScheduling.Location = new System.Drawing.Point(5, 25);
-            this.monthCalendarScheduling.Name = "monthCalendarScheduling";
-            this.monthCalendarScheduling.TabIndex = 0;
-            // 
             // buttonScheduleAppointment
             // 
             this.buttonScheduleAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -233,12 +227,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.appointment_dateDateTimePicker);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.comboBoxDoctorSelection);
-            this.groupBox1.Controls.Add(this.monthCalendarScheduling);
             this.groupBox1.Location = new System.Drawing.Point(12, 231);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(563, 232);
+            this.groupBox1.Size = new System.Drawing.Size(577, 252);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Calendar and Doctor Selection for Appointment Scheduling:";
@@ -257,16 +251,6 @@
             this.groupBox2.TabIndex = 39;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Is the Patient experiencing any of the following?";
-            // 
-            // scheduled_appointment_dataBindingSource
-            // 
-            this.scheduled_appointment_dataBindingSource.DataMember = "scheduled_appointment_data";
-            this.scheduled_appointment_dataBindingSource.DataSource = this.iPIMS_9DataSet;
-            // 
-            // iPIMS_9DataSet
-            // 
-            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
-            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // checkBoxSuicide
             // 
@@ -322,6 +306,16 @@
             this.checkBoxChestPains.TabIndex = 36;
             this.checkBoxChestPains.Text = "Chest pains";
             this.checkBoxChestPains.UseVisualStyleBackColor = true;
+            // 
+            // scheduled_appointment_dataBindingSource
+            // 
+            this.scheduled_appointment_dataBindingSource.DataMember = "scheduled_appointment_data";
+            this.scheduled_appointment_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            // 
+            // iPIMS_9DataSet
+            // 
+            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
+            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // menuStrip
             // 
@@ -652,6 +646,15 @@
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Text = "Save Data";
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.scheduled_appointment_dataBindingNavigatorSaveItem_Click);
             // 
+            // appointment_dateDateTimePicker
+            // 
+            this.appointment_dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.scheduled_appointment_dataBindingSource, "appointment_date", true));
+            this.appointment_dateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.appointment_dateDateTimePicker.Location = new System.Drawing.Point(22, 77);
+            this.appointment_dateDateTimePicker.Name = "appointment_dateDateTimePicker";
+            this.appointment_dateDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.appointment_dateDateTimePicker.TabIndex = 40;
+            // 
             // ScheduleAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -697,7 +700,6 @@
         private System.Windows.Forms.Label labelFirstName;
         private System.Windows.Forms.Label labelScheduleAppointment;
         private System.Windows.Forms.ComboBox comboBoxDoctorSelection;
-        private System.Windows.Forms.MonthCalendar monthCalendarScheduling;
         private System.Windows.Forms.Button buttonScheduleAppointment;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -749,5 +751,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton scheduled_appointment_dataBindingNavigatorSaveItem;
+        private System.Windows.Forms.DateTimePicker appointment_dateDateTimePicker;
     }
 }
