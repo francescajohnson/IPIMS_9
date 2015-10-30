@@ -419,19 +419,31 @@ namespace IPIMS_Group_9 {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class scheduled_appointment_dataDataTable : global::System.Data.TypedTableBase<scheduled_appointment_dataRow> {
             
-            private global::System.Data.DataColumn columnfirst_name;
+            private global::System.Data.DataColumn columnFirst_Name;
             
-            private global::System.Data.DataColumn columnlast_name;
+            private global::System.Data.DataColumn columnLast_Name;
             
-            private global::System.Data.DataColumn columnsymptoms;
+            private global::System.Data.DataColumn columnDate_of_Birth;
             
-            private global::System.Data.DataColumn columnappointment_date;
+            private global::System.Data.DataColumn columnAppointment_Date;
             
-            private global::System.Data.DataColumn columndoctor_name;
+            private global::System.Data.DataColumn columnAppointment_Time;
             
-            private global::System.Data.DataColumn columnweakness;
+            private global::System.Data.DataColumn columnSymptoms;
             
-            private global::System.Data.DataColumn columndate_of_birth;
+            private global::System.Data.DataColumn columnDoctor_Name;
+            
+            private global::System.Data.DataColumn columnHas_Weakness;
+            
+            private global::System.Data.DataColumn columnHas_Chest_Pains;
+            
+            private global::System.Data.DataColumn columnHas_Leg_Pain;
+            
+            private global::System.Data.DataColumn columnHas_Blood_in_Urine;
+            
+            private global::System.Data.DataColumn columnIs_Wheezing;
+            
+            private global::System.Data.DataColumn columnIs_Suicidal;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -468,57 +480,105 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn first_nameColumn {
+            public global::System.Data.DataColumn First_NameColumn {
                 get {
-                    return this.columnfirst_name;
+                    return this.columnFirst_Name;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn last_nameColumn {
+            public global::System.Data.DataColumn Last_NameColumn {
                 get {
-                    return this.columnlast_name;
+                    return this.columnLast_Name;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn symptomsColumn {
+            public global::System.Data.DataColumn Date_of_BirthColumn {
                 get {
-                    return this.columnsymptoms;
+                    return this.columnDate_of_Birth;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn appointment_dateColumn {
+            public global::System.Data.DataColumn Appointment_DateColumn {
                 get {
-                    return this.columnappointment_date;
+                    return this.columnAppointment_Date;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn doctor_nameColumn {
+            public global::System.Data.DataColumn Appointment_TimeColumn {
                 get {
-                    return this.columndoctor_name;
+                    return this.columnAppointment_Time;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn weaknessColumn {
+            public global::System.Data.DataColumn SymptomsColumn {
                 get {
-                    return this.columnweakness;
+                    return this.columnSymptoms;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn date_of_birthColumn {
+            public global::System.Data.DataColumn Doctor_NameColumn {
                 get {
-                    return this.columndate_of_birth;
+                    return this.columnDoctor_Name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Has_WeaknessColumn {
+                get {
+                    return this.columnHas_Weakness;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Has_Chest_PainsColumn {
+                get {
+                    return this.columnHas_Chest_Pains;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Has_Leg_PainColumn {
+                get {
+                    return this.columnHas_Leg_Pain;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Has_Blood_in_UrineColumn {
+                get {
+                    return this.columnHas_Blood_in_Urine;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Is_WheezingColumn {
+                get {
+                    return this.columnIs_Wheezing;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Is_SuicidalColumn {
+                get {
+                    return this.columnIs_Suicidal;
                 }
             }
             
@@ -559,16 +619,22 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public scheduled_appointment_dataRow Addscheduled_appointment_dataRow(string first_name, string last_name, string symptoms, System.DateTime appointment_date, string doctor_name, bool weakness, System.DateTime date_of_birth) {
+            public scheduled_appointment_dataRow Addscheduled_appointment_dataRow(string First_Name, string Last_Name, System.DateTime Date_of_Birth, System.DateTime Appointment_Date, System.DateTime Appointment_Time, string Symptoms, string Doctor_Name, bool Has_Weakness, bool Has_Chest_Pains, bool Has_Leg_Pain, bool Has_Blood_in_Urine, bool Is_Wheezing, bool Is_Suicidal) {
                 scheduled_appointment_dataRow rowscheduled_appointment_dataRow = ((scheduled_appointment_dataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        first_name,
-                        last_name,
-                        symptoms,
-                        appointment_date,
-                        doctor_name,
-                        weakness,
-                        date_of_birth};
+                        First_Name,
+                        Last_Name,
+                        Date_of_Birth,
+                        Appointment_Date,
+                        Appointment_Time,
+                        Symptoms,
+                        Doctor_Name,
+                        Has_Weakness,
+                        Has_Chest_Pains,
+                        Has_Leg_Pain,
+                        Has_Blood_in_Urine,
+                        Is_Wheezing,
+                        Is_Suicidal};
                 rowscheduled_appointment_dataRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowscheduled_appointment_dataRow);
                 return rowscheduled_appointment_dataRow;
@@ -576,11 +642,11 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public scheduled_appointment_dataRow FindByfirst_namelast_namedate_of_birth(string first_name, string last_name, System.DateTime date_of_birth) {
+            public scheduled_appointment_dataRow FindByFirst_NameLast_NameDate_of_Birth(string First_Name, string Last_Name, System.DateTime Date_of_Birth) {
                 return ((scheduled_appointment_dataRow)(this.Rows.Find(new object[] {
-                            first_name,
-                            last_name,
-                            date_of_birth})));
+                            First_Name,
+                            Last_Name,
+                            Date_of_Birth})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -600,47 +666,71 @@ namespace IPIMS_Group_9 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnfirst_name = base.Columns["first_name"];
-                this.columnlast_name = base.Columns["last_name"];
-                this.columnsymptoms = base.Columns["symptoms"];
-                this.columnappointment_date = base.Columns["appointment_date"];
-                this.columndoctor_name = base.Columns["doctor_name"];
-                this.columnweakness = base.Columns["weakness"];
-                this.columndate_of_birth = base.Columns["date_of_birth"];
+                this.columnFirst_Name = base.Columns["First_Name"];
+                this.columnLast_Name = base.Columns["Last_Name"];
+                this.columnDate_of_Birth = base.Columns["Date_of_Birth"];
+                this.columnAppointment_Date = base.Columns["Appointment_Date"];
+                this.columnAppointment_Time = base.Columns["Appointment_Time"];
+                this.columnSymptoms = base.Columns["Symptoms"];
+                this.columnDoctor_Name = base.Columns["Doctor_Name"];
+                this.columnHas_Weakness = base.Columns["Has_Weakness"];
+                this.columnHas_Chest_Pains = base.Columns["Has_Chest_Pains"];
+                this.columnHas_Leg_Pain = base.Columns["Has_Leg_Pain"];
+                this.columnHas_Blood_in_Urine = base.Columns["Has_Blood_in_Urine"];
+                this.columnIs_Wheezing = base.Columns["Is_Wheezing"];
+                this.columnIs_Suicidal = base.Columns["Is_Suicidal"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnfirst_name = new global::System.Data.DataColumn("first_name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfirst_name);
-                this.columnlast_name = new global::System.Data.DataColumn("last_name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlast_name);
-                this.columnsymptoms = new global::System.Data.DataColumn("symptoms", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsymptoms);
-                this.columnappointment_date = new global::System.Data.DataColumn("appointment_date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnappointment_date);
-                this.columndoctor_name = new global::System.Data.DataColumn("doctor_name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndoctor_name);
-                this.columnweakness = new global::System.Data.DataColumn("weakness", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnweakness);
-                this.columndate_of_birth = new global::System.Data.DataColumn("date_of_birth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndate_of_birth);
+                this.columnFirst_Name = new global::System.Data.DataColumn("First_Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFirst_Name);
+                this.columnLast_Name = new global::System.Data.DataColumn("Last_Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLast_Name);
+                this.columnDate_of_Birth = new global::System.Data.DataColumn("Date_of_Birth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDate_of_Birth);
+                this.columnAppointment_Date = new global::System.Data.DataColumn("Appointment_Date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAppointment_Date);
+                this.columnAppointment_Time = new global::System.Data.DataColumn("Appointment_Time", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAppointment_Time);
+                this.columnSymptoms = new global::System.Data.DataColumn("Symptoms", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSymptoms);
+                this.columnDoctor_Name = new global::System.Data.DataColumn("Doctor_Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDoctor_Name);
+                this.columnHas_Weakness = new global::System.Data.DataColumn("Has_Weakness", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHas_Weakness);
+                this.columnHas_Chest_Pains = new global::System.Data.DataColumn("Has_Chest_Pains", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHas_Chest_Pains);
+                this.columnHas_Leg_Pain = new global::System.Data.DataColumn("Has_Leg_Pain", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHas_Leg_Pain);
+                this.columnHas_Blood_in_Urine = new global::System.Data.DataColumn("Has_Blood_in_Urine", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHas_Blood_in_Urine);
+                this.columnIs_Wheezing = new global::System.Data.DataColumn("Is_Wheezing", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIs_Wheezing);
+                this.columnIs_Suicidal = new global::System.Data.DataColumn("Is_Suicidal", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIs_Suicidal);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnfirst_name,
-                                this.columnlast_name,
-                                this.columndate_of_birth}, true));
-                this.columnfirst_name.AllowDBNull = false;
-                this.columnfirst_name.MaxLength = 45;
-                this.columnlast_name.AllowDBNull = false;
-                this.columnlast_name.MaxLength = 45;
-                this.columnsymptoms.AllowDBNull = false;
-                this.columnsymptoms.MaxLength = 100;
-                this.columnappointment_date.AllowDBNull = false;
-                this.columndoctor_name.AllowDBNull = false;
-                this.columndoctor_name.MaxLength = 45;
-                this.columnweakness.AllowDBNull = false;
-                this.columndate_of_birth.AllowDBNull = false;
+                                this.columnFirst_Name,
+                                this.columnLast_Name,
+                                this.columnDate_of_Birth}, true));
+                this.columnFirst_Name.AllowDBNull = false;
+                this.columnFirst_Name.MaxLength = 50;
+                this.columnLast_Name.AllowDBNull = false;
+                this.columnLast_Name.MaxLength = 45;
+                this.columnDate_of_Birth.AllowDBNull = false;
+                this.columnAppointment_Date.AllowDBNull = false;
+                this.columnAppointment_Time.AllowDBNull = false;
+                this.columnSymptoms.AllowDBNull = false;
+                this.columnSymptoms.MaxLength = 200;
+                this.columnDoctor_Name.AllowDBNull = false;
+                this.columnDoctor_Name.MaxLength = 90;
+                this.columnHas_Weakness.AllowDBNull = false;
+                this.columnHas_Chest_Pains.AllowDBNull = false;
+                this.columnHas_Leg_Pain.AllowDBNull = false;
+                this.columnHas_Blood_in_Urine.AllowDBNull = false;
+                this.columnIs_Wheezing.AllowDBNull = false;
+                this.columnIs_Suicidal.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -784,7 +874,17 @@ namespace IPIMS_Group_9 {
             
             private global::System.Data.DataColumn columndoctor_name;
             
-            private global::System.Data.DataColumn columnalert;
+            private global::System.Data.DataColumn columnIs_Suicidal;
+            
+            private global::System.Data.DataColumn columnIs_Wheezing;
+            
+            private global::System.Data.DataColumn columnHas_Blood_in_Urine;
+            
+            private global::System.Data.DataColumn columnHas_Leg_Pain;
+            
+            private global::System.Data.DataColumn columnHas_Chest_Pains;
+            
+            private global::System.Data.DataColumn columnHas_Weakness;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -861,9 +961,49 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn alertColumn {
+            public global::System.Data.DataColumn Is_SuicidalColumn {
                 get {
-                    return this.columnalert;
+                    return this.columnIs_Suicidal;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Is_WheezingColumn {
+                get {
+                    return this.columnIs_Wheezing;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Has_Blood_in_UrineColumn {
+                get {
+                    return this.columnHas_Blood_in_Urine;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Has_Leg_PainColumn {
+                get {
+                    return this.columnHas_Leg_Pain;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Has_Chest_PainsColumn {
+                get {
+                    return this.columnHas_Chest_Pains;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Has_WeaknessColumn {
+                get {
+                    return this.columnHas_Weakness;
                 }
             }
             
@@ -904,7 +1044,7 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public update_healthcare_dataRow Addupdate_healthcare_dataRow(string first_name, string last_name, System.DateTime date_of_birth, string symptoms, string doctor_name, int alert) {
+            public update_healthcare_dataRow Addupdate_healthcare_dataRow(string first_name, string last_name, System.DateTime date_of_birth, string symptoms, string doctor_name, bool Is_Suicidal, bool Is_Wheezing, bool Has_Blood_in_Urine, bool Has_Leg_Pain, bool Has_Chest_Pains, bool Has_Weakness) {
                 update_healthcare_dataRow rowupdate_healthcare_dataRow = ((update_healthcare_dataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         first_name,
@@ -912,7 +1052,12 @@ namespace IPIMS_Group_9 {
                         date_of_birth,
                         symptoms,
                         doctor_name,
-                        alert};
+                        Is_Suicidal,
+                        Is_Wheezing,
+                        Has_Blood_in_Urine,
+                        Has_Leg_Pain,
+                        Has_Chest_Pains,
+                        Has_Weakness};
                 rowupdate_healthcare_dataRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowupdate_healthcare_dataRow);
                 return rowupdate_healthcare_dataRow;
@@ -949,7 +1094,12 @@ namespace IPIMS_Group_9 {
                 this.columndate_of_birth = base.Columns["date_of_birth"];
                 this.columnsymptoms = base.Columns["symptoms"];
                 this.columndoctor_name = base.Columns["doctor_name"];
-                this.columnalert = base.Columns["alert"];
+                this.columnIs_Suicidal = base.Columns["Is_Suicidal"];
+                this.columnIs_Wheezing = base.Columns["Is_Wheezing"];
+                this.columnHas_Blood_in_Urine = base.Columns["Has_Blood_in_Urine"];
+                this.columnHas_Leg_Pain = base.Columns["Has_Leg_Pain"];
+                this.columnHas_Chest_Pains = base.Columns["Has_Chest_Pains"];
+                this.columnHas_Weakness = base.Columns["Has_Weakness"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -965,8 +1115,18 @@ namespace IPIMS_Group_9 {
                 base.Columns.Add(this.columnsymptoms);
                 this.columndoctor_name = new global::System.Data.DataColumn("doctor_name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndoctor_name);
-                this.columnalert = new global::System.Data.DataColumn("alert", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnalert);
+                this.columnIs_Suicidal = new global::System.Data.DataColumn("Is_Suicidal", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIs_Suicidal);
+                this.columnIs_Wheezing = new global::System.Data.DataColumn("Is_Wheezing", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIs_Wheezing);
+                this.columnHas_Blood_in_Urine = new global::System.Data.DataColumn("Has_Blood_in_Urine", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHas_Blood_in_Urine);
+                this.columnHas_Leg_Pain = new global::System.Data.DataColumn("Has_Leg_Pain", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHas_Leg_Pain);
+                this.columnHas_Chest_Pains = new global::System.Data.DataColumn("Has_Chest_Pains", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHas_Chest_Pains);
+                this.columnHas_Weakness = new global::System.Data.DataColumn("Has_Weakness", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHas_Weakness);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnfirst_name,
                                 this.columnlast_name,
@@ -980,6 +1140,12 @@ namespace IPIMS_Group_9 {
                 this.columnsymptoms.MaxLength = 100;
                 this.columndoctor_name.AllowDBNull = false;
                 this.columndoctor_name.MaxLength = 45;
+                this.columnIs_Suicidal.AllowDBNull = false;
+                this.columnIs_Wheezing.AllowDBNull = false;
+                this.columnHas_Blood_in_Urine.AllowDBNull = false;
+                this.columnHas_Leg_Pain.AllowDBNull = false;
+                this.columnHas_Chest_Pains.AllowDBNull = false;
+                this.columnHas_Weakness.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1113,37 +1279,33 @@ namespace IPIMS_Group_9 {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class user_dataDataTable : global::System.Data.TypedTableBase<user_dataRow> {
             
-            private global::System.Data.DataColumn columnclassification;
+            private global::System.Data.DataColumn columnClassification;
             
-            private global::System.Data.DataColumn columnfirst_name;
+            private global::System.Data.DataColumn columnFirst_Name;
             
-            private global::System.Data.DataColumn columnlast_name;
+            private global::System.Data.DataColumn columnLast_Name;
             
-            private global::System.Data.DataColumn columngender;
+            private global::System.Data.DataColumn columnGender;
             
-            private global::System.Data.DataColumn columndate_of_birth;
+            private global::System.Data.DataColumn columnDate_of_Birth;
             
-            private global::System.Data.DataColumn columnsocial_security_number;
+            private global::System.Data.DataColumn columnSocial_Security_Number;
             
-            private global::System.Data.DataColumn columnstreet_address;
+            private global::System.Data.DataColumn columnStreet_Address;
             
-            private global::System.Data.DataColumn columncity;
+            private global::System.Data.DataColumn columnCity;
             
-            private global::System.Data.DataColumn columnstate;
+            private global::System.Data.DataColumn columnPassword;
             
-            private global::System.Data.DataColumn columnzip_code;
+            private global::System.Data.DataColumn columnUsername;
             
-            private global::System.Data.DataColumn columnphone_number;
+            private global::System.Data.DataColumn columnEmail;
             
-            private global::System.Data.DataColumn columnemail;
+            private global::System.Data.DataColumn columnPhone_Number;
             
-            private global::System.Data.DataColumn columnusername;
+            private global::System.Data.DataColumn columnZip_Code;
             
-            private global::System.Data.DataColumn columnpassword;
-            
-            private global::System.Data.DataColumn columninsurance_provider;
-            
-            private global::System.Data.DataColumn columninsurance_contact;
+            private global::System.Data.DataColumn columnState;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -1180,129 +1342,113 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn classificationColumn {
+            public global::System.Data.DataColumn ClassificationColumn {
                 get {
-                    return this.columnclassification;
+                    return this.columnClassification;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn first_nameColumn {
+            public global::System.Data.DataColumn First_NameColumn {
                 get {
-                    return this.columnfirst_name;
+                    return this.columnFirst_Name;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn last_nameColumn {
+            public global::System.Data.DataColumn Last_NameColumn {
                 get {
-                    return this.columnlast_name;
+                    return this.columnLast_Name;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn genderColumn {
+            public global::System.Data.DataColumn GenderColumn {
                 get {
-                    return this.columngender;
+                    return this.columnGender;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn date_of_birthColumn {
+            public global::System.Data.DataColumn Date_of_BirthColumn {
                 get {
-                    return this.columndate_of_birth;
+                    return this.columnDate_of_Birth;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn social_security_numberColumn {
+            public global::System.Data.DataColumn Social_Security_NumberColumn {
                 get {
-                    return this.columnsocial_security_number;
+                    return this.columnSocial_Security_Number;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn street_addressColumn {
+            public global::System.Data.DataColumn Street_AddressColumn {
                 get {
-                    return this.columnstreet_address;
+                    return this.columnStreet_Address;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn cityColumn {
+            public global::System.Data.DataColumn CityColumn {
                 get {
-                    return this.columncity;
+                    return this.columnCity;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn stateColumn {
+            public global::System.Data.DataColumn PasswordColumn {
                 get {
-                    return this.columnstate;
+                    return this.columnPassword;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn zip_codeColumn {
+            public global::System.Data.DataColumn UsernameColumn {
                 get {
-                    return this.columnzip_code;
+                    return this.columnUsername;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn phone_numberColumn {
+            public global::System.Data.DataColumn EmailColumn {
                 get {
-                    return this.columnphone_number;
+                    return this.columnEmail;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn emailColumn {
+            public global::System.Data.DataColumn Phone_NumberColumn {
                 get {
-                    return this.columnemail;
+                    return this.columnPhone_Number;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn usernameColumn {
+            public global::System.Data.DataColumn Zip_CodeColumn {
                 get {
-                    return this.columnusername;
+                    return this.columnZip_Code;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn passwordColumn {
+            public global::System.Data.DataColumn StateColumn {
                 get {
-                    return this.columnpassword;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn insurance_providerColumn {
-                get {
-                    return this.columninsurance_provider;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn insurance_contactColumn {
-                get {
-                    return this.columninsurance_contact;
+                    return this.columnState;
                 }
             }
             
@@ -1343,41 +1489,23 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public user_dataRow Adduser_dataRow(
-                        string classification, 
-                        string first_name, 
-                        string last_name, 
-                        string gender, 
-                        System.DateTime date_of_birth, 
-                        string social_security_number, 
-                        string street_address, 
-                        string city, 
-                        string state, 
-                        string zip_code, 
-                        string phone_number, 
-                        string email, 
-                        string username, 
-                        string password, 
-                        string insurance_provider, 
-                        string insurance_contact) {
+            public user_dataRow Adduser_dataRow(string Classification, string First_Name, string Last_Name, string Gender, System.DateTime Date_of_Birth, string Social_Security_Number, string Street_Address, string City, string Password, string Username, string Email, string Phone_Number, string Zip_Code, string State) {
                 user_dataRow rowuser_dataRow = ((user_dataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        classification,
-                        first_name,
-                        last_name,
-                        gender,
-                        date_of_birth,
-                        social_security_number,
-                        street_address,
-                        city,
-                        state,
-                        zip_code,
-                        phone_number,
-                        email,
-                        username,
-                        password,
-                        insurance_provider,
-                        insurance_contact};
+                        Classification,
+                        First_Name,
+                        Last_Name,
+                        Gender,
+                        Date_of_Birth,
+                        Social_Security_Number,
+                        Street_Address,
+                        City,
+                        Password,
+                        Username,
+                        Email,
+                        Phone_Number,
+                        Zip_Code,
+                        State};
                 rowuser_dataRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowuser_dataRow);
                 return rowuser_dataRow;
@@ -1385,14 +1513,11 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public user_dataRow FindByfirst_namelast_namedate_of_birthsocial_security_numberemailusername(string first_name, string last_name, System.DateTime date_of_birth, string social_security_number, string email, string username) {
+            public user_dataRow FindByFirst_NameLast_NameDate_of_Birth(string First_Name, string Last_Name, System.DateTime Date_of_Birth) {
                 return ((user_dataRow)(this.Rows.Find(new object[] {
-                            first_name,
-                            last_name,
-                            date_of_birth,
-                            social_security_number,
-                            email,
-                            username})));
+                            First_Name,
+                            Last_Name,
+                            Date_of_Birth})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1412,91 +1537,80 @@ namespace IPIMS_Group_9 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnclassification = base.Columns["classification"];
-                this.columnfirst_name = base.Columns["first_name"];
-                this.columnlast_name = base.Columns["last_name"];
-                this.columngender = base.Columns["gender"];
-                this.columndate_of_birth = base.Columns["date_of_birth"];
-                this.columnsocial_security_number = base.Columns["social_security_number"];
-                this.columnstreet_address = base.Columns["street_address"];
-                this.columncity = base.Columns["city"];
-                this.columnstate = base.Columns["state"];
-                this.columnzip_code = base.Columns["zip_code"];
-                this.columnphone_number = base.Columns["phone_number"];
-                this.columnemail = base.Columns["email"];
-                this.columnusername = base.Columns["username"];
-                this.columnpassword = base.Columns["password"];
-                this.columninsurance_provider = base.Columns["insurance_provider"];
-                this.columninsurance_contact = base.Columns["insurance_contact"];
+                this.columnClassification = base.Columns["Classification"];
+                this.columnFirst_Name = base.Columns["First_Name"];
+                this.columnLast_Name = base.Columns["Last_Name"];
+                this.columnGender = base.Columns["Gender"];
+                this.columnDate_of_Birth = base.Columns["Date_of_Birth"];
+                this.columnSocial_Security_Number = base.Columns["Social_Security_Number"];
+                this.columnStreet_Address = base.Columns["Street_Address"];
+                this.columnCity = base.Columns["City"];
+                this.columnPassword = base.Columns["Password"];
+                this.columnUsername = base.Columns["Username"];
+                this.columnEmail = base.Columns["Email"];
+                this.columnPhone_Number = base.Columns["Phone_Number"];
+                this.columnZip_Code = base.Columns["Zip_Code"];
+                this.columnState = base.Columns["State"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnclassification = new global::System.Data.DataColumn("classification", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnclassification);
-                this.columnfirst_name = new global::System.Data.DataColumn("first_name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfirst_name);
-                this.columnlast_name = new global::System.Data.DataColumn("last_name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnlast_name);
-                this.columngender = new global::System.Data.DataColumn("gender", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columngender);
-                this.columndate_of_birth = new global::System.Data.DataColumn("date_of_birth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columndate_of_birth);
-                this.columnsocial_security_number = new global::System.Data.DataColumn("social_security_number", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnsocial_security_number);
-                this.columnstreet_address = new global::System.Data.DataColumn("street_address", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnstreet_address);
-                this.columncity = new global::System.Data.DataColumn("city", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncity);
-                this.columnstate = new global::System.Data.DataColumn("state", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnstate);
-                this.columnzip_code = new global::System.Data.DataColumn("zip_code", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnzip_code);
-                this.columnphone_number = new global::System.Data.DataColumn("phone_number", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnphone_number);
-                this.columnemail = new global::System.Data.DataColumn("email", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnemail);
-                this.columnusername = new global::System.Data.DataColumn("username", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnusername);
-                this.columnpassword = new global::System.Data.DataColumn("password", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnpassword);
-                this.columninsurance_provider = new global::System.Data.DataColumn("insurance_provider", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columninsurance_provider);
-                this.columninsurance_contact = new global::System.Data.DataColumn("insurance_contact", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columninsurance_contact);
+                this.columnClassification = new global::System.Data.DataColumn("Classification", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnClassification);
+                this.columnFirst_Name = new global::System.Data.DataColumn("First_Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFirst_Name);
+                this.columnLast_Name = new global::System.Data.DataColumn("Last_Name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLast_Name);
+                this.columnGender = new global::System.Data.DataColumn("Gender", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGender);
+                this.columnDate_of_Birth = new global::System.Data.DataColumn("Date_of_Birth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDate_of_Birth);
+                this.columnSocial_Security_Number = new global::System.Data.DataColumn("Social_Security_Number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSocial_Security_Number);
+                this.columnStreet_Address = new global::System.Data.DataColumn("Street_Address", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStreet_Address);
+                this.columnCity = new global::System.Data.DataColumn("City", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCity);
+                this.columnPassword = new global::System.Data.DataColumn("Password", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPassword);
+                this.columnUsername = new global::System.Data.DataColumn("Username", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUsername);
+                this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmail);
+                this.columnPhone_Number = new global::System.Data.DataColumn("Phone_Number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhone_Number);
+                this.columnZip_Code = new global::System.Data.DataColumn("Zip_Code", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnZip_Code);
+                this.columnState = new global::System.Data.DataColumn("State", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnState);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnfirst_name,
-                                this.columnlast_name,
-                                this.columndate_of_birth,
-                                this.columnsocial_security_number,
-                                this.columnemail,
-                                this.columnusername}, true));
-                this.columnclassification.AllowDBNull = false;
-                this.columnclassification.MaxLength = 15;
-                this.columnfirst_name.AllowDBNull = false;
-                this.columnfirst_name.MaxLength = 45;
-                this.columnlast_name.AllowDBNull = false;
-                this.columnlast_name.MaxLength = 45;
-                this.columngender.AllowDBNull = false;
-                this.columngender.MaxLength = 1;
-                this.columndate_of_birth.AllowDBNull = false;
-                this.columnsocial_security_number.AllowDBNull = false;
-                this.columnsocial_security_number.MaxLength = 11;
-                this.columnstreet_address.MaxLength = 45;
-                this.columncity.MaxLength = 25;
-                this.columnstate.MaxLength = 15;
-                this.columnzip_code.MaxLength = 12;
-                this.columnphone_number.AllowDBNull = false;
-                this.columnphone_number.MaxLength = 20;
-                this.columnemail.AllowDBNull = false;
-                this.columnemail.MaxLength = 64;
-                this.columnusername.AllowDBNull = false;
-                this.columnusername.MaxLength = 45;
-                this.columnpassword.AllowDBNull = false;
-                this.columnpassword.MaxLength = 45;
-                this.columninsurance_provider.MaxLength = 45;
-                this.columninsurance_contact.MaxLength = 20;
+                                this.columnFirst_Name,
+                                this.columnLast_Name,
+                                this.columnDate_of_Birth}, true));
+                this.columnClassification.AllowDBNull = false;
+                this.columnClassification.MaxLength = 15;
+                this.columnFirst_Name.AllowDBNull = false;
+                this.columnFirst_Name.MaxLength = 45;
+                this.columnLast_Name.AllowDBNull = false;
+                this.columnLast_Name.MaxLength = 45;
+                this.columnGender.AllowDBNull = false;
+                this.columnGender.MaxLength = 1;
+                this.columnDate_of_Birth.AllowDBNull = false;
+                this.columnSocial_Security_Number.AllowDBNull = false;
+                this.columnSocial_Security_Number.MaxLength = 11;
+                this.columnStreet_Address.MaxLength = 45;
+                this.columnCity.MaxLength = 25;
+                this.columnPassword.AllowDBNull = false;
+                this.columnPassword.MaxLength = 20;
+                this.columnUsername.AllowDBNull = false;
+                this.columnUsername.MaxLength = 45;
+                this.columnEmail.AllowDBNull = false;
+                this.columnEmail.MaxLength = 64;
+                this.columnPhone_Number.AllowDBNull = false;
+                this.columnPhone_Number.MaxLength = 20;
+                this.columnZip_Code.MaxLength = 12;
+                this.columnState.MaxLength = 15;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1935,6 +2049,7 @@ namespace IPIMS_Group_9 {
                 this.columnLab_Description.MaxLength = 45;
                 this.columnDoctor_Name.AllowDBNull = false;
                 this.columnDoctor_Name.MaxLength = 90;
+                this.columnInstruction.AllowDBNull = false;
                 this.columnInstruction.MaxLength = 45;
             }
             
@@ -2075,18 +2190,6 @@ namespace IPIMS_Group_9 {
             
             private global::System.Data.DataColumn columnDate_of_Birth;
             
-            private global::System.Data.DataColumn columnStreet_Address;
-            
-            private global::System.Data.DataColumn columnCity;
-            
-            private global::System.Data.DataColumn columnState;
-            
-            private global::System.Data.DataColumn columnZip_Code;
-            
-            private global::System.Data.DataColumn columnPhone_Number;
-            
-            private global::System.Data.DataColumn columnEmail;
-            
             private global::System.Data.DataColumn columnHealth_Insurance_Provider;
             
             private global::System.Data.DataColumn columnHealth_Insurance_Contact_Number;
@@ -2094,6 +2197,14 @@ namespace IPIMS_Group_9 {
             private global::System.Data.DataColumn columnMedical_History;
             
             private global::System.Data.DataColumn columnDoctor_Name;
+            
+            private global::System.Data.DataColumn columnAge;
+            
+            private global::System.Data.DataColumn columnCountry_of_Origin;
+            
+            private global::System.Data.DataColumn columnIs_Smoker;
+            
+            private global::System.Data.DataColumn columnIs_Drug_User;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -2154,54 +2265,6 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Street_AddressColumn {
-                get {
-                    return this.columnStreet_Address;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CityColumn {
-                get {
-                    return this.columnCity;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn StateColumn {
-                get {
-                    return this.columnState;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Zip_CodeColumn {
-                get {
-                    return this.columnZip_Code;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn Phone_NumberColumn {
-                get {
-                    return this.columnPhone_Number;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn EmailColumn {
-                get {
-                    return this.columnEmail;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn Health_Insurance_ProviderColumn {
                 get {
                     return this.columnHealth_Insurance_Provider;
@@ -2229,6 +2292,38 @@ namespace IPIMS_Group_9 {
             public global::System.Data.DataColumn Doctor_NameColumn {
                 get {
                     return this.columnDoctor_Name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AgeColumn {
+                get {
+                    return this.columnAge;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Country_of_OriginColumn {
+                get {
+                    return this.columnCountry_of_Origin;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Is_SmokerColumn {
+                get {
+                    return this.columnIs_Smoker;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Is_Drug_UserColumn {
+                get {
+                    return this.columnIs_Drug_User;
                 }
             }
             
@@ -2269,22 +2364,20 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public patient_dataRow Addpatient_dataRow(string First_Name, string Last_Name, System.DateTime Date_of_Birth, string Street_Address, string City, string State, string Zip_Code, string Phone_Number, string Email, string Health_Insurance_Provider, string Health_Insurance_Contact_Number, string Medical_History, string Doctor_Name) {
+            public patient_dataRow Addpatient_dataRow(string First_Name, string Last_Name, System.DateTime Date_of_Birth, string Health_Insurance_Provider, string Health_Insurance_Contact_Number, string Medical_History, string Doctor_Name, int Age, string Country_of_Origin, bool Is_Smoker, bool Is_Drug_User) {
                 patient_dataRow rowpatient_dataRow = ((patient_dataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         First_Name,
                         Last_Name,
                         Date_of_Birth,
-                        Street_Address,
-                        City,
-                        State,
-                        Zip_Code,
-                        Phone_Number,
-                        Email,
                         Health_Insurance_Provider,
                         Health_Insurance_Contact_Number,
                         Medical_History,
-                        Doctor_Name};
+                        Doctor_Name,
+                        Age,
+                        Country_of_Origin,
+                        Is_Smoker,
+                        Is_Drug_User};
                 rowpatient_dataRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowpatient_dataRow);
                 return rowpatient_dataRow;
@@ -2319,16 +2412,14 @@ namespace IPIMS_Group_9 {
                 this.columnFirst_Name = base.Columns["First_Name"];
                 this.columnLast_Name = base.Columns["Last_Name"];
                 this.columnDate_of_Birth = base.Columns["Date_of_Birth"];
-                this.columnStreet_Address = base.Columns["Street_Address"];
-                this.columnCity = base.Columns["City"];
-                this.columnState = base.Columns["State"];
-                this.columnZip_Code = base.Columns["Zip_Code"];
-                this.columnPhone_Number = base.Columns["Phone_Number"];
-                this.columnEmail = base.Columns["Email"];
                 this.columnHealth_Insurance_Provider = base.Columns["Health_Insurance_Provider"];
                 this.columnHealth_Insurance_Contact_Number = base.Columns["Health_Insurance_Contact_Number"];
                 this.columnMedical_History = base.Columns["Medical_History"];
                 this.columnDoctor_Name = base.Columns["Doctor_Name"];
+                this.columnAge = base.Columns["Age"];
+                this.columnCountry_of_Origin = base.Columns["Country_of_Origin"];
+                this.columnIs_Smoker = base.Columns["Is_Smoker"];
+                this.columnIs_Drug_User = base.Columns["Is_Drug_User"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2340,18 +2431,6 @@ namespace IPIMS_Group_9 {
                 base.Columns.Add(this.columnLast_Name);
                 this.columnDate_of_Birth = new global::System.Data.DataColumn("Date_of_Birth", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDate_of_Birth);
-                this.columnStreet_Address = new global::System.Data.DataColumn("Street_Address", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStreet_Address);
-                this.columnCity = new global::System.Data.DataColumn("City", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCity);
-                this.columnState = new global::System.Data.DataColumn("State", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnState);
-                this.columnZip_Code = new global::System.Data.DataColumn("Zip_Code", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnZip_Code);
-                this.columnPhone_Number = new global::System.Data.DataColumn("Phone_Number", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPhone_Number);
-                this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEmail);
                 this.columnHealth_Insurance_Provider = new global::System.Data.DataColumn("Health_Insurance_Provider", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnHealth_Insurance_Provider);
                 this.columnHealth_Insurance_Contact_Number = new global::System.Data.DataColumn("Health_Insurance_Contact_Number", typeof(string), null, global::System.Data.MappingType.Element);
@@ -2360,6 +2439,14 @@ namespace IPIMS_Group_9 {
                 base.Columns.Add(this.columnMedical_History);
                 this.columnDoctor_Name = new global::System.Data.DataColumn("Doctor_Name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDoctor_Name);
+                this.columnAge = new global::System.Data.DataColumn("Age", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAge);
+                this.columnCountry_of_Origin = new global::System.Data.DataColumn("Country_of_Origin", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCountry_of_Origin);
+                this.columnIs_Smoker = new global::System.Data.DataColumn("Is_Smoker", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIs_Smoker);
+                this.columnIs_Drug_User = new global::System.Data.DataColumn("Is_Drug_User", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIs_Drug_User);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnFirst_Name,
                                 this.columnLast_Name,
@@ -2369,17 +2456,19 @@ namespace IPIMS_Group_9 {
                 this.columnLast_Name.AllowDBNull = false;
                 this.columnLast_Name.MaxLength = 45;
                 this.columnDate_of_Birth.AllowDBNull = false;
-                this.columnStreet_Address.MaxLength = 45;
-                this.columnCity.MaxLength = 50;
-                this.columnState.MaxLength = 25;
-                this.columnZip_Code.MaxLength = 12;
-                this.columnPhone_Number.MaxLength = 15;
-                this.columnEmail.MaxLength = 100;
+                this.columnHealth_Insurance_Provider.AllowDBNull = false;
                 this.columnHealth_Insurance_Provider.MaxLength = 45;
+                this.columnHealth_Insurance_Contact_Number.AllowDBNull = false;
                 this.columnHealth_Insurance_Contact_Number.MaxLength = 15;
+                this.columnMedical_History.AllowDBNull = false;
                 this.columnMedical_History.MaxLength = 200;
                 this.columnDoctor_Name.AllowDBNull = false;
                 this.columnDoctor_Name.MaxLength = 50;
+                this.columnAge.AllowDBNull = false;
+                this.columnCountry_of_Origin.AllowDBNull = false;
+                this.columnCountry_of_Origin.MaxLength = 25;
+                this.columnIs_Smoker.AllowDBNull = false;
+                this.columnIs_Drug_User.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2522,78 +2611,144 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string first_name {
+            public string First_Name {
                 get {
-                    return ((string)(this[this.tablescheduled_appointment_data.first_nameColumn]));
+                    return ((string)(this[this.tablescheduled_appointment_data.First_NameColumn]));
                 }
                 set {
-                    this[this.tablescheduled_appointment_data.first_nameColumn] = value;
+                    this[this.tablescheduled_appointment_data.First_NameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string last_name {
+            public string Last_Name {
                 get {
-                    return ((string)(this[this.tablescheduled_appointment_data.last_nameColumn]));
+                    return ((string)(this[this.tablescheduled_appointment_data.Last_NameColumn]));
                 }
                 set {
-                    this[this.tablescheduled_appointment_data.last_nameColumn] = value;
+                    this[this.tablescheduled_appointment_data.Last_NameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string symptoms {
+            public System.DateTime Date_of_Birth {
                 get {
-                    return ((string)(this[this.tablescheduled_appointment_data.symptomsColumn]));
+                    return ((global::System.DateTime)(this[this.tablescheduled_appointment_data.Date_of_BirthColumn]));
                 }
                 set {
-                    this[this.tablescheduled_appointment_data.symptomsColumn] = value;
+                    this[this.tablescheduled_appointment_data.Date_of_BirthColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime appointment_date {
+            public System.DateTime Appointment_Date {
                 get {
-                    return ((global::System.DateTime)(this[this.tablescheduled_appointment_data.appointment_dateColumn]));
+                    return ((global::System.DateTime)(this[this.tablescheduled_appointment_data.Appointment_DateColumn]));
                 }
                 set {
-                    this[this.tablescheduled_appointment_data.appointment_dateColumn] = value;
+                    this[this.tablescheduled_appointment_data.Appointment_DateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string doctor_name {
+            public System.DateTime Appointment_Time {
                 get {
-                    return ((string)(this[this.tablescheduled_appointment_data.doctor_nameColumn]));
+                    return ((global::System.DateTime)(this[this.tablescheduled_appointment_data.Appointment_TimeColumn]));
                 }
                 set {
-                    this[this.tablescheduled_appointment_data.doctor_nameColumn] = value;
+                    this[this.tablescheduled_appointment_data.Appointment_TimeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool weakness {
+            public string Symptoms {
                 get {
-                    return ((bool)(this[this.tablescheduled_appointment_data.weaknessColumn]));
+                    return ((string)(this[this.tablescheduled_appointment_data.SymptomsColumn]));
                 }
                 set {
-                    this[this.tablescheduled_appointment_data.weaknessColumn] = value;
+                    this[this.tablescheduled_appointment_data.SymptomsColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime date_of_birth {
+            public string Doctor_Name {
                 get {
-                    return ((global::System.DateTime)(this[this.tablescheduled_appointment_data.date_of_birthColumn]));
+                    return ((string)(this[this.tablescheduled_appointment_data.Doctor_NameColumn]));
                 }
                 set {
-                    this[this.tablescheduled_appointment_data.date_of_birthColumn] = value;
+                    this[this.tablescheduled_appointment_data.Doctor_NameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Has_Weakness {
+                get {
+                    return ((bool)(this[this.tablescheduled_appointment_data.Has_WeaknessColumn]));
+                }
+                set {
+                    this[this.tablescheduled_appointment_data.Has_WeaknessColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Has_Chest_Pains {
+                get {
+                    return ((bool)(this[this.tablescheduled_appointment_data.Has_Chest_PainsColumn]));
+                }
+                set {
+                    this[this.tablescheduled_appointment_data.Has_Chest_PainsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Has_Leg_Pain {
+                get {
+                    return ((bool)(this[this.tablescheduled_appointment_data.Has_Leg_PainColumn]));
+                }
+                set {
+                    this[this.tablescheduled_appointment_data.Has_Leg_PainColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Has_Blood_in_Urine {
+                get {
+                    return ((bool)(this[this.tablescheduled_appointment_data.Has_Blood_in_UrineColumn]));
+                }
+                set {
+                    this[this.tablescheduled_appointment_data.Has_Blood_in_UrineColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Is_Wheezing {
+                get {
+                    return ((bool)(this[this.tablescheduled_appointment_data.Is_WheezingColumn]));
+                }
+                set {
+                    this[this.tablescheduled_appointment_data.Is_WheezingColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Is_Suicidal {
+                get {
+                    return ((bool)(this[this.tablescheduled_appointment_data.Is_SuicidalColumn]));
+                }
+                set {
+                    this[this.tablescheduled_appointment_data.Is_SuicidalColumn] = value;
                 }
             }
         }
@@ -2669,30 +2824,68 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int alert {
+            public bool Is_Suicidal {
                 get {
-                    try {
-                        return ((int)(this[this.tableupdate_healthcare_data.alertColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'alert\' in table \'update_healthcare_data\' is DBNull.", e);
-                    }
+                    return ((bool)(this[this.tableupdate_healthcare_data.Is_SuicidalColumn]));
                 }
                 set {
-                    this[this.tableupdate_healthcare_data.alertColumn] = value;
+                    this[this.tableupdate_healthcare_data.Is_SuicidalColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsalertNull() {
-                return this.IsNull(this.tableupdate_healthcare_data.alertColumn);
+            public bool Is_Wheezing {
+                get {
+                    return ((bool)(this[this.tableupdate_healthcare_data.Is_WheezingColumn]));
+                }
+                set {
+                    this[this.tableupdate_healthcare_data.Is_WheezingColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetalertNull() {
-                this[this.tableupdate_healthcare_data.alertColumn] = global::System.Convert.DBNull;
+            public bool Has_Blood_in_Urine {
+                get {
+                    return ((bool)(this[this.tableupdate_healthcare_data.Has_Blood_in_UrineColumn]));
+                }
+                set {
+                    this[this.tableupdate_healthcare_data.Has_Blood_in_UrineColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Has_Leg_Pain {
+                get {
+                    return ((bool)(this[this.tableupdate_healthcare_data.Has_Leg_PainColumn]));
+                }
+                set {
+                    this[this.tableupdate_healthcare_data.Has_Leg_PainColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Has_Chest_Pains {
+                get {
+                    return ((bool)(this[this.tableupdate_healthcare_data.Has_Chest_PainsColumn]));
+                }
+                set {
+                    this[this.tableupdate_healthcare_data.Has_Chest_PainsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Has_Weakness {
+                get {
+                    return ((bool)(this[this.tableupdate_healthcare_data.Has_WeaknessColumn]));
+                }
+                set {
+                    this[this.tableupdate_healthcare_data.Has_WeaknessColumn] = value;
+                }
             }
         }
         
@@ -2712,280 +2905,224 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string classification {
+            public string Classification {
                 get {
-                    return ((string)(this[this.tableuser_data.classificationColumn]));
+                    return ((string)(this[this.tableuser_data.ClassificationColumn]));
                 }
                 set {
-                    this[this.tableuser_data.classificationColumn] = value;
+                    this[this.tableuser_data.ClassificationColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string first_name {
+            public string First_Name {
                 get {
-                    return ((string)(this[this.tableuser_data.first_nameColumn]));
+                    return ((string)(this[this.tableuser_data.First_NameColumn]));
                 }
                 set {
-                    this[this.tableuser_data.first_nameColumn] = value;
+                    this[this.tableuser_data.First_NameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string last_name {
+            public string Last_Name {
                 get {
-                    return ((string)(this[this.tableuser_data.last_nameColumn]));
+                    return ((string)(this[this.tableuser_data.Last_NameColumn]));
                 }
                 set {
-                    this[this.tableuser_data.last_nameColumn] = value;
+                    this[this.tableuser_data.Last_NameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string gender {
+            public string Gender {
                 get {
-                    return ((string)(this[this.tableuser_data.genderColumn]));
+                    return ((string)(this[this.tableuser_data.GenderColumn]));
                 }
                 set {
-                    this[this.tableuser_data.genderColumn] = value;
+                    this[this.tableuser_data.GenderColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime date_of_birth {
+            public System.DateTime Date_of_Birth {
                 get {
-                    return ((global::System.DateTime)(this[this.tableuser_data.date_of_birthColumn]));
+                    return ((global::System.DateTime)(this[this.tableuser_data.Date_of_BirthColumn]));
                 }
                 set {
-                    this[this.tableuser_data.date_of_birthColumn] = value;
+                    this[this.tableuser_data.Date_of_BirthColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string social_security_number {
+            public string Social_Security_Number {
                 get {
-                    return ((string)(this[this.tableuser_data.social_security_numberColumn]));
+                    return ((string)(this[this.tableuser_data.Social_Security_NumberColumn]));
                 }
                 set {
-                    this[this.tableuser_data.social_security_numberColumn] = value;
+                    this[this.tableuser_data.Social_Security_NumberColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string street_address {
-                get {
-                    try {
-                        return ((string)(this[this.tableuser_data.street_addressColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'street_address\' in table \'user_data\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableuser_data.street_addressColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string city {
+            public string Street_Address {
                 get {
                     try {
-                        return ((string)(this[this.tableuser_data.cityColumn]));
+                        return ((string)(this[this.tableuser_data.Street_AddressColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'city\' in table \'user_data\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Street_Address\' in table \'user_data\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableuser_data.cityColumn] = value;
+                    this[this.tableuser_data.Street_AddressColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string state {
+            public string City {
                 get {
                     try {
-                        return ((string)(this[this.tableuser_data.stateColumn]));
+                        return ((string)(this[this.tableuser_data.CityColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'state\' in table \'user_data\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'City\' in table \'user_data\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableuser_data.stateColumn] = value;
+                    this[this.tableuser_data.CityColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string zip_code {
+            public string Password {
+                get {
+                    return ((string)(this[this.tableuser_data.PasswordColumn]));
+                }
+                set {
+                    this[this.tableuser_data.PasswordColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Username {
+                get {
+                    return ((string)(this[this.tableuser_data.UsernameColumn]));
+                }
+                set {
+                    this[this.tableuser_data.UsernameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Email {
+                get {
+                    return ((string)(this[this.tableuser_data.EmailColumn]));
+                }
+                set {
+                    this[this.tableuser_data.EmailColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Phone_Number {
+                get {
+                    return ((string)(this[this.tableuser_data.Phone_NumberColumn]));
+                }
+                set {
+                    this[this.tableuser_data.Phone_NumberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Zip_Code {
                 get {
                     try {
-                        return ((string)(this[this.tableuser_data.zip_codeColumn]));
+                        return ((string)(this[this.tableuser_data.Zip_CodeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'zip_code\' in table \'user_data\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Zip_Code\' in table \'user_data\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableuser_data.zip_codeColumn] = value;
+                    this[this.tableuser_data.Zip_CodeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string phone_number {
-                get {
-                    return ((string)(this[this.tableuser_data.phone_numberColumn]));
-                }
-                set {
-                    this[this.tableuser_data.phone_numberColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string email {
-                get {
-                    return ((string)(this[this.tableuser_data.emailColumn]));
-                }
-                set {
-                    this[this.tableuser_data.emailColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string username {
-                get {
-                    return ((string)(this[this.tableuser_data.usernameColumn]));
-                }
-                set {
-                    this[this.tableuser_data.usernameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string password {
-                get {
-                    return ((string)(this[this.tableuser_data.passwordColumn]));
-                }
-                set {
-                    this[this.tableuser_data.passwordColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string insurance_provider {
+            public string State {
                 get {
                     try {
-                        return ((string)(this[this.tableuser_data.insurance_providerColumn]));
+                        return ((string)(this[this.tableuser_data.StateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'insurance_provider\' in table \'user_data\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'State\' in table \'user_data\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableuser_data.insurance_providerColumn] = value;
+                    this[this.tableuser_data.StateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string insurance_contact {
-                get {
-                    try {
-                        return ((string)(this[this.tableuser_data.insurance_contactColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'insurance_contact\' in table \'user_data\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableuser_data.insurance_contactColumn] = value;
-                }
+            public bool IsStreet_AddressNull() {
+                return this.IsNull(this.tableuser_data.Street_AddressColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isstreet_addressNull() {
-                return this.IsNull(this.tableuser_data.street_addressColumn);
+            public void SetStreet_AddressNull() {
+                this[this.tableuser_data.Street_AddressColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setstreet_addressNull() {
-                this[this.tableuser_data.street_addressColumn] = global::System.Convert.DBNull;
+            public bool IsCityNull() {
+                return this.IsNull(this.tableuser_data.CityColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IscityNull() {
-                return this.IsNull(this.tableuser_data.cityColumn);
+            public void SetCityNull() {
+                this[this.tableuser_data.CityColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetcityNull() {
-                this[this.tableuser_data.cityColumn] = global::System.Convert.DBNull;
+            public bool IsZip_CodeNull() {
+                return this.IsNull(this.tableuser_data.Zip_CodeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsstateNull() {
-                return this.IsNull(this.tableuser_data.stateColumn);
+            public void SetZip_CodeNull() {
+                this[this.tableuser_data.Zip_CodeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetstateNull() {
-                this[this.tableuser_data.stateColumn] = global::System.Convert.DBNull;
+            public bool IsStateNull() {
+                return this.IsNull(this.tableuser_data.StateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Iszip_codeNull() {
-                return this.IsNull(this.tableuser_data.zip_codeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setzip_codeNull() {
-                this[this.tableuser_data.zip_codeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isinsurance_providerNull() {
-                return this.IsNull(this.tableuser_data.insurance_providerColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setinsurance_providerNull() {
-                this[this.tableuser_data.insurance_providerColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isinsurance_contactNull() {
-                return this.IsNull(this.tableuser_data.insurance_contactColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setinsurance_contactNull() {
-                this[this.tableuser_data.insurance_contactColumn] = global::System.Convert.DBNull;
+            public void SetStateNull() {
+                this[this.tableuser_data.StateColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3128,28 +3265,11 @@ namespace IPIMS_Group_9 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Instruction {
                 get {
-                    try {
-                        return ((string)(this[this.tablee_prescription_data.InstructionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Instruction\' in table \'e_prescription_data\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tablee_prescription_data.InstructionColumn]));
                 }
                 set {
                     this[this.tablee_prescription_data.InstructionColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsInstructionNull() {
-                return this.IsNull(this.tablee_prescription_data.InstructionColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetInstructionNull() {
-                this[this.tablee_prescription_data.InstructionColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3202,111 +3322,9 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Street_Address {
-                get {
-                    try {
-                        return ((string)(this[this.tablepatient_data.Street_AddressColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Street_Address\' in table \'patient_data\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablepatient_data.Street_AddressColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string City {
-                get {
-                    try {
-                        return ((string)(this[this.tablepatient_data.CityColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'City\' in table \'patient_data\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablepatient_data.CityColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string State {
-                get {
-                    try {
-                        return ((string)(this[this.tablepatient_data.StateColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'State\' in table \'patient_data\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablepatient_data.StateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Zip_Code {
-                get {
-                    try {
-                        return ((string)(this[this.tablepatient_data.Zip_CodeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Zip_Code\' in table \'patient_data\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablepatient_data.Zip_CodeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Phone_Number {
-                get {
-                    try {
-                        return ((string)(this[this.tablepatient_data.Phone_NumberColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Phone_Number\' in table \'patient_data\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablepatient_data.Phone_NumberColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Email {
-                get {
-                    try {
-                        return ((string)(this[this.tablepatient_data.EmailColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Email\' in table \'patient_data\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablepatient_data.EmailColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Health_Insurance_Provider {
                 get {
-                    try {
-                        return ((string)(this[this.tablepatient_data.Health_Insurance_ProviderColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Health_Insurance_Provider\' in table \'patient_data\' is DBNul" +
-                                "l.", e);
-                    }
+                    return ((string)(this[this.tablepatient_data.Health_Insurance_ProviderColumn]));
                 }
                 set {
                     this[this.tablepatient_data.Health_Insurance_ProviderColumn] = value;
@@ -3317,13 +3335,7 @@ namespace IPIMS_Group_9 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Health_Insurance_Contact_Number {
                 get {
-                    try {
-                        return ((string)(this[this.tablepatient_data.Health_Insurance_Contact_NumberColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Health_Insurance_Contact_Number\' in table \'patient_data\' is" +
-                                " DBNull.", e);
-                    }
+                    return ((string)(this[this.tablepatient_data.Health_Insurance_Contact_NumberColumn]));
                 }
                 set {
                     this[this.tablepatient_data.Health_Insurance_Contact_NumberColumn] = value;
@@ -3334,12 +3346,7 @@ namespace IPIMS_Group_9 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Medical_History {
                 get {
-                    try {
-                        return ((string)(this[this.tablepatient_data.Medical_HistoryColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Medical_History\' in table \'patient_data\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tablepatient_data.Medical_HistoryColumn]));
                 }
                 set {
                     this[this.tablepatient_data.Medical_HistoryColumn] = value;
@@ -3359,110 +3366,46 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsStreet_AddressNull() {
-                return this.IsNull(this.tablepatient_data.Street_AddressColumn);
+            public int Age {
+                get {
+                    return ((int)(this[this.tablepatient_data.AgeColumn]));
+                }
+                set {
+                    this[this.tablepatient_data.AgeColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetStreet_AddressNull() {
-                this[this.tablepatient_data.Street_AddressColumn] = global::System.Convert.DBNull;
+            public string Country_of_Origin {
+                get {
+                    return ((string)(this[this.tablepatient_data.Country_of_OriginColumn]));
+                }
+                set {
+                    this[this.tablepatient_data.Country_of_OriginColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCityNull() {
-                return this.IsNull(this.tablepatient_data.CityColumn);
+            public bool Is_Smoker {
+                get {
+                    return ((bool)(this[this.tablepatient_data.Is_SmokerColumn]));
+                }
+                set {
+                    this[this.tablepatient_data.Is_SmokerColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCityNull() {
-                this[this.tablepatient_data.CityColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsStateNull() {
-                return this.IsNull(this.tablepatient_data.StateColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetStateNull() {
-                this[this.tablepatient_data.StateColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsZip_CodeNull() {
-                return this.IsNull(this.tablepatient_data.Zip_CodeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetZip_CodeNull() {
-                this[this.tablepatient_data.Zip_CodeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsPhone_NumberNull() {
-                return this.IsNull(this.tablepatient_data.Phone_NumberColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetPhone_NumberNull() {
-                this[this.tablepatient_data.Phone_NumberColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsEmailNull() {
-                return this.IsNull(this.tablepatient_data.EmailColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetEmailNull() {
-                this[this.tablepatient_data.EmailColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsHealth_Insurance_ProviderNull() {
-                return this.IsNull(this.tablepatient_data.Health_Insurance_ProviderColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetHealth_Insurance_ProviderNull() {
-                this[this.tablepatient_data.Health_Insurance_ProviderColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsHealth_Insurance_Contact_NumberNull() {
-                return this.IsNull(this.tablepatient_data.Health_Insurance_Contact_NumberColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetHealth_Insurance_Contact_NumberNull() {
-                this[this.tablepatient_data.Health_Insurance_Contact_NumberColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsMedical_HistoryNull() {
-                return this.IsNull(this.tablepatient_data.Medical_HistoryColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetMedical_HistoryNull() {
-                this[this.tablepatient_data.Medical_HistoryColumn] = global::System.Convert.DBNull;
+            public bool Is_Drug_User {
+                get {
+                    return ((bool)(this[this.tablepatient_data.Is_Drug_UserColumn]));
+                }
+                set {
+                    this[this.tablepatient_data.Is_Drug_UserColumn] = value;
+                }
             }
         }
         
@@ -3761,57 +3704,87 @@ namespace IPIMS_Group_9.IPIMS_9DataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "scheduled_appointment_data";
-            tableMapping.ColumnMappings.Add("first_name", "first_name");
-            tableMapping.ColumnMappings.Add("last_name", "last_name");
-            tableMapping.ColumnMappings.Add("symptoms", "symptoms");
-            tableMapping.ColumnMappings.Add("appointment_date", "appointment_date");
-            tableMapping.ColumnMappings.Add("doctor_name", "doctor_name");
-            tableMapping.ColumnMappings.Add("alert", "weakness");
-            tableMapping.ColumnMappings.Add("date_of_birth", "date_of_birth");
             tableMapping.ColumnMappings.Add("weakness", "weakness");
+            tableMapping.ColumnMappings.Add("First_Name", "First_Name");
+            tableMapping.ColumnMappings.Add("Last_Name", "Last_Name");
+            tableMapping.ColumnMappings.Add("Date_of_Birth", "Date_of_Birth");
+            tableMapping.ColumnMappings.Add("Appointment_Date", "Appointment_Date");
+            tableMapping.ColumnMappings.Add("Appointment_Time", "Appointment_Time");
+            tableMapping.ColumnMappings.Add("Symptoms", "Symptoms");
+            tableMapping.ColumnMappings.Add("Doctor_Name", "Doctor_Name");
+            tableMapping.ColumnMappings.Add("Has_Weakness", "Has_Weakness");
+            tableMapping.ColumnMappings.Add("Has_Chest_Pains", "Has_Chest_Pains");
+            tableMapping.ColumnMappings.Add("Has_Leg_Pain", "Has_Leg_Pain");
+            tableMapping.ColumnMappings.Add("Has_Blood_in_Urine", "Has_Blood_in_Urine");
+            tableMapping.ColumnMappings.Add("Is_Wheezing", "Is_Wheezing");
+            tableMapping.ColumnMappings.Add("Is_Suicidal", "Is_Suicidal");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [scheduled_appointment_data] WHERE (([first_name] = @Original_first_name) AND ([last_name] = @Original_last_name) AND ([date_of_birth] = @Original_date_of_birth) AND ([symptoms] = @Original_symptoms) AND ([appointment_date] = @Original_appointment_date) AND ([doctor_name] = @Original_doctor_name) AND ([weakness] = @Original_weakness))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [scheduled_appointment_data] WHERE (([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Appointment_Date] = @Original_Appointment_Date) AND ([Appointment_Time] = @Original_Appointment_Time) AND ([Symptoms] = @Original_Symptoms) AND ([Doctor_Name] = @Original_Doctor_Name) AND ([Has_Weakness] = @Original_Has_Weakness) AND ([Has_Chest_Pains] = @Original_Has_Chest_Pains) AND ([Has_Leg_Pain] = @Original_Has_Leg_Pain) AND ([Has_Blood_in_Urine] = @Original_Has_Blood_in_Urine) AND ([Is_Wheezing] = @Original_Is_Wheezing) AND ([Is_Suicidal] = @Original_Is_Suicidal))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_of_birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "symptoms", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_appointment_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "appointment_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_doctor_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "doctor_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "weakness", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Appointment_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Appointment_Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Appointment_Time", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Appointment_Time", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Symptoms", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Weakness", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Chest_Pains", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Chest_Pains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Leg_Pain", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Leg_Pain", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Blood_in_Urine", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Blood_in_Urine", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Wheezing", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Wheezing", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Suicidal", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Suicidal", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [scheduled_appointment_data] ([first_name], [last_name], [date_of_birth], [symptoms], [appointment_date], [doctor_name], [weakness]) VALUES (@first_name, @last_name, @date_of_birth, @symptoms, @appointment_date, @doctor_name, @weakness);
-SELECT first_name, last_name, date_of_birth, symptoms, appointment_date, doctor_name, weakness FROM scheduled_appointment_data WHERE (date_of_birth = @date_of_birth) AND (first_name = @first_name) AND (last_name = @last_name)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [scheduled_appointment_data] ([First_Name], [Last_Name], [Date_of_Birth], [Appointment_Date], [Appointment_Time], [Symptoms], [Doctor_Name], [Has_Weakness], [Has_Chest_Pains], [Has_Leg_Pain], [Has_Blood_in_Urine], [Is_Wheezing], [Is_Suicidal]) VALUES (@First_Name, @Last_Name, @Date_of_Birth, @Appointment_Date, @Appointment_Time, @Symptoms, @Doctor_Name, @Has_Weakness, @Has_Chest_Pains, @Has_Leg_Pain, @Has_Blood_in_Urine, @Is_Wheezing, @Is_Suicidal);
+SELECT First_Name, Last_Name, Date_of_Birth, Appointment_Date, Appointment_Time, Symptoms, Doctor_Name, Has_Weakness, Has_Chest_Pains, Has_Leg_Pain, Has_Blood_in_Urine, Is_Wheezing, Is_Suicidal FROM scheduled_appointment_data WHERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_Name = @Last_Name)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_of_birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "symptoms", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@appointment_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "appointment_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@doctor_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "doctor_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "weakness", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Appointment_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Appointment_Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Appointment_Time", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Appointment_Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Symptoms", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Weakness", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Chest_Pains", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Chest_Pains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Leg_Pain", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Leg_Pain", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Blood_in_Urine", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Blood_in_Urine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Wheezing", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Wheezing", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Suicidal", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Suicidal", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [scheduled_appointment_data] SET [first_name] = @first_name, [last_name] = @last_name, [date_of_birth] = @date_of_birth, [symptoms] = @symptoms, [appointment_date] = @appointment_date, [doctor_name] = @doctor_name, [weakness] = @weakness WHERE (([first_name] = @Original_first_name) AND ([last_name] = @Original_last_name) AND ([date_of_birth] = @Original_date_of_birth) AND ([symptoms] = @Original_symptoms) AND ([appointment_date] = @Original_appointment_date) AND ([doctor_name] = @Original_doctor_name) AND ([weakness] = @Original_weakness));
-SELECT first_name, last_name, date_of_birth, symptoms, appointment_date, doctor_name, weakness FROM scheduled_appointment_data WHERE (date_of_birth = @date_of_birth) AND (first_name = @first_name) AND (last_name = @last_name)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [scheduled_appointment_data] SET [First_Name] = @First_Name, [Last_Name] = @Last_Name, [Date_of_Birth] = @Date_of_Birth, [Appointment_Date] = @Appointment_Date, [Appointment_Time] = @Appointment_Time, [Symptoms] = @Symptoms, [Doctor_Name] = @Doctor_Name, [Has_Weakness] = @Has_Weakness, [Has_Chest_Pains] = @Has_Chest_Pains, [Has_Leg_Pain] = @Has_Leg_Pain, [Has_Blood_in_Urine] = @Has_Blood_in_Urine, [Is_Wheezing] = @Is_Wheezing, [Is_Suicidal] = @Is_Suicidal WHERE (([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Appointment_Date] = @Original_Appointment_Date) AND ([Appointment_Time] = @Original_Appointment_Time) AND ([Symptoms] = @Original_Symptoms) AND ([Doctor_Name] = @Original_Doctor_Name) AND ([Has_Weakness] = @Original_Has_Weakness) AND ([Has_Chest_Pains] = @Original_Has_Chest_Pains) AND ([Has_Leg_Pain] = @Original_Has_Leg_Pain) AND ([Has_Blood_in_Urine] = @Original_Has_Blood_in_Urine) AND ([Is_Wheezing] = @Original_Is_Wheezing) AND ([Is_Suicidal] = @Original_Is_Suicidal));
+SELECT First_Name, Last_Name, Date_of_Birth, Appointment_Date, Appointment_Time, Symptoms, Doctor_Name, Has_Weakness, Has_Chest_Pains, Has_Leg_Pain, Has_Blood_in_Urine, Is_Wheezing, Is_Suicidal FROM scheduled_appointment_data WHERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_Name = @Last_Name)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_of_birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "symptoms", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@appointment_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "appointment_date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@doctor_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "doctor_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "weakness", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_of_birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "symptoms", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_appointment_date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "appointment_date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_doctor_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "doctor_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "weakness", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Appointment_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Appointment_Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Appointment_Time", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Appointment_Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Symptoms", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Weakness", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Chest_Pains", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Chest_Pains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Leg_Pain", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Leg_Pain", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Blood_in_Urine", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Blood_in_Urine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Wheezing", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Wheezing", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Suicidal", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Suicidal", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Appointment_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Appointment_Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Appointment_Time", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Appointment_Time", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Symptoms", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Weakness", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Chest_Pains", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Chest_Pains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Leg_Pain", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Leg_Pain", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Blood_in_Urine", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Blood_in_Urine", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Wheezing", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Wheezing", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Suicidal", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Suicidal", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3827,8 +3800,9 @@ SELECT first_name, last_name, date_of_birth, symptoms, appointment_date, doctor_
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        first_name, last_name, date_of_birth, symptoms, appointment_date, d" +
-                "octor_name, weakness\r\nFROM            scheduled_appointment_data";
+            this._commandCollection[0].CommandText = @"SELECT        First_Name, Last_Name, Date_of_Birth, Appointment_Date, Appointment_Time, Symptoms, Doctor_Name, Has_Weakness, Has_Chest_Pains, Has_Leg_Pain, 
+                         Has_Blood_in_Urine, Is_Wheezing, Is_Suicidal
+FROM            scheduled_appointment_data";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3889,34 +3863,40 @@ SELECT first_name, last_name, date_of_birth, symptoms, appointment_date, doctor_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_first_name, string Original_last_name, System.DateTime Original_date_of_birth, string Original_symptoms, System.DateTime Original_appointment_date, string Original_doctor_name, bool Original_weakness) {
-            if ((Original_first_name == null)) {
-                throw new global::System.ArgumentNullException("Original_first_name");
+        public virtual int Delete(string Original_First_Name, string Original_Last_Name, System.DateTime Original_Date_of_Birth, System.DateTime Original_Appointment_Date, System.DateTime Original_Appointment_Time, string Original_Symptoms, string Original_Doctor_Name, bool Original_Has_Weakness, bool Original_Has_Chest_Pains, bool Original_Has_Leg_Pain, bool Original_Has_Blood_in_Urine, bool Original_Is_Wheezing, bool Original_Is_Suicidal) {
+            if ((Original_First_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_First_Name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_first_name));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_First_Name));
             }
-            if ((Original_last_name == null)) {
-                throw new global::System.ArgumentNullException("Original_last_name");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_last_name));
-            }
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_date_of_birth));
-            if ((Original_symptoms == null)) {
-                throw new global::System.ArgumentNullException("Original_symptoms");
+            if ((Original_Last_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_Last_Name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_symptoms));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Last_Name));
             }
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_appointment_date));
-            if ((Original_doctor_name == null)) {
-                throw new global::System.ArgumentNullException("Original_doctor_name");
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_Date_of_Birth));
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((System.DateTime)(Original_Appointment_Date));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_Appointment_Time));
+            if ((Original_Symptoms == null)) {
+                throw new global::System.ArgumentNullException("Original_Symptoms");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_doctor_name));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Symptoms));
             }
-            this.Adapter.DeleteCommand.Parameters[6].Value = ((bool)(Original_weakness));
+            if ((Original_Doctor_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_Doctor_Name");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Doctor_Name));
+            }
+            this.Adapter.DeleteCommand.Parameters[7].Value = ((bool)(Original_Has_Weakness));
+            this.Adapter.DeleteCommand.Parameters[8].Value = ((bool)(Original_Has_Chest_Pains));
+            this.Adapter.DeleteCommand.Parameters[9].Value = ((bool)(Original_Has_Leg_Pain));
+            this.Adapter.DeleteCommand.Parameters[10].Value = ((bool)(Original_Has_Blood_in_Urine));
+            this.Adapter.DeleteCommand.Parameters[11].Value = ((bool)(Original_Is_Wheezing));
+            this.Adapter.DeleteCommand.Parameters[12].Value = ((bool)(Original_Is_Suicidal));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -3937,34 +3917,40 @@ SELECT first_name, last_name, date_of_birth, symptoms, appointment_date, doctor_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string first_name, string last_name, System.DateTime date_of_birth, string symptoms, System.DateTime appointment_date, string doctor_name, bool weakness) {
-            if ((first_name == null)) {
-                throw new global::System.ArgumentNullException("first_name");
+        public virtual int Insert(string First_Name, string Last_Name, System.DateTime Date_of_Birth, System.DateTime Appointment_Date, System.DateTime Appointment_Time, string Symptoms, string Doctor_Name, bool Has_Weakness, bool Has_Chest_Pains, bool Has_Leg_Pain, bool Has_Blood_in_Urine, bool Is_Wheezing, bool Is_Suicidal) {
+            if ((First_Name == null)) {
+                throw new global::System.ArgumentNullException("First_Name");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(first_name));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(First_Name));
             }
-            if ((last_name == null)) {
-                throw new global::System.ArgumentNullException("last_name");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(last_name));
-            }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(date_of_birth));
-            if ((symptoms == null)) {
-                throw new global::System.ArgumentNullException("symptoms");
+            if ((Last_Name == null)) {
+                throw new global::System.ArgumentNullException("Last_Name");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(symptoms));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Last_Name));
             }
-            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(appointment_date));
-            if ((doctor_name == null)) {
-                throw new global::System.ArgumentNullException("doctor_name");
+            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(Date_of_Birth));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(Appointment_Date));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(Appointment_Time));
+            if ((Symptoms == null)) {
+                throw new global::System.ArgumentNullException("Symptoms");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(doctor_name));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Symptoms));
             }
-            this.Adapter.InsertCommand.Parameters[6].Value = ((bool)(weakness));
+            if ((Doctor_Name == null)) {
+                throw new global::System.ArgumentNullException("Doctor_Name");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Doctor_Name));
+            }
+            this.Adapter.InsertCommand.Parameters[7].Value = ((bool)(Has_Weakness));
+            this.Adapter.InsertCommand.Parameters[8].Value = ((bool)(Has_Chest_Pains));
+            this.Adapter.InsertCommand.Parameters[9].Value = ((bool)(Has_Leg_Pain));
+            this.Adapter.InsertCommand.Parameters[10].Value = ((bool)(Has_Blood_in_Urine));
+            this.Adapter.InsertCommand.Parameters[11].Value = ((bool)(Is_Wheezing));
+            this.Adapter.InsertCommand.Parameters[12].Value = ((bool)(Is_Suicidal));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -3985,61 +3971,99 @@ SELECT first_name, last_name, date_of_birth, symptoms, appointment_date, doctor_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string first_name, string last_name, System.DateTime date_of_birth, string symptoms, System.DateTime appointment_date, string doctor_name, bool weakness, string Original_first_name, string Original_last_name, System.DateTime Original_date_of_birth, string Original_symptoms, System.DateTime Original_appointment_date, string Original_doctor_name, bool Original_weakness) {
-            if ((first_name == null)) {
-                throw new global::System.ArgumentNullException("first_name");
+        public virtual int Update(
+                    string First_Name, 
+                    string Last_Name, 
+                    System.DateTime Date_of_Birth, 
+                    System.DateTime Appointment_Date, 
+                    System.DateTime Appointment_Time, 
+                    string Symptoms, 
+                    string Doctor_Name, 
+                    bool Has_Weakness, 
+                    bool Has_Chest_Pains, 
+                    bool Has_Leg_Pain, 
+                    bool Has_Blood_in_Urine, 
+                    bool Is_Wheezing, 
+                    bool Is_Suicidal, 
+                    string Original_First_Name, 
+                    string Original_Last_Name, 
+                    System.DateTime Original_Date_of_Birth, 
+                    System.DateTime Original_Appointment_Date, 
+                    System.DateTime Original_Appointment_Time, 
+                    string Original_Symptoms, 
+                    string Original_Doctor_Name, 
+                    bool Original_Has_Weakness, 
+                    bool Original_Has_Chest_Pains, 
+                    bool Original_Has_Leg_Pain, 
+                    bool Original_Has_Blood_in_Urine, 
+                    bool Original_Is_Wheezing, 
+                    bool Original_Is_Suicidal) {
+            if ((First_Name == null)) {
+                throw new global::System.ArgumentNullException("First_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(first_name));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(First_Name));
             }
-            if ((last_name == null)) {
-                throw new global::System.ArgumentNullException("last_name");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(last_name));
-            }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(date_of_birth));
-            if ((symptoms == null)) {
-                throw new global::System.ArgumentNullException("symptoms");
+            if ((Last_Name == null)) {
+                throw new global::System.ArgumentNullException("Last_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(symptoms));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Last_Name));
             }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(appointment_date));
-            if ((doctor_name == null)) {
-                throw new global::System.ArgumentNullException("doctor_name");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(doctor_name));
-            }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((bool)(weakness));
-            if ((Original_first_name == null)) {
-                throw new global::System.ArgumentNullException("Original_first_name");
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(Date_of_Birth));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(Appointment_Date));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(Appointment_Time));
+            if ((Symptoms == null)) {
+                throw new global::System.ArgumentNullException("Symptoms");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_first_name));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Symptoms));
             }
-            if ((Original_last_name == null)) {
-                throw new global::System.ArgumentNullException("Original_last_name");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_last_name));
-            }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((System.DateTime)(Original_date_of_birth));
-            if ((Original_symptoms == null)) {
-                throw new global::System.ArgumentNullException("Original_symptoms");
+            if ((Doctor_Name == null)) {
+                throw new global::System.ArgumentNullException("Doctor_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_symptoms));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Doctor_Name));
             }
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_appointment_date));
-            if ((Original_doctor_name == null)) {
-                throw new global::System.ArgumentNullException("Original_doctor_name");
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((bool)(Has_Weakness));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((bool)(Has_Chest_Pains));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((bool)(Has_Leg_Pain));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((bool)(Has_Blood_in_Urine));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((bool)(Is_Wheezing));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((bool)(Is_Suicidal));
+            if ((Original_First_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_First_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_doctor_name));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_First_Name));
             }
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((bool)(Original_weakness));
+            if ((Original_Last_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_Last_Name");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_Last_Name));
+            }
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((System.DateTime)(Original_Date_of_Birth));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((System.DateTime)(Original_Appointment_Date));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((System.DateTime)(Original_Appointment_Time));
+            if ((Original_Symptoms == null)) {
+                throw new global::System.ArgumentNullException("Original_Symptoms");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_Symptoms));
+            }
+            if ((Original_Doctor_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_Doctor_Name");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_Doctor_Name));
+            }
+            this.Adapter.UpdateCommand.Parameters[20].Value = ((bool)(Original_Has_Weakness));
+            this.Adapter.UpdateCommand.Parameters[21].Value = ((bool)(Original_Has_Chest_Pains));
+            this.Adapter.UpdateCommand.Parameters[22].Value = ((bool)(Original_Has_Leg_Pain));
+            this.Adapter.UpdateCommand.Parameters[23].Value = ((bool)(Original_Has_Blood_in_Urine));
+            this.Adapter.UpdateCommand.Parameters[24].Value = ((bool)(Original_Is_Wheezing));
+            this.Adapter.UpdateCommand.Parameters[25].Value = ((bool)(Original_Is_Suicidal));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4060,8 +4084,31 @@ SELECT first_name, last_name, date_of_birth, symptoms, appointment_date, doctor_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string symptoms, System.DateTime appointment_date, string doctor_name, bool weakness, string Original_first_name, string Original_last_name, System.DateTime Original_date_of_birth, string Original_symptoms, System.DateTime Original_appointment_date, string Original_doctor_name, bool Original_weakness) {
-            return this.Update(Original_first_name, Original_last_name, Original_date_of_birth, symptoms, appointment_date, doctor_name, weakness, Original_first_name, Original_last_name, Original_date_of_birth, Original_symptoms, Original_appointment_date, Original_doctor_name, Original_weakness);
+        public virtual int Update(
+                    System.DateTime Appointment_Date, 
+                    System.DateTime Appointment_Time, 
+                    string Symptoms, 
+                    string Doctor_Name, 
+                    bool Has_Weakness, 
+                    bool Has_Chest_Pains, 
+                    bool Has_Leg_Pain, 
+                    bool Has_Blood_in_Urine, 
+                    bool Is_Wheezing, 
+                    bool Is_Suicidal, 
+                    string Original_First_Name, 
+                    string Original_Last_Name, 
+                    System.DateTime Original_Date_of_Birth, 
+                    System.DateTime Original_Appointment_Date, 
+                    System.DateTime Original_Appointment_Time, 
+                    string Original_Symptoms, 
+                    string Original_Doctor_Name, 
+                    bool Original_Has_Weakness, 
+                    bool Original_Has_Chest_Pains, 
+                    bool Original_Has_Leg_Pain, 
+                    bool Original_Has_Blood_in_Urine, 
+                    bool Original_Is_Wheezing, 
+                    bool Original_Is_Suicidal) {
+            return this.Update(Original_First_Name, Original_Last_Name, Original_Date_of_Birth, Appointment_Date, Appointment_Time, Symptoms, Doctor_Name, Has_Weakness, Has_Chest_Pains, Has_Leg_Pain, Has_Blood_in_Urine, Is_Wheezing, Is_Suicidal, Original_First_Name, Original_Last_Name, Original_Date_of_Birth, Original_Appointment_Date, Original_Appointment_Time, Original_Symptoms, Original_Doctor_Name, Original_Has_Weakness, Original_Has_Chest_Pains, Original_Has_Leg_Pain, Original_Has_Blood_in_Urine, Original_Is_Wheezing, Original_Is_Suicidal);
         }
     }
     
@@ -4191,48 +4238,71 @@ SELECT first_name, last_name, date_of_birth, symptoms, appointment_date, doctor_
             tableMapping.ColumnMappings.Add("date_of_birth", "date_of_birth");
             tableMapping.ColumnMappings.Add("symptoms", "symptoms");
             tableMapping.ColumnMappings.Add("doctor", "doctor_name");
-            tableMapping.ColumnMappings.Add("alert", "alert");
             tableMapping.ColumnMappings.Add("doctor_name", "doctor_name");
+            tableMapping.ColumnMappings.Add("Is_Suicidal", "Is_Suicidal");
+            tableMapping.ColumnMappings.Add("Is_Wheezing", "Is_Wheezing");
+            tableMapping.ColumnMappings.Add("Has_Blood_in_Urine", "Has_Blood_in_Urine");
+            tableMapping.ColumnMappings.Add("Has_Leg_Pain", "Has_Leg_Pain");
+            tableMapping.ColumnMappings.Add("Has_Chest_Pains", "Has_Chest_Pains");
+            tableMapping.ColumnMappings.Add("Has_Weakness", "Has_Weakness");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [update_healthcare_data] WHERE (([first_name] = @Original_first_name) AND ([last_name] = @Original_last_name) AND ([date_of_birth] = @Original_date_of_birth) AND ([symptoms] = @Original_symptoms) AND ((@IsNull_alert = 1 AND [alert] IS NULL) OR ([alert] = @Original_alert)) AND ([doctor_name] = @Original_doctor_name))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [update_healthcare_data] WHERE (([first_name] = @Original_first_name) AND ([last_name] = @Original_last_name) AND ([date_of_birth] = @Original_date_of_birth) AND ([symptoms] = @Original_symptoms) AND ([Is_Suicidal] = @Original_Is_Suicidal) AND ([Is_Wheezing] = @Original_Is_Wheezing) AND ([Has_Blood_in_Urine] = @Original_Has_Blood_in_Urine) AND ([Has_Leg_Pain] = @Original_Has_Leg_Pain) AND ([Has_Chest_Pains] = @Original_Has_Chest_Pains) AND ([Has_Weakness] = @Original_Has_Weakness) AND ([doctor_name] = @Original_doctor_name))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_of_birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "symptoms", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_alert", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "alert", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_alert", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "alert", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Suicidal", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Suicidal", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Wheezing", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Wheezing", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Blood_in_Urine", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Blood_in_Urine", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Leg_Pain", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Leg_Pain", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Chest_Pains", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Chest_Pains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Weakness", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_doctor_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "doctor_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [update_healthcare_data] ([first_name], [last_name], [date_of_birth], [symptoms], [alert], [doctor_name]) VALUES (@first_name, @last_name, @date_of_birth, @symptoms, @alert, @doctor_name);
-SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM update_healthcare_data WHERE (date_of_birth = @date_of_birth) AND (first_name = @first_name) AND (last_name = @last_name)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [update_healthcare_data] ([first_name], [last_name], [date_of_birth], [symptoms], [Is_Suicidal], [Is_Wheezing], [Has_Blood_in_Urine], [Has_Leg_Pain], [Has_Chest_Pains], [Has_Weakness], [doctor_name]) VALUES (@first_name, @last_name, @date_of_birth, @symptoms, @Is_Suicidal, @Is_Wheezing, @Has_Blood_in_Urine, @Has_Leg_Pain, @Has_Chest_Pains, @Has_Weakness, @doctor_name);
+SELECT first_name, last_name, date_of_birth, symptoms, Is_Suicidal, Is_Wheezing, Has_Blood_in_Urine, Has_Leg_Pain, Has_Chest_Pains, Has_Weakness, doctor_name FROM update_healthcare_data WHERE (date_of_birth = @date_of_birth) AND (first_name = @first_name) AND (last_name = @last_name)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_of_birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "symptoms", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@alert", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "alert", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Suicidal", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Suicidal", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Wheezing", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Wheezing", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Blood_in_Urine", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Blood_in_Urine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Leg_Pain", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Leg_Pain", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Chest_Pains", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Chest_Pains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Weakness", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@doctor_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "doctor_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [update_healthcare_data] SET [first_name] = @first_name, [last_name] = @last_name, [date_of_birth] = @date_of_birth, [symptoms] = @symptoms, [alert] = @alert, [doctor_name] = @doctor_name WHERE (([first_name] = @Original_first_name) AND ([last_name] = @Original_last_name) AND ([date_of_birth] = @Original_date_of_birth) AND ([symptoms] = @Original_symptoms) AND ((@IsNull_alert = 1 AND [alert] IS NULL) OR ([alert] = @Original_alert)) AND ([doctor_name] = @Original_doctor_name));
-SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM update_healthcare_data WHERE (date_of_birth = @date_of_birth) AND (first_name = @first_name) AND (last_name = @last_name)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [update_healthcare_data] SET [first_name] = @first_name, [last_name] = @last_name, [date_of_birth] = @date_of_birth, [symptoms] = @symptoms, [Is_Suicidal] = @Is_Suicidal, [Is_Wheezing] = @Is_Wheezing, [Has_Blood_in_Urine] = @Has_Blood_in_Urine, [Has_Leg_Pain] = @Has_Leg_Pain, [Has_Chest_Pains] = @Has_Chest_Pains, [Has_Weakness] = @Has_Weakness, [doctor_name] = @doctor_name WHERE (([first_name] = @Original_first_name) AND ([last_name] = @Original_last_name) AND ([date_of_birth] = @Original_date_of_birth) AND ([symptoms] = @Original_symptoms) AND ([Is_Suicidal] = @Original_Is_Suicidal) AND ([Is_Wheezing] = @Original_Is_Wheezing) AND ([Has_Blood_in_Urine] = @Original_Has_Blood_in_Urine) AND ([Has_Leg_Pain] = @Original_Has_Leg_Pain) AND ([Has_Chest_Pains] = @Original_Has_Chest_Pains) AND ([Has_Weakness] = @Original_Has_Weakness) AND ([doctor_name] = @Original_doctor_name));
+SELECT first_name, last_name, date_of_birth, symptoms, Is_Suicidal, Is_Wheezing, Has_Blood_in_Urine, Has_Leg_Pain, Has_Chest_Pains, Has_Weakness, doctor_name FROM update_healthcare_data WHERE (date_of_birth = @date_of_birth) AND (first_name = @first_name) AND (last_name = @last_name)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_of_birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "symptoms", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@alert", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "alert", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Suicidal", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Suicidal", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Wheezing", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Wheezing", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Blood_in_Urine", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Blood_in_Urine", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Leg_Pain", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Leg_Pain", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Chest_Pains", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Chest_Pains", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Has_Weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Weakness", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@doctor_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "doctor_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_first_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_last_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_of_birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_symptoms", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "symptoms", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_alert", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "alert", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_alert", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "alert", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Suicidal", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Suicidal", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Wheezing", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Wheezing", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Blood_in_Urine", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Blood_in_Urine", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Leg_Pain", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Leg_Pain", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Chest_Pains", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Chest_Pains", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Has_Weakness", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Has_Weakness", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_doctor_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "doctor_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
@@ -4249,8 +4319,9 @@ SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM u
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        first_name, last_name, date_of_birth, symptoms, alert, doctor_name\r" +
-                "\nFROM            update_healthcare_data";
+            this._commandCollection[0].CommandText = "SELECT        first_name, last_name, date_of_birth, symptoms, Is_Suicidal, Is_Whe" +
+                "ezing, Has_Blood_in_Urine, Has_Leg_Pain, Has_Chest_Pains, Has_Weakness, \r\n      " +
+                "                   doctor_name\r\nFROM            update_healthcare_data";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4311,7 +4382,7 @@ SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM u
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_first_name, string Original_last_name, System.DateTime Original_date_of_birth, string Original_symptoms, global::System.Nullable<int> Original_alert, string Original_doctor_name) {
+        public virtual int Delete(string Original_first_name, string Original_last_name, System.DateTime Original_date_of_birth, string Original_symptoms, bool Original_Is_Suicidal, bool Original_Is_Wheezing, bool Original_Has_Blood_in_Urine, bool Original_Has_Leg_Pain, bool Original_Has_Chest_Pains, bool Original_Has_Weakness, string Original_doctor_name) {
             if ((Original_first_name == null)) {
                 throw new global::System.ArgumentNullException("Original_first_name");
             }
@@ -4331,19 +4402,17 @@ SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM u
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_symptoms));
             }
-            if ((Original_alert.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((int)(Original_alert.Value));
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((bool)(Original_Is_Suicidal));
+            this.Adapter.DeleteCommand.Parameters[5].Value = ((bool)(Original_Is_Wheezing));
+            this.Adapter.DeleteCommand.Parameters[6].Value = ((bool)(Original_Has_Blood_in_Urine));
+            this.Adapter.DeleteCommand.Parameters[7].Value = ((bool)(Original_Has_Leg_Pain));
+            this.Adapter.DeleteCommand.Parameters[8].Value = ((bool)(Original_Has_Chest_Pains));
+            this.Adapter.DeleteCommand.Parameters[9].Value = ((bool)(Original_Has_Weakness));
             if ((Original_doctor_name == null)) {
                 throw new global::System.ArgumentNullException("Original_doctor_name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_doctor_name));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_doctor_name));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4365,7 +4434,7 @@ SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM u
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string first_name, string last_name, System.DateTime date_of_birth, string symptoms, global::System.Nullable<int> alert, string doctor_name) {
+        public virtual int Insert(string first_name, string last_name, System.DateTime date_of_birth, string symptoms, bool Is_Suicidal, bool Is_Wheezing, bool Has_Blood_in_Urine, bool Has_Leg_Pain, bool Has_Chest_Pains, bool Has_Weakness, string doctor_name) {
             if ((first_name == null)) {
                 throw new global::System.ArgumentNullException("first_name");
             }
@@ -4385,17 +4454,17 @@ SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM u
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(symptoms));
             }
-            if ((alert.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(alert.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.InsertCommand.Parameters[4].Value = ((bool)(Is_Suicidal));
+            this.Adapter.InsertCommand.Parameters[5].Value = ((bool)(Is_Wheezing));
+            this.Adapter.InsertCommand.Parameters[6].Value = ((bool)(Has_Blood_in_Urine));
+            this.Adapter.InsertCommand.Parameters[7].Value = ((bool)(Has_Leg_Pain));
+            this.Adapter.InsertCommand.Parameters[8].Value = ((bool)(Has_Chest_Pains));
+            this.Adapter.InsertCommand.Parameters[9].Value = ((bool)(Has_Weakness));
             if ((doctor_name == null)) {
                 throw new global::System.ArgumentNullException("doctor_name");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(doctor_name));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(doctor_name));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4417,7 +4486,29 @@ SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM u
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string first_name, string last_name, System.DateTime date_of_birth, string symptoms, global::System.Nullable<int> alert, string doctor_name, string Original_first_name, string Original_last_name, System.DateTime Original_date_of_birth, string Original_symptoms, global::System.Nullable<int> Original_alert, string Original_doctor_name) {
+        public virtual int Update(
+                    string first_name, 
+                    string last_name, 
+                    System.DateTime date_of_birth, 
+                    string symptoms, 
+                    bool Is_Suicidal, 
+                    bool Is_Wheezing, 
+                    bool Has_Blood_in_Urine, 
+                    bool Has_Leg_Pain, 
+                    bool Has_Chest_Pains, 
+                    bool Has_Weakness, 
+                    string doctor_name, 
+                    string Original_first_name, 
+                    string Original_last_name, 
+                    System.DateTime Original_date_of_birth, 
+                    string Original_symptoms, 
+                    bool Original_Is_Suicidal, 
+                    bool Original_Is_Wheezing, 
+                    bool Original_Has_Blood_in_Urine, 
+                    bool Original_Has_Leg_Pain, 
+                    bool Original_Has_Chest_Pains, 
+                    bool Original_Has_Weakness, 
+                    string Original_doctor_name) {
             if ((first_name == null)) {
                 throw new global::System.ArgumentNullException("first_name");
             }
@@ -4437,50 +4528,48 @@ SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM u
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(symptoms));
             }
-            if ((alert.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(alert.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((bool)(Is_Suicidal));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((bool)(Is_Wheezing));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((bool)(Has_Blood_in_Urine));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((bool)(Has_Leg_Pain));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((bool)(Has_Chest_Pains));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((bool)(Has_Weakness));
             if ((doctor_name == null)) {
                 throw new global::System.ArgumentNullException("doctor_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(doctor_name));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(doctor_name));
             }
             if ((Original_first_name == null)) {
                 throw new global::System.ArgumentNullException("Original_first_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_first_name));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_first_name));
             }
             if ((Original_last_name == null)) {
                 throw new global::System.ArgumentNullException("Original_last_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_last_name));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_last_name));
             }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((System.DateTime)(Original_date_of_birth));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((System.DateTime)(Original_date_of_birth));
             if ((Original_symptoms == null)) {
                 throw new global::System.ArgumentNullException("Original_symptoms");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_symptoms));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_symptoms));
             }
-            if ((Original_alert.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_alert.Value));
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((bool)(Original_Is_Suicidal));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((bool)(Original_Is_Wheezing));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((bool)(Original_Has_Blood_in_Urine));
+            this.Adapter.UpdateCommand.Parameters[18].Value = ((bool)(Original_Has_Leg_Pain));
+            this.Adapter.UpdateCommand.Parameters[19].Value = ((bool)(Original_Has_Chest_Pains));
+            this.Adapter.UpdateCommand.Parameters[20].Value = ((bool)(Original_Has_Weakness));
             if ((Original_doctor_name == null)) {
                 throw new global::System.ArgumentNullException("Original_doctor_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_doctor_name));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_doctor_name));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4502,8 +4591,27 @@ SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM u
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string symptoms, global::System.Nullable<int> alert, string doctor_name, string Original_first_name, string Original_last_name, System.DateTime Original_date_of_birth, string Original_symptoms, global::System.Nullable<int> Original_alert, string Original_doctor_name) {
-            return this.Update(Original_first_name, Original_last_name, Original_date_of_birth, symptoms, alert, doctor_name, Original_first_name, Original_last_name, Original_date_of_birth, Original_symptoms, Original_alert, Original_doctor_name);
+        public virtual int Update(
+                    string symptoms, 
+                    bool Is_Suicidal, 
+                    bool Is_Wheezing, 
+                    bool Has_Blood_in_Urine, 
+                    bool Has_Leg_Pain, 
+                    bool Has_Chest_Pains, 
+                    bool Has_Weakness, 
+                    string doctor_name, 
+                    string Original_first_name, 
+                    string Original_last_name, 
+                    System.DateTime Original_date_of_birth, 
+                    string Original_symptoms, 
+                    bool Original_Is_Suicidal, 
+                    bool Original_Is_Wheezing, 
+                    bool Original_Has_Blood_in_Urine, 
+                    bool Original_Has_Leg_Pain, 
+                    bool Original_Has_Chest_Pains, 
+                    bool Original_Has_Weakness, 
+                    string Original_doctor_name) {
+            return this.Update(Original_first_name, Original_last_name, Original_date_of_birth, symptoms, Is_Suicidal, Is_Wheezing, Has_Blood_in_Urine, Has_Leg_Pain, Has_Chest_Pains, Has_Weakness, doctor_name, Original_first_name, Original_last_name, Original_date_of_birth, Original_symptoms, Original_Is_Suicidal, Original_Is_Wheezing, Original_Has_Blood_in_Urine, Original_Has_Leg_Pain, Original_Has_Chest_Pains, Original_Has_Weakness, Original_doctor_name);
         }
     }
     
@@ -4628,136 +4736,99 @@ SELECT first_name, last_name, date_of_birth, symptoms, alert, doctor_name FROM u
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "user_data";
-            tableMapping.ColumnMappings.Add("classification", "classification");
-            tableMapping.ColumnMappings.Add("first_name", "first_name");
-            tableMapping.ColumnMappings.Add("last_name", "last_name");
-            tableMapping.ColumnMappings.Add("gender", "gender");
-            tableMapping.ColumnMappings.Add("date_of_birth", "date_of_birth");
-            tableMapping.ColumnMappings.Add("social_security_number", "social_security_number");
-            tableMapping.ColumnMappings.Add("street_address", "street_address");
-            tableMapping.ColumnMappings.Add("city", "city");
-            tableMapping.ColumnMappings.Add("state", "state");
-            tableMapping.ColumnMappings.Add("zip_code", "zip_code");
-            tableMapping.ColumnMappings.Add("phone_number", "phone_number");
-            tableMapping.ColumnMappings.Add("email", "email");
-            tableMapping.ColumnMappings.Add("username", "username");
-            tableMapping.ColumnMappings.Add("password", "password");
-            tableMapping.ColumnMappings.Add("insurance_provider", "insurance_provider");
-            tableMapping.ColumnMappings.Add("insurance_contact", "insurance_contact");
+            tableMapping.ColumnMappings.Add("Classification", "Classification");
+            tableMapping.ColumnMappings.Add("First_Name", "First_Name");
+            tableMapping.ColumnMappings.Add("Last_Name", "Last_Name");
+            tableMapping.ColumnMappings.Add("Gender", "Gender");
+            tableMapping.ColumnMappings.Add("Date_of_Birth", "Date_of_Birth");
+            tableMapping.ColumnMappings.Add("Social_Security_Number", "Social_Security_Number");
+            tableMapping.ColumnMappings.Add("Street_Address", "Street_Address");
+            tableMapping.ColumnMappings.Add("City", "City");
+            tableMapping.ColumnMappings.Add("Password", "Password");
+            tableMapping.ColumnMappings.Add("Username", "Username");
+            tableMapping.ColumnMappings.Add("Email", "Email");
+            tableMapping.ColumnMappings.Add("Phone_Number", "Phone_Number");
+            tableMapping.ColumnMappings.Add("Zip_Code", "Zip_Code");
+            tableMapping.ColumnMappings.Add("State", "State");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[user_data] WHERE (([classification] = @Original_classification) AND ([first_name] = @Original_first_name) AND ([last_name] = @Original_last_name) AND ([gender] = @Original_gender) AND ([date_of_birth] = @Original_date_of_birth) AND ([social_security_number] = @Original_social_security_number) AND ((@IsNull_street_address = 1 AND [street_address] IS NULL) OR ([street_address] = @Original_street_address)) AND ((@IsNull_city = 1 AND [city] IS NULL) OR ([city] = @Original_city)) AND ((@IsNull_state = 1 AND [state] IS NULL) OR ([state] = @Original_state)) AND ((@IsNull_zip_code = 1 AND [zip_code] IS NULL) OR ([zip_code] = @Original_zip_code)) AND ([phone_number] = @Original_phone_number) AND ([email] = @Original_email) AND ([username] = @Original_username) AND ([password] = @Original_password) AND ((@IsNull_insurance_provider = 1 AND [insurance_provider] IS NULL) OR ([insurance_provider] = @Original_insurance_provider)) AND ((@IsNull_insurance_contact = 1 AND [insurance_contact] IS NULL) OR ([insurance_contact] = @Original_insurance_contact)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [user_data] WHERE (([Classification] = @Original_Classification) AND ([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Gender] = @Original_Gender) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Social_Security_Number] = @Original_Social_Security_Number) AND ((@IsNull_Street_Address = 1 AND [Street_Address] IS NULL) OR ([Street_Address] = @Original_Street_Address)) AND ((@IsNull_City = 1 AND [City] IS NULL) OR ([City] = @Original_City)) AND ([Password] = @Original_Password) AND ([Username] = @Original_Username) AND ([Email] = @Original_Email) AND ([Phone_Number] = @Original_Phone_Number) AND ((@IsNull_Zip_Code = 1 AND [Zip_Code] IS NULL) OR ([Zip_Code] = @Original_Zip_Code)) AND ((@IsNull_State = 1 AND [State] IS NULL) OR ([State] = @Original_State)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_classification", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "classification", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_first_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_last_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_gender", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gender", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_of_birth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_social_security_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "social_security_number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_street_address", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "street_address", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_street_address", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "street_address", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_city", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "city", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_city", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "city", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_state", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "state", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_state", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "state", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_zip_code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "zip_code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_zip_code", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "zip_code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_phone_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "phone_number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_insurance_provider", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_provider", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_insurance_provider", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_provider", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_insurance_contact", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_contact", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_insurance_contact", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_contact", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Classification", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Classification", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Social_Security_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Social_Security_Number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Street_Address", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Street_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_City", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_City", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Username", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Phone_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Zip_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Zip_Code", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_State", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_State", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[user_data] ([classification], [first_name], [last_name], [gender], [date_of_birth], [social_security_number], [street_address], [city], [state], [zip_code], [phone_number], [email], [username], [password], [insurance_provider], [insurance_contact]) VALUES (@classification, @first_name, @last_name, @gender, @date_of_birth, @social_security_number, @street_address, @city, @state, @zip_code, @phone_number, @email, @username, @password, @insurance_provider, @insurance_contact);
-SELECT classification, first_name, last_name, gender, date_of_birth, social_security_number, street_address, city, state, zip_code, phone_number, email, username, password, insurance_provider, insurance_contact FROM user_data WHERE (date_of_birth = @date_of_birth) AND (email = @email) AND (first_name = @first_name) AND (last_name = @last_name) AND (social_security_number = @social_security_number) AND (username = @username)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [user_data] ([Classification], [First_Name], [Last_Name], [Gender], [Date_of_Birth], [Social_Security_Number], [Street_Address], [City], [Password], [Username], [Email], [Phone_Number], [Zip_Code], [State]) VALUES (@Classification, @First_Name, @Last_Name, @Gender, @Date_of_Birth, @Social_Security_Number, @Street_Address, @City, @Password, @Username, @Email, @Phone_Number, @Zip_Code, @State);
+SELECT Classification, First_Name, Last_Name, Gender, Date_of_Birth, Social_Security_Number, Street_Address, City, Password, Username, Email, Phone_Number, Zip_Code, State FROM user_data WHERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_Name = @Last_Name)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@classification", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "classification", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@first_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@last_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@gender", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_of_birth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@social_security_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "social_security_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@street_address", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "street_address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@city", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "city", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@state", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "state", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@zip_code", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "zip_code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@phone_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "phone_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@insurance_provider", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_provider", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@insurance_contact", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_contact", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Classification", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Classification", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Social_Security_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Social_Security_Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Street_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@City", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Phone_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Zip_Code", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@State", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[user_data] SET [classification] = @classification, [first_name] = @" +
-                "first_name, [last_name] = @last_name, [gender] = @gender, [date_of_birth] = @dat" +
-                "e_of_birth, [social_security_number] = @social_security_number, [street_address]" +
-                " = @street_address, [city] = @city, [state] = @state, [zip_code] = @zip_code, [p" +
-                "hone_number] = @phone_number, [email] = @email, [username] = @username, [passwor" +
-                "d] = @password, [insurance_provider] = @insurance_provider, [insurance_contact] " +
-                "= @insurance_contact WHERE (([classification] = @Original_classification) AND ([" +
-                "first_name] = @Original_first_name) AND ([last_name] = @Original_last_name) AND " +
-                "([gender] = @Original_gender) AND ([date_of_birth] = @Original_date_of_birth) AN" +
-                "D ([social_security_number] = @Original_social_security_number) AND ((@IsNull_st" +
-                "reet_address = 1 AND [street_address] IS NULL) OR ([street_address] = @Original_" +
-                "street_address)) AND ((@IsNull_city = 1 AND [city] IS NULL) OR ([city] = @Origin" +
-                "al_city)) AND ((@IsNull_state = 1 AND [state] IS NULL) OR ([state] = @Original_s" +
-                "tate)) AND ((@IsNull_zip_code = 1 AND [zip_code] IS NULL) OR ([zip_code] = @Orig" +
-                "inal_zip_code)) AND ([phone_number] = @Original_phone_number) AND ([email] = @Or" +
-                "iginal_email) AND ([username] = @Original_username) AND ([password] = @Original_" +
-                "password) AND ((@IsNull_insurance_provider = 1 AND [insurance_provider] IS NULL)" +
-                " OR ([insurance_provider] = @Original_insurance_provider)) AND ((@IsNull_insuran" +
-                "ce_contact = 1 AND [insurance_contact] IS NULL) OR ([insurance_contact] = @Origi" +
-                "nal_insurance_contact)));\r\nSELECT classification, first_name, last_name, gender," +
-                " date_of_birth, social_security_number, street_address, city, state, zip_code, p" +
-                "hone_number, email, username, password, insurance_provider, insurance_contact FR" +
-                "OM user_data WHERE (date_of_birth = @date_of_birth) AND (email = @email) AND (fi" +
-                "rst_name = @first_name) AND (last_name = @last_name) AND (social_security_number" +
-                " = @social_security_number) AND (username = @username)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [user_data] SET [Classification] = @Classification, [First_Name] = @First_Name, [Last_Name] = @Last_Name, [Gender] = @Gender, [Date_of_Birth] = @Date_of_Birth, [Social_Security_Number] = @Social_Security_Number, [Street_Address] = @Street_Address, [City] = @City, [Password] = @Password, [Username] = @Username, [Email] = @Email, [Phone_Number] = @Phone_Number, [Zip_Code] = @Zip_Code, [State] = @State WHERE (([Classification] = @Original_Classification) AND ([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Gender] = @Original_Gender) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Social_Security_Number] = @Original_Social_Security_Number) AND ((@IsNull_Street_Address = 1 AND [Street_Address] IS NULL) OR ([Street_Address] = @Original_Street_Address)) AND ((@IsNull_City = 1 AND [City] IS NULL) OR ([City] = @Original_City)) AND ([Password] = @Original_Password) AND ([Username] = @Original_Username) AND ([Email] = @Original_Email) AND ([Phone_Number] = @Original_Phone_Number) AND ((@IsNull_Zip_Code = 1 AND [Zip_Code] IS NULL) OR ([Zip_Code] = @Original_Zip_Code)) AND ((@IsNull_State = 1 AND [State] IS NULL) OR ([State] = @Original_State)));
+SELECT Classification, First_Name, Last_Name, Gender, Date_of_Birth, Social_Security_Number, Street_Address, City, Password, Username, Email, Phone_Number, Zip_Code, State FROM user_data WHERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_Name = @Last_Name)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@classification", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "classification", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@first_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@last_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@gender", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_of_birth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@social_security_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "social_security_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@street_address", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "street_address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@city", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "city", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@state", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "state", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@zip_code", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "zip_code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@phone_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "phone_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@insurance_provider", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_provider", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@insurance_contact", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_contact", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_classification", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "classification", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_first_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_last_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_gender", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "gender", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_date_of_birth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_social_security_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "social_security_number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_street_address", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "street_address", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_street_address", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "street_address", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_city", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "city", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_city", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "city", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_state", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "state", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_state", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "state", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_zip_code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "zip_code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_zip_code", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "zip_code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_phone_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "phone_number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_email", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_username", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_password", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_insurance_provider", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_provider", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_insurance_provider", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_provider", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_insurance_contact", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_contact", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_insurance_contact", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_contact", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Classification", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Classification", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Social_Security_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Social_Security_Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Street_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@City", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Username", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Phone_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Zip_Code", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@State", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Classification", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Classification", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Social_Security_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Social_Security_Number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Street_Address", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Street_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_City", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_City", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Username", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Username", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Phone_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Zip_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Zip_Code", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_State", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_State", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4770,33 +4841,13 @@ SELECT classification, first_name, last_name, gender, date_of_birth, social_secu
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT classification, first_name, last_name, gender, date_of_birth, social_secur" +
-                "ity_number, street_address, city, state, zip_code, phone_number, email, username" +
-                ", password, insurance_provider, insurance_contact FROM dbo.user_data";
+            this._commandCollection[0].CommandText = "SELECT        Classification, First_Name, Last_Name, Gender, Date_of_Birth, Socia" +
+                "l_Security_Number, Street_Address, City, Password, Username, Email, Phone_Number" +
+                ", \r\n                         Zip_Code, State\r\nFROM            user_data";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"INSERT INTO dbo.user_data (classification, first_name, last_name, gender, date_of_birth, social_security_number, street_address, city, state, zip_code, phone_number, email, username, password, insurance_provider, insurance_contact) VALUES (@classification, @first_name, @last_name, @gender, @date_of_birth, @social_security_number, @street_address, @city, @state, @zip_code, @phone_number, @email, @username, @password, @insurance_provider, @insurance_contact);";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@classification", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, "classification", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@first_name", global::System.Data.SqlDbType.VarChar, 45, global::System.Data.ParameterDirection.Input, 0, 0, "first_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@last_name", global::System.Data.SqlDbType.VarChar, 45, global::System.Data.ParameterDirection.Input, 0, 0, "last_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@gender", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, "gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@date_of_birth", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "date_of_birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@social_security_number", global::System.Data.SqlDbType.VarChar, 11, global::System.Data.ParameterDirection.Input, 0, 0, "social_security_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@street_address", global::System.Data.SqlDbType.VarChar, 45, global::System.Data.ParameterDirection.Input, 0, 0, "street_address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@city", global::System.Data.SqlDbType.VarChar, 45, global::System.Data.ParameterDirection.Input, 0, 0, "city", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@state", global::System.Data.SqlDbType.VarChar, 2, global::System.Data.ParameterDirection.Input, 0, 0, "state", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@zip_code", global::System.Data.SqlDbType.VarChar, 5, global::System.Data.ParameterDirection.Input, 0, 0, "zip_code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@phone_number", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, "phone_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@email", global::System.Data.SqlDbType.VarChar, 64, global::System.Data.ParameterDirection.Input, 0, 0, "email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@username", global::System.Data.SqlDbType.VarChar, 45, global::System.Data.ParameterDirection.Input, 0, 0, "username", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 45, global::System.Data.ParameterDirection.Input, 0, 0, "password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@insurance_provider", global::System.Data.SqlDbType.VarChar, 45, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_provider", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@insurance_contact", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, "insurance_contact", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4856,125 +4907,93 @@ SELECT classification, first_name, last_name, gender, date_of_birth, social_secu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(
-                    string Original_classification, 
-                    string Original_first_name, 
-                    string Original_last_name, 
-                    string Original_gender, 
-                    System.DateTime Original_date_of_birth, 
-                    string Original_social_security_number, 
-                    string Original_street_address, 
-                    string Original_city, 
-                    string Original_state, 
-                    string Original_zip_code, 
-                    string Original_phone_number, 
-                    string Original_email, 
-                    string Original_username, 
-                    string Original_password, 
-                    string Original_insurance_provider, 
-                    string Original_insurance_contact) {
-            if ((Original_classification == null)) {
-                throw new global::System.ArgumentNullException("Original_classification");
+        public virtual int Delete(string Original_Classification, string Original_First_Name, string Original_Last_Name, string Original_Gender, System.DateTime Original_Date_of_Birth, string Original_Social_Security_Number, string Original_Street_Address, string Original_City, string Original_Password, string Original_Username, string Original_Email, string Original_Phone_Number, string Original_Zip_Code, string Original_State) {
+            if ((Original_Classification == null)) {
+                throw new global::System.ArgumentNullException("Original_Classification");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_classification));
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_Classification));
             }
-            if ((Original_first_name == null)) {
-                throw new global::System.ArgumentNullException("Original_first_name");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_first_name));
-            }
-            if ((Original_last_name == null)) {
-                throw new global::System.ArgumentNullException("Original_last_name");
+            if ((Original_First_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_First_Name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_last_name));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_First_Name));
             }
-            if ((Original_gender == null)) {
-                throw new global::System.ArgumentNullException("Original_gender");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_gender));
-            }
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_date_of_birth));
-            if ((Original_social_security_number == null)) {
-                throw new global::System.ArgumentNullException("Original_social_security_number");
+            if ((Original_Last_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_Last_Name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_social_security_number));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Last_Name));
             }
-            if ((Original_street_address == null)) {
+            if ((Original_Gender == null)) {
+                throw new global::System.ArgumentNullException("Original_Gender");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_Gender));
+            }
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_Date_of_Birth));
+            if ((Original_Social_Security_Number == null)) {
+                throw new global::System.ArgumentNullException("Original_Social_Security_Number");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Social_Security_Number));
+            }
+            if ((Original_Street_Address == null)) {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_street_address));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_Street_Address));
             }
-            if ((Original_city == null)) {
+            if ((Original_City == null)) {
                 this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_city));
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_City));
             }
-            if ((Original_state == null)) {
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_state));
-            }
-            if ((Original_zip_code == null)) {
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[13].Value = global::System.DBNull.Value;
+            if ((Original_Password == null)) {
+                throw new global::System.ArgumentNullException("Original_Password");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((string)(Original_zip_code));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Password));
             }
-            if ((Original_phone_number == null)) {
-                throw new global::System.ArgumentNullException("Original_phone_number");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_phone_number));
-            }
-            if ((Original_email == null)) {
-                throw new global::System.ArgumentNullException("Original_email");
+            if ((Original_Username == null)) {
+                throw new global::System.ArgumentNullException("Original_Username");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((string)(Original_email));
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_Username));
             }
-            if ((Original_username == null)) {
-                throw new global::System.ArgumentNullException("Original_username");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_username));
-            }
-            if ((Original_password == null)) {
-                throw new global::System.ArgumentNullException("Original_password");
+            if ((Original_Email == null)) {
+                throw new global::System.ArgumentNullException("Original_Email");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((string)(Original_password));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_Email));
             }
-            if ((Original_insurance_provider == null)) {
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[19].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((string)(Original_insurance_provider));
-            }
-            if ((Original_insurance_contact == null)) {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[21].Value = global::System.DBNull.Value;
+            if ((Original_Phone_Number == null)) {
+                throw new global::System.ArgumentNullException("Original_Phone_Number");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((string)(Original_insurance_contact));
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((string)(Original_Phone_Number));
+            }
+            if ((Original_Zip_Code == null)) {
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((string)(Original_Zip_Code));
+            }
+            if ((Original_State == null)) {
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((string)(Original_State));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4996,113 +5015,85 @@ SELECT classification, first_name, last_name, gender, date_of_birth, social_secu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(
-                    string classification, 
-                    string first_name, 
-                    string last_name, 
-                    string gender, 
-                    System.DateTime date_of_birth, 
-                    string social_security_number, 
-                    string street_address, 
-                    string city, 
-                    string state, 
-                    string zip_code, 
-                    string phone_number, 
-                    string email, 
-                    string username, 
-                    string password, 
-                    string insurance_provider, 
-                    string insurance_contact) {
-            if ((classification == null)) {
-                throw new global::System.ArgumentNullException("classification");
+        public virtual int Insert(string Classification, string First_Name, string Last_Name, string Gender, System.DateTime Date_of_Birth, string Social_Security_Number, string Street_Address, string City, string Password, string Username, string Email, string Phone_Number, string Zip_Code, string State) {
+            if ((Classification == null)) {
+                throw new global::System.ArgumentNullException("Classification");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(classification));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Classification));
             }
-            if ((first_name == null)) {
-                throw new global::System.ArgumentNullException("first_name");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(first_name));
-            }
-            if ((last_name == null)) {
-                throw new global::System.ArgumentNullException("last_name");
+            if ((First_Name == null)) {
+                throw new global::System.ArgumentNullException("First_Name");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(last_name));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(First_Name));
             }
-            if ((gender == null)) {
-                throw new global::System.ArgumentNullException("gender");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(gender));
-            }
-            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(date_of_birth));
-            if ((social_security_number == null)) {
-                throw new global::System.ArgumentNullException("social_security_number");
+            if ((Last_Name == null)) {
+                throw new global::System.ArgumentNullException("Last_Name");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(social_security_number));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Last_Name));
             }
-            if ((street_address == null)) {
+            if ((Gender == null)) {
+                throw new global::System.ArgumentNullException("Gender");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Gender));
+            }
+            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(Date_of_Birth));
+            if ((Social_Security_Number == null)) {
+                throw new global::System.ArgumentNullException("Social_Security_Number");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Social_Security_Number));
+            }
+            if ((Street_Address == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(street_address));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Street_Address));
             }
-            if ((city == null)) {
+            if ((City == null)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(city));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(City));
             }
-            if ((state == null)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(state));
-            }
-            if ((zip_code == null)) {
-                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            if ((Password == null)) {
+                throw new global::System.ArgumentNullException("Password");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(zip_code));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(Password));
             }
-            if ((phone_number == null)) {
-                throw new global::System.ArgumentNullException("phone_number");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(phone_number));
-            }
-            if ((email == null)) {
-                throw new global::System.ArgumentNullException("email");
+            if ((Username == null)) {
+                throw new global::System.ArgumentNullException("Username");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(email));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Username));
             }
-            if ((username == null)) {
-                throw new global::System.ArgumentNullException("username");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(username));
-            }
-            if ((password == null)) {
-                throw new global::System.ArgumentNullException("password");
+            if ((Email == null)) {
+                throw new global::System.ArgumentNullException("Email");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(password));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Email));
             }
-            if ((insurance_provider == null)) {
-                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(insurance_provider));
-            }
-            if ((insurance_contact == null)) {
-                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+            if ((Phone_Number == null)) {
+                throw new global::System.ArgumentNullException("Phone_Number");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(insurance_contact));
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(Phone_Number));
+            }
+            if ((Zip_Code == null)) {
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(Zip_Code));
+            }
+            if ((State == null)) {
+                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(State));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5125,231 +5116,199 @@ SELECT classification, first_name, last_name, gender, date_of_birth, social_secu
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string classification, 
-                    string first_name, 
-                    string last_name, 
-                    string gender, 
-                    System.DateTime date_of_birth, 
-                    string social_security_number, 
-                    string street_address, 
-                    string city, 
-                    string state, 
-                    string zip_code, 
-                    string phone_number, 
-                    string email, 
-                    string username, 
-                    string password, 
-                    string insurance_provider, 
-                    string insurance_contact, 
-                    string Original_classification, 
-                    string Original_first_name, 
-                    string Original_last_name, 
-                    string Original_gender, 
-                    System.DateTime Original_date_of_birth, 
-                    string Original_social_security_number, 
-                    string Original_street_address, 
-                    string Original_city, 
-                    string Original_state, 
-                    string Original_zip_code, 
-                    string Original_phone_number, 
-                    string Original_email, 
-                    string Original_username, 
-                    string Original_password, 
-                    string Original_insurance_provider, 
-                    string Original_insurance_contact) {
-            if ((classification == null)) {
-                throw new global::System.ArgumentNullException("classification");
+                    string Classification, 
+                    string First_Name, 
+                    string Last_Name, 
+                    string Gender, 
+                    System.DateTime Date_of_Birth, 
+                    string Social_Security_Number, 
+                    string Street_Address, 
+                    string City, 
+                    string Password, 
+                    string Username, 
+                    string Email, 
+                    string Phone_Number, 
+                    string Zip_Code, 
+                    string State, 
+                    string Original_Classification, 
+                    string Original_First_Name, 
+                    string Original_Last_Name, 
+                    string Original_Gender, 
+                    System.DateTime Original_Date_of_Birth, 
+                    string Original_Social_Security_Number, 
+                    string Original_Street_Address, 
+                    string Original_City, 
+                    string Original_Password, 
+                    string Original_Username, 
+                    string Original_Email, 
+                    string Original_Phone_Number, 
+                    string Original_Zip_Code, 
+                    string Original_State) {
+            if ((Classification == null)) {
+                throw new global::System.ArgumentNullException("Classification");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(classification));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Classification));
             }
-            if ((first_name == null)) {
-                throw new global::System.ArgumentNullException("first_name");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(first_name));
-            }
-            if ((last_name == null)) {
-                throw new global::System.ArgumentNullException("last_name");
+            if ((First_Name == null)) {
+                throw new global::System.ArgumentNullException("First_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(last_name));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(First_Name));
             }
-            if ((gender == null)) {
-                throw new global::System.ArgumentNullException("gender");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(gender));
-            }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(date_of_birth));
-            if ((social_security_number == null)) {
-                throw new global::System.ArgumentNullException("social_security_number");
+            if ((Last_Name == null)) {
+                throw new global::System.ArgumentNullException("Last_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(social_security_number));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Last_Name));
             }
-            if ((street_address == null)) {
+            if ((Gender == null)) {
+                throw new global::System.ArgumentNullException("Gender");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Gender));
+            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(Date_of_Birth));
+            if ((Social_Security_Number == null)) {
+                throw new global::System.ArgumentNullException("Social_Security_Number");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Social_Security_Number));
+            }
+            if ((Street_Address == null)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(street_address));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Street_Address));
             }
-            if ((city == null)) {
+            if ((City == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(city));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(City));
             }
-            if ((state == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(state));
-            }
-            if ((zip_code == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            if ((Password == null)) {
+                throw new global::System.ArgumentNullException("Password");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(zip_code));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Password));
             }
-            if ((phone_number == null)) {
-                throw new global::System.ArgumentNullException("phone_number");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(phone_number));
-            }
-            if ((email == null)) {
-                throw new global::System.ArgumentNullException("email");
+            if ((Username == null)) {
+                throw new global::System.ArgumentNullException("Username");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(email));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Username));
             }
-            if ((username == null)) {
-                throw new global::System.ArgumentNullException("username");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(username));
-            }
-            if ((password == null)) {
-                throw new global::System.ArgumentNullException("password");
+            if ((Email == null)) {
+                throw new global::System.ArgumentNullException("Email");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(password));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Email));
             }
-            if ((insurance_provider == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(insurance_provider));
-            }
-            if ((insurance_contact == null)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            if ((Phone_Number == null)) {
+                throw new global::System.ArgumentNullException("Phone_Number");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(insurance_contact));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Phone_Number));
             }
-            if ((Original_classification == null)) {
-                throw new global::System.ArgumentNullException("Original_classification");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_classification));
-            }
-            if ((Original_first_name == null)) {
-                throw new global::System.ArgumentNullException("Original_first_name");
+            if ((Zip_Code == null)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_first_name));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Zip_Code));
             }
-            if ((Original_last_name == null)) {
-                throw new global::System.ArgumentNullException("Original_last_name");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_last_name));
-            }
-            if ((Original_gender == null)) {
-                throw new global::System.ArgumentNullException("Original_gender");
+            if ((State == null)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_gender));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(State));
             }
-            this.Adapter.UpdateCommand.Parameters[20].Value = ((System.DateTime)(Original_date_of_birth));
-            if ((Original_social_security_number == null)) {
-                throw new global::System.ArgumentNullException("Original_social_security_number");
+            if ((Original_Classification == null)) {
+                throw new global::System.ArgumentNullException("Original_Classification");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_social_security_number));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_Classification));
             }
-            if ((Original_street_address == null)) {
+            if ((Original_First_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_First_Name");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_First_Name));
+            }
+            if ((Original_Last_Name == null)) {
+                throw new global::System.ArgumentNullException("Original_Last_Name");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_Last_Name));
+            }
+            if ((Original_Gender == null)) {
+                throw new global::System.ArgumentNullException("Original_Gender");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Gender));
+            }
+            this.Adapter.UpdateCommand.Parameters[18].Value = ((System.DateTime)(Original_Date_of_Birth));
+            if ((Original_Social_Security_Number == null)) {
+                throw new global::System.ArgumentNullException("Original_Social_Security_Number");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_Social_Security_Number));
+            }
+            if ((Original_Street_Address == null)) {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_Street_Address));
+            }
+            if ((Original_City == null)) {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_street_address));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_City));
             }
-            if ((Original_city == null)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_city));
-            }
-            if ((Original_state == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+            if ((Original_Password == null)) {
+                throw new global::System.ArgumentNullException("Original_Password");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_state));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_Password));
             }
-            if ((Original_zip_code == null)) {
+            if ((Original_Username == null)) {
+                throw new global::System.ArgumentNullException("Original_Username");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_Username));
+            }
+            if ((Original_Email == null)) {
+                throw new global::System.ArgumentNullException("Original_Email");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_Email));
+            }
+            if ((Original_Phone_Number == null)) {
+                throw new global::System.ArgumentNullException("Original_Phone_Number");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_Phone_Number));
+            }
+            if ((Original_Zip_Code == null)) {
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_zip_code));
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_Zip_Code));
             }
-            if ((Original_phone_number == null)) {
-                throw new global::System.ArgumentNullException("Original_phone_number");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_phone_number));
-            }
-            if ((Original_email == null)) {
-                throw new global::System.ArgumentNullException("Original_email");
+            if ((Original_State == null)) {
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_email));
-            }
-            if ((Original_username == null)) {
-                throw new global::System.ArgumentNullException("Original_username");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((string)(Original_username));
-            }
-            if ((Original_password == null)) {
-                throw new global::System.ArgumentNullException("Original_password");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_password));
-            }
-            if ((Original_insurance_provider == null)) {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[35].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[35].Value = ((string)(Original_insurance_provider));
-            }
-            if ((Original_insurance_contact == null)) {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[37].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[36].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[37].Value = ((string)(Original_insurance_contact));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_State));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5372,168 +5331,32 @@ SELECT classification, first_name, last_name, gender, date_of_birth, social_secu
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string classification, 
-                    string gender, 
-                    string street_address, 
-                    string city, 
-                    string state, 
-                    string zip_code, 
-                    string phone_number, 
-                    string password, 
-                    string insurance_provider, 
-                    string insurance_contact, 
-                    string Original_classification, 
-                    string Original_first_name, 
-                    string Original_last_name, 
-                    string Original_gender, 
-                    System.DateTime Original_date_of_birth, 
-                    string Original_social_security_number, 
-                    string Original_street_address, 
-                    string Original_city, 
-                    string Original_state, 
-                    string Original_zip_code, 
-                    string Original_phone_number, 
-                    string Original_email, 
-                    string Original_username, 
-                    string Original_password, 
-                    string Original_insurance_provider, 
-                    string Original_insurance_contact) {
-            return this.Update(classification, Original_first_name, Original_last_name, gender, Original_date_of_birth, Original_social_security_number, street_address, city, state, zip_code, phone_number, Original_email, Original_username, password, insurance_provider, insurance_contact, Original_classification, Original_first_name, Original_last_name, Original_gender, Original_date_of_birth, Original_social_security_number, Original_street_address, Original_city, Original_state, Original_zip_code, Original_phone_number, Original_email, Original_username, Original_password, Original_insurance_provider, Original_insurance_contact);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertQuery(
-                    string classification, 
-                    string first_name, 
-                    string last_name, 
-                    string gender, 
-                    string date_of_birth, 
-                    string social_security_number, 
-                    string street_address, 
-                    string city, 
-                    string state, 
-                    string zip_code, 
-                    string phone_number, 
-                    string email, 
-                    string username, 
-                    string password, 
-                    string insurance_provider, 
-                    string insurance_contact) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
-            if ((classification == null)) {
-                throw new global::System.ArgumentNullException("classification");
-            }
-            else {
-                command.Parameters[0].Value = ((string)(classification));
-            }
-            if ((first_name == null)) {
-                throw new global::System.ArgumentNullException("first_name");
-            }
-            else {
-                command.Parameters[1].Value = ((string)(first_name));
-            }
-            if ((last_name == null)) {
-                throw new global::System.ArgumentNullException("last_name");
-            }
-            else {
-                command.Parameters[2].Value = ((string)(last_name));
-            }
-            if ((gender == null)) {
-                throw new global::System.ArgumentNullException("gender");
-            }
-            else {
-                command.Parameters[3].Value = ((string)(gender));
-            }
-            if ((date_of_birth == null)) {
-                throw new global::System.ArgumentNullException("date_of_birth");
-            }
-            else {
-                command.Parameters[4].Value = ((string)(date_of_birth));
-            }
-            if ((social_security_number == null)) {
-                throw new global::System.ArgumentNullException("social_security_number");
-            }
-            else {
-                command.Parameters[5].Value = ((string)(social_security_number));
-            }
-            if ((street_address == null)) {
-                command.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[6].Value = ((string)(street_address));
-            }
-            if ((city == null)) {
-                command.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[7].Value = ((string)(city));
-            }
-            if ((state == null)) {
-                command.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[8].Value = ((string)(state));
-            }
-            if ((zip_code == null)) {
-                command.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[9].Value = ((string)(zip_code));
-            }
-            if ((phone_number == null)) {
-                throw new global::System.ArgumentNullException("phone_number");
-            }
-            else {
-                command.Parameters[10].Value = ((string)(phone_number));
-            }
-            if ((email == null)) {
-                throw new global::System.ArgumentNullException("email");
-            }
-            else {
-                command.Parameters[11].Value = ((string)(email));
-            }
-            if ((username == null)) {
-                throw new global::System.ArgumentNullException("username");
-            }
-            else {
-                command.Parameters[12].Value = ((string)(username));
-            }
-            if ((password == null)) {
-                throw new global::System.ArgumentNullException("password");
-            }
-            else {
-                command.Parameters[13].Value = ((string)(password));
-            }
-            if ((insurance_provider == null)) {
-                command.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[14].Value = ((string)(insurance_provider));
-            }
-            if ((insurance_contact == null)) {
-                command.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[15].Value = ((string)(insurance_contact));
-            }
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
+                    string Classification, 
+                    string Gender, 
+                    string Social_Security_Number, 
+                    string Street_Address, 
+                    string City, 
+                    string Password, 
+                    string Username, 
+                    string Email, 
+                    string Phone_Number, 
+                    string Zip_Code, 
+                    string State, 
+                    string Original_Classification, 
+                    string Original_First_Name, 
+                    string Original_Last_Name, 
+                    string Original_Gender, 
+                    System.DateTime Original_Date_of_Birth, 
+                    string Original_Social_Security_Number, 
+                    string Original_Street_Address, 
+                    string Original_City, 
+                    string Original_Password, 
+                    string Original_Username, 
+                    string Original_Email, 
+                    string Original_Phone_Number, 
+                    string Original_Zip_Code, 
+                    string Original_State) {
+            return this.Update(Classification, Original_First_Name, Original_Last_Name, Gender, Original_Date_of_Birth, Social_Security_Number, Street_Address, City, Password, Username, Email, Phone_Number, Zip_Code, State, Original_Classification, Original_First_Name, Original_Last_Name, Original_Gender, Original_Date_of_Birth, Original_Social_Security_Number, Original_Street_Address, Original_City, Original_Password, Original_Username, Original_Email, Original_Phone_Number, Original_Zip_Code, Original_State);
         }
     }
     
@@ -5673,66 +5496,64 @@ SELECT classification, first_name, last_name, gender, date_of_birth, social_secu
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[e_prescription_data] WHERE (([Prescription_Id] = @Original_Prescription_Id) AND ([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Prescription_Name] = @Original_Prescription_Name) AND ([Prescription_Date] = @Original_Prescription_Date) AND ([Dosage] = @Original_Dosage) AND ([Medicine_Name] = @Original_Medicine_Name) AND ([Quantity] = @Original_Quantity) AND ([Lab_Description] = @Original_Lab_Description) AND ([Doctor_Name] = @Original_Doctor_Name) AND ((@IsNull_Instruction = 1 AND [Instruction] IS NULL) OR ([Instruction] = @Original_Instruction)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [e_prescription_data] WHERE (([Prescription_Id] = @Original_Prescription_Id) AND ([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Prescription_Name] = @Original_Prescription_Name) AND ([Prescription_Date] = @Original_Prescription_Date) AND ([Dosage] = @Original_Dosage) AND ([Medicine_Name] = @Original_Medicine_Name) AND ([Quantity] = @Original_Quantity) AND ([Lab_Description] = @Original_Lab_Description) AND ([Doctor_Name] = @Original_Doctor_Name) AND ([Instruction] = @Original_Instruction))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Dosage", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dosage", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Medicine_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medicine_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Quantity", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Lab_Description", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Lab_Description", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Doctor_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Instruction", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Instruction", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Medicine_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medicine_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Quantity", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Lab_Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Lab_Description", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Instruction", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[e_prescription_data] ([First_Name], [Last_Name], [Date_of_Birth], [Prescription_Name], [Prescription_Date], [Dosage], [Medicine_Name], [Quantity], [Lab_Description], [Doctor_Name], [Instruction]) VALUES (@First_Name, @Last_Name, @Date_of_Birth, @Prescription_Name, @Prescription_Date, @Dosage, @Medicine_Name, @Quantity, @Lab_Description, @Doctor_Name, @Instruction);
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [e_prescription_data] ([First_Name], [Last_Name], [Date_of_Birth], [Prescription_Name], [Prescription_Date], [Dosage], [Medicine_Name], [Quantity], [Lab_Description], [Doctor_Name], [Instruction]) VALUES (@First_Name, @Last_Name, @Date_of_Birth, @Prescription_Name, @Prescription_Date, @Dosage, @Medicine_Name, @Quantity, @Lab_Description, @Doctor_Name, @Instruction);
 SELECT Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription_Name, Prescription_Date, Dosage, Medicine_Name, Quantity, Lab_Description, Doctor_Name, Instruction FROM e_prescription_data WHERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_Name = @Last_Name) AND (Prescription_Id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prescription_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prescription_Date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prescription_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prescription_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dosage", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dosage", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Medicine_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medicine_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quantity", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Lab_Description", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Lab_Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Doctor_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Instruction", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Medicine_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medicine_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quantity", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Lab_Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Lab_Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Instruction", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[e_prescription_data] SET [First_Name] = @First_Name, [Last_Name] = @Last_Name, [Date_of_Birth] = @Date_of_Birth, [Prescription_Name] = @Prescription_Name, [Prescription_Date] = @Prescription_Date, [Dosage] = @Dosage, [Medicine_Name] = @Medicine_Name, [Quantity] = @Quantity, [Lab_Description] = @Lab_Description, [Doctor_Name] = @Doctor_Name, [Instruction] = @Instruction WHERE (([Prescription_Id] = @Original_Prescription_Id) AND ([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Prescription_Name] = @Original_Prescription_Name) AND ([Prescription_Date] = @Original_Prescription_Date) AND ([Dosage] = @Original_Dosage) AND ([Medicine_Name] = @Original_Medicine_Name) AND ([Quantity] = @Original_Quantity) AND ([Lab_Description] = @Original_Lab_Description) AND ([Doctor_Name] = @Original_Doctor_Name) AND ((@IsNull_Instruction = 1 AND [Instruction] IS NULL) OR ([Instruction] = @Original_Instruction)));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [e_prescription_data] SET [First_Name] = @First_Name, [Last_Name] = @Last_Name, [Date_of_Birth] = @Date_of_Birth, [Prescription_Name] = @Prescription_Name, [Prescription_Date] = @Prescription_Date, [Dosage] = @Dosage, [Medicine_Name] = @Medicine_Name, [Quantity] = @Quantity, [Lab_Description] = @Lab_Description, [Doctor_Name] = @Doctor_Name, [Instruction] = @Instruction WHERE (([Prescription_Id] = @Original_Prescription_Id) AND ([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Prescription_Name] = @Original_Prescription_Name) AND ([Prescription_Date] = @Original_Prescription_Date) AND ([Dosage] = @Original_Dosage) AND ([Medicine_Name] = @Original_Medicine_Name) AND ([Quantity] = @Original_Quantity) AND ([Lab_Description] = @Original_Lab_Description) AND ([Doctor_Name] = @Original_Doctor_Name) AND ([Instruction] = @Original_Instruction));
 SELECT Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription_Name, Prescription_Date, Dosage, Medicine_Name, Quantity, Lab_Description, Doctor_Name, Instruction FROM e_prescription_data WHERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_Name = @Last_Name) AND (Prescription_Id = @Prescription_Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prescription_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prescription_Date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prescription_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prescription_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dosage", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dosage", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Medicine_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medicine_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quantity", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Lab_Description", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Lab_Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Doctor_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Instruction", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Medicine_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medicine_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quantity", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Lab_Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Lab_Description", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Instruction", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Date", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prescription_Date", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Date", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Dosage", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Dosage", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Medicine_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medicine_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Quantity", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Lab_Description", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Lab_Description", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Doctor_Name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Instruction", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Instruction", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Medicine_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medicine_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Quantity", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Quantity", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Lab_Description", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Lab_Description", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Instruction", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Instruction", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prescription_Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Prescription_Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -5749,9 +5570,10 @@ SELECT Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription_Name,
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription_Name, " +
-                "Prescription_Date, Dosage, Medicine_Name, Quantity, Lab_Description, Doctor_Name" +
-                ", Instruction FROM dbo.e_prescription_data";
+            this._commandCollection[0].CommandText = "SELECT        Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription" +
+                "_Name, Prescription_Date, Dosage, Medicine_Name, Quantity, Lab_Description, Doct" +
+                "or_Name, \r\n                         Instruction\r\nFROM            e_prescription_" +
+                "data";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5860,12 +5682,10 @@ SELECT Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription_Name,
                 this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Doctor_Name));
             }
             if ((Original_Instruction == null)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_Instruction");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_Instruction));
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_Instruction));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5934,7 +5754,7 @@ SELECT Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription_Name,
                 this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Doctor_Name));
             }
             if ((Instruction == null)) {
-                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Instruction");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Instruction));
@@ -6030,7 +5850,7 @@ SELECT Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription_Name,
                 this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Doctor_Name));
             }
             if ((Instruction == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Instruction");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Instruction));
@@ -6082,14 +5902,12 @@ SELECT Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription_Name,
                 this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_Doctor_Name));
             }
             if ((Original_Instruction == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_Instruction");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_Instruction));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_Instruction));
             }
-            this.Adapter.UpdateCommand.Parameters[24].Value = ((int)(Prescription_Id));
+            this.Adapter.UpdateCommand.Parameters[23].Value = ((int)(Prescription_Id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6259,123 +6077,72 @@ SELECT Prescription_Id, First_Name, Last_Name, Date_of_Birth, Prescription_Name,
             tableMapping.ColumnMappings.Add("First_Name", "First_Name");
             tableMapping.ColumnMappings.Add("Last_Name", "Last_Name");
             tableMapping.ColumnMappings.Add("Date_of_Birth", "Date_of_Birth");
-            tableMapping.ColumnMappings.Add("Street_Address", "Street_Address");
-            tableMapping.ColumnMappings.Add("City", "City");
-            tableMapping.ColumnMappings.Add("State", "State");
-            tableMapping.ColumnMappings.Add("Zip_Code", "Zip_Code");
-            tableMapping.ColumnMappings.Add("Phone_Number", "Phone_Number");
-            tableMapping.ColumnMappings.Add("Email", "Email");
             tableMapping.ColumnMappings.Add("Health_Insurance_Provider", "Health_Insurance_Provider");
             tableMapping.ColumnMappings.Add("Health_Insurance_Contact_Number", "Health_Insurance_Contact_Number");
             tableMapping.ColumnMappings.Add("Medical_History", "Medical_History");
             tableMapping.ColumnMappings.Add("Doctor_Name", "Doctor_Name");
+            tableMapping.ColumnMappings.Add("Age", "Age");
+            tableMapping.ColumnMappings.Add("Country_of_Origin", "Country_of_Origin");
+            tableMapping.ColumnMappings.Add("Is_Smoker", "Is_Smoker");
+            tableMapping.ColumnMappings.Add("Is_Drug_User", "Is_Drug_User");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[patient_data] WHERE (([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ((@IsNull_Street_Address = 1 AND [Street_Address] IS NULL) OR ([Street_Address] = @Original_Street_Address)) AND ((@IsNull_City = 1 AND [City] IS NULL) OR ([City] = @Original_City)) AND ((@IsNull_State = 1 AND [State] IS NULL) OR ([State] = @Original_State)) AND ((@IsNull_Zip_Code = 1 AND [Zip_Code] IS NULL) OR ([Zip_Code] = @Original_Zip_Code)) AND ((@IsNull_Phone_Number = 1 AND [Phone_Number] IS NULL) OR ([Phone_Number] = @Original_Phone_Number)) AND ((@IsNull_Email = 1 AND [Email] IS NULL) OR ([Email] = @Original_Email)) AND ((@IsNull_Health_Insurance_Provider = 1 AND [Health_Insurance_Provider] IS NULL) OR ([Health_Insurance_Provider] = @Original_Health_Insurance_Provider)) AND ((@IsNull_Health_Insurance_Contact_Number = 1 AND [Health_Insurance_Contact_Number] IS NULL) OR ([Health_Insurance_Contact_Number] = @Original_Health_Insurance_Contact_Number)) AND ((@IsNull_Medical_History = 1 AND [Medical_History] IS NULL) OR ([Medical_History] = @Original_Medical_History)) AND ([Doctor_Name] = @Original_Doctor_Name))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [patient_data] WHERE (([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Age] = @Original_Age) AND ([Country_of_Origin] = @Original_Country_of_Origin) AND ([Health_Insurance_Provider] = @Original_Health_Insurance_Provider) AND ([Health_Insurance_Contact_Number] = @Original_Health_Insurance_Contact_Number) AND ([Medical_History] = @Original_Medical_History) AND ([Is_Smoker] = @Original_Is_Smoker) AND ([Is_Drug_User] = @Original_Is_Drug_User) AND ([Doctor_Name] = @Original_Doctor_Name))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Street_Address", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Street_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_City", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_City", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_State", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_State", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Zip_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Zip_Code", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Phone_Number", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Phone_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Email", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Health_Insurance_Provider", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Provider", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Age", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Age", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Country_of_Origin", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country_of_Origin", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Health_Insurance_Provider", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Provider", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Health_Insurance_Contact_Number", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Contact_Number", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Health_Insurance_Contact_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Contact_Number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Medical_History", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medical_History", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Medical_History", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medical_History", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Smoker", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Smoker", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Drug_User", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Drug_User", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[patient_data] ([First_Name], [Last_Name], [Date_of_Birth], [Street_Address], [City], [State], [Zip_Code], [Phone_Number], [Email], [Health_Insurance_Provider], [Health_Insurance_Contact_Number], [Medical_History], [Doctor_Name]) VALUES (@First_Name, @Last_Name, @Date_of_Birth, @Street_Address, @City, @State, @Zip_Code, @Phone_Number, @Email, @Health_Insurance_Provider, @Health_Insurance_Contact_Number, @Medical_History, @Doctor_Name);
-SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Code, Phone_Number, Email, Health_Insurance_Provider, Health_Insurance_Contact_Number, Medical_History, Doctor_Name FROM patient_data WHERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_Name = @Last_Name)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [patient_data] ([First_Name], [Last_Name], [Date_of_Birth], [Age], [Country_of_Origin], [Health_Insurance_Provider], [Health_Insurance_Contact_Number], [Medical_History], [Is_Smoker], [Is_Drug_User], [Doctor_Name]) VALUES (@First_Name, @Last_Name, @Date_of_Birth, @Age, @Country_of_Origin, @Health_Insurance_Provider, @Health_Insurance_Contact_Number, @Medical_History, @Is_Smoker, @Is_Drug_User, @Doctor_Name);
+SELECT First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Health_Insurance_Provider, Health_Insurance_Contact_Number, Medical_History, Is_Smoker, Is_Drug_User, Doctor_Name FROM patient_data WHERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_Name = @Last_Name)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Street_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@City", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@State", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Zip_Code", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Phone_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Age", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Age", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Country_of_Origin", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country_of_Origin", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Health_Insurance_Provider", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Provider", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Health_Insurance_Contact_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Contact_Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Medical_History", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medical_History", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Smoker", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Smoker", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Drug_User", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Drug_User", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[patient_data] SET [First_Name] = @First_Name, [Last_Name] = @Last_N" +
-                "ame, [Date_of_Birth] = @Date_of_Birth, [Street_Address] = @Street_Address, [City" +
-                "] = @City, [State] = @State, [Zip_Code] = @Zip_Code, [Phone_Number] = @Phone_Num" +
-                "ber, [Email] = @Email, [Health_Insurance_Provider] = @Health_Insurance_Provider," +
-                " [Health_Insurance_Contact_Number] = @Health_Insurance_Contact_Number, [Medical_" +
-                "History] = @Medical_History, [Doctor_Name] = @Doctor_Name WHERE (([First_Name] =" +
-                " @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Bir" +
-                "th] = @Original_Date_of_Birth) AND ((@IsNull_Street_Address = 1 AND [Street_Addr" +
-                "ess] IS NULL) OR ([Street_Address] = @Original_Street_Address)) AND ((@IsNull_Ci" +
-                "ty = 1 AND [City] IS NULL) OR ([City] = @Original_City)) AND ((@IsNull_State = 1" +
-                " AND [State] IS NULL) OR ([State] = @Original_State)) AND ((@IsNull_Zip_Code = 1" +
-                " AND [Zip_Code] IS NULL) OR ([Zip_Code] = @Original_Zip_Code)) AND ((@IsNull_Pho" +
-                "ne_Number = 1 AND [Phone_Number] IS NULL) OR ([Phone_Number] = @Original_Phone_N" +
-                "umber)) AND ((@IsNull_Email = 1 AND [Email] IS NULL) OR ([Email] = @Original_Ema" +
-                "il)) AND ((@IsNull_Health_Insurance_Provider = 1 AND [Health_Insurance_Provider]" +
-                " IS NULL) OR ([Health_Insurance_Provider] = @Original_Health_Insurance_Provider)" +
-                ") AND ((@IsNull_Health_Insurance_Contact_Number = 1 AND [Health_Insurance_Contac" +
-                "t_Number] IS NULL) OR ([Health_Insurance_Contact_Number] = @Original_Health_Insu" +
-                "rance_Contact_Number)) AND ((@IsNull_Medical_History = 1 AND [Medical_History] I" +
-                "S NULL) OR ([Medical_History] = @Original_Medical_History)) AND ([Doctor_Name] =" +
-                " @Original_Doctor_Name));\r\nSELECT First_Name, Last_Name, Date_of_Birth, Street_A" +
-                "ddress, City, State, Zip_Code, Phone_Number, Email, Health_Insurance_Provider, H" +
-                "ealth_Insurance_Contact_Number, Medical_History, Doctor_Name FROM patient_data W" +
-                "HERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_N" +
-                "ame = @Last_Name)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [patient_data] SET [First_Name] = @First_Name, [Last_Name] = @Last_Name, [Date_of_Birth] = @Date_of_Birth, [Age] = @Age, [Country_of_Origin] = @Country_of_Origin, [Health_Insurance_Provider] = @Health_Insurance_Provider, [Health_Insurance_Contact_Number] = @Health_Insurance_Contact_Number, [Medical_History] = @Medical_History, [Is_Smoker] = @Is_Smoker, [Is_Drug_User] = @Is_Drug_User, [Doctor_Name] = @Doctor_Name WHERE (([First_Name] = @Original_First_Name) AND ([Last_Name] = @Original_Last_Name) AND ([Date_of_Birth] = @Original_Date_of_Birth) AND ([Age] = @Original_Age) AND ([Country_of_Origin] = @Original_Country_of_Origin) AND ([Health_Insurance_Provider] = @Original_Health_Insurance_Provider) AND ([Health_Insurance_Contact_Number] = @Original_Health_Insurance_Contact_Number) AND ([Medical_History] = @Original_Medical_History) AND ([Is_Smoker] = @Original_Is_Smoker) AND ([Is_Drug_User] = @Original_Is_Drug_User) AND ([Doctor_Name] = @Original_Doctor_Name));
+SELECT First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Health_Insurance_Provider, Health_Insurance_Contact_Number, Medical_History, Is_Smoker, Is_Drug_User, Doctor_Name FROM patient_data WHERE (Date_of_Birth = @Date_of_Birth) AND (First_Name = @First_Name) AND (Last_Name = @Last_Name)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Street_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@City", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@State", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Zip_Code", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Phone_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Age", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Age", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Country_of_Origin", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country_of_Origin", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Health_Insurance_Provider", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Provider", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Health_Insurance_Contact_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Contact_Number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Medical_History", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medical_History", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Smoker", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Smoker", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Is_Drug_User", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Drug_User", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_First_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "First_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Last_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Last_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Street_Address", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Street_Address", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Street_Address", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_City", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_City", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "City", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_State", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_State", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "State", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Zip_Code", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Zip_Code", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Zip_Code", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Phone_Number", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Phone_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone_Number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Email", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Health_Insurance_Provider", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Provider", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Date_of_Birth", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Date_of_Birth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Age", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Age", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Country_of_Origin", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Country_of_Origin", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Health_Insurance_Provider", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Provider", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Health_Insurance_Contact_Number", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Contact_Number", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Health_Insurance_Contact_Number", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Health_Insurance_Contact_Number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Medical_History", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medical_History", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Medical_History", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Medical_History", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Smoker", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Smoker", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Is_Drug_User", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Is_Drug_User", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Doctor_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Doctor_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
@@ -6392,9 +6159,10 @@ SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Co
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Cod" +
-                "e, Phone_Number, Email, Health_Insurance_Provider, Health_Insurance_Contact_Numb" +
-                "er, Medical_History, Doctor_Name FROM dbo.patient_data";
+            this._commandCollection[0].CommandText = "SELECT        First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Healt" +
+                "h_Insurance_Provider, Health_Insurance_Contact_Number, Medical_History, Is_Smoke" +
+                "r, \r\n                         Is_Drug_User, Doctor_Name\r\nFROM            patient" +
+                "_data";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -6455,7 +6223,7 @@ SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_First_Name, string Original_Last_Name, System.DateTime Original_Date_of_Birth, string Original_Street_Address, string Original_City, string Original_State, string Original_Zip_Code, string Original_Phone_Number, string Original_Email, string Original_Health_Insurance_Provider, string Original_Health_Insurance_Contact_Number, string Original_Medical_History, string Original_Doctor_Name) {
+        public virtual int Delete(string Original_First_Name, string Original_Last_Name, System.DateTime Original_Date_of_Birth, int Original_Age, string Original_Country_of_Origin, string Original_Health_Insurance_Provider, string Original_Health_Insurance_Contact_Number, string Original_Medical_History, bool Original_Is_Smoker, bool Original_Is_Drug_User, string Original_Doctor_Name) {
             if ((Original_First_Name == null)) {
                 throw new global::System.ArgumentNullException("Original_First_Name");
             }
@@ -6469,83 +6237,38 @@ SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Co
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_Last_Name));
             }
             this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_Date_of_Birth));
-            if ((Original_Street_Address == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_Age));
+            if ((Original_Country_of_Origin == null)) {
+                throw new global::System.ArgumentNullException("Original_Country_of_Origin");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Street_Address));
-            }
-            if ((Original_City == null)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_City));
-            }
-            if ((Original_State == null)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_State));
-            }
-            if ((Original_Zip_Code == null)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Zip_Code));
-            }
-            if ((Original_Phone_Number == null)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_Phone_Number));
-            }
-            if ((Original_Email == null)) {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_Email));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Country_of_Origin));
             }
             if ((Original_Health_Insurance_Provider == null)) {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_Health_Insurance_Provider");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_Health_Insurance_Provider));
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Health_Insurance_Provider));
             }
             if ((Original_Health_Insurance_Contact_Number == null)) {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_Health_Insurance_Contact_Number");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_Health_Insurance_Contact_Number));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Health_Insurance_Contact_Number));
             }
             if ((Original_Medical_History == null)) {
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_Medical_History");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_Medical_History));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_Medical_History));
             }
+            this.Adapter.DeleteCommand.Parameters[8].Value = ((bool)(Original_Is_Smoker));
+            this.Adapter.DeleteCommand.Parameters[9].Value = ((bool)(Original_Is_Drug_User));
             if ((Original_Doctor_Name == null)) {
                 throw new global::System.ArgumentNullException("Original_Doctor_Name");
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[21].Value = ((string)(Original_Doctor_Name));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Doctor_Name));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -6567,7 +6290,7 @@ SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Co
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string First_Name, string Last_Name, System.DateTime Date_of_Birth, string Street_Address, string City, string State, string Zip_Code, string Phone_Number, string Email, string Health_Insurance_Provider, string Health_Insurance_Contact_Number, string Medical_History, string Doctor_Name) {
+        public virtual int Insert(string First_Name, string Last_Name, System.DateTime Date_of_Birth, int Age, string Country_of_Origin, string Health_Insurance_Provider, string Health_Insurance_Contact_Number, string Medical_History, bool Is_Smoker, bool Is_Drug_User, string Doctor_Name) {
             if ((First_Name == null)) {
                 throw new global::System.ArgumentNullException("First_Name");
             }
@@ -6581,65 +6304,38 @@ SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Co
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Last_Name));
             }
             this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(Date_of_Birth));
-            if ((Street_Address == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Age));
+            if ((Country_of_Origin == null)) {
+                throw new global::System.ArgumentNullException("Country_of_Origin");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Street_Address));
-            }
-            if ((City == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(City));
-            }
-            if ((State == null)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(State));
-            }
-            if ((Zip_Code == null)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Zip_Code));
-            }
-            if ((Phone_Number == null)) {
-                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Phone_Number));
-            }
-            if ((Email == null)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(Email));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Country_of_Origin));
             }
             if ((Health_Insurance_Provider == null)) {
-                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Health_Insurance_Provider");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Health_Insurance_Provider));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Health_Insurance_Provider));
             }
             if ((Health_Insurance_Contact_Number == null)) {
-                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Health_Insurance_Contact_Number");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Health_Insurance_Contact_Number));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Health_Insurance_Contact_Number));
             }
             if ((Medical_History == null)) {
-                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Medical_History");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(Medical_History));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Medical_History));
             }
+            this.Adapter.InsertCommand.Parameters[8].Value = ((bool)(Is_Smoker));
+            this.Adapter.InsertCommand.Parameters[9].Value = ((bool)(Is_Drug_User));
             if ((Doctor_Name == null)) {
                 throw new global::System.ArgumentNullException("Doctor_Name");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(Doctor_Name));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Doctor_Name));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -6665,28 +6361,24 @@ SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Co
                     string First_Name, 
                     string Last_Name, 
                     System.DateTime Date_of_Birth, 
-                    string Street_Address, 
-                    string City, 
-                    string State, 
-                    string Zip_Code, 
-                    string Phone_Number, 
-                    string Email, 
+                    int Age, 
+                    string Country_of_Origin, 
                     string Health_Insurance_Provider, 
                     string Health_Insurance_Contact_Number, 
                     string Medical_History, 
+                    bool Is_Smoker, 
+                    bool Is_Drug_User, 
                     string Doctor_Name, 
                     string Original_First_Name, 
                     string Original_Last_Name, 
                     System.DateTime Original_Date_of_Birth, 
-                    string Original_Street_Address, 
-                    string Original_City, 
-                    string Original_State, 
-                    string Original_Zip_Code, 
-                    string Original_Phone_Number, 
-                    string Original_Email, 
+                    int Original_Age, 
+                    string Original_Country_of_Origin, 
                     string Original_Health_Insurance_Provider, 
                     string Original_Health_Insurance_Contact_Number, 
                     string Original_Medical_History, 
+                    bool Original_Is_Smoker, 
+                    bool Original_Is_Drug_User, 
                     string Original_Doctor_Name) {
             if ((First_Name == null)) {
                 throw new global::System.ArgumentNullException("First_Name");
@@ -6701,156 +6393,84 @@ SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Co
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Last_Name));
             }
             this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(Date_of_Birth));
-            if ((Street_Address == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Age));
+            if ((Country_of_Origin == null)) {
+                throw new global::System.ArgumentNullException("Country_of_Origin");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Street_Address));
-            }
-            if ((City == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(City));
-            }
-            if ((State == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(State));
-            }
-            if ((Zip_Code == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Zip_Code));
-            }
-            if ((Phone_Number == null)) {
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Phone_Number));
-            }
-            if ((Email == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Email));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Country_of_Origin));
             }
             if ((Health_Insurance_Provider == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Health_Insurance_Provider");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Health_Insurance_Provider));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Health_Insurance_Provider));
             }
             if ((Health_Insurance_Contact_Number == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Health_Insurance_Contact_Number");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Health_Insurance_Contact_Number));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Health_Insurance_Contact_Number));
             }
             if ((Medical_History == null)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Medical_History");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Medical_History));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Medical_History));
             }
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((bool)(Is_Smoker));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((bool)(Is_Drug_User));
             if ((Doctor_Name == null)) {
                 throw new global::System.ArgumentNullException("Doctor_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Doctor_Name));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Doctor_Name));
             }
             if ((Original_First_Name == null)) {
                 throw new global::System.ArgumentNullException("Original_First_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_First_Name));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_First_Name));
             }
             if ((Original_Last_Name == null)) {
                 throw new global::System.ArgumentNullException("Original_Last_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_Last_Name));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Last_Name));
             }
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((System.DateTime)(Original_Date_of_Birth));
-            if ((Original_Street_Address == null)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Street_Address));
-            }
-            if ((Original_City == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((System.DateTime)(Original_Date_of_Birth));
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(Original_Age));
+            if ((Original_Country_of_Origin == null)) {
+                throw new global::System.ArgumentNullException("Original_Country_of_Origin");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_City));
-            }
-            if ((Original_State == null)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_State));
-            }
-            if ((Original_Zip_Code == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_Zip_Code));
-            }
-            if ((Original_Phone_Number == null)) {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_Phone_Number));
-            }
-            if ((Original_Email == null)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_Email));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Country_of_Origin));
             }
             if ((Original_Health_Insurance_Provider == null)) {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[29].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_Health_Insurance_Provider");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_Health_Insurance_Provider));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_Health_Insurance_Provider));
             }
             if ((Original_Health_Insurance_Contact_Number == null)) {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_Health_Insurance_Contact_Number");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_Health_Insurance_Contact_Number));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Health_Insurance_Contact_Number));
             }
             if ((Original_Medical_History == null)) {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[33].Value = global::System.DBNull.Value;
+                throw new global::System.ArgumentNullException("Original_Medical_History");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[33].Value = ((string)(Original_Medical_History));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_Medical_History));
             }
+            this.Adapter.UpdateCommand.Parameters[19].Value = ((bool)(Original_Is_Smoker));
+            this.Adapter.UpdateCommand.Parameters[20].Value = ((bool)(Original_Is_Drug_User));
             if ((Original_Doctor_Name == null)) {
                 throw new global::System.ArgumentNullException("Original_Doctor_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[34].Value = ((string)(Original_Doctor_Name));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_Doctor_Name));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -6873,30 +6493,26 @@ SELECT First_Name, Last_Name, Date_of_Birth, Street_Address, City, State, Zip_Co
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
-                    string Street_Address, 
-                    string City, 
-                    string State, 
-                    string Zip_Code, 
-                    string Phone_Number, 
-                    string Email, 
+                    int Age, 
+                    string Country_of_Origin, 
                     string Health_Insurance_Provider, 
                     string Health_Insurance_Contact_Number, 
                     string Medical_History, 
+                    bool Is_Smoker, 
+                    bool Is_Drug_User, 
                     string Doctor_Name, 
                     string Original_First_Name, 
                     string Original_Last_Name, 
                     System.DateTime Original_Date_of_Birth, 
-                    string Original_Street_Address, 
-                    string Original_City, 
-                    string Original_State, 
-                    string Original_Zip_Code, 
-                    string Original_Phone_Number, 
-                    string Original_Email, 
+                    int Original_Age, 
+                    string Original_Country_of_Origin, 
                     string Original_Health_Insurance_Provider, 
                     string Original_Health_Insurance_Contact_Number, 
                     string Original_Medical_History, 
+                    bool Original_Is_Smoker, 
+                    bool Original_Is_Drug_User, 
                     string Original_Doctor_Name) {
-            return this.Update(Original_First_Name, Original_Last_Name, Original_Date_of_Birth, Street_Address, City, State, Zip_Code, Phone_Number, Email, Health_Insurance_Provider, Health_Insurance_Contact_Number, Medical_History, Doctor_Name, Original_First_Name, Original_Last_Name, Original_Date_of_Birth, Original_Street_Address, Original_City, Original_State, Original_Zip_Code, Original_Phone_Number, Original_Email, Original_Health_Insurance_Provider, Original_Health_Insurance_Contact_Number, Original_Medical_History, Original_Doctor_Name);
+            return this.Update(Original_First_Name, Original_Last_Name, Original_Date_of_Birth, Age, Country_of_Origin, Health_Insurance_Provider, Health_Insurance_Contact_Number, Medical_History, Is_Smoker, Is_Drug_User, Doctor_Name, Original_First_Name, Original_Last_Name, Original_Date_of_Birth, Original_Age, Original_Country_of_Origin, Original_Health_Insurance_Provider, Original_Health_Insurance_Contact_Number, Original_Medical_History, Original_Is_Smoker, Original_Is_Drug_User, Original_Doctor_Name);
         }
     }
     
