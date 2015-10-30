@@ -36,11 +36,11 @@ namespace IPIMS_Group_9 {
         
         private global::System.Data.DataRelation relationuser_data_patient_data;
         
-        private global::System.Data.DataRelation relationpatient_data_scheduled_appointment_data;
-        
         private global::System.Data.DataRelation relationpatient_data_e_prescription_data;
         
         private global::System.Data.DataRelation relationpatient_data_update_healthcare_data;
+        
+        private global::System.Data.DataRelation relationpatient_data_scheduled_appointment_data;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -299,9 +299,9 @@ namespace IPIMS_Group_9 {
                 }
             }
             this.relationuser_data_patient_data = this.Relations["user_data_patient_data"];
-            this.relationpatient_data_scheduled_appointment_data = this.Relations["patient_data_scheduled_appointment_data"];
             this.relationpatient_data_e_prescription_data = this.Relations["patient_data_e_prescription_data"];
             this.relationpatient_data_update_healthcare_data = this.Relations["patient_data_update_healthcare_data"];
+            this.relationpatient_data_scheduled_appointment_data = this.Relations["patient_data_scheduled_appointment_data"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -322,6 +322,51 @@ namespace IPIMS_Group_9 {
             base.Tables.Add(this.tablee_prescription_data);
             this.tablepatient_data = new patient_dataDataTable();
             base.Tables.Add(this.tablepatient_data);
+            global::System.Data.ForeignKeyConstraint fkc;
+            fkc = new global::System.Data.ForeignKeyConstraint("patient_data_scheduled_appointment_data", new global::System.Data.DataColumn[] {
+                        this.tablepatient_data.First_NameColumn,
+                        this.tablepatient_data.Last_NameColumn,
+                        this.tablepatient_data.Date_of_BirthColumn}, new global::System.Data.DataColumn[] {
+                        this.tablescheduled_appointment_data.First_NameColumn,
+                        this.tablescheduled_appointment_data.Last_NameColumn,
+                        this.tablescheduled_appointment_data.Date_of_BirthColumn});
+            this.tablescheduled_appointment_data.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.None;
+            fkc = new global::System.Data.ForeignKeyConstraint("patient_data_update_healthcare_data", new global::System.Data.DataColumn[] {
+                        this.tablepatient_data.First_NameColumn,
+                        this.tablepatient_data.Last_NameColumn,
+                        this.tablepatient_data.Date_of_BirthColumn}, new global::System.Data.DataColumn[] {
+                        this.tableupdate_healthcare_data.First_NameColumn,
+                        this.tableupdate_healthcare_data.Last_NameColumn,
+                        this.tableupdate_healthcare_data.Date_of_BirthColumn});
+            this.tableupdate_healthcare_data.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.None;
+            fkc = new global::System.Data.ForeignKeyConstraint("patient_data_e_prescription_data", new global::System.Data.DataColumn[] {
+                        this.tablepatient_data.First_NameColumn,
+                        this.tablepatient_data.Last_NameColumn,
+                        this.tablepatient_data.Date_of_BirthColumn}, new global::System.Data.DataColumn[] {
+                        this.tablee_prescription_data.First_NameColumn,
+                        this.tablee_prescription_data.Last_NameColumn,
+                        this.tablee_prescription_data.Date_of_BirthColumn});
+            this.tablee_prescription_data.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.None;
+            fkc = new global::System.Data.ForeignKeyConstraint("user_data_patient_data", new global::System.Data.DataColumn[] {
+                        this.tableuser_data.First_NameColumn,
+                        this.tableuser_data.Last_NameColumn,
+                        this.tableuser_data.Date_of_BirthColumn}, new global::System.Data.DataColumn[] {
+                        this.tablepatient_data.First_NameColumn,
+                        this.tablepatient_data.Last_NameColumn,
+                        this.tablepatient_data.Date_of_BirthColumn});
+            this.tablepatient_data.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.None;
             this.relationuser_data_patient_data = new global::System.Data.DataRelation("user_data_patient_data", new global::System.Data.DataColumn[] {
                         this.tableuser_data.First_NameColumn,
                         this.tableuser_data.Last_NameColumn,
@@ -329,15 +374,8 @@ namespace IPIMS_Group_9 {
                         this.tablepatient_data.First_NameColumn,
                         this.tablepatient_data.Last_NameColumn,
                         this.tablepatient_data.Date_of_BirthColumn}, false);
+            this.relationuser_data_patient_data.Nested = true;
             this.Relations.Add(this.relationuser_data_patient_data);
-            this.relationpatient_data_scheduled_appointment_data = new global::System.Data.DataRelation("patient_data_scheduled_appointment_data", new global::System.Data.DataColumn[] {
-                        this.tablepatient_data.First_NameColumn,
-                        this.tablepatient_data.Last_NameColumn,
-                        this.tablepatient_data.Date_of_BirthColumn}, new global::System.Data.DataColumn[] {
-                        this.tablescheduled_appointment_data.First_NameColumn,
-                        this.tablescheduled_appointment_data.Last_NameColumn,
-                        this.tablescheduled_appointment_data.Date_of_BirthColumn}, false);
-            this.Relations.Add(this.relationpatient_data_scheduled_appointment_data);
             this.relationpatient_data_e_prescription_data = new global::System.Data.DataRelation("patient_data_e_prescription_data", new global::System.Data.DataColumn[] {
                         this.tablepatient_data.First_NameColumn,
                         this.tablepatient_data.Last_NameColumn,
@@ -345,6 +383,7 @@ namespace IPIMS_Group_9 {
                         this.tablee_prescription_data.First_NameColumn,
                         this.tablee_prescription_data.Last_NameColumn,
                         this.tablee_prescription_data.Date_of_BirthColumn}, false);
+            this.relationpatient_data_e_prescription_data.Nested = true;
             this.Relations.Add(this.relationpatient_data_e_prescription_data);
             this.relationpatient_data_update_healthcare_data = new global::System.Data.DataRelation("patient_data_update_healthcare_data", new global::System.Data.DataColumn[] {
                         this.tablepatient_data.First_NameColumn,
@@ -353,7 +392,17 @@ namespace IPIMS_Group_9 {
                         this.tableupdate_healthcare_data.First_NameColumn,
                         this.tableupdate_healthcare_data.Last_NameColumn,
                         this.tableupdate_healthcare_data.Date_of_BirthColumn}, false);
+            this.relationpatient_data_update_healthcare_data.Nested = true;
             this.Relations.Add(this.relationpatient_data_update_healthcare_data);
+            this.relationpatient_data_scheduled_appointment_data = new global::System.Data.DataRelation("patient_data_scheduled_appointment_data", new global::System.Data.DataColumn[] {
+                        this.tablepatient_data.First_NameColumn,
+                        this.tablepatient_data.Last_NameColumn,
+                        this.tablepatient_data.Date_of_BirthColumn}, new global::System.Data.DataColumn[] {
+                        this.tablescheduled_appointment_data.First_NameColumn,
+                        this.tablescheduled_appointment_data.Last_NameColumn,
+                        this.tablescheduled_appointment_data.Date_of_BirthColumn}, false);
+            this.relationpatient_data_scheduled_appointment_data.Nested = true;
+            this.Relations.Add(this.relationpatient_data_scheduled_appointment_data);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3509,17 +3558,6 @@ namespace IPIMS_Group_9 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public scheduled_appointment_dataRow[] Getscheduled_appointment_dataRows() {
-                if ((this.Table.ChildRelations["patient_data_scheduled_appointment_data"] == null)) {
-                    return new scheduled_appointment_dataRow[0];
-                }
-                else {
-                    return ((scheduled_appointment_dataRow[])(base.GetChildRows(this.Table.ChildRelations["patient_data_scheduled_appointment_data"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public e_prescription_dataRow[] Gete_prescription_dataRows() {
                 if ((this.Table.ChildRelations["patient_data_e_prescription_data"] == null)) {
                     return new e_prescription_dataRow[0];
@@ -3537,6 +3575,17 @@ namespace IPIMS_Group_9 {
                 }
                 else {
                     return ((update_healthcare_dataRow[])(base.GetChildRows(this.Table.ChildRelations["patient_data_update_healthcare_data"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public scheduled_appointment_dataRow[] Getscheduled_appointment_dataRows() {
+                if ((this.Table.ChildRelations["patient_data_scheduled_appointment_data"] == null)) {
+                    return new scheduled_appointment_dataRow[0];
+                }
+                else {
+                    return ((scheduled_appointment_dataRow[])(base.GetChildRows(this.Table.ChildRelations["patient_data_scheduled_appointment_data"])));
                 }
             }
         }
@@ -6851,12 +6900,12 @@ SELECT First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Health_Insu
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._scheduled_appointment_dataTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.scheduled_appointment_data.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._e_prescription_dataTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.e_prescription_data.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._scheduled_appointment_dataTableAdapter.Update(updatedRows));
+                    result = (result + this._e_prescription_dataTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -6869,12 +6918,12 @@ SELECT First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Health_Insu
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._e_prescription_dataTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.e_prescription_data.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._scheduled_appointment_dataTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.scheduled_appointment_data.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._e_prescription_dataTableAdapter.Update(updatedRows));
+                    result = (result + this._scheduled_appointment_dataTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -6904,11 +6953,11 @@ SELECT First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Health_Insu
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._scheduled_appointment_dataTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.scheduled_appointment_data.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._e_prescription_dataTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.e_prescription_data.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._scheduled_appointment_dataTableAdapter.Update(addedRows));
+                    result = (result + this._e_prescription_dataTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -6920,11 +6969,11 @@ SELECT First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Health_Insu
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._e_prescription_dataTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.e_prescription_data.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._scheduled_appointment_dataTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.scheduled_appointment_data.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._e_prescription_dataTableAdapter.Update(addedRows));
+                    result = (result + this._scheduled_appointment_dataTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -6938,11 +6987,11 @@ SELECT First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Health_Insu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(IPIMS_9DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._e_prescription_dataTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.e_prescription_data.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._scheduled_appointment_dataTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.scheduled_appointment_data.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._e_prescription_dataTableAdapter.Update(deletedRows));
+                    result = (result + this._scheduled_appointment_dataTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -6954,11 +7003,11 @@ SELECT First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Health_Insu
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._scheduled_appointment_dataTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.scheduled_appointment_data.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._e_prescription_dataTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.e_prescription_data.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._scheduled_appointment_dataTableAdapter.Update(deletedRows));
+                    result = (result + this._e_prescription_dataTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
