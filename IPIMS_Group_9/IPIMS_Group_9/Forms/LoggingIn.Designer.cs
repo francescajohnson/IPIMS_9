@@ -31,10 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoggingIn));
             this.groupBoxLoginInformation = new System.Windows.Forms.GroupBox();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.labelPleaseLogin = new System.Windows.Forms.Label();
@@ -64,8 +62,6 @@
             // 
             // groupBoxLoginInformation
             // 
-            this.groupBoxLoginInformation.Controls.Add(this.passwordTextBox);
-            this.groupBoxLoginInformation.Controls.Add(this.usernameTextBox);
             this.groupBoxLoginInformation.Controls.Add(this.labelPassword);
             this.groupBoxLoginInformation.Controls.Add(this.labelUsername);
             this.groupBoxLoginInformation.Location = new System.Drawing.Point(217, 197);
@@ -74,14 +70,6 @@
             this.groupBoxLoginInformation.TabIndex = 24;
             this.groupBoxLoginInformation.TabStop = false;
             this.groupBoxLoginInformation.Text = "Login Information:";
-            // 
-            // passwordTextBox
-            // 
-            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "password", true));
-            this.passwordTextBox.Location = new System.Drawing.Point(71, 46);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(201, 20);
-            this.passwordTextBox.TabIndex = 28;
             // 
             // user_dataBindingSource
             // 
@@ -92,14 +80,6 @@
             // 
             this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
             this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usernameTextBox
-            // 
-            this.usernameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "username", true));
-            this.usernameTextBox.Location = new System.Drawing.Point(71, 17);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(201, 20);
-            this.usernameTextBox.TabIndex = 28;
             // 
             // labelPassword
             // 
@@ -158,6 +138,8 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.e_prescription_dataTableAdapter = null;
+            this.tableAdapterManager.patient_dataTableAdapter = null;
             this.tableAdapterManager.scheduled_appointment_dataTableAdapter = null;
             this.tableAdapterManager.update_healthcare_dataTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -338,7 +320,5 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton user_dataBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox passwordTextBox;
-        private System.Windows.Forms.TextBox usernameTextBox;
     }
 }

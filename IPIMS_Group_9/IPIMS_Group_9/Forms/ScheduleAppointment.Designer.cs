@@ -32,25 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScheduleAppointment));
             this.groupBoxPatientInformation = new System.Windows.Forms.GroupBox();
             this.labelDateOfBirth = new System.Windows.Forms.Label();
-            this.textBoxDateOfBirth = new System.Windows.Forms.TextBox();
-            this.textBoxSymptoms = new System.Windows.Forms.TextBox();
             this.labelSymptoms = new System.Windows.Forms.Label();
-            this.textBoxLastName = new System.Windows.Forms.TextBox();
-            this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.labelScheduleAppointment = new System.Windows.Forms.Label();
-            this.comboBoxDoctorSelection = new System.Windows.Forms.ComboBox();
             this.buttonScheduleAppointment = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBoxSuicide = new System.Windows.Forms.CheckBox();
-            this.checkBoxWheezing = new System.Windows.Forms.CheckBox();
-            this.checkBoxBloodUrine = new System.Windows.Forms.CheckBox();
-            this.checkBoxTenderness = new System.Windows.Forms.CheckBox();
-            this.checkBoxChestPains = new System.Windows.Forms.CheckBox();
             this.scheduled_appointment_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.patientServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchForPatientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,10 +82,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.scheduled_appointment_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.appointment_dateDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBoxPatientInformation.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
             this.menuStrip.SuspendLayout();
@@ -106,11 +94,7 @@
             // groupBoxPatientInformation
             // 
             this.groupBoxPatientInformation.Controls.Add(this.labelDateOfBirth);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxDateOfBirth);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxSymptoms);
             this.groupBoxPatientInformation.Controls.Add(this.labelSymptoms);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxLastName);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxFirstName);
             this.groupBoxPatientInformation.Controls.Add(this.labelLastName);
             this.groupBoxPatientInformation.Controls.Add(this.labelFirstName);
             this.groupBoxPatientInformation.Location = new System.Drawing.Point(12, 75);
@@ -129,24 +113,6 @@
             this.labelDateOfBirth.TabIndex = 9;
             this.labelDateOfBirth.Text = "Date of Birth:";
             // 
-            // textBoxDateOfBirth
-            // 
-            this.textBoxDateOfBirth.Location = new System.Drawing.Point(467, 19);
-            this.textBoxDateOfBirth.Name = "textBoxDateOfBirth";
-            this.textBoxDateOfBirth.Size = new System.Drawing.Size(71, 20);
-            this.textBoxDateOfBirth.TabIndex = 8;
-            this.textBoxDateOfBirth.TextChanged += new System.EventHandler(this.textBoxDateOfBirth_TextClicked);
-            // 
-            // textBoxSymptoms
-            // 
-            this.textBoxSymptoms.Location = new System.Drawing.Point(73, 45);
-            this.textBoxSymptoms.Multiline = true;
-            this.textBoxSymptoms.Name = "textBoxSymptoms";
-            this.textBoxSymptoms.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxSymptoms.Size = new System.Drawing.Size(465, 97);
-            this.textBoxSymptoms.TabIndex = 7;
-            this.textBoxSymptoms.TextChanged += new System.EventHandler(this.textBoxSymptoms_TextClicked);
-            // 
             // labelSymptoms
             // 
             this.labelSymptoms.AutoSize = true;
@@ -155,22 +121,6 @@
             this.labelSymptoms.Size = new System.Drawing.Size(58, 13);
             this.labelSymptoms.TabIndex = 6;
             this.labelSymptoms.Text = "Symptoms:";
-            // 
-            // textBoxLastName
-            // 
-            this.textBoxLastName.Location = new System.Drawing.Point(266, 19);
-            this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(120, 20);
-            this.textBoxLastName.TabIndex = 5;
-            this.textBoxLastName.TextChanged += new System.EventHandler(this.textBoxLastName_TextClicked);
-            // 
-            // textBoxFirstName
-            // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(73, 19);
-            this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(120, 20);
-            this.textBoxFirstName.TabIndex = 4;
-            this.textBoxFirstName.TextChanged += new System.EventHandler(this.textBoxFirstName_TextClicked);
             // 
             // labelLastName
             // 
@@ -200,20 +150,6 @@
             this.labelScheduleAppointment.TabIndex = 34;
             this.labelScheduleAppointment.Text = "Schedule Appointment";
             // 
-            // comboBoxDoctorSelection
-            // 
-            this.comboBoxDoctorSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDoctorSelection.FormattingEnabled = true;
-            this.comboBoxDoctorSelection.Items.AddRange(new object[] {
-            "Dr. Thomas Smith",
-            "Dr. Susan Enriquez",
-            "Dr. Linda Chattin"});
-            this.comboBoxDoctorSelection.Location = new System.Drawing.Point(273, 25);
-            this.comboBoxDoctorSelection.Name = "comboBoxDoctorSelection";
-            this.comboBoxDoctorSelection.Size = new System.Drawing.Size(284, 26);
-            this.comboBoxDoctorSelection.TabIndex = 2;
-            this.comboBoxDoctorSelection.Text = "Select the Doctor for the Appointment";
-            // 
             // buttonScheduleAppointment
             // 
             this.buttonScheduleAppointment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -227,85 +163,13 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.appointment_dateDateTimePicker);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.comboBoxDoctorSelection);
             this.groupBox1.Location = new System.Drawing.Point(12, 231);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(577, 252);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Calendar and Doctor Selection for Appointment Scheduling:";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkBoxSuicide);
-            this.groupBox2.Controls.Add(this.checkBoxWheezing);
-            this.groupBox2.Controls.Add(this.checkBoxBloodUrine);
-            this.groupBox2.Controls.Add(this.checkBoxTenderness);
-            this.groupBox2.Controls.Add(this.checkBoxChestPains);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(262, 62);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(295, 170);
-            this.groupBox2.TabIndex = 39;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Is the Patient experiencing any of the following?";
-            // 
-            // checkBoxSuicide
-            // 
-            this.checkBoxSuicide.AutoSize = true;
-            this.checkBoxSuicide.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxSuicide.Location = new System.Drawing.Point(6, 133);
-            this.checkBoxSuicide.Name = "checkBoxSuicide";
-            this.checkBoxSuicide.Size = new System.Drawing.Size(107, 17);
-            this.checkBoxSuicide.TabIndex = 40;
-            this.checkBoxSuicide.Text = "Suicidal thoughts";
-            this.checkBoxSuicide.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxWheezing
-            // 
-            this.checkBoxWheezing.AutoSize = true;
-            this.checkBoxWheezing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWheezing.Location = new System.Drawing.Point(6, 110);
-            this.checkBoxWheezing.Name = "checkBoxWheezing";
-            this.checkBoxWheezing.Size = new System.Drawing.Size(148, 17);
-            this.checkBoxWheezing.TabIndex = 39;
-            this.checkBoxWheezing.Text = "Wheezing while breathing";
-            this.checkBoxWheezing.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBloodUrine
-            // 
-            this.checkBoxBloodUrine.AutoSize = true;
-            this.checkBoxBloodUrine.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBloodUrine.Location = new System.Drawing.Point(6, 87);
-            this.checkBoxBloodUrine.Name = "checkBoxBloodUrine";
-            this.checkBoxBloodUrine.Size = new System.Drawing.Size(150, 17);
-            this.checkBoxBloodUrine.TabIndex = 38;
-            this.checkBoxBloodUrine.Text = "Blood in the patient\'s urine";
-            this.checkBoxBloodUrine.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxTenderness
-            // 
-            this.checkBoxTenderness.AutoSize = true;
-            this.checkBoxTenderness.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxTenderness.Location = new System.Drawing.Point(6, 64);
-            this.checkBoxTenderness.Name = "checkBoxTenderness";
-            this.checkBoxTenderness.Size = new System.Drawing.Size(229, 17);
-            this.checkBoxTenderness.TabIndex = 37;
-            this.checkBoxTenderness.Text = "Tenderness and pain in the back of the leg";
-            this.checkBoxTenderness.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxChestPains
-            // 
-            this.checkBoxChestPains.AutoSize = true;
-            this.checkBoxChestPains.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxChestPains.Location = new System.Drawing.Point(6, 41);
-            this.checkBoxChestPains.Name = "checkBoxChestPains";
-            this.checkBoxChestPains.Size = new System.Drawing.Size(81, 17);
-            this.checkBoxChestPains.TabIndex = 36;
-            this.checkBoxChestPains.Text = "Chest pains";
-            this.checkBoxChestPains.UseVisualStyleBackColor = true;
             // 
             // scheduled_appointment_dataBindingSource
             // 
@@ -316,6 +180,16 @@
             // 
             this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
             this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(262, 62);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(295, 170);
+            this.groupBox2.TabIndex = 39;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Is the Patient experiencing any of the following?";
             // 
             // menuStrip
             // 
@@ -516,6 +390,8 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.e_prescription_dataTableAdapter = null;
+            this.tableAdapterManager.patient_dataTableAdapter = null;
             this.tableAdapterManager.scheduled_appointment_dataTableAdapter = this.scheduled_appointment_dataTableAdapter;
             this.tableAdapterManager.update_healthcare_dataTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -646,15 +522,6 @@
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Text = "Save Data";
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.scheduled_appointment_dataBindingNavigatorSaveItem_Click);
             // 
-            // appointment_dateDateTimePicker
-            // 
-            this.appointment_dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.scheduled_appointment_dataBindingSource, "appointment_date", true));
-            this.appointment_dateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.appointment_dateDateTimePicker.Location = new System.Drawing.Point(22, 77);
-            this.appointment_dateDateTimePicker.Name = "appointment_dateDateTimePicker";
-            this.appointment_dateDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.appointment_dateDateTimePicker.TabIndex = 40;
-            // 
             // ScheduleAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -673,8 +540,6 @@
             this.groupBoxPatientInformation.ResumeLayout(false);
             this.groupBoxPatientInformation.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
             this.menuStrip.ResumeLayout(false);
@@ -691,23 +556,13 @@
 
         private System.Windows.Forms.GroupBox groupBoxPatientInformation;
         private System.Windows.Forms.Label labelDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxSymptoms;
         private System.Windows.Forms.Label labelSymptoms;
-        private System.Windows.Forms.TextBox textBoxLastName;
-        private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.Label labelLastName;
         private System.Windows.Forms.Label labelFirstName;
         private System.Windows.Forms.Label labelScheduleAppointment;
-        private System.Windows.Forms.ComboBox comboBoxDoctorSelection;
         private System.Windows.Forms.Button buttonScheduleAppointment;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBoxSuicide;
-        private System.Windows.Forms.CheckBox checkBoxWheezing;
-        private System.Windows.Forms.CheckBox checkBoxBloodUrine;
-        private System.Windows.Forms.CheckBox checkBoxTenderness;
-        private System.Windows.Forms.CheckBox checkBoxChestPains;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem patientServicesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchForPatientToolStripMenuItem;
@@ -751,6 +606,5 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton scheduled_appointment_dataBindingNavigatorSaveItem;
-        private System.Windows.Forms.DateTimePicker appointment_dateDateTimePicker;
     }
 }

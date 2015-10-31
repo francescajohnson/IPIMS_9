@@ -29,18 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.comboBoxDoctorSelection = new System.Windows.Forms.ComboBox();
             this.groupBoxPatientInformation = new System.Windows.Forms.GroupBox();
-            this.textBoxLabDescription = new System.Windows.Forms.TextBox();
             this.labelLabDescription = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.labelDosage = new System.Windows.Forms.Label();
-            this.textBoxMedicine = new System.Windows.Forms.TextBox();
             this.labelMedicine = new System.Windows.Forms.Label();
             this.labelDateOfBirth = new System.Windows.Forms.Label();
-            this.textBoxDateOfBirth = new System.Windows.Forms.TextBox();
-            this.textBoxLastName = new System.Windows.Forms.TextBox();
-            this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.labelEPrescriptions = new System.Windows.Forms.Label();
@@ -57,32 +50,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.update_healthcare_dataBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBoxDoctorSelection
-            // 
-            this.comboBoxDoctorSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDoctorSelection.FormattingEnabled = true;
-            this.comboBoxDoctorSelection.Items.AddRange(new object[] {
-            "Dr. Thomas Smith",
-            "Dr. Susan Enriquez",
-            "Dr. Linda Chattin"});
-            this.comboBoxDoctorSelection.Location = new System.Drawing.Point(152, 186);
-            this.comboBoxDoctorSelection.Name = "comboBoxDoctorSelection";
-            this.comboBoxDoctorSelection.Size = new System.Drawing.Size(284, 23);
-            this.comboBoxDoctorSelection.TabIndex = 50;
-            this.comboBoxDoctorSelection.Text = "Select Doctor:";
-            // 
             // groupBoxPatientInformation
             // 
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxLabDescription);
             this.groupBoxPatientInformation.Controls.Add(this.labelLabDescription);
-            this.groupBoxPatientInformation.Controls.Add(this.textBox1);
             this.groupBoxPatientInformation.Controls.Add(this.labelDosage);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxMedicine);
             this.groupBoxPatientInformation.Controls.Add(this.labelMedicine);
             this.groupBoxPatientInformation.Controls.Add(this.labelDateOfBirth);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxDateOfBirth);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxLastName);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxFirstName);
             this.groupBoxPatientInformation.Controls.Add(this.labelLastName);
             this.groupBoxPatientInformation.Controls.Add(this.labelFirstName);
             this.groupBoxPatientInformation.Location = new System.Drawing.Point(12, 75);
@@ -91,14 +64,6 @@
             this.groupBoxPatientInformation.TabIndex = 46;
             this.groupBoxPatientInformation.TabStop = false;
             this.groupBoxPatientInformation.Text = "Patient Information";
-            // 
-            // textBoxLabDescription
-            // 
-            this.textBoxLabDescription.Location = new System.Drawing.Point(96, 69);
-            this.textBoxLabDescription.Name = "textBoxLabDescription";
-            this.textBoxLabDescription.Size = new System.Drawing.Size(447, 20);
-            this.textBoxLabDescription.TabIndex = 15;
-            this.textBoxLabDescription.Text = "X-Ray left hip";
             // 
             // labelLabDescription
             // 
@@ -109,14 +74,6 @@
             this.labelLabDescription.TabIndex = 14;
             this.labelLabDescription.Text = "Lab Description:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(275, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 20);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.Text = "500 mg";
-            // 
             // labelDosage
             // 
             this.labelDosage.AutoSize = true;
@@ -125,14 +82,6 @@
             this.labelDosage.Size = new System.Drawing.Size(47, 13);
             this.labelDosage.TabIndex = 12;
             this.labelDosage.Text = "Dosage:";
-            // 
-            // textBoxMedicine
-            // 
-            this.textBoxMedicine.Location = new System.Drawing.Point(96, 43);
-            this.textBoxMedicine.Name = "textBoxMedicine";
-            this.textBoxMedicine.Size = new System.Drawing.Size(120, 20);
-            this.textBoxMedicine.TabIndex = 11;
-            this.textBoxMedicine.Text = "Acetaminophen";
             // 
             // labelMedicine
             // 
@@ -151,30 +100,6 @@
             this.labelDateOfBirth.Size = new System.Drawing.Size(69, 13);
             this.labelDateOfBirth.TabIndex = 9;
             this.labelDateOfBirth.Text = "Date of Birth:";
-            // 
-            // textBoxDateOfBirth
-            // 
-            this.textBoxDateOfBirth.Location = new System.Drawing.Point(472, 19);
-            this.textBoxDateOfBirth.Name = "textBoxDateOfBirth";
-            this.textBoxDateOfBirth.Size = new System.Drawing.Size(71, 20);
-            this.textBoxDateOfBirth.TabIndex = 8;
-            this.textBoxDateOfBirth.Text = "01/01/2121";
-            // 
-            // textBoxLastName
-            // 
-            this.textBoxLastName.Location = new System.Drawing.Point(271, 19);
-            this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(120, 20);
-            this.textBoxLastName.TabIndex = 5;
-            this.textBoxLastName.Text = "Roberts";
-            // 
-            // textBoxFirstName
-            // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(78, 19);
-            this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(120, 20);
-            this.textBoxFirstName.TabIndex = 4;
-            this.textBoxFirstName.Text = "Julie";
             // 
             // labelLastName
             // 
@@ -200,9 +125,9 @@
             this.labelEPrescriptions.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEPrescriptions.Location = new System.Drawing.Point(12, 36);
             this.labelEPrescriptions.Name = "labelEPrescriptions";
-            this.labelEPrescriptions.Size = new System.Drawing.Size(498, 36);
+            this.labelEPrescriptions.Size = new System.Drawing.Size(455, 36);
             this.labelEPrescriptions.TabIndex = 44;
-            this.labelEPrescriptions.Text = "E-Prescriptions (Medicine and Labs)";
+            this.labelEPrescriptions.Text = "E-Prescriptions and Lab Records";
             // 
             // buttonPrint
             // 
@@ -262,6 +187,8 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.e_prescription_dataTableAdapter = null;
+            this.tableAdapterManager.patient_dataTableAdapter = null;
             this.tableAdapterManager.scheduled_appointment_dataTableAdapter = null;
             this.tableAdapterManager.update_healthcare_dataTableAdapter = this.update_healthcare_dataTableAdapter;
             this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -272,7 +199,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 516);
-            this.Controls.Add(this.comboBoxDoctorSelection);
             this.Controls.Add(this.groupBoxPatientInformation);
             this.Controls.Add(this.labelEPrescriptions);
             this.Controls.Add(this.buttonPrint);
@@ -294,18 +220,11 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBoxDoctorSelection;
         private System.Windows.Forms.GroupBox groupBoxPatientInformation;
-        private System.Windows.Forms.TextBox textBoxLabDescription;
         private System.Windows.Forms.Label labelLabDescription;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label labelDosage;
-        private System.Windows.Forms.TextBox textBoxMedicine;
         private System.Windows.Forms.Label labelMedicine;
         private System.Windows.Forms.Label labelDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxLastName;
-        private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.Label labelLastName;
         private System.Windows.Forms.Label labelFirstName;
         private System.Windows.Forms.Label labelEPrescriptions;

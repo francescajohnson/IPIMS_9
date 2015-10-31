@@ -31,20 +31,9 @@
             this.labelLastName = new System.Windows.Forms.Label();
             this.groupBoxPersonalInformation = new System.Windows.Forms.GroupBox();
             this.labelDateOfBirth = new System.Windows.Forms.Label();
-            this.textBoxDateOfBirth = new System.Windows.Forms.TextBox();
-            this.textBoxSymptoms = new System.Windows.Forms.TextBox();
             this.labelSymptoms = new System.Windows.Forms.Label();
-            this.textBoxLastName = new System.Windows.Forms.TextBox();
-            this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.labelFirstName = new System.Windows.Forms.Label();
-            this.comboBoxDoctorSelection = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBoxSuicide = new System.Windows.Forms.CheckBox();
-            this.checkBoxWheezing = new System.Windows.Forms.CheckBox();
-            this.checkBoxBloodUrine = new System.Windows.Forms.CheckBox();
-            this.checkBoxTenderness = new System.Windows.Forms.CheckBox();
-            this.checkBoxChestPains = new System.Windows.Forms.CheckBox();
-            this.checkBoxWeakness = new System.Windows.Forms.CheckBox();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.labelUpdateHealthcareConditions = new System.Windows.Forms.Label();
@@ -75,7 +64,6 @@
             this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutOfIPIMSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxPersonalInformation.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,11 +79,7 @@
             // groupBoxPersonalInformation
             // 
             this.groupBoxPersonalInformation.Controls.Add(this.labelDateOfBirth);
-            this.groupBoxPersonalInformation.Controls.Add(this.textBoxDateOfBirth);
-            this.groupBoxPersonalInformation.Controls.Add(this.textBoxSymptoms);
             this.groupBoxPersonalInformation.Controls.Add(this.labelSymptoms);
-            this.groupBoxPersonalInformation.Controls.Add(this.textBoxLastName);
-            this.groupBoxPersonalInformation.Controls.Add(this.textBoxFirstName);
             this.groupBoxPersonalInformation.Controls.Add(this.labelLastName);
             this.groupBoxPersonalInformation.Controls.Add(this.labelFirstName);
             this.groupBoxPersonalInformation.Location = new System.Drawing.Point(12, 77);
@@ -114,22 +98,6 @@
             this.labelDateOfBirth.TabIndex = 9;
             this.labelDateOfBirth.Text = "Date of Birth:";
             // 
-            // textBoxDateOfBirth
-            // 
-            this.textBoxDateOfBirth.Location = new System.Drawing.Point(467, 38);
-            this.textBoxDateOfBirth.Name = "textBoxDateOfBirth";
-            this.textBoxDateOfBirth.Size = new System.Drawing.Size(71, 20);
-            this.textBoxDateOfBirth.TabIndex = 8;
-            // 
-            // textBoxSymptoms
-            // 
-            this.textBoxSymptoms.Location = new System.Drawing.Point(73, 64);
-            this.textBoxSymptoms.Multiline = true;
-            this.textBoxSymptoms.Name = "textBoxSymptoms";
-            this.textBoxSymptoms.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxSymptoms.Size = new System.Drawing.Size(465, 97);
-            this.textBoxSymptoms.TabIndex = 7;
-            // 
             // labelSymptoms
             // 
             this.labelSymptoms.AutoSize = true;
@@ -138,20 +106,6 @@
             this.labelSymptoms.Size = new System.Drawing.Size(58, 13);
             this.labelSymptoms.TabIndex = 6;
             this.labelSymptoms.Text = "Symptoms:";
-            // 
-            // textBoxLastName
-            // 
-            this.textBoxLastName.Location = new System.Drawing.Point(266, 38);
-            this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(120, 20);
-            this.textBoxLastName.TabIndex = 5;
-            // 
-            // textBoxFirstName
-            // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(73, 38);
-            this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(120, 20);
-            this.textBoxFirstName.TabIndex = 4;
             // 
             // labelFirstName
             // 
@@ -162,28 +116,8 @@
             this.labelFirstName.TabIndex = 0;
             this.labelFirstName.Text = "First Name:";
             // 
-            // comboBoxDoctorSelection
-            // 
-            this.comboBoxDoctorSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDoctorSelection.FormattingEnabled = true;
-            this.comboBoxDoctorSelection.Items.AddRange(new object[] {
-            "Dr. Thomas Smith",
-            "Dr. Susan Enriquez",
-            "Dr. Linda Chattin"});
-            this.comboBoxDoctorSelection.Location = new System.Drawing.Point(12, 250);
-            this.comboBoxDoctorSelection.Name = "comboBoxDoctorSelection";
-            this.comboBoxDoctorSelection.Size = new System.Drawing.Size(284, 26);
-            this.comboBoxDoctorSelection.TabIndex = 40;
-            this.comboBoxDoctorSelection.Text = "Select a Doctor";
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBoxSuicide);
-            this.groupBox1.Controls.Add(this.checkBoxWheezing);
-            this.groupBox1.Controls.Add(this.checkBoxBloodUrine);
-            this.groupBox1.Controls.Add(this.checkBoxTenderness);
-            this.groupBox1.Controls.Add(this.checkBoxChestPains);
-            this.groupBox1.Controls.Add(this.checkBoxWeakness);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 299);
             this.groupBox1.Name = "groupBox1";
@@ -191,72 +125,6 @@
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Is the Patient experiencing any of the following?";
-            // 
-            // checkBoxSuicide
-            // 
-            this.checkBoxSuicide.AutoSize = true;
-            this.checkBoxSuicide.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxSuicide.Location = new System.Drawing.Point(6, 146);
-            this.checkBoxSuicide.Name = "checkBoxSuicide";
-            this.checkBoxSuicide.Size = new System.Drawing.Size(107, 17);
-            this.checkBoxSuicide.TabIndex = 40;
-            this.checkBoxSuicide.Text = "Suicidal thoughts";
-            this.checkBoxSuicide.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxWheezing
-            // 
-            this.checkBoxWheezing.AutoSize = true;
-            this.checkBoxWheezing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWheezing.Location = new System.Drawing.Point(6, 123);
-            this.checkBoxWheezing.Name = "checkBoxWheezing";
-            this.checkBoxWheezing.Size = new System.Drawing.Size(148, 17);
-            this.checkBoxWheezing.TabIndex = 39;
-            this.checkBoxWheezing.Text = "Wheezing while breathing";
-            this.checkBoxWheezing.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBloodUrine
-            // 
-            this.checkBoxBloodUrine.AutoSize = true;
-            this.checkBoxBloodUrine.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBloodUrine.Location = new System.Drawing.Point(6, 100);
-            this.checkBoxBloodUrine.Name = "checkBoxBloodUrine";
-            this.checkBoxBloodUrine.Size = new System.Drawing.Size(150, 17);
-            this.checkBoxBloodUrine.TabIndex = 38;
-            this.checkBoxBloodUrine.Text = "Blood in the patient\'s urine";
-            this.checkBoxBloodUrine.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxTenderness
-            // 
-            this.checkBoxTenderness.AutoSize = true;
-            this.checkBoxTenderness.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxTenderness.Location = new System.Drawing.Point(6, 77);
-            this.checkBoxTenderness.Name = "checkBoxTenderness";
-            this.checkBoxTenderness.Size = new System.Drawing.Size(229, 17);
-            this.checkBoxTenderness.TabIndex = 37;
-            this.checkBoxTenderness.Text = "Tenderness and pain in the back of the leg";
-            this.checkBoxTenderness.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxChestPains
-            // 
-            this.checkBoxChestPains.AutoSize = true;
-            this.checkBoxChestPains.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxChestPains.Location = new System.Drawing.Point(6, 54);
-            this.checkBoxChestPains.Name = "checkBoxChestPains";
-            this.checkBoxChestPains.Size = new System.Drawing.Size(81, 17);
-            this.checkBoxChestPains.TabIndex = 36;
-            this.checkBoxChestPains.Text = "Chest pains";
-            this.checkBoxChestPains.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxWeakness
-            // 
-            this.checkBoxWeakness.AutoSize = true;
-            this.checkBoxWeakness.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWeakness.Location = new System.Drawing.Point(6, 31);
-            this.checkBoxWeakness.Name = "checkBoxWeakness";
-            this.checkBoxWeakness.Size = new System.Drawing.Size(170, 17);
-            this.checkBoxWeakness.TabIndex = 35;
-            this.checkBoxWeakness.Text = "Weakness in arms and/or legs";
-            this.checkBoxWeakness.UseVisualStyleBackColor = true;
             // 
             // buttonClear
             // 
@@ -489,7 +357,6 @@
             this.ClientSize = new System.Drawing.Size(594, 502);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.groupBoxPersonalInformation);
-            this.Controls.Add(this.comboBoxDoctorSelection);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonSave);
@@ -499,8 +366,6 @@
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
             this.groupBoxPersonalInformation.ResumeLayout(false);
             this.groupBoxPersonalInformation.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -513,20 +378,9 @@
         private System.Windows.Forms.Label labelLastName;
         private System.Windows.Forms.GroupBox groupBoxPersonalInformation;
         private System.Windows.Forms.Label labelDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxSymptoms;
         private System.Windows.Forms.Label labelSymptoms;
-        private System.Windows.Forms.TextBox textBoxLastName;
-        private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.Label labelFirstName;
-        private System.Windows.Forms.ComboBox comboBoxDoctorSelection;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBoxSuicide;
-        private System.Windows.Forms.CheckBox checkBoxWheezing;
-        private System.Windows.Forms.CheckBox checkBoxBloodUrine;
-        private System.Windows.Forms.CheckBox checkBoxTenderness;
-        private System.Windows.Forms.CheckBox checkBoxChestPains;
-        private System.Windows.Forms.CheckBox checkBoxWeakness;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelUpdateHealthcareConditions;

@@ -32,9 +32,6 @@
             this.buttonSearch = new System.Windows.Forms.Button();
             this.groupBoxPatientInformation = new System.Windows.Forms.GroupBox();
             this.labelDateOfBirth = new System.Windows.Forms.Label();
-            this.textBoxDateOfBirth = new System.Windows.Forms.TextBox();
-            this.textBoxLastName = new System.Windows.Forms.TextBox();
-            this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
@@ -90,9 +87,6 @@
             // groupBoxPatientInformation
             // 
             this.groupBoxPatientInformation.Controls.Add(this.labelDateOfBirth);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxDateOfBirth);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxLastName);
-            this.groupBoxPatientInformation.Controls.Add(this.textBoxFirstName);
             this.groupBoxPatientInformation.Controls.Add(this.labelLastName);
             this.groupBoxPatientInformation.Controls.Add(this.labelFirstName);
             this.groupBoxPatientInformation.Location = new System.Drawing.Point(12, 82);
@@ -110,30 +104,6 @@
             this.labelDateOfBirth.Size = new System.Drawing.Size(69, 13);
             this.labelDateOfBirth.TabIndex = 9;
             this.labelDateOfBirth.Text = "Date of Birth:";
-            // 
-            // textBoxDateOfBirth
-            // 
-            this.textBoxDateOfBirth.Location = new System.Drawing.Point(207, 43);
-            this.textBoxDateOfBirth.Name = "textBoxDateOfBirth";
-            this.textBoxDateOfBirth.Size = new System.Drawing.Size(71, 20);
-            this.textBoxDateOfBirth.TabIndex = 8;
-            this.textBoxDateOfBirth.Text = "01/01/2121";
-            // 
-            // textBoxLastName
-            // 
-            this.textBoxLastName.Location = new System.Drawing.Point(351, 17);
-            this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(205, 20);
-            this.textBoxLastName.TabIndex = 5;
-            this.textBoxLastName.Text = "Roberts";
-            // 
-            // textBoxFirstName
-            // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(73, 17);
-            this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(205, 20);
-            this.textBoxFirstName.TabIndex = 4;
-            this.textBoxFirstName.Text = "Julie";
             // 
             // labelLastName
             // 
@@ -372,9 +342,6 @@
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.GroupBox groupBoxPatientInformation;
         private System.Windows.Forms.Label labelDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxLastName;
-        private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.Label labelLastName;
         private System.Windows.Forms.Label labelFirstName;
         private System.Windows.Forms.MenuStrip menuStrip;

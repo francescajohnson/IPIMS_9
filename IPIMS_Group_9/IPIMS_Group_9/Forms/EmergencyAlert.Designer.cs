@@ -28,15 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxDoctorSelection = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBoxSuicide = new System.Windows.Forms.CheckBox();
-            this.checkBoxWheezing = new System.Windows.Forms.CheckBox();
-            this.checkBoxBloodUrine = new System.Windows.Forms.CheckBox();
-            this.checkBoxTenderness = new System.Windows.Forms.CheckBox();
-            this.checkBoxChestPains = new System.Windows.Forms.CheckBox();
-            this.checkBoxWeakness = new System.Windows.Forms.CheckBox();
-            this.textBoxSymptoms = new System.Windows.Forms.TextBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.labelEmergencyAlert = new System.Windows.Forms.Label();
             this.labelSymptoms = new System.Windows.Forms.Label();
@@ -67,32 +59,11 @@
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutOfIPIMSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.groupBox1.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBoxDoctorSelection
-            // 
-            this.comboBoxDoctorSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDoctorSelection.FormattingEnabled = true;
-            this.comboBoxDoctorSelection.Items.AddRange(new object[] {
-            "Dr. Thomas Smith",
-            "Dr. Susan Enriquez",
-            "Dr. Linda Chattin"});
-            this.comboBoxDoctorSelection.Location = new System.Drawing.Point(12, 269);
-            this.comboBoxDoctorSelection.Name = "comboBoxDoctorSelection";
-            this.comboBoxDoctorSelection.Size = new System.Drawing.Size(284, 26);
-            this.comboBoxDoctorSelection.TabIndex = 52;
-            this.comboBoxDoctorSelection.Text = "Select a Doctor";
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBoxSuicide);
-            this.groupBox1.Controls.Add(this.checkBoxWheezing);
-            this.groupBox1.Controls.Add(this.checkBoxBloodUrine);
-            this.groupBox1.Controls.Add(this.checkBoxTenderness);
-            this.groupBox1.Controls.Add(this.checkBoxChestPains);
-            this.groupBox1.Controls.Add(this.checkBoxWeakness);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 301);
             this.groupBox1.Name = "groupBox1";
@@ -100,87 +71,6 @@
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Emergency Alert Conditions Include:";
-            // 
-            // checkBoxSuicide
-            // 
-            this.checkBoxSuicide.AutoSize = true;
-            this.checkBoxSuicide.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxSuicide.Location = new System.Drawing.Point(6, 146);
-            this.checkBoxSuicide.Name = "checkBoxSuicide";
-            this.checkBoxSuicide.Size = new System.Drawing.Size(107, 17);
-            this.checkBoxSuicide.TabIndex = 40;
-            this.checkBoxSuicide.Text = "Suicidal thoughts";
-            this.checkBoxSuicide.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxWheezing
-            // 
-            this.checkBoxWheezing.AutoSize = true;
-            this.checkBoxWheezing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWheezing.Location = new System.Drawing.Point(6, 123);
-            this.checkBoxWheezing.Name = "checkBoxWheezing";
-            this.checkBoxWheezing.Size = new System.Drawing.Size(148, 17);
-            this.checkBoxWheezing.TabIndex = 39;
-            this.checkBoxWheezing.Text = "Wheezing while breathing";
-            this.checkBoxWheezing.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxBloodUrine
-            // 
-            this.checkBoxBloodUrine.AutoSize = true;
-            this.checkBoxBloodUrine.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxBloodUrine.Location = new System.Drawing.Point(6, 100);
-            this.checkBoxBloodUrine.Name = "checkBoxBloodUrine";
-            this.checkBoxBloodUrine.Size = new System.Drawing.Size(150, 17);
-            this.checkBoxBloodUrine.TabIndex = 38;
-            this.checkBoxBloodUrine.Text = "Blood in the patient\'s urine";
-            this.checkBoxBloodUrine.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxTenderness
-            // 
-            this.checkBoxTenderness.AutoSize = true;
-            this.checkBoxTenderness.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxTenderness.Location = new System.Drawing.Point(6, 77);
-            this.checkBoxTenderness.Name = "checkBoxTenderness";
-            this.checkBoxTenderness.Size = new System.Drawing.Size(229, 17);
-            this.checkBoxTenderness.TabIndex = 37;
-            this.checkBoxTenderness.Text = "Tenderness and pain in the back of the leg";
-            this.checkBoxTenderness.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxChestPains
-            // 
-            this.checkBoxChestPains.AutoSize = true;
-            this.checkBoxChestPains.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxChestPains.Location = new System.Drawing.Point(6, 54);
-            this.checkBoxChestPains.Name = "checkBoxChestPains";
-            this.checkBoxChestPains.Size = new System.Drawing.Size(81, 17);
-            this.checkBoxChestPains.TabIndex = 36;
-            this.checkBoxChestPains.Text = "Chest pains";
-            this.checkBoxChestPains.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxWeakness
-            // 
-            this.checkBoxWeakness.AutoSize = true;
-            this.checkBoxWeakness.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxWeakness.Location = new System.Drawing.Point(6, 31);
-            this.checkBoxWeakness.Name = "checkBoxWeakness";
-            this.checkBoxWeakness.Size = new System.Drawing.Size(170, 17);
-            this.checkBoxWeakness.TabIndex = 35;
-            this.checkBoxWeakness.Text = "Weakness in arms and/or legs";
-            this.checkBoxWeakness.UseVisualStyleBackColor = true;
-            // 
-            // textBoxSymptoms
-            // 
-            this.textBoxSymptoms.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxSymptoms.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSymptoms.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBoxSymptoms.Location = new System.Drawing.Point(90, 87);
-            this.textBoxSymptoms.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxSymptoms.Multiline = true;
-            this.textBoxSymptoms.Name = "textBoxSymptoms";
-            this.textBoxSymptoms.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxSymptoms.Size = new System.Drawing.Size(489, 172);
-            this.textBoxSymptoms.TabIndex = 48;
             // 
             // buttonSave
             // 
@@ -423,9 +313,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 502);
             this.Controls.Add(this.menuStrip);
-            this.Controls.Add(this.comboBoxDoctorSelection);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBoxSymptoms);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.labelEmergencyAlert);
             this.Controls.Add(this.labelSymptoms);
@@ -433,8 +321,6 @@
             this.Name = "EmergencyAlert";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -444,15 +330,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBoxDoctorSelection;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBoxSuicide;
-        private System.Windows.Forms.CheckBox checkBoxWheezing;
-        private System.Windows.Forms.CheckBox checkBoxBloodUrine;
-        private System.Windows.Forms.CheckBox checkBoxTenderness;
-        private System.Windows.Forms.CheckBox checkBoxChestPains;
-        private System.Windows.Forms.CheckBox checkBoxWeakness;
-        private System.Windows.Forms.TextBox textBoxSymptoms;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelEmergencyAlert;
         private System.Windows.Forms.Label labelSymptoms;

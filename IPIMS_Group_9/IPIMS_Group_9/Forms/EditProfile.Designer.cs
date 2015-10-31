@@ -30,66 +30,44 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditProfile));
-            this.textBoxZipCode = new System.Windows.Forms.TextBox();
             this.labelZipCode = new System.Windows.Forms.Label();
             this.labelState = new System.Windows.Forms.Label();
             this.labelCity = new System.Windows.Forms.Label();
             this.labelEmailAddress = new System.Windows.Forms.Label();
-            this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
             this.labelPhoneNumber = new System.Windows.Forms.Label();
             this.groupBoxLoginInformation = new System.Windows.Forms.GroupBox();
             this.labelPassword = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelConfirmPassword = new System.Windows.Forms.Label();
-            this.textBoxPasswordInitial = new System.Windows.Forms.TextBox();
-            this.groupBoxMedicalInformation = new System.Windows.Forms.GroupBox();
-            this.textBoxMedicalHistory = new System.Windows.Forms.TextBox();
-            this.labelMedicalHistory = new System.Windows.Forms.Label();
-            this.textBoxHealthInsuranceNumber = new System.Windows.Forms.TextBox();
-            this.labelHealthInsuranceNumber = new System.Windows.Forms.Label();
-            this.textBoxHealthInsurance = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.buttonEditProfile = new System.Windows.Forms.Button();
-            this.textBoxEmailAddress = new System.Windows.Forms.TextBox();
             this.groupBoxContactInformation = new System.Windows.Forms.GroupBox();
             this.labelEditProfile = new System.Windows.Forms.Label();
             this.groupBoxAddressInformation = new System.Windows.Forms.GroupBox();
-            this.labelStreetAddress = new System.Windows.Forms.Label();
-            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
             this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
+            this.labelStreetAddress = new System.Windows.Forms.Label();
             this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
             this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
             this.user_dataBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.user_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.street_addressTextBox = new System.Windows.Forms.TextBox();
             this.groupBoxLoginInformation.SuspendLayout();
-            this.groupBoxMedicalInformation.SuspendLayout();
             this.groupBoxContactInformation.SuspendLayout();
             this.groupBoxAddressInformation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).BeginInit();
             this.user_dataBindingNavigator.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBoxZipCode
-            // 
-            this.textBoxZipCode.Location = new System.Drawing.Point(395, 46);
-            this.textBoxZipCode.Name = "textBoxZipCode";
-            this.textBoxZipCode.Size = new System.Drawing.Size(82, 20);
-            this.textBoxZipCode.TabIndex = 14;
-            this.textBoxZipCode.Text = "54321";
             // 
             // labelZipCode
             // 
@@ -127,14 +105,6 @@
             this.labelEmailAddress.TabIndex = 6;
             this.labelEmailAddress.Text = "Email Address:";
             // 
-            // textBoxPhoneNumber
-            // 
-            this.textBoxPhoneNumber.Location = new System.Drawing.Point(92, 17);
-            this.textBoxPhoneNumber.Name = "textBoxPhoneNumber";
-            this.textBoxPhoneNumber.Size = new System.Drawing.Size(82, 20);
-            this.textBoxPhoneNumber.TabIndex = 4;
-            this.textBoxPhoneNumber.Text = "623-555-1234";
-            // 
             // labelPhoneNumber
             // 
             this.labelPhoneNumber.AutoSize = true;
@@ -147,9 +117,7 @@
             // groupBoxLoginInformation
             // 
             this.groupBoxLoginInformation.Controls.Add(this.labelPassword);
-            this.groupBoxLoginInformation.Controls.Add(this.textBoxPassword);
             this.groupBoxLoginInformation.Controls.Add(this.labelConfirmPassword);
-            this.groupBoxLoginInformation.Controls.Add(this.textBoxPasswordInitial);
             this.groupBoxLoginInformation.Location = new System.Drawing.Point(12, 82);
             this.groupBoxLoginInformation.Name = "groupBoxLoginInformation";
             this.groupBoxLoginInformation.Size = new System.Drawing.Size(278, 84);
@@ -166,13 +134,6 @@
             this.labelPassword.TabIndex = 8;
             this.labelPassword.Text = "Change Password:";
             // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Location = new System.Drawing.Point(103, 46);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(169, 20);
-            this.textBoxPassword.TabIndex = 7;
-            // 
             // labelConfirmPassword
             // 
             this.labelConfirmPassword.AutoSize = true;
@@ -181,79 +142,6 @@
             this.labelConfirmPassword.Size = new System.Drawing.Size(94, 13);
             this.labelConfirmPassword.TabIndex = 6;
             this.labelConfirmPassword.Text = "Confirm Password:";
-            // 
-            // textBoxPasswordInitial
-            // 
-            this.textBoxPasswordInitial.Location = new System.Drawing.Point(103, 17);
-            this.textBoxPasswordInitial.Name = "textBoxPasswordInitial";
-            this.textBoxPasswordInitial.Size = new System.Drawing.Size(169, 20);
-            this.textBoxPasswordInitial.TabIndex = 4;
-            // 
-            // groupBoxMedicalInformation
-            // 
-            this.groupBoxMedicalInformation.Controls.Add(this.textBoxMedicalHistory);
-            this.groupBoxMedicalInformation.Controls.Add(this.labelMedicalHistory);
-            this.groupBoxMedicalInformation.Controls.Add(this.textBoxHealthInsuranceNumber);
-            this.groupBoxMedicalInformation.Controls.Add(this.labelHealthInsuranceNumber);
-            this.groupBoxMedicalInformation.Controls.Add(this.textBoxHealthInsurance);
-            this.groupBoxMedicalInformation.Controls.Add(this.label2);
-            this.groupBoxMedicalInformation.Location = new System.Drawing.Point(12, 352);
-            this.groupBoxMedicalInformation.Name = "groupBoxMedicalInformation";
-            this.groupBoxMedicalInformation.Size = new System.Drawing.Size(409, 103);
-            this.groupBoxMedicalInformation.TabIndex = 37;
-            this.groupBoxMedicalInformation.TabStop = false;
-            this.groupBoxMedicalInformation.Text = "Medical Information:";
-            this.groupBoxMedicalInformation.Visible = false;
-            // 
-            // textBoxMedicalHistory
-            // 
-            this.textBoxMedicalHistory.Location = new System.Drawing.Point(104, 71);
-            this.textBoxMedicalHistory.Name = "textBoxMedicalHistory";
-            this.textBoxMedicalHistory.Size = new System.Drawing.Size(299, 20);
-            this.textBoxMedicalHistory.TabIndex = 8;
-            // 
-            // labelMedicalHistory
-            // 
-            this.labelMedicalHistory.AutoSize = true;
-            this.labelMedicalHistory.Location = new System.Drawing.Point(16, 74);
-            this.labelMedicalHistory.Name = "labelMedicalHistory";
-            this.labelMedicalHistory.Size = new System.Drawing.Size(82, 13);
-            this.labelMedicalHistory.TabIndex = 7;
-            this.labelMedicalHistory.Text = "Medical History:";
-            // 
-            // textBoxHealthInsuranceNumber
-            // 
-            this.textBoxHealthInsuranceNumber.Location = new System.Drawing.Point(104, 43);
-            this.textBoxHealthInsuranceNumber.Name = "textBoxHealthInsuranceNumber";
-            this.textBoxHealthInsuranceNumber.Size = new System.Drawing.Size(158, 20);
-            this.textBoxHealthInsuranceNumber.TabIndex = 6;
-            this.textBoxHealthInsuranceNumber.Text = "Insurance Phone Number";
-            // 
-            // labelHealthInsuranceNumber
-            // 
-            this.labelHealthInsuranceNumber.AutoSize = true;
-            this.labelHealthInsuranceNumber.Location = new System.Drawing.Point(51, 46);
-            this.labelHealthInsuranceNumber.Name = "labelHealthInsuranceNumber";
-            this.labelHealthInsuranceNumber.Size = new System.Drawing.Size(47, 13);
-            this.labelHealthInsuranceNumber.TabIndex = 5;
-            this.labelHealthInsuranceNumber.Text = "Contact:";
-            // 
-            // textBoxHealthInsurance
-            // 
-            this.textBoxHealthInsurance.Location = new System.Drawing.Point(104, 17);
-            this.textBoxHealthInsurance.Name = "textBoxHealthInsurance";
-            this.textBoxHealthInsurance.Size = new System.Drawing.Size(158, 20);
-            this.textBoxHealthInsurance.TabIndex = 4;
-            this.textBoxHealthInsurance.Text = "Insurance Provider";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Health Insurance:";
             // 
             // buttonEditProfile
             // 
@@ -265,19 +153,9 @@
             this.buttonEditProfile.Text = "Edit Profile";
             this.buttonEditProfile.UseVisualStyleBackColor = true;
             // 
-            // textBoxEmailAddress
-            // 
-            this.textBoxEmailAddress.Location = new System.Drawing.Point(92, 46);
-            this.textBoxEmailAddress.Name = "textBoxEmailAddress";
-            this.textBoxEmailAddress.Size = new System.Drawing.Size(169, 20);
-            this.textBoxEmailAddress.TabIndex = 7;
-            this.textBoxEmailAddress.Text = "Tempe";
-            // 
             // groupBoxContactInformation
             // 
-            this.groupBoxContactInformation.Controls.Add(this.textBoxEmailAddress);
             this.groupBoxContactInformation.Controls.Add(this.labelEmailAddress);
-            this.groupBoxContactInformation.Controls.Add(this.textBoxPhoneNumber);
             this.groupBoxContactInformation.Controls.Add(this.labelPhoneNumber);
             this.groupBoxContactInformation.Location = new System.Drawing.Point(12, 262);
             this.groupBoxContactInformation.Name = "groupBoxContactInformation";
@@ -298,8 +176,6 @@
             // 
             // groupBoxAddressInformation
             // 
-            this.groupBoxAddressInformation.Controls.Add(this.street_addressTextBox);
-            this.groupBoxAddressInformation.Controls.Add(this.textBoxZipCode);
             this.groupBoxAddressInformation.Controls.Add(this.labelZipCode);
             this.groupBoxAddressInformation.Controls.Add(this.labelState);
             this.groupBoxAddressInformation.Controls.Add(this.labelCity);
@@ -311,6 +187,16 @@
             this.groupBoxAddressInformation.TabStop = false;
             this.groupBoxAddressInformation.Text = "Address Information:";
             // 
+            // user_dataBindingSource
+            // 
+            this.user_dataBindingSource.DataMember = "user_data";
+            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            // 
+            // iPIMS_9DataSet
+            // 
+            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
+            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // labelStreetAddress
             // 
             this.labelStreetAddress.AutoSize = true;
@@ -320,16 +206,6 @@
             this.labelStreetAddress.TabIndex = 0;
             this.labelStreetAddress.Text = "Street Address:";
             // 
-            // iPIMS_9DataSet
-            // 
-            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
-            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // user_dataBindingSource
-            // 
-            this.user_dataBindingSource.DataMember = "user_data";
-            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
-            // 
             // user_dataTableAdapter
             // 
             this.user_dataTableAdapter.ClearBeforeFill = true;
@@ -337,6 +213,8 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.e_prescription_dataTableAdapter = null;
+            this.tableAdapterManager.patient_dataTableAdapter = null;
             this.tableAdapterManager.scheduled_appointment_dataTableAdapter = null;
             this.tableAdapterManager.update_healthcare_dataTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -374,6 +252,31 @@
             this.user_dataBindingNavigator.Text = "bindingNavigator1";
             this.user_dataBindingNavigator.Visible = false;
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -406,17 +309,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -424,7 +320,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -433,48 +329,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // user_dataBindingNavigatorSaveItem
             // 
             this.user_dataBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.user_dataBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("user_dataBindingNavigatorSaveItem.Image")));
             this.user_dataBindingNavigatorSaveItem.Name = "user_dataBindingNavigatorSaveItem";
-            this.user_dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.user_dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.user_dataBindingNavigatorSaveItem.Text = "Save Data";
             this.user_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.user_dataBindingNavigatorSaveItem_Click);
-            // 
-            // street_addressTextBox
-            // 
-            this.street_addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "street_address", true));
-            this.street_addressTextBox.Location = new System.Drawing.Point(92, 17);
-            this.street_addressTextBox.Name = "street_addressTextBox";
-            this.street_addressTextBox.Size = new System.Drawing.Size(466, 20);
-            this.street_addressTextBox.TabIndex = 40;
             // 
             // EditProfile
             // 
@@ -483,7 +353,6 @@
             this.ClientSize = new System.Drawing.Size(602, 516);
             this.Controls.Add(this.user_dataBindingNavigator);
             this.Controls.Add(this.groupBoxLoginInformation);
-            this.Controls.Add(this.groupBoxMedicalInformation);
             this.Controls.Add(this.buttonEditProfile);
             this.Controls.Add(this.groupBoxContactInformation);
             this.Controls.Add(this.labelEditProfile);
@@ -494,14 +363,12 @@
             this.Load += new System.EventHandler(this.EditProfile_Load);
             this.groupBoxLoginInformation.ResumeLayout(false);
             this.groupBoxLoginInformation.PerformLayout();
-            this.groupBoxMedicalInformation.ResumeLayout(false);
-            this.groupBoxMedicalInformation.PerformLayout();
             this.groupBoxContactInformation.ResumeLayout(false);
             this.groupBoxContactInformation.PerformLayout();
             this.groupBoxAddressInformation.ResumeLayout(false);
             this.groupBoxAddressInformation.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).EndInit();
             this.user_dataBindingNavigator.ResumeLayout(false);
             this.user_dataBindingNavigator.PerformLayout();
@@ -512,27 +379,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxZipCode;
         private System.Windows.Forms.Label labelZipCode;
         private System.Windows.Forms.Label labelState;
         private System.Windows.Forms.Label labelCity;
         private System.Windows.Forms.Label labelEmailAddress;
-        private System.Windows.Forms.TextBox textBoxPhoneNumber;
         private System.Windows.Forms.Label labelPhoneNumber;
         private System.Windows.Forms.GroupBox groupBoxLoginInformation;
         private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label labelConfirmPassword;
-        private System.Windows.Forms.TextBox textBoxPasswordInitial;
-        private System.Windows.Forms.GroupBox groupBoxMedicalInformation;
-        private System.Windows.Forms.TextBox textBoxMedicalHistory;
-        private System.Windows.Forms.Label labelMedicalHistory;
-        private System.Windows.Forms.TextBox textBoxHealthInsuranceNumber;
-        private System.Windows.Forms.Label labelHealthInsuranceNumber;
-        private System.Windows.Forms.TextBox textBoxHealthInsurance;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonEditProfile;
-        private System.Windows.Forms.TextBox textBoxEmailAddress;
         private System.Windows.Forms.GroupBox groupBoxContactInformation;
         private System.Windows.Forms.Label labelEditProfile;
         private System.Windows.Forms.GroupBox groupBoxAddressInformation;
@@ -554,6 +409,5 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton user_dataBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox street_addressTextBox;
     }
 }

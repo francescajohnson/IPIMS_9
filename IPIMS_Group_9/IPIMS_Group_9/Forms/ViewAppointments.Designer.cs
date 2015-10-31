@@ -28,36 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBoxPastAppointments = new System.Windows.Forms.ListBox();
-            this.listBoxUpcomingAppointments = new System.Windows.Forms.ListBox();
             this.tabPageUpcomingAppointments = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPagePastAppointments = new System.Windows.Forms.TabPage();
             this.labelViewAppointment = new System.Windows.Forms.Label();
-            this.tabPageUpcomingAppointments.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPagePastAppointments.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // listBoxPastAppointments
-            // 
-            this.listBoxPastAppointments.FormattingEnabled = true;
-            this.listBoxPastAppointments.Location = new System.Drawing.Point(5, 3);
-            this.listBoxPastAppointments.Name = "listBoxPastAppointments";
-            this.listBoxPastAppointments.Size = new System.Drawing.Size(552, 394);
-            this.listBoxPastAppointments.TabIndex = 1;
-            // 
-            // listBoxUpcomingAppointments
-            // 
-            this.listBoxUpcomingAppointments.FormattingEnabled = true;
-            this.listBoxUpcomingAppointments.Location = new System.Drawing.Point(4, 4);
-            this.listBoxUpcomingAppointments.Name = "listBoxUpcomingAppointments";
-            this.listBoxUpcomingAppointments.Size = new System.Drawing.Size(552, 394);
-            this.listBoxUpcomingAppointments.TabIndex = 0;
             // 
             // tabPageUpcomingAppointments
             // 
-            this.tabPageUpcomingAppointments.Controls.Add(this.listBoxUpcomingAppointments);
             this.tabPageUpcomingAppointments.Location = new System.Drawing.Point(4, 22);
             this.tabPageUpcomingAppointments.Name = "tabPageUpcomingAppointments";
             this.tabPageUpcomingAppointments.Padding = new System.Windows.Forms.Padding(3);
@@ -78,7 +57,6 @@
             // 
             // tabPagePastAppointments
             // 
-            this.tabPagePastAppointments.Controls.Add(this.listBoxPastAppointments);
             this.tabPagePastAppointments.Location = new System.Drawing.Point(4, 22);
             this.tabPagePastAppointments.Name = "tabPagePastAppointments";
             this.tabPagePastAppointments.Padding = new System.Windows.Forms.Padding(3);
@@ -107,9 +85,7 @@
             this.Name = "ViewAppointments";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
-            this.tabPageUpcomingAppointments.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPagePastAppointments.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,8 +93,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBoxPastAppointments;
-        private System.Windows.Forms.ListBox listBoxUpcomingAppointments;
         private System.Windows.Forms.TabPage tabPageUpcomingAppointments;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPagePastAppointments;
