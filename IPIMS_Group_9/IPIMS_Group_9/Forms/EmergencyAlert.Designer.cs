@@ -321,6 +321,7 @@
             this.Name = "EmergencyAlert";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
+            this.Load += new System.EventHandler(this.EmergencyAlert_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);

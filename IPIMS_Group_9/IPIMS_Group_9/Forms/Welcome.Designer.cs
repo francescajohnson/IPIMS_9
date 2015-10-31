@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ClassificationButton = new System.Windows.Forms.Button();
             this.labelPleaseSelectMenuOption = new System.Windows.Forms.Label();
             this.labelWelcome = new System.Windows.Forms.Label();
             this.logoutOfIPIMSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,16 +59,6 @@
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ClassificationButton
-            // 
-            this.ClassificationButton.Location = new System.Drawing.Point(255, 236);
-            this.ClassificationButton.Name = "ClassificationButton";
-            this.ClassificationButton.Size = new System.Drawing.Size(95, 31);
-            this.ClassificationButton.TabIndex = 41;
-            this.ClassificationButton.Text = "Classification";
-            this.ClassificationButton.UseVisualStyleBackColor = true;
-            this.ClassificationButton.Visible = false;
             // 
             // labelPleaseSelectMenuOption
             // 
@@ -313,7 +302,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 502);
-            this.Controls.Add(this.ClassificationButton);
             this.Controls.Add(this.labelPleaseSelectMenuOption);
             this.Controls.Add(this.labelWelcome);
             this.Controls.Add(this.labelEmergencyAlerts);
@@ -330,7 +318,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ClassificationButton;
         private System.Windows.Forms.Label labelPleaseSelectMenuOption;
         private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.ToolStripMenuItem logoutOfIPIMSToolStripMenuItem;

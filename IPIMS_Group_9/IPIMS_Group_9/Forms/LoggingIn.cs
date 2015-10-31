@@ -12,6 +12,7 @@ namespace IPIMS_Group_9.Forms
 {
     public partial class LoggingIn : Form
     {
+         
         public LoggingIn()
         {
             InitializeComponent();
@@ -36,9 +37,10 @@ namespace IPIMS_Group_9.Forms
         {
             if(checkBoxNewUser.Checked == true)
             {
-                // Do something
+                // Must go to the registration page first
             }
 
+            cur
         }
     }
 }

@@ -19,7 +19,7 @@ namespace IPIMS_Group_9.Forms
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            if (textBoxSymptoms.Text != "")
+       /*     if (textBoxSymptoms.Text != "")
             {
                 MessageBox.Show("Our staff will contact you, as soon as possible.");
                 MessageBox.Show("Thank you for updating your health conditions.");
@@ -40,11 +40,11 @@ namespace IPIMS_Group_9.Forms
             else
             {
                 MessageBox.Show("Please enter a description of the symptoms.");
-            }
+            }*/
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
-        {
+        {/*
             textBoxSymptoms.Text = "";
             checkBoxBloodUrine.Checked = false;
             checkBoxChestPains.Checked = false;
@@ -52,7 +52,12 @@ namespace IPIMS_Group_9.Forms
             checkBoxTenderness.Checked = false;
             checkBoxWeakness.Checked = false;
             checkBoxWheezing.Checked = false;
-        
+        */
+        }
+
+        private void EmergencyAlert_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
