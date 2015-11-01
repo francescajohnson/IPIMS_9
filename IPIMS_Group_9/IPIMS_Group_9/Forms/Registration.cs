@@ -189,6 +189,9 @@ namespace IPIMS_Group_9.Forms
                     {
                         newPatientDataRow.Is_Drug_User = true;
                     }
+                    //Add the row to the patient_data table
+                    this.iPIMS_9DataSet.patient_data.Rows.Add(newPatientDataRow);
+                    this.patient_dataTableAdapter.Update(this.iPIMS_9DataSet.patient_data);
                 }
                 else
                 {
@@ -197,12 +200,10 @@ namespace IPIMS_Group_9.Forms
 
                 //Add the row to the user_data table
                 this.iPIMS_9DataSet.user_data.Rows.Add(newUserDataRow);
-                //Add the row to the patient_data table
-                this.iPIMS_9DataSet.patient_data.Rows.Add(newPatientDataRow);
+                
 
                 //Save the new rows to the database
                 this.user_dataTableAdapter.Update(this.iPIMS_9DataSet.user_data);
-                this.patient_dataTableAdapter.Update(this.iPIMS_9DataSet.patient_data);
             }
             catch (Exception ex)
             {
