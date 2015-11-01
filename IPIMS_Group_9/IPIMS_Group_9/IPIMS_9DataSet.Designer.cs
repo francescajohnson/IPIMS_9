@@ -4147,13 +4147,18 @@ SELECT Patient_Id, First_Name, Last_Name, Date_of_Birth, Appointment_Date, Appoi
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        Patient_Id, First_Name, Last_Name, Date_of_Birth, Appointment_Date, Appointment_Time, Symptoms, Doctor_Name, Has_Weakness, Has_Chest_Pains, 
                          Has_Leg_Pain, Has_Blood_in_Urine, Is_Wheezing, Is_Suicidal
 FROM            scheduled_appointment_data";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT          First_Name, Last_Name, Date_of_Birth\r\nFROM            scheduled_a" +
+                "ppointment_data";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4175,6 +4180,30 @@ FROM            scheduled_appointment_data";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual IPIMS_9DataSet.scheduled_appointment_dataDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            IPIMS_9DataSet.scheduled_appointment_dataDataTable dataTable = new IPIMS_9DataSet.scheduled_appointment_dataDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int ViewApptFillBy(IPIMS_9DataSet.scheduled_appointment_dataDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual IPIMS_9DataSet.scheduled_appointment_dataDataTable ViewApptGetDataBy() {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             IPIMS_9DataSet.scheduled_appointment_dataDataTable dataTable = new IPIMS_9DataSet.scheduled_appointment_dataDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

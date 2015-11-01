@@ -27,9 +27,16 @@ namespace IPIMS_Group_9.Forms
 
         private void ViewAppointments_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'iPIMS_9DataSet.scheduled_appointment_data' table. You can move, or remove it, as needed.
+            // this.scheduled_appointment_dataTableAdapter.Fill(this.iPIMS_9DataSet.scheduled_appointment_data);
             // TODO: This line of code loads data into the 'iPIMS_9DataSet.patient_data' table. You can move, or remove it, as needed.
-            this.patient_dataTableAdapter.Fill(this.iPIMS_9DataSet.patient_data);
+            // this.patient_dataTableAdapter.Fill(this.iPIMS_9DataSet.patient_data);
 
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            this.scheduled_appointment_dataTableAdapter.ViewApptFillBy(this.iPIMS_9DataSet.scheduled_appointment_data);
         }
     }
 }
