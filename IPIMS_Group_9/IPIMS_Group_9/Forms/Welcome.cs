@@ -60,13 +60,7 @@ namespace IPIMS_Group_9.Forms
         {
             EPrescription formEP = new EPrescription();
             formEP.Visible = true;
-        }
-        private void viewPatientProfileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ViewPatientInformation formVPI = new ViewPatientInformation();
-            formVPI.Visible = true;
-        }
-        private void searchRecordsToolStripMenuItem_Click(object sender, EventArgs e)
+        }        private void searchRecordsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EPrescription formEP = new EPrescription();
             formEP.Visible = true;

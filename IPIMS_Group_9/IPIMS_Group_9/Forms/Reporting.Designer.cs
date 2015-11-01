@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reporting));
             this.tabPageHealthOutcomes = new System.Windows.Forms.TabPage();
+            this.patient_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageAdmissionRates = new System.Windows.Forms.TabPage();
             this.tabPageTypePatients = new System.Windows.Forms.TabPage();
@@ -49,39 +52,19 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.user_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
             this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
             this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
-            this.patient_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.patient_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.patient_dataTableAdapter();
-            this.patient_dataDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageHealthOutcomes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
             this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).BeginInit();
             this.user_dataBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPageHealthOutcomes
             // 
-            this.tabPageHealthOutcomes.Controls.Add(this.patient_dataDataGridView);
             this.tabPageHealthOutcomes.Location = new System.Drawing.Point(4, 25);
             this.tabPageHealthOutcomes.Name = "tabPageHealthOutcomes";
             this.tabPageHealthOutcomes.Padding = new System.Windows.Forms.Padding(3);
@@ -89,6 +72,21 @@
             this.tabPageHealthOutcomes.TabIndex = 0;
             this.tabPageHealthOutcomes.Text = "Health Outcomes";
             this.tabPageHealthOutcomes.UseVisualStyleBackColor = true;
+            // 
+            // patient_dataBindingSource
+            // 
+            this.patient_dataBindingSource.DataMember = "FK_user_data_patient_data";
+            this.patient_dataBindingSource.DataSource = this.user_dataBindingSource;
+            // 
+            // user_dataBindingSource
+            // 
+            this.user_dataBindingSource.DataMember = "user_data";
+            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            // 
+            // iPIMS_9DataSet
+            // 
+            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
+            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabControl1
             // 
@@ -265,16 +263,6 @@
             this.user_dataBindingNavigatorSaveItem.Text = "Save Data";
             this.user_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.user_dataBindingNavigatorSaveItem_Click);
             // 
-            // user_dataBindingSource
-            // 
-            this.user_dataBindingSource.DataMember = "user_data";
-            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
-            // 
-            // iPIMS_9DataSet
-            // 
-            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
-            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // user_dataTableAdapter
             // 
             this.user_dataTableAdapter.ClearBeforeFill = true;
@@ -289,118 +277,9 @@
             this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.user_dataTableAdapter = this.user_dataTableAdapter;
             // 
-            // patient_dataBindingSource
-            // 
-            this.patient_dataBindingSource.DataMember = "FK_user_data_patient_data";
-            this.patient_dataBindingSource.DataSource = this.user_dataBindingSource;
-            // 
             // patient_dataTableAdapter
             // 
             this.patient_dataTableAdapter.ClearBeforeFill = true;
-            // 
-            // patient_dataDataGridView
-            // 
-            this.patient_dataDataGridView.AutoGenerateColumns = false;
-            this.patient_dataDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.patient_dataDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewCheckBoxColumn2,
-            this.dataGridViewTextBoxColumn11});
-            this.patient_dataDataGridView.DataSource = this.patient_dataBindingSource;
-            this.patient_dataDataGridView.Location = new System.Drawing.Point(3, 0);
-            this.patient_dataDataGridView.Name = "patient_dataDataGridView";
-            this.patient_dataDataGridView.Size = new System.Drawing.Size(1011, 388);
-            this.patient_dataDataGridView.TabIndex = 0;
-            this.patient_dataDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patient_dataDataGridView_CellContentClick);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Classification";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Classification";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Patient_Id";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Patient_Id";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "First_Name";
-            this.dataGridViewTextBoxColumn3.HeaderText = "First_Name";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Last_Name";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Last_Name";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Date_of_Birth";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Date_of_Birth";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Age";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Age";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Country_of_Origin";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Country_of_Origin";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Health_Insurance_Provider";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Health_Insurance_Provider";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Health_Insurance_Contact_Number";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Health_Insurance_Contact_Number";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Medical_History";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Medical_History";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Is_Smoker";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Is_Smoker";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
-            // dataGridViewCheckBoxColumn2
-            // 
-            this.dataGridViewCheckBoxColumn2.DataPropertyName = "Is_Drug_User";
-            this.dataGridViewCheckBoxColumn2.HeaderText = "Is_Drug_User";
-            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Doctor_Name";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Doctor_Name";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             // 
             // Reporting
             // 
@@ -414,15 +293,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
             this.Load += new System.EventHandler(this.Reporting_Load);
-            this.tabPageHealthOutcomes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
             this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).EndInit();
             this.user_dataBindingNavigator.ResumeLayout(false);
             this.user_dataBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -455,19 +332,5 @@
         private System.Windows.Forms.ToolStripButton user_dataBindingNavigatorSaveItem;
         private System.Windows.Forms.BindingSource patient_dataBindingSource;
         private IPIMS_9DataSetTableAdapters.patient_dataTableAdapter patient_dataTableAdapter;
-        private System.Windows.Forms.DataGridView patient_dataDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }

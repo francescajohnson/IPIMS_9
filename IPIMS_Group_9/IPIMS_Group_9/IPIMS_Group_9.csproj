@@ -128,12 +128,6 @@
     <Compile Include="Forms\ViewAppointments.Designer.cs">
       <DependentUpon>ViewAppointments.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ViewPatientInformation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ViewPatientInformation.Designer.cs">
-      <DependentUpon>ViewPatientInformation.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewAppointments.resx">
       <DependentUpon>ViewAppointments.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ViewPatientInformation.resx">
-      <DependentUpon>ViewPatientInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>

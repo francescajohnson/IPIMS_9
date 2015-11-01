@@ -18,7 +18,6 @@ namespace IPIMS_Group_9.Forms
          
         public LoggingIn()
         {
-
             /*SqlConnection con = new SqlConnection();  
             con.ConnectionString = "Data Source=KRISHNA-PC\\SQLEXPRESS;Initial Catalog=STUDENT;Integrated Security=True"; */
             InitializeComponent();
@@ -28,9 +27,7 @@ namespace IPIMS_Group_9.Forms
         {
             this.Validate();
             this.user_dataBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.iPIMS_9DataSet);
-
-  
+            //this.tableAdapterManager.UpdateAll(this.iPIMS_9DataSet);
        }
 
         private void LoggingIn_Load(object sender, EventArgs e)
@@ -50,9 +47,6 @@ namespace IPIMS_Group_9.Forms
                 Registration formR = new Registration();
                 formR.Visible = true;
             }
-
-
-            
         }
     }
 }

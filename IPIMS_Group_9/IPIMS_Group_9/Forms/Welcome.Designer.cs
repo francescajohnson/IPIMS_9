@@ -187,13 +187,6 @@
             this.searchRecordsToolStripMenuItem.Text = "Add Lab Record";
             this.searchRecordsToolStripMenuItem.Click += new System.EventHandler(this.searchRecordsToolStripMenuItem_Click);
             // 
-            // viewPatientProfileToolStripMenuItem
-            // 
-            this.viewPatientProfileToolStripMenuItem.Name = "viewPatientProfileToolStripMenuItem";
-            this.viewPatientProfileToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.viewPatientProfileToolStripMenuItem.Text = "View Patient Profile Information";
-            this.viewPatientProfileToolStripMenuItem.Click += new System.EventHandler(this.viewPatientProfileToolStripMenuItem_Click);
-            // 
             // printExistingEPrescribeToolStripMenuItem
             // 
             this.printExistingEPrescribeToolStripMenuItem.Name = "printExistingEPrescribeToolStripMenuItem";
