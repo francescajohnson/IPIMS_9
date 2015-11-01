@@ -35,7 +35,8 @@ namespace IPIMS_Group_9.Forms
             else if (classificationComboBox.Text == "Doctor" || classificationComboBox.Text == "Nurse" || classificationComboBox.Text == "Office Staff" || 
                 classificationComboBox.Text == "Lab Staff" || classificationComboBox.Text == "Research Staff")
                 groupBoxMedicalInformation.Visible = false;
-            }
+        }
+   
         private void is_SmokerCheckBox_CheckedChanged()
         {
             if(is_SmokerCheckBox.Checked){
@@ -141,6 +142,7 @@ namespace IPIMS_Group_9.Forms
                 // Create new row for user data and patient data tables
                 IPIMS_9DataSet.user_dataRow newUserDataRow;
                 IPIMS_9DataSet.patient_dataRow newPatientDataRow;
+
                 newUserDataRow = iPIMS_9DataSet.user_data.Newuser_dataRow();
                 newPatientDataRow = iPIMS_9DataSet.patient_data.Newpatient_dataRow();
 
@@ -158,8 +160,14 @@ namespace IPIMS_Group_9.Forms
                 newUserDataRow.Email = email.ToString();
                 newUserDataRow.Username = username.ToString();
                 newUserDataRow.Password = password.ToString();
+                newUserDataRow.Social_Security_Number = "000-00-0000";
 
-                
+                //Add the row to the user_data table
+                this.iPIMS_9DataSet.user_data.Rows.Add(newUserDataRow);
+
+                //Save the new rows to the database
+                this.user_dataTableAdapter.Update(this.iPIMS_9DataSet.user_data);
+
 
                 if (classification == "Patient")
                 {
@@ -196,22 +204,9 @@ namespace IPIMS_Group_9.Forms
                     this.iPIMS_9DataSet.patient_data.Rows.Add(newPatientDataRow);
                     this.patient_dataTableAdapter.Update(this.iPIMS_9DataSet.patient_data);
                 }
-                else
-                {
-                    newUserDataRow.Social_Security_Number = "000-00-0000";
-                }
+               
 
                 // this.user_dataTableAdapter.Insert(classification.ToString(), first_name.ToString(), last_name.ToString(), date_of_birth.Date, gender.ToString(), social_security_number.ToString(), street_address.ToString(), city.ToString(), state.ToString(), zip_code.ToString(), phone_number.ToString(), email.ToString(), username.ToString(), password.ToString());
-                
-                //Add the row to the user_data table
-                this.iPIMS_9DataSet.user_data.Rows.Add(newUserDataRow);
-
-                
-
-                //Save the new rows to the database
-                this.user_dataTableAdapter.Update(this.iPIMS_9DataSet.user_data);
-
-
             }
             catch (Exception ex)
             {

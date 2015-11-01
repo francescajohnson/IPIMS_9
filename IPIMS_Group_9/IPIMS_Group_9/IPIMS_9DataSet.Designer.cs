@@ -5733,13 +5733,19 @@ SELECT Classification, Patient_Id, First_Name, Last_Name, Date_of_Birth, Age, Co
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        Classification, Patient_Id, First_Name, Last_Name, Date_of_Birth, Age, Country_of_Origin, Health_Insurance_Provider, Health_Insurance_Contact_Number, 
                          Medical_History, Is_Smoker, Is_Drug_User, Doctor_Name
 FROM            patient_data";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        patient_data.Patient_Id, patient_data.First_Name, patient_data.Last" +
+                "_Name\r\nFROM            patient_data INNER JOIN\r\n                         user_da" +
+                "ta ON patient_data.Classification = user_data.Classification";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5761,6 +5767,30 @@ FROM            patient_data";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual IPIMS_9DataSet.patient_dataDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            IPIMS_9DataSet.patient_dataDataTable dataTable = new IPIMS_9DataSet.patient_dataDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(IPIMS_9DataSet.patient_dataDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual IPIMS_9DataSet.patient_dataDataTable GetDataBy() {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             IPIMS_9DataSet.patient_dataDataTable dataTable = new IPIMS_9DataSet.patient_dataDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

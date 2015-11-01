@@ -27,12 +27,21 @@ namespace IPIMS_Group_9.Forms
 
         private void Reporting_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'iPIMS_9DataSet.patient_data' table. You can move, or remove it, as needed.
+            // this.patient_dataTableAdapter.Fill(this.iPIMS_9DataSet.patient_data);
             // TODO: This line of code loads data into the 'iPIMS_9DataSet.user_data' table. You can move, or remove it, as needed.
-            this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
+            // this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
+
+            this.patient_dataTableAdapter.FillBy(this.iPIMS_9DataSet.patient_data);
 
         }
 
         private void user_dataDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void patient_dataDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
