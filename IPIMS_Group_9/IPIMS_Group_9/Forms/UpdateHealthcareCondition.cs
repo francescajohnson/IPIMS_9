@@ -19,7 +19,7 @@ namespace IPIMS_Group_9.Forms
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            textBoxFirstName.Text = "";
+            /*textBoxFirstName.Text = "";
             textBoxLastName.Text = "";
             textBoxDateOfBirth.Text = "";
             textBoxSymptoms.Text = "";
@@ -28,11 +28,11 @@ namespace IPIMS_Group_9.Forms
             checkBoxSuicide.Checked = false;
             checkBoxTenderness.Checked = false;
             checkBoxWeakness.Checked = false;
-            checkBoxWheezing.Checked = false;
+            checkBoxWheezing.Checked = false;*/
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
-        {
+        {/*
             if (textBoxSymptoms.Text != "")
             {
                 MessageBox.Show("Thank you for updating the health conditions.");
@@ -53,7 +53,7 @@ namespace IPIMS_Group_9.Forms
             else
             {
                 MessageBox.Show("Please enter a description of the symptoms.");
-            }
+            }*/
         }
     }
 }

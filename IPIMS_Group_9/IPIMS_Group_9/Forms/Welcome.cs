@@ -13,10 +13,10 @@ namespace IPIMS_Group_9.Forms
     public partial class Welcome : Form
     {
         private string username;
-        public Welcome(string username)
+        public Welcome()//string username)
         {
             InitializeComponent();
-            username = username;
+            //username = username;
         }
         //
         //Menu Items

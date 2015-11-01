@@ -13,11 +13,11 @@ namespace IPIMS_Group_9.Forms
         /// </summary>
         [STAThread]
 
-        internal static class Globals
+       /* internal static class Globals
         {
             public string currentUser;
             public string name;
-        }
+        }*/
 
         static void Main()
         {

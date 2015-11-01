@@ -520,7 +520,7 @@
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Name = "scheduled_appointment_dataBindingNavigatorSaveItem";
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Text = "Save Data";
-            this.scheduled_appointment_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.scheduled_appointment_dataBindingNavigatorSaveItem_Click);
+            //this.scheduled_appointment_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.scheduled_appointment_dataBindingNavigatorSaveItem_Click);
             // 
             // ScheduleAppointment
             // 
@@ -536,7 +536,7 @@
             this.Name = "ScheduleAppointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
-            this.Load += new System.EventHandler(this.ScheduleAppointment_Load);
+            //this.Load += new System.EventHandler(this.ScheduleAppointment_Load);
             this.groupBoxPatientInformation.ResumeLayout(false);
             this.groupBoxPatientInformation.PerformLayout();
             this.groupBox1.ResumeLayout(false);

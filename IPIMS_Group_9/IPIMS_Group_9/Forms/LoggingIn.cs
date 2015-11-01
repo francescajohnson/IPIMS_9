@@ -40,7 +40,7 @@ namespace IPIMS_Group_9.Forms
                 // Must go to the registration page first
             }
 
-            cur
+            
         }
     }
 }
