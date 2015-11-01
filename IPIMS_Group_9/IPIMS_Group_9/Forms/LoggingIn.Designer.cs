@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoggingIn));
+            System.Windows.Forms.Label usernameLabel;
+            System.Windows.Forms.Label passwordLabel;
             this.groupBoxLoginInformation = new System.Windows.Forms.GroupBox();
             this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
-            this.labelPassword = new System.Windows.Forms.Label();
-            this.labelUsername = new System.Windows.Forms.Label();
             this.labelPleaseLogin = new System.Windows.Forms.Label();
             this.checkBoxNewUser = new System.Windows.Forms.CheckBox();
             this.buttonContinue = new System.Windows.Forms.Button();
@@ -53,6 +53,10 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.user_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            usernameLabel = new System.Windows.Forms.Label();
+            passwordLabel = new System.Windows.Forms.Label();
             this.groupBoxLoginInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
@@ -62,11 +66,13 @@
             // 
             // groupBoxLoginInformation
             // 
-            this.groupBoxLoginInformation.Controls.Add(this.labelPassword);
-            this.groupBoxLoginInformation.Controls.Add(this.labelUsername);
+            this.groupBoxLoginInformation.Controls.Add(passwordLabel);
+            this.groupBoxLoginInformation.Controls.Add(this.passwordTextBox);
+            this.groupBoxLoginInformation.Controls.Add(usernameLabel);
+            this.groupBoxLoginInformation.Controls.Add(this.usernameTextBox);
             this.groupBoxLoginInformation.Location = new System.Drawing.Point(217, 197);
             this.groupBoxLoginInformation.Name = "groupBoxLoginInformation";
-            this.groupBoxLoginInformation.Size = new System.Drawing.Size(278, 84);
+            this.groupBoxLoginInformation.Size = new System.Drawing.Size(292, 99);
             this.groupBoxLoginInformation.TabIndex = 24;
             this.groupBoxLoginInformation.TabStop = false;
             this.groupBoxLoginInformation.Text = "Login Information:";
@@ -80,24 +86,6 @@
             // 
             this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
             this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // labelPassword
-            // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(9, 49);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(56, 13);
-            this.labelPassword.TabIndex = 6;
-            this.labelPassword.Text = "Password:";
-            // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Location = new System.Drawing.Point(7, 20);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(58, 13);
-            this.labelUsername.TabIndex = 0;
-            this.labelUsername.Text = "Username:";
             // 
             // labelPleaseLogin
             // 
@@ -113,7 +101,7 @@
             // 
             this.checkBoxNewUser.AutoSize = true;
             this.checkBoxNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxNewUser.Location = new System.Drawing.Point(255, 287);
+            this.checkBoxNewUser.Location = new System.Drawing.Point(254, 302);
             this.checkBoxNewUser.Name = "checkBoxNewUser";
             this.checkBoxNewUser.Size = new System.Drawing.Size(205, 30);
             this.checkBoxNewUser.TabIndex = 26;
@@ -269,6 +257,40 @@
             this.user_dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.user_dataBindingNavigatorSaveItem.Text = "Save Data";
             // 
+            // usernameLabel
+            // 
+            usernameLabel.AutoSize = true;
+            usernameLabel.Location = new System.Drawing.Point(6, 22);
+            usernameLabel.Name = "usernameLabel";
+            usernameLabel.Size = new System.Drawing.Size(58, 13);
+            usernameLabel.TabIndex = 27;
+            usernameLabel.Text = "Username:";
+            // 
+            // usernameTextBox
+            // 
+            this.usernameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Username", true));
+            this.usernameTextBox.Location = new System.Drawing.Point(70, 19);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(216, 20);
+            this.usernameTextBox.TabIndex = 28;
+            // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new System.Drawing.Point(8, 67);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new System.Drawing.Size(56, 13);
+            passwordLabel.TabIndex = 28;
+            passwordLabel.Text = "Password:";
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Password", true));
+            this.passwordTextBox.Location = new System.Drawing.Point(70, 64);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(216, 20);
+            this.passwordTextBox.TabIndex = 29;
+            // 
             // LoggingIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,8 +320,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBoxLoginInformation;
-        private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.Label labelPleaseLogin;
         private System.Windows.Forms.CheckBox checkBoxNewUser;
         private System.Windows.Forms.Button buttonContinue;
@@ -320,5 +340,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton user_dataBindingNavigatorSaveItem;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox usernameTextBox;
     }
 }
