@@ -198,12 +198,17 @@ namespace IPIMS_Group_9.Forms
                     newUserDataRow.Social_Security_Number = "000-00-0000";
                 }
 
+                // this.user_dataTableAdapter.Insert(classification.ToString(), first_name.ToString(), last_name.ToString(), date_of_birth.Date, gender.ToString(), social_security_number.ToString(), street_address.ToString(), city.ToString(), state.ToString(), zip_code.ToString(), phone_number.ToString(), email.ToString(), username.ToString(), password.ToString());
+                
                 //Add the row to the user_data table
                 this.iPIMS_9DataSet.user_data.Rows.Add(newUserDataRow);
+
                 
 
                 //Save the new rows to the database
                 this.user_dataTableAdapter.Update(this.iPIMS_9DataSet.user_data);
+
+
             }
             catch (Exception ex)
             {
