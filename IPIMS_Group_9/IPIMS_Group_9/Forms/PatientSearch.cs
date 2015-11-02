@@ -28,46 +28,45 @@ namespace IPIMS_Group_9.Forms
         private void PatientSearch_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'iPIMS_9DataSet.scheduled_appointment_data' table. You can move, or remove it, as needed.
-            // this.scheduled_appointment_dataTableAdapter.Fill(this.iPIMS_9DataSet.scheduled_appointment_data);
+           // this.scheduled_appointment_dataTableAdapter.Fill(this.iPIMS_9DataSet.scheduled_appointment_data);
             // TODO: This line of code loads data into the 'iPIMS_9DataSet.user_data' table. You can move, or remove it, as needed.
-            // this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
+          // this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
             // TODO: This line of code loads data into the 'iPIMS_9DataSet.patient_data' table. You can move, or remove it, as needed.
-            //  this.patient_dataTableAdapter.Fill(this.iPIMS_9DataSet.patient_data);
+          //  this.patient_dataTableAdapter.Fill(this.iPIMS_9DataSet.patient_data);
 
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
+            string SearchString1stName;
+            string SearchStringLastName;
+            DateTime dataOfBirth;
+            //this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
+            //this.user_dataTableAdapter.PatientSearchFill(this.iPIMS_9DataSet.user_data);
+            
+            if (this.first_NameTextBox.Text == "")
+            {
+                return;
 
+            }
+            if (this.last_NameTextBox.Text == "")
+            {
+                return;
+
+            }
+            if (this.date_of_BirthDateTimePicker.Text == "")
+            {
+                return;
+
+            }
+            SearchString1stName = this.first_NameTextBox.Text;
+            SearchStringLastName = this.last_NameTextBox.Text;
+            this.user_dataTableAdapter.PatientSearchFill(this.iPIMS_9DataSet.user_data);
+           // this.user_dataTableAdapter.PatientSearchFill(this.iPIMS_9DataSet.patient_data);
+            //dataOfBirth = this.date_of_BirthDateTimePicker.Text;
+            //first_name = first_NameTextBox.Text;
+            //last_name = last_NameTextBox.Text;
+            //date_of_birth = date_of_BirthDateTimePicker.Value.Date;
         }
-
-        private void searchToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.patient_dataTableAdapter.search(this.iPIMS_9DataSet.patient_data, first_NameToolStripTextBox.Text, last_NameToolStripTextBox.Text);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
-
-        private void Searchbutton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.patient_dataTableAdapter.search(this.iPIMS_9DataSet.patient_data, first_NameToolStripTextBox.Text, last_NameToolStripTextBox.Text);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-
-        }
-
-        
     }
 }

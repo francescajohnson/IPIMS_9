@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reporting));
             this.tabPageHealthOutcomes = new System.Windows.Forms.TabPage();
-            this.patient_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageAdmissionRates = new System.Windows.Forms.TabPage();
             this.tabPageTypePatients = new System.Windows.Forms.TabPage();
@@ -52,41 +49,63 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.user_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.patient_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.patient_dataDataGridView = new System.Windows.Forms.DataGridView();
+            this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
             this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
             this.patient_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.patient_dataTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
+            this.scheduled_appointment_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.scheduled_appointment_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.scheduled_appointment_dataTableAdapter();
+            this.scheduled_appointment_dataBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.scheduled_appointment_dataDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_dataDataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patient_dataDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.tabPageHealthOutcomes.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPageAdmissionRates.SuspendLayout();
+            this.tabPageTypePatients.SuspendLayout();
+            this.tabPagePatientPopulations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).BeginInit();
             this.user_dataBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPageHealthOutcomes
             // 
+            this.tabPageHealthOutcomes.AutoScroll = true;
+            this.tabPageHealthOutcomes.Controls.Add(this.scheduled_appointment_dataDataGridView);
             this.tabPageHealthOutcomes.Location = new System.Drawing.Point(4, 25);
             this.tabPageHealthOutcomes.Name = "tabPageHealthOutcomes";
             this.tabPageHealthOutcomes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHealthOutcomes.Size = new System.Drawing.Size(1118, 404);
+            this.tabPageHealthOutcomes.Size = new System.Drawing.Size(562, 403);
             this.tabPageHealthOutcomes.TabIndex = 0;
             this.tabPageHealthOutcomes.Text = "Health Outcomes";
             this.tabPageHealthOutcomes.UseVisualStyleBackColor = true;
-            // 
-            // patient_dataBindingSource
-            // 
-            this.patient_dataBindingSource.DataMember = "FK_user_data_patient_data";
-            this.patient_dataBindingSource.DataSource = this.user_dataBindingSource;
-            // 
-            // user_dataBindingSource
-            // 
-            this.user_dataBindingSource.DataMember = "user_data";
-            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
-            // 
-            // iPIMS_9DataSet
-            // 
-            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
-            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabControl1
             // 
@@ -98,33 +117,36 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 57);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1126, 433);
+            this.tabControl1.Size = new System.Drawing.Size(570, 432);
             this.tabControl1.TabIndex = 39;
             // 
             // tabPageAdmissionRates
             // 
+            this.tabPageAdmissionRates.Controls.Add(this.patient_dataDataGridView2);
             this.tabPageAdmissionRates.Location = new System.Drawing.Point(4, 25);
             this.tabPageAdmissionRates.Name = "tabPageAdmissionRates";
             this.tabPageAdmissionRates.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAdmissionRates.Size = new System.Drawing.Size(1118, 404);
+            this.tabPageAdmissionRates.Size = new System.Drawing.Size(562, 403);
             this.tabPageAdmissionRates.TabIndex = 1;
             this.tabPageAdmissionRates.Text = "Admission Rates";
             this.tabPageAdmissionRates.UseVisualStyleBackColor = true;
             // 
             // tabPageTypePatients
             // 
+            this.tabPageTypePatients.Controls.Add(this.patient_dataDataGridView1);
             this.tabPageTypePatients.Location = new System.Drawing.Point(4, 25);
             this.tabPageTypePatients.Name = "tabPageTypePatients";
-            this.tabPageTypePatients.Size = new System.Drawing.Size(1118, 404);
+            this.tabPageTypePatients.Size = new System.Drawing.Size(562, 403);
             this.tabPageTypePatients.TabIndex = 2;
             this.tabPageTypePatients.Text = "Type of Patients";
             this.tabPageTypePatients.UseVisualStyleBackColor = true;
             // 
             // tabPagePatientPopulations
             // 
+            this.tabPagePatientPopulations.Controls.Add(this.patient_dataDataGridView);
             this.tabPagePatientPopulations.Location = new System.Drawing.Point(4, 25);
             this.tabPagePatientPopulations.Name = "tabPagePatientPopulations";
-            this.tabPagePatientPopulations.Size = new System.Drawing.Size(1118, 404);
+            this.tabPagePatientPopulations.Size = new System.Drawing.Size(562, 403);
             this.tabPagePatientPopulations.TabIndex = 3;
             this.tabPagePatientPopulations.Text = "Patient Populations";
             this.tabPagePatientPopulations.UseVisualStyleBackColor = true;
@@ -165,9 +187,10 @@
             this.user_dataBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.user_dataBindingNavigator.Name = "user_dataBindingNavigator";
             this.user_dataBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.user_dataBindingNavigator.Size = new System.Drawing.Size(1150, 25);
+            this.user_dataBindingNavigator.Size = new System.Drawing.Size(594, 25);
             this.user_dataBindingNavigator.TabIndex = 40;
             this.user_dataBindingNavigator.Text = "bindingNavigator1";
+            this.user_dataBindingNavigator.Visible = false;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -263,6 +286,64 @@
             this.user_dataBindingNavigatorSaveItem.Text = "Save Data";
             this.user_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.user_dataBindingNavigatorSaveItem_Click);
             // 
+            // patient_dataBindingSource
+            // 
+            this.patient_dataBindingSource.DataMember = "FK_user_data_patient_data";
+            this.patient_dataBindingSource.DataSource = this.user_dataBindingSource;
+            // 
+            // patient_dataDataGridView
+            // 
+            this.patient_dataDataGridView.AutoGenerateColumns = false;
+            this.patient_dataDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.patient_dataDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.patient_dataDataGridView.DataSource = this.patient_dataBindingSource;
+            this.patient_dataDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.patient_dataDataGridView.Name = "patient_dataDataGridView";
+            this.patient_dataDataGridView.Size = new System.Drawing.Size(556, 400);
+            this.patient_dataDataGridView.TabIndex = 0;
+            // 
+            // user_dataBindingSource
+            // 
+            this.user_dataBindingSource.DataMember = "user_data";
+            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            // 
+            // iPIMS_9DataSet
+            // 
+            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
+            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "First_Name";
+            this.dataGridViewTextBoxColumn3.HeaderText = "First_Name";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Last_Name";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Last_Name";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Age";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Age";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Country_of_Origin";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Country_of_Origin";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 148;
+            // 
             // user_dataTableAdapter
             // 
             this.user_dataTableAdapter.ClearBeforeFill = true;
@@ -281,25 +362,168 @@
             // 
             this.patient_dataTableAdapter.ClearBeforeFill = true;
             // 
+            // scheduled_appointment_dataBindingSource
+            // 
+            this.scheduled_appointment_dataBindingSource.DataMember = "scheduled_appointment_data";
+            this.scheduled_appointment_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            // 
+            // scheduled_appointment_dataTableAdapter
+            // 
+            this.scheduled_appointment_dataTableAdapter.ClearBeforeFill = true;
+            // 
+            // scheduled_appointment_dataBindingSource1
+            // 
+            this.scheduled_appointment_dataBindingSource1.DataMember = "FK_patient_data_scheduled_appointment_data";
+            this.scheduled_appointment_dataBindingSource1.DataSource = this.patient_dataBindingSource;
+            // 
+            // scheduled_appointment_dataDataGridView
+            // 
+            this.scheduled_appointment_dataDataGridView.AutoGenerateColumns = false;
+            this.scheduled_appointment_dataDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.scheduled_appointment_dataDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn15});
+            this.scheduled_appointment_dataDataGridView.DataSource = this.scheduled_appointment_dataBindingSource1;
+            this.scheduled_appointment_dataDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.scheduled_appointment_dataDataGridView.Name = "scheduled_appointment_dataDataGridView";
+            this.scheduled_appointment_dataDataGridView.Size = new System.Drawing.Size(556, 394);
+            this.scheduled_appointment_dataDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "First_Name";
+            this.dataGridViewTextBoxColumn1.HeaderText = "First_Name";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Last_Name";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Last_Name";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Appointment_Date";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Appointment_Date";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Symptoms";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Symptoms";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.Width = 125;
+            // 
+            // patient_dataDataGridView2
+            // 
+            this.patient_dataDataGridView2.AutoGenerateColumns = false;
+            this.patient_dataDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.patient_dataDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn12});
+            this.patient_dataDataGridView2.DataSource = this.patient_dataBindingSource;
+            this.patient_dataDataGridView2.Location = new System.Drawing.Point(-4, 0);
+            this.patient_dataDataGridView2.Name = "patient_dataDataGridView2";
+            this.patient_dataDataGridView2.Size = new System.Drawing.Size(566, 400);
+            this.patient_dataDataGridView2.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Patient_Id";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Patient_Id";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 140;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "First_Name";
+            this.dataGridViewTextBoxColumn10.HeaderText = "First_Name";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 140;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Last_Name";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Last_Name";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // patient_dataDataGridView1
+            // 
+            this.patient_dataDataGridView1.AutoGenerateColumns = false;
+            this.patient_dataDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.patient_dataDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewCheckBoxColumn1,
+            this.dataGridViewCheckBoxColumn2});
+            this.patient_dataDataGridView1.DataSource = this.patient_dataBindingSource;
+            this.patient_dataDataGridView1.Location = new System.Drawing.Point(-4, 3);
+            this.patient_dataDataGridView1.Name = "patient_dataDataGridView1";
+            this.patient_dataDataGridView1.Size = new System.Drawing.Size(563, 397);
+            this.patient_dataDataGridView1.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "First_Name";
+            this.dataGridViewTextBoxColumn8.HeaderText = "First_Name";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Last_Name";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Last_Name";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 140;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Is_Smoker";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Is_Smoker";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            // 
+            // dataGridViewCheckBoxColumn2
+            // 
+            this.dataGridViewCheckBoxColumn2.DataPropertyName = "Is_Drug_User";
+            this.dataGridViewCheckBoxColumn2.HeaderText = "Is_Drug_User";
+            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
+            // 
             // Reporting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 502);
-            this.Controls.Add(this.user_dataBindingNavigator);
+            this.ClientSize = new System.Drawing.Size(594, 501);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.labelViewReports);
+            this.Controls.Add(this.user_dataBindingNavigator);
             this.Name = "Reporting";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
             this.Load += new System.EventHandler(this.Reporting_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
+            this.tabPageHealthOutcomes.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPageAdmissionRates.ResumeLayout(false);
+            this.tabPageTypePatients.ResumeLayout(false);
+            this.tabPagePatientPopulations.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).EndInit();
             this.user_dataBindingNavigator.ResumeLayout(false);
             this.user_dataBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -332,5 +556,27 @@
         private System.Windows.Forms.ToolStripButton user_dataBindingNavigatorSaveItem;
         private System.Windows.Forms.BindingSource patient_dataBindingSource;
         private IPIMS_9DataSetTableAdapters.patient_dataTableAdapter patient_dataTableAdapter;
+        private System.Windows.Forms.DataGridView patient_dataDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.BindingSource scheduled_appointment_dataBindingSource;
+        private IPIMS_9DataSetTableAdapters.scheduled_appointment_dataTableAdapter scheduled_appointment_dataTableAdapter;
+        private System.Windows.Forms.DataGridView scheduled_appointment_dataDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.BindingSource scheduled_appointment_dataBindingSource1;
+        private System.Windows.Forms.DataGridView patient_dataDataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridView patient_dataDataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
     }
 }

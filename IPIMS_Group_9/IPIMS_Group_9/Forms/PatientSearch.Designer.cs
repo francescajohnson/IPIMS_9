@@ -30,7 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientSearch));
+            System.Windows.Forms.Label first_NameLabel;
+            System.Windows.Forms.Label last_NameLabel;
+            System.Windows.Forms.Label date_of_BirthLabel;
             this.labelPatientSearch = new System.Windows.Forms.Label();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.groupBoxPatientInformation = new System.Windows.Forms.GroupBox();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.patientServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchForPatientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,30 +62,29 @@
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutOfIPIMSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.patient_dataBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.patient_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.patient_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.patient_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.patient_dataTableAdapter();
+            this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
+            this.patient_dataBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.patient_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.first_NameTextBox = new System.Windows.Forms.TextBox();
+            this.last_NameTextBox = new System.Windows.Forms.TextBox();
+            this.date_of_BirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.patient_dataDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
             this.user_dataDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,37 +94,63 @@
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.searchToolStrip = new System.Windows.Forms.ToolStrip();
-            this.first_NameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.first_NameToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.last_NameToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.last_NameToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.searchToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.patient_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.patient_dataTableAdapter();
-            this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
-            this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
-            this.Searchbutton = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            first_NameLabel = new System.Windows.Forms.Label();
+            last_NameLabel = new System.Windows.Forms.Label();
+            date_of_BirthLabel = new System.Windows.Forms.Label();
+            this.groupBoxPatientInformation.SuspendLayout();
             this.menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingNavigator)).BeginInit();
             this.patient_dataBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
-            this.searchToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // labelPatientSearch
             // 
             this.labelPatientSearch.AutoSize = true;
             this.labelPatientSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPatientSearch.Location = new System.Drawing.Point(12, 67);
+            this.labelPatientSearch.Location = new System.Drawing.Point(12, 27);
             this.labelPatientSearch.Name = "labelPatientSearch";
             this.labelPatientSearch.Size = new System.Drawing.Size(252, 36);
             this.labelPatientSearch.TabIndex = 33;
             this.labelPatientSearch.Text = "Search for Patient";
+            // 
+            // buttonSearch
+            // 
+            this.buttonSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSearch.Location = new System.Drawing.Point(436, 40);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(140, 35);
+            this.buttonSearch.TabIndex = 37;
+            this.buttonSearch.Text = "Initiate Search";
+            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            // 
+            // groupBoxPatientInformation
+            // 
+            this.groupBoxPatientInformation.Controls.Add(date_of_BirthLabel);
+            this.groupBoxPatientInformation.Controls.Add(this.date_of_BirthDateTimePicker);
+            this.groupBoxPatientInformation.Controls.Add(last_NameLabel);
+            this.groupBoxPatientInformation.Controls.Add(this.last_NameTextBox);
+            this.groupBoxPatientInformation.Controls.Add(first_NameLabel);
+            this.groupBoxPatientInformation.Controls.Add(this.first_NameTextBox);
+            this.groupBoxPatientInformation.Location = new System.Drawing.Point(12, 82);
+            this.groupBoxPatientInformation.Name = "groupBoxPatientInformation";
+            this.groupBoxPatientInformation.Size = new System.Drawing.Size(578, 103);
+            this.groupBoxPatientInformation.TabIndex = 34;
+            this.groupBoxPatientInformation.TabStop = false;
+            this.groupBoxPatientInformation.Text = "Patient Information:";
             // 
             // menuStrip
             // 
@@ -133,7 +163,7 @@
             this.logoutToolStripMenuItem1});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(854, 24);
+            this.menuStrip.Size = new System.Drawing.Size(836, 24);
             this.menuStrip.TabIndex = 38;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -265,25 +295,25 @@
             // editProfileInformationToolStripMenuItem
             // 
             this.editProfileInformationToolStripMenuItem.Name = "editProfileInformationToolStripMenuItem";
-            this.editProfileInformationToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.editProfileInformationToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.editProfileInformationToolStripMenuItem.Text = "Analysis of health outcomes";
             // 
             // report2ToolStripMenuItem
             // 
             this.report2ToolStripMenuItem.Name = "report2ToolStripMenuItem";
-            this.report2ToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.report2ToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.report2ToolStripMenuItem.Text = "Tracking of the admission rates";
             // 
             // analysisOfTypeOfPatientsToolStripMenuItem
             // 
             this.analysisOfTypeOfPatientsToolStripMenuItem.Name = "analysisOfTypeOfPatientsToolStripMenuItem";
-            this.analysisOfTypeOfPatientsToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.analysisOfTypeOfPatientsToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.analysisOfTypeOfPatientsToolStripMenuItem.Text = "Analysis of type of patients";
             // 
             // analysisOfPatientPopulationToolStripMenuItem
             // 
             this.analysisOfPatientPopulationToolStripMenuItem.Name = "analysisOfPatientPopulationToolStripMenuItem";
-            this.analysisOfPatientPopulationToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+            this.analysisOfPatientPopulationToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.analysisOfPatientPopulationToolStripMenuItem.Text = "Analysis of patient population";
             // 
             // logoutToolStripMenuItem
@@ -291,7 +321,7 @@
             this.logoutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editProfileToolStripMenuItem});
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.logoutToolStripMenuItem.Text = "Profile Tools";
             // 
             // editProfileToolStripMenuItem
@@ -313,6 +343,30 @@
             this.logoutOfIPIMSToolStripMenuItem.Name = "logoutOfIPIMSToolStripMenuItem";
             this.logoutOfIPIMSToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.logoutOfIPIMSToolStripMenuItem.Text = "Logout of IPIMS";
+            // 
+            // iPIMS_9DataSet
+            // 
+            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
+            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // patient_dataBindingSource
+            // 
+            this.patient_dataBindingSource.DataMember = "patient_data";
+            this.patient_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            // 
+            // patient_dataTableAdapter
+            // 
+            this.patient_dataTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.e_prescription_dataTableAdapter = null;
+            this.tableAdapterManager.patient_dataTableAdapter = this.patient_dataTableAdapter;
+            this.tableAdapterManager.scheduled_appointment_dataTableAdapter = null;
+            this.tableAdapterManager.update_healthcare_dataTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.user_dataTableAdapter = null;
             // 
             // patient_dataBindingNavigator
             // 
@@ -344,41 +398,6 @@
             this.patient_dataBindingNavigator.TabIndex = 39;
             this.patient_dataBindingNavigator.Text = "bindingNavigator1";
             this.patient_dataBindingNavigator.Visible = false;
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // patient_dataBindingSource
-            // 
-            this.patient_dataBindingSource.DataMember = "patient_data";
-            this.patient_dataBindingSource.DataSource = this.iPIMS_9DataSet;
-            // 
-            // iPIMS_9DataSet
-            // 
-            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
-            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -412,9 +431,16 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -437,8 +463,26 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // patient_dataBindingNavigatorSaveItem
             // 
@@ -448,6 +492,57 @@
             this.patient_dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.patient_dataBindingNavigatorSaveItem.Text = "Save Data";
             this.patient_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.patient_dataBindingNavigatorSaveItem_Click);
+            // 
+            // first_NameLabel
+            // 
+            first_NameLabel.AutoSize = true;
+            first_NameLabel.Location = new System.Drawing.Point(6, 29);
+            first_NameLabel.Name = "first_NameLabel";
+            first_NameLabel.Size = new System.Drawing.Size(60, 13);
+            first_NameLabel.TabIndex = 0;
+            first_NameLabel.Text = "First Name:";
+            // 
+            // first_NameTextBox
+            // 
+            this.first_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource, "First_Name", true));
+            this.first_NameTextBox.Location = new System.Drawing.Point(72, 26);
+            this.first_NameTextBox.Name = "first_NameTextBox";
+            this.first_NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.first_NameTextBox.TabIndex = 1;
+            // 
+            // last_NameLabel
+            // 
+            last_NameLabel.AutoSize = true;
+            last_NameLabel.Location = new System.Drawing.Point(357, 29);
+            last_NameLabel.Name = "last_NameLabel";
+            last_NameLabel.Size = new System.Drawing.Size(61, 13);
+            last_NameLabel.TabIndex = 2;
+            last_NameLabel.Text = "Last Name:";
+            // 
+            // last_NameTextBox
+            // 
+            this.last_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource, "Last_Name", true));
+            this.last_NameTextBox.Location = new System.Drawing.Point(424, 26);
+            this.last_NameTextBox.Name = "last_NameTextBox";
+            this.last_NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.last_NameTextBox.TabIndex = 3;
+            // 
+            // date_of_BirthLabel
+            // 
+            date_of_BirthLabel.AutoSize = true;
+            date_of_BirthLabel.Location = new System.Drawing.Point(120, 65);
+            date_of_BirthLabel.Name = "date_of_BirthLabel";
+            date_of_BirthLabel.Size = new System.Drawing.Size(69, 13);
+            date_of_BirthLabel.TabIndex = 4;
+            date_of_BirthLabel.Text = "Date of Birth:";
+            // 
+            // date_of_BirthDateTimePicker
+            // 
+            this.date_of_BirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.patient_dataBindingSource, "Date_of_Birth", true));
+            this.date_of_BirthDateTimePicker.Location = new System.Drawing.Point(195, 61);
+            this.date_of_BirthDateTimePicker.Name = "date_of_BirthDateTimePicker";
+            this.date_of_BirthDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.date_of_BirthDateTimePicker.TabIndex = 5;
             // 
             // patient_dataDataGridView
             // 
@@ -468,60 +563,14 @@
             this.patient_dataDataGridView.Size = new System.Drawing.Size(822, 110);
             this.patient_dataDataGridView.TabIndex = 39;
             // 
-            // dataGridViewTextBoxColumn6
+            // user_dataBindingSource
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Age";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Age";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 30;
+            this.user_dataBindingSource.DataMember = "user_data";
+            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
             // 
-            // dataGridViewTextBoxColumn7
+            // user_dataTableAdapter
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Country_of_Origin";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Country_of_Origin";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Health_Insurance_Provider";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Health_Insurance_Provider";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Health_Insurance_Contact_Number";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Health_Insurance_Contact_Number";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 170;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Medical_History";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Medical_History";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 90;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Is_Smoker";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Is_Smoker";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.Width = 70;
-            // 
-            // dataGridViewCheckBoxColumn2
-            // 
-            this.dataGridViewCheckBoxColumn2.DataPropertyName = "Is_Drug_User";
-            this.dataGridViewCheckBoxColumn2.HeaderText = "Is_Drug_User";
-            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
-            this.dataGridViewCheckBoxColumn2.Width = 85;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Doctor_Name";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Doctor_Name";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 85;
+            this.user_dataTableAdapter.ClearBeforeFill = true;
             // 
             // user_dataDataGridView
             // 
@@ -592,111 +641,89 @@
             this.dataGridViewTextBoxColumn21.HeaderText = "State";
             this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
             // 
-            // user_dataBindingSource
+            // dataGridViewTextBoxColumn11
             // 
-            this.user_dataBindingSource.DataMember = "user_data";
-            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Doctor_Name";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Doctor_Name";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 85;
             // 
-            // searchToolStrip
+            // dataGridViewCheckBoxColumn2
             // 
-            this.searchToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.first_NameToolStripLabel,
-            this.first_NameToolStripTextBox,
-            this.last_NameToolStripLabel,
-            this.last_NameToolStripTextBox,
-            this.searchToolStripButton});
-            this.searchToolStrip.Location = new System.Drawing.Point(0, 24);
-            this.searchToolStrip.Name = "searchToolStrip";
-            this.searchToolStrip.Size = new System.Drawing.Size(854, 25);
-            this.searchToolStrip.TabIndex = 40;
-            this.searchToolStrip.Text = "searchToolStrip";
+            this.dataGridViewCheckBoxColumn2.DataPropertyName = "Is_Drug_User";
+            this.dataGridViewCheckBoxColumn2.HeaderText = "Is_Drug_User";
+            this.dataGridViewCheckBoxColumn2.Name = "dataGridViewCheckBoxColumn2";
+            this.dataGridViewCheckBoxColumn2.Width = 85;
             // 
-            // first_NameToolStripLabel
+            // dataGridViewCheckBoxColumn1
             // 
-            this.first_NameToolStripLabel.Name = "first_NameToolStripLabel";
-            this.first_NameToolStripLabel.Size = new System.Drawing.Size(69, 22);
-            this.first_NameToolStripLabel.Text = "First_Name:";
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Is_Smoker";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Is_Smoker";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.Width = 70;
             // 
-            // first_NameToolStripTextBox
+            // dataGridViewTextBoxColumn10
             // 
-            this.first_NameToolStripTextBox.Name = "first_NameToolStripTextBox";
-            this.first_NameToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Medical_History";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Medical_History";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 90;
             // 
-            // last_NameToolStripLabel
+            // dataGridViewTextBoxColumn9
             // 
-            this.last_NameToolStripLabel.Name = "last_NameToolStripLabel";
-            this.last_NameToolStripLabel.Size = new System.Drawing.Size(68, 22);
-            this.last_NameToolStripLabel.Text = "Last_Name:";
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Health_Insurance_Contact_Number";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Health_Insurance_Contact_Number";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 170;
             // 
-            // last_NameToolStripTextBox
+            // dataGridViewTextBoxColumn8
             // 
-            this.last_NameToolStripTextBox.Name = "last_NameToolStripTextBox";
-            this.last_NameToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Health_Insurance_Provider";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Health_Insurance_Provider";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 150;
             // 
-            // searchToolStripButton
+            // dataGridViewTextBoxColumn7
             // 
-            this.searchToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.searchToolStripButton.Name = "searchToolStripButton";
-            this.searchToolStripButton.Size = new System.Drawing.Size(46, 22);
-            this.searchToolStripButton.Text = "Search";
-            this.searchToolStripButton.Click += new System.EventHandler(this.searchToolStripButton_Click);
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Country_of_Origin";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Country_of_Origin";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
-            // patient_dataTableAdapter
+            // dataGridViewTextBoxColumn6
             // 
-            this.patient_dataTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.e_prescription_dataTableAdapter = null;
-            this.tableAdapterManager.patient_dataTableAdapter = this.patient_dataTableAdapter;
-            this.tableAdapterManager.scheduled_appointment_dataTableAdapter = null;
-            this.tableAdapterManager.update_healthcare_dataTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.user_dataTableAdapter = null;
-            // 
-            // user_dataTableAdapter
-            // 
-            this.user_dataTableAdapter.ClearBeforeFill = true;
-            // 
-            // Searchbutton
-            // 
-            this.Searchbutton.Location = new System.Drawing.Point(355, 24);
-            this.Searchbutton.Name = "Searchbutton";
-            this.Searchbutton.Size = new System.Drawing.Size(117, 25);
-            this.Searchbutton.TabIndex = 41;
-            this.Searchbutton.Text = "Initiate Search";
-            this.Searchbutton.UseVisualStyleBackColor = true;
-            this.Searchbutton.Click += new System.EventHandler(this.Searchbutton_Click);
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Age";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Age";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 30;
             // 
             // PatientSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 454);
-            this.Controls.Add(this.Searchbutton);
-            this.Controls.Add(this.searchToolStrip);
+            this.ClientSize = new System.Drawing.Size(836, 434);
             this.Controls.Add(this.user_dataDataGridView);
             this.Controls.Add(this.patient_dataDataGridView);
             this.Controls.Add(this.patient_dataBindingNavigator);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.labelPatientSearch);
+            this.Controls.Add(this.buttonSearch);
+            this.Controls.Add(this.groupBoxPatientInformation);
             this.Name = "PatientSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
             this.Load += new System.EventHandler(this.PatientSearch_Load);
+            this.groupBoxPatientInformation.ResumeLayout(false);
+            this.groupBoxPatientInformation.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingNavigator)).EndInit();
             this.patient_dataBindingNavigator.ResumeLayout(false);
             this.patient_dataBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patient_dataDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
-            this.searchToolStrip.ResumeLayout(false);
-            this.searchToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -705,6 +732,8 @@
         #endregion
 
         private System.Windows.Forms.Label labelPatientSearch;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.GroupBox groupBoxPatientInformation;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem patientServicesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchForPatientToolStripMenuItem;
@@ -748,6 +777,9 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton patient_dataBindingNavigatorSaveItem;
+        private System.Windows.Forms.DateTimePicker date_of_BirthDateTimePicker;
+        private System.Windows.Forms.TextBox last_NameTextBox;
+        private System.Windows.Forms.TextBox first_NameTextBox;
         private System.Windows.Forms.DataGridView patient_dataDataGridView;
         private System.Windows.Forms.BindingSource user_dataBindingSource;
         private IPIMS_9DataSetTableAdapters.user_dataTableAdapter user_dataTableAdapter;
@@ -768,12 +800,5 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.ToolStrip searchToolStrip;
-        private System.Windows.Forms.ToolStripLabel first_NameToolStripLabel;
-        private System.Windows.Forms.ToolStripTextBox first_NameToolStripTextBox;
-        private System.Windows.Forms.ToolStripLabel last_NameToolStripLabel;
-        private System.Windows.Forms.ToolStripTextBox last_NameToolStripTextBox;
-        private System.Windows.Forms.ToolStripButton searchToolStripButton;
-        private System.Windows.Forms.Button Searchbutton;
     }
 }
