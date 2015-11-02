@@ -36,19 +36,31 @@
             this.labelEmailAddress = new System.Windows.Forms.Label();
             this.labelPhoneNumber = new System.Windows.Forms.Label();
             this.groupBoxLoginInformation = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelConfirmPassword = new System.Windows.Forms.Label();
             this.buttonEditProfile = new System.Windows.Forms.Button();
             this.groupBoxContactInformation = new System.Windows.Forms.GroupBox();
+            this.emailBox = new System.Windows.Forms.TextBox();
+            this.phoneBox = new System.Windows.Forms.TextBox();
             this.labelEditProfile = new System.Windows.Forms.Label();
             this.groupBoxAddressInformation = new System.Windows.Forms.GroupBox();
-            this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
+            this.stateBox = new System.Windows.Forms.TextBox();
+            this.cityBox = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.zipCodeBox = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.addressBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.labelStreetAddress = new System.Windows.Forms.Label();
-            this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
-            this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
             this.user_dataBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -60,13 +72,24 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.user_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
+            this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.passwordBox2 = new System.Windows.Forms.TextBox();
+            this.passwordBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.warningLabel = new System.Windows.Forms.Label();
+            this.warningLabel2 = new System.Windows.Forms.Label();
             this.groupBoxLoginInformation.SuspendLayout();
             this.groupBoxContactInformation.SuspendLayout();
             this.groupBoxAddressInformation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).BeginInit();
             this.user_dataBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelZipCode
@@ -116,6 +139,8 @@
             // 
             // groupBoxLoginInformation
             // 
+            this.groupBoxLoginInformation.Controls.Add(this.textBox2);
+            this.groupBoxLoginInformation.Controls.Add(this.textBox1);
             this.groupBoxLoginInformation.Controls.Add(this.labelPassword);
             this.groupBoxLoginInformation.Controls.Add(this.labelConfirmPassword);
             this.groupBoxLoginInformation.Location = new System.Drawing.Point(12, 82);
@@ -124,6 +149,20 @@
             this.groupBoxLoginInformation.TabIndex = 36;
             this.groupBoxLoginInformation.TabStop = false;
             this.groupBoxLoginInformation.Text = "Login Information:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(108, 43);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(108, 17);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 9;
             // 
             // labelPassword
             // 
@@ -152,17 +191,34 @@
             this.buttonEditProfile.TabIndex = 38;
             this.buttonEditProfile.Text = "Edit Profile";
             this.buttonEditProfile.UseVisualStyleBackColor = true;
+            this.buttonEditProfile.Click += new System.EventHandler(this.buttonEditProfile_Click);
             // 
             // groupBoxContactInformation
             // 
             this.groupBoxContactInformation.Controls.Add(this.labelEmailAddress);
             this.groupBoxContactInformation.Controls.Add(this.labelPhoneNumber);
+            this.groupBoxContactInformation.Controls.Add(this.emailBox);
+            this.groupBoxContactInformation.Controls.Add(this.phoneBox);
             this.groupBoxContactInformation.Location = new System.Drawing.Point(12, 262);
             this.groupBoxContactInformation.Name = "groupBoxContactInformation";
             this.groupBoxContactInformation.Size = new System.Drawing.Size(278, 84);
             this.groupBoxContactInformation.TabIndex = 35;
             this.groupBoxContactInformation.TabStop = false;
             this.groupBoxContactInformation.Text = "Contact Information:";
+            // 
+            // emailBox
+            // 
+            this.emailBox.Location = new System.Drawing.Point(94, 46);
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(100, 20);
+            this.emailBox.TabIndex = 9;
+            // 
+            // phoneBox
+            // 
+            this.phoneBox.Location = new System.Drawing.Point(94, 17);
+            this.phoneBox.Name = "phoneBox";
+            this.phoneBox.Size = new System.Drawing.Size(100, 20);
+            this.phoneBox.TabIndex = 9;
             // 
             // labelEditProfile
             // 
@@ -176,9 +232,11 @@
             // 
             // groupBoxAddressInformation
             // 
+            this.groupBoxAddressInformation.Controls.Add(this.stateBox);
             this.groupBoxAddressInformation.Controls.Add(this.labelZipCode);
             this.groupBoxAddressInformation.Controls.Add(this.labelState);
             this.groupBoxAddressInformation.Controls.Add(this.labelCity);
+            this.groupBoxAddressInformation.Controls.Add(this.groupBox2);
             this.groupBoxAddressInformation.Controls.Add(this.labelStreetAddress);
             this.groupBoxAddressInformation.Location = new System.Drawing.Point(12, 172);
             this.groupBoxAddressInformation.Name = "groupBoxAddressInformation";
@@ -187,15 +245,93 @@
             this.groupBoxAddressInformation.TabStop = false;
             this.groupBoxAddressInformation.Text = "Address Information:";
             // 
-            // user_dataBindingSource
+            // stateBox
             // 
-            this.user_dataBindingSource.DataMember = "user_data";
-            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            this.stateBox.Location = new System.Drawing.Point(227, 46);
+            this.stateBox.Name = "stateBox";
+            this.stateBox.Size = new System.Drawing.Size(100, 20);
+            this.stateBox.TabIndex = 9;
             // 
-            // iPIMS_9DataSet
+            // cityBox
             // 
-            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
-            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.cityBox.Location = new System.Drawing.Point(92, 46);
+            this.cityBox.Name = "cityBox";
+            this.cityBox.Size = new System.Drawing.Size(100, 20);
+            this.cityBox.TabIndex = 9;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.zipCodeBox);
+            this.groupBox2.Controls.Add(this.cityBox);
+            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.addressBox);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(564, 84);
+            this.groupBox2.TabIndex = 34;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Address Information:";
+            // 
+            // zipCodeBox
+            // 
+            this.zipCodeBox.Location = new System.Drawing.Point(395, 46);
+            this.zipCodeBox.Name = "zipCodeBox";
+            this.zipCodeBox.Size = new System.Drawing.Size(100, 20);
+            this.zipCodeBox.TabIndex = 9;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(227, 46);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 9;
+            // 
+            // addressBox
+            // 
+            this.addressBox.Location = new System.Drawing.Point(92, 17);
+            this.addressBox.Name = "addressBox";
+            this.addressBox.Size = new System.Drawing.Size(418, 20);
+            this.addressBox.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(336, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Zip Code:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(186, 49);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "State:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(59, 49);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(27, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "City:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Street Address:";
             // 
             // labelStreetAddress
             // 
@@ -205,20 +341,6 @@
             this.labelStreetAddress.Size = new System.Drawing.Size(79, 13);
             this.labelStreetAddress.TabIndex = 0;
             this.labelStreetAddress.Text = "Street Address:";
-            // 
-            // user_dataTableAdapter
-            // 
-            this.user_dataTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.e_prescription_dataTableAdapter = null;
-            this.tableAdapterManager.patient_dataTableAdapter = null;
-            this.tableAdapterManager.scheduled_appointment_dataTableAdapter = null;
-            this.tableAdapterManager.update_healthcare_dataTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.user_dataTableAdapter = this.user_dataTableAdapter;
             // 
             // user_dataBindingNavigator
             // 
@@ -260,6 +382,16 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // user_dataBindingSource
+            // 
+            this.user_dataBindingSource.DataMember = "user_data";
+            this.user_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            // 
+            // iPIMS_9DataSet
+            // 
+            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
+            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -346,12 +478,90 @@
             this.user_dataBindingNavigatorSaveItem.Text = "Save Data";
             this.user_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.user_dataBindingNavigatorSaveItem_Click);
             // 
+            // user_dataTableAdapter
+            // 
+            this.user_dataTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.e_prescription_dataTableAdapter = null;
+            this.tableAdapterManager.patient_dataTableAdapter = null;
+            this.tableAdapterManager.scheduled_appointment_dataTableAdapter = null;
+            this.tableAdapterManager.update_healthcare_dataTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.user_dataTableAdapter = this.user_dataTableAdapter;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.passwordBox2);
+            this.groupBox1.Controls.Add(this.passwordBox1);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(12, 82);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(278, 84);
+            this.groupBox1.TabIndex = 36;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Login Information:";
+            // 
+            // passwordBox2
+            // 
+            this.passwordBox2.Location = new System.Drawing.Point(108, 43);
+            this.passwordBox2.Name = "passwordBox2";
+            this.passwordBox2.Size = new System.Drawing.Size(100, 20);
+            this.passwordBox2.TabIndex = 9;
+            // 
+            // passwordBox1
+            // 
+            this.passwordBox1.Location = new System.Drawing.Point(108, 17);
+            this.passwordBox1.Name = "passwordBox1";
+            this.passwordBox1.Size = new System.Drawing.Size(100, 20);
+            this.passwordBox1.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Change Password:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Confirm Password:";
+            // 
+            // warningLabel
+            // 
+            this.warningLabel.AutoSize = true;
+            this.warningLabel.Location = new System.Drawing.Point(101, 461);
+            this.warningLabel.Name = "warningLabel";
+            this.warningLabel.Size = new System.Drawing.Size(0, 13);
+            this.warningLabel.TabIndex = 40;
+            // 
+            // warningLabel2
+            // 
+            this.warningLabel2.AutoSize = true;
+            this.warningLabel2.Location = new System.Drawing.Point(103, 432);
+            this.warningLabel2.Name = "warningLabel2";
+            this.warningLabel2.Size = new System.Drawing.Size(0, 13);
+            this.warningLabel2.TabIndex = 40;
+            // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 516);
+            this.Controls.Add(this.warningLabel2);
+            this.Controls.Add(this.warningLabel);
             this.Controls.Add(this.user_dataBindingNavigator);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxLoginInformation);
             this.Controls.Add(this.buttonEditProfile);
             this.Controls.Add(this.groupBoxContactInformation);
@@ -367,11 +577,15 @@
             this.groupBoxContactInformation.PerformLayout();
             this.groupBoxAddressInformation.ResumeLayout(false);
             this.groupBoxAddressInformation.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).EndInit();
             this.user_dataBindingNavigator.ResumeLayout(false);
             this.user_dataBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -409,5 +623,26 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton user_dataBindingNavigatorSaveItem;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox emailBox;
+        private System.Windows.Forms.TextBox phoneBox;
+        private System.Windows.Forms.TextBox stateBox;
+        private System.Windows.Forms.TextBox cityBox;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox zipCodeBox;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox addressBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox passwordBox2;
+        private System.Windows.Forms.TextBox passwordBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label warningLabel;
+        private System.Windows.Forms.Label warningLabel2;
     }
 }
