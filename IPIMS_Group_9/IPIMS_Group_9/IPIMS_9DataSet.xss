@@ -9,63 +9,87 @@
     <Shape ID="DesignTable:scheduled_appointment_data" ZOrder="6" X="1406" Y="329" Height="324" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="273" />
     <Shape ID="DesignTable:update_healthcare_data" ZOrder="7" X="1051" Y="131" Height="286" Width="282" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="235" />
     <Shape ID="DesignTable:user_data" ZOrder="9" X="189" Y="96" Height="305" Width="200" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="24" OldDataTableHeight="24" SplitterPosition="254" />
-    <Shape ID="DesignTable:e_prescription_data" ZOrder="8" X="744" Y="12" Height="305" Width="257" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
-    <Shape ID="DesignTable:patient_data" ZOrder="1" X="505" Y="309" Height="305" Width="232" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
+    <Shape ID="DesignTable:e_prescription_data" ZOrder="8" X="744" Y="12" Height="381" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
+    <Shape ID="DesignTable:patient_data" ZOrder="5" X="505" Y="309" Height="305" Width="232" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
   </Shapes>
   <Connectors>
-    <Connector ID="DesignRelation:user_data_patient_data" ZOrder="5" LineWidth="11">
+    <Connector ID="DesignRelation:FK_user_data_patient_data" ZOrder="4" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>372</X>
-          <Y>401</Y>
+          <X>150</X>
+          <Y>0</Y>
         </Point>
         <Point>
-          <X>372</X>
-          <Y>528</Y>
+          <X>150</X>
+          <Y>-30</Y>
         </Point>
         <Point>
-          <X>505</X>
-          <Y>528</Y>
+          <X>150</X>
+          <Y>-30</Y>
+        </Point>
+        <Point>
+          <X>150</X>
+          <Y>0</Y>
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:patient_data_e_prescription_data" ZOrder="4" LineWidth="11">
+    <Connector ID="DesignRelation:FK_patient_data_scheduled_appointment_data" ZOrder="3" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>613</X>
-          <Y>309</Y>
+          <X>142</X>
+          <Y>0</Y>
         </Point>
         <Point>
-          <X>613</X>
-          <Y>145</Y>
+          <X>142</X>
+          <Y>-30</Y>
         </Point>
         <Point>
-          <X>744</X>
-          <Y>145</Y>
+          <X>142</X>
+          <Y>-30</Y>
+        </Point>
+        <Point>
+          <X>142</X>
+          <Y>0</Y>
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:patient_data_update_healthcare_data" ZOrder="3" LineWidth="11">
+    <Connector ID="DesignRelation:FK_patient_data_update_healthcare_data" ZOrder="2" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>737</X>
-          <Y>393</Y>
+          <X>134</X>
+          <Y>0</Y>
         </Point>
         <Point>
-          <X>1051</X>
-          <Y>393</Y>
+          <X>134</X>
+          <Y>-30</Y>
+        </Point>
+        <Point>
+          <X>134</X>
+          <Y>-30</Y>
+        </Point>
+        <Point>
+          <X>134</X>
+          <Y>0</Y>
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:patient_data_scheduled_appointment_data" ZOrder="2" LineWidth="11">
+    <Connector ID="DesignRelation:FK_patient_data_e_prescription_data" ZOrder="1" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>737</X>
-          <Y>480</Y>
+          <X>126</X>
+          <Y>0</Y>
         </Point>
         <Point>
-          <X>1406</X>
-          <Y>480</Y>
+          <X>126</X>
+          <Y>-30</Y>
+        </Point>
+        <Point>
+          <X>126</X>
+          <Y>-30</Y>
+        </Point>
+        <Point>
+          <X>126</X>
+          <Y>0</Y>
         </Point>
       </RoutePoints>
     </Connector>

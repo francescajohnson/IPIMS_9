@@ -61,7 +61,7 @@ namespace IPIMS_Group_9.Forms
             }
             SearchString1stName = this.first_NameTextBox.Text;
             SearchStringLastName = this.last_NameTextBox.Text;
-            this.user_dataTableAdapter.PatientSearchFill(this.iPIMS_9DataSet.user_data);
+            //  this.user_dataTableAdapter.PatientSearchFill(this.iPIMS_9DataSet.user_data);
            // this.user_dataTableAdapter.PatientSearchFill(this.iPIMS_9DataSet.patient_data);
             //dataOfBirth = this.date_of_BirthDateTimePicker.Text;
             //first_name = first_NameTextBox.Text;
