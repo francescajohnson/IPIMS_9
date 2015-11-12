@@ -24,8 +24,8 @@ namespace IPIMS_Group_9.Forms
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new Registration());
-            Application.Run(new ViewAppointments());
+            Application.Run(new Registration());
+            // Application.Run(new ViewAppointments());
             // Application.Run(new Reporting());
             // Application.Run(new Welcome());
         }

@@ -187,6 +187,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="IPIMS_9DataSet.xsc">
       <DependentUpon>IPIMS_9DataSet.xsd</DependentUpon>
     </None>

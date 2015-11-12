@@ -40,7 +40,7 @@ namespace IPIMS_Group_9.Forms
         {
             string SearchString1stName;
             string SearchStringLastName;
-            DateTime dataOfBirth;
+            //DateTime dataOfBirth;
             //this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
             //this.user_dataTableAdapter.PatientSearchFill(this.iPIMS_9DataSet.user_data);
             
