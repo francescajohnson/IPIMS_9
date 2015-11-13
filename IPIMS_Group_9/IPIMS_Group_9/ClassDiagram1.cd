@@ -1,7 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="IPIMS_Group_9.IPIMS_9DataSet" Collapsed="true">
+  <Class Name="IPIMS_Group_9.IPIMS_9DataSet">
     <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.e_prescription_dataRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="IPIMS_Group_9.IPIMS_9DataSet.e_prescription_dataRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.update_healthcare_dataRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.e_prescription_dataDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.e_prescription_dataRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.patient_dataRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.user_dataRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.scheduled_appointment_dataDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>IPIMS_9DataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.scheduled_appointment_dataRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="IPIMS_Group_9.IPIMS_9DataSet.patient_dataRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="IPIMS_Group_9.IPIMS_9DataSet.update_healthcare_dataRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.patient_dataDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.patient_dataRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.user_dataRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.update_healthcare_dataRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="IPIMS_Group_9.IPIMS_9DataSet.scheduled_appointment_dataRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.scheduled_appointment_dataRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.update_healthcare_dataDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>IPIMS_9DataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="IPIMS_Group_9.IPIMS_9DataSet.user_dataDataTable" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>IPIMS_9DataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="IPIMS_Group_9.IPIMS_9DataSet.user_dataRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>BQAAhAAQAwAAAAJghABAQoARIAhCQRiAAAgAAAEABBA=</HashCode>
       <FileName>IPIMS_9DataSet.cs</FileName>
