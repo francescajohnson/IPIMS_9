@@ -41,7 +41,6 @@
             System.Windows.Forms.Label phone_NumberLabel;
             System.Windows.Forms.Label usernameLabel;
             System.Windows.Forms.Label passwordLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
             System.Windows.Forms.Label country_of_OriginLabel;
             System.Windows.Forms.Label health_Insurance_ProviderLabel;
             System.Windows.Forms.Label health_Insurance_Contact_NumberLabel;
@@ -50,6 +49,7 @@
             System.Windows.Forms.Label is_Drug_UserLabel;
             System.Windows.Forms.Label doctor_NameLabel;
             System.Windows.Forms.Label social_Security_NumberLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
             this.groupBoxContactInformation = new System.Windows.Forms.GroupBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.user_dataBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -59,6 +59,15 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.groupBoxMedicalInformation = new System.Windows.Forms.GroupBox();
+            this.social_Security_NumberTextBox = new System.Windows.Forms.TextBox();
+            this.doctor_NameComboBox = new System.Windows.Forms.ComboBox();
+            this.patient_dataBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.is_Drug_UserCheckBox = new System.Windows.Forms.CheckBox();
+            this.is_SmokerCheckBox = new System.Windows.Forms.CheckBox();
+            this.medical_HistoryTextBox = new System.Windows.Forms.TextBox();
+            this.health_Insurance_Contact_NumberTextBox = new System.Windows.Forms.TextBox();
+            this.health_Insurance_ProviderTextBox = new System.Windows.Forms.TextBox();
+            this.country_of_OriginTextBox = new System.Windows.Forms.TextBox();
             this.patient_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelRegistration = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -90,15 +99,6 @@
             this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
             this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
             this.patient_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.patient_dataTableAdapter();
-            this.patient_dataBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.country_of_OriginTextBox = new System.Windows.Forms.TextBox();
-            this.health_Insurance_ProviderTextBox = new System.Windows.Forms.TextBox();
-            this.health_Insurance_Contact_NumberTextBox = new System.Windows.Forms.TextBox();
-            this.medical_HistoryTextBox = new System.Windows.Forms.TextBox();
-            this.is_SmokerCheckBox = new System.Windows.Forms.CheckBox();
-            this.is_Drug_UserCheckBox = new System.Windows.Forms.CheckBox();
-            this.doctor_NameComboBox = new System.Windows.Forms.ComboBox();
-            this.social_Security_NumberTextBox = new System.Windows.Forms.TextBox();
             first_NameLabel = new System.Windows.Forms.Label();
             last_NameLabel = new System.Windows.Forms.Label();
             genderLabel = new System.Windows.Forms.Label();
@@ -124,13 +124,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBoxMedicalInformation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBoxUserInformation.SuspendLayout();
             this.groupBoxAddressInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource1BindingNavigator)).BeginInit();
             this.user_dataBindingSource1BindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // first_NameLabel
@@ -241,6 +241,78 @@
             passwordLabel.TabIndex = 0;
             passwordLabel.Text = "Password:";
             // 
+            // country_of_OriginLabel
+            // 
+            country_of_OriginLabel.AutoSize = true;
+            country_of_OriginLabel.Location = new System.Drawing.Point(6, 16);
+            country_of_OriginLabel.Name = "country_of_OriginLabel";
+            country_of_OriginLabel.Size = new System.Drawing.Size(88, 13);
+            country_of_OriginLabel.TabIndex = 0;
+            country_of_OriginLabel.Text = "Country of Origin:";
+            // 
+            // health_Insurance_ProviderLabel
+            // 
+            health_Insurance_ProviderLabel.AutoSize = true;
+            health_Insurance_ProviderLabel.Location = new System.Drawing.Point(6, 42);
+            health_Insurance_ProviderLabel.Name = "health_Insurance_ProviderLabel";
+            health_Insurance_ProviderLabel.Size = new System.Drawing.Size(133, 13);
+            health_Insurance_ProviderLabel.TabIndex = 2;
+            health_Insurance_ProviderLabel.Text = "Health Insurance Provider:";
+            // 
+            // health_Insurance_Contact_NumberLabel
+            // 
+            health_Insurance_Contact_NumberLabel.AutoSize = true;
+            health_Insurance_Contact_NumberLabel.Location = new System.Drawing.Point(6, 68);
+            health_Insurance_Contact_NumberLabel.Name = "health_Insurance_Contact_NumberLabel";
+            health_Insurance_Contact_NumberLabel.Size = new System.Drawing.Size(171, 13);
+            health_Insurance_Contact_NumberLabel.TabIndex = 4;
+            health_Insurance_Contact_NumberLabel.Text = "Health Insurance Contact Number:";
+            // 
+            // medical_HistoryLabel
+            // 
+            medical_HistoryLabel.AutoSize = true;
+            medical_HistoryLabel.Location = new System.Drawing.Point(300, 16);
+            medical_HistoryLabel.Name = "medical_HistoryLabel";
+            medical_HistoryLabel.Size = new System.Drawing.Size(82, 13);
+            medical_HistoryLabel.TabIndex = 6;
+            medical_HistoryLabel.Text = "Medical History:";
+            // 
+            // is_SmokerLabel
+            // 
+            is_SmokerLabel.AutoSize = true;
+            is_SmokerLabel.Location = new System.Drawing.Point(204, 150);
+            is_SmokerLabel.Name = "is_SmokerLabel";
+            is_SmokerLabel.Size = new System.Drawing.Size(121, 13);
+            is_SmokerLabel.TabIndex = 8;
+            is_SmokerLabel.Text = "Is the Patient a smoker?";
+            // 
+            // is_Drug_UserLabel
+            // 
+            is_Drug_UserLabel.AutoSize = true;
+            is_Drug_UserLabel.Location = new System.Drawing.Point(30, 150);
+            is_Drug_UserLabel.Name = "is_Drug_UserLabel";
+            is_Drug_UserLabel.Size = new System.Drawing.Size(131, 13);
+            is_Drug_UserLabel.TabIndex = 10;
+            is_Drug_UserLabel.Text = "Is the Patient a drug user?";
+            // 
+            // doctor_NameLabel
+            // 
+            doctor_NameLabel.AutoSize = true;
+            doctor_NameLabel.Location = new System.Drawing.Point(6, 96);
+            doctor_NameLabel.Name = "doctor_NameLabel";
+            doctor_NameLabel.Size = new System.Drawing.Size(73, 13);
+            doctor_NameLabel.TabIndex = 12;
+            doctor_NameLabel.Text = "Doctor Name:";
+            // 
+            // social_Security_NumberLabel
+            // 
+            social_Security_NumberLabel.AutoSize = true;
+            social_Security_NumberLabel.Location = new System.Drawing.Point(6, 123);
+            social_Security_NumberLabel.Name = "social_Security_NumberLabel";
+            social_Security_NumberLabel.Size = new System.Drawing.Size(120, 13);
+            social_Security_NumberLabel.TabIndex = 14;
+            social_Security_NumberLabel.Text = "Social Security Number:";
+            // 
             // groupBoxContactInformation
             // 
             this.groupBoxContactInformation.Controls.Add(phone_NumberLabel);
@@ -329,11 +401,84 @@
             this.groupBoxMedicalInformation.Controls.Add(this.country_of_OriginTextBox);
             this.groupBoxMedicalInformation.Location = new System.Drawing.Point(12, 277);
             this.groupBoxMedicalInformation.Name = "groupBoxMedicalInformation";
-            this.groupBoxMedicalInformation.Size = new System.Drawing.Size(586, 189);
+            this.groupBoxMedicalInformation.Size = new System.Drawing.Size(586, 175);
             this.groupBoxMedicalInformation.TabIndex = 24;
             this.groupBoxMedicalInformation.TabStop = false;
             this.groupBoxMedicalInformation.Text = "Patient Medical Information:";
             this.groupBoxMedicalInformation.Visible = false;
+            // 
+            // social_Security_NumberTextBox
+            // 
+            this.social_Security_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource1, "Social_Security_Number", true));
+            this.social_Security_NumberTextBox.Location = new System.Drawing.Point(132, 120);
+            this.social_Security_NumberTextBox.Name = "social_Security_NumberTextBox";
+            this.social_Security_NumberTextBox.Size = new System.Drawing.Size(148, 20);
+            this.social_Security_NumberTextBox.TabIndex = 15;
+            // 
+            // doctor_NameComboBox
+            // 
+            this.doctor_NameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Doctor_Name", true));
+            this.doctor_NameComboBox.FormattingEnabled = true;
+            this.doctor_NameComboBox.Location = new System.Drawing.Point(85, 93);
+            this.doctor_NameComboBox.Name = "doctor_NameComboBox";
+            this.doctor_NameComboBox.Size = new System.Drawing.Size(195, 21);
+            this.doctor_NameComboBox.TabIndex = 13;
+            // 
+            // patient_dataBindingSource1
+            // 
+            this.patient_dataBindingSource1.DataMember = "FK_user_data_patient_data";
+            this.patient_dataBindingSource1.DataSource = this.user_dataBindingSource1;
+            // 
+            // is_Drug_UserCheckBox
+            // 
+            this.is_Drug_UserCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.patient_dataBindingSource1, "Is_Drug_User", true));
+            this.is_Drug_UserCheckBox.Location = new System.Drawing.Point(9, 145);
+            this.is_Drug_UserCheckBox.Name = "is_Drug_UserCheckBox";
+            this.is_Drug_UserCheckBox.Size = new System.Drawing.Size(15, 24);
+            this.is_Drug_UserCheckBox.TabIndex = 11;
+            this.is_Drug_UserCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // is_SmokerCheckBox
+            // 
+            this.is_SmokerCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.patient_dataBindingSource1, "Is_Smoker", true));
+            this.is_SmokerCheckBox.Location = new System.Drawing.Point(183, 145);
+            this.is_SmokerCheckBox.Name = "is_SmokerCheckBox";
+            this.is_SmokerCheckBox.Size = new System.Drawing.Size(15, 24);
+            this.is_SmokerCheckBox.TabIndex = 9;
+            this.is_SmokerCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // medical_HistoryTextBox
+            // 
+            this.medical_HistoryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Medical_History", true));
+            this.medical_HistoryTextBox.Location = new System.Drawing.Point(388, 13);
+            this.medical_HistoryTextBox.Multiline = true;
+            this.medical_HistoryTextBox.Name = "medical_HistoryTextBox";
+            this.medical_HistoryTextBox.Size = new System.Drawing.Size(178, 156);
+            this.medical_HistoryTextBox.TabIndex = 7;
+            // 
+            // health_Insurance_Contact_NumberTextBox
+            // 
+            this.health_Insurance_Contact_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Health_Insurance_Contact_Number", true));
+            this.health_Insurance_Contact_NumberTextBox.Location = new System.Drawing.Point(183, 65);
+            this.health_Insurance_Contact_NumberTextBox.Name = "health_Insurance_Contact_NumberTextBox";
+            this.health_Insurance_Contact_NumberTextBox.Size = new System.Drawing.Size(97, 20);
+            this.health_Insurance_Contact_NumberTextBox.TabIndex = 5;
+            // 
+            // health_Insurance_ProviderTextBox
+            // 
+            this.health_Insurance_ProviderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Health_Insurance_Provider", true));
+            this.health_Insurance_ProviderTextBox.Location = new System.Drawing.Point(145, 39);
+            this.health_Insurance_ProviderTextBox.Name = "health_Insurance_ProviderTextBox";
+            this.health_Insurance_ProviderTextBox.Size = new System.Drawing.Size(135, 20);
+            this.health_Insurance_ProviderTextBox.TabIndex = 3;
+            // 
+            // country_of_OriginTextBox
+            // 
+            this.country_of_OriginTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Country_of_Origin", true));
+            this.country_of_OriginTextBox.Location = new System.Drawing.Point(100, 13);
+            this.country_of_OriginTextBox.Name = "country_of_OriginTextBox";
+            this.country_of_OriginTextBox.Size = new System.Drawing.Size(180, 20);
+            this.country_of_OriginTextBox.TabIndex = 1;
             // 
             // patient_dataBindingSource
             // 
@@ -634,151 +779,6 @@
             // 
             this.patient_dataTableAdapter.ClearBeforeFill = true;
             // 
-            // patient_dataBindingSource1
-            // 
-            this.patient_dataBindingSource1.DataMember = "FK_user_data_patient_data";
-            this.patient_dataBindingSource1.DataSource = this.user_dataBindingSource1;
-            // 
-            // country_of_OriginLabel
-            // 
-            country_of_OriginLabel.AutoSize = true;
-            country_of_OriginLabel.Location = new System.Drawing.Point(6, 16);
-            country_of_OriginLabel.Name = "country_of_OriginLabel";
-            country_of_OriginLabel.Size = new System.Drawing.Size(88, 13);
-            country_of_OriginLabel.TabIndex = 0;
-            country_of_OriginLabel.Text = "Country of Origin:";
-            // 
-            // country_of_OriginTextBox
-            // 
-            this.country_of_OriginTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Country_of_Origin", true));
-            this.country_of_OriginTextBox.Location = new System.Drawing.Point(100, 13);
-            this.country_of_OriginTextBox.Name = "country_of_OriginTextBox";
-            this.country_of_OriginTextBox.Size = new System.Drawing.Size(180, 20);
-            this.country_of_OriginTextBox.TabIndex = 1;
-            // 
-            // health_Insurance_ProviderLabel
-            // 
-            health_Insurance_ProviderLabel.AutoSize = true;
-            health_Insurance_ProviderLabel.Location = new System.Drawing.Point(6, 42);
-            health_Insurance_ProviderLabel.Name = "health_Insurance_ProviderLabel";
-            health_Insurance_ProviderLabel.Size = new System.Drawing.Size(133, 13);
-            health_Insurance_ProviderLabel.TabIndex = 2;
-            health_Insurance_ProviderLabel.Text = "Health Insurance Provider:";
-            // 
-            // health_Insurance_ProviderTextBox
-            // 
-            this.health_Insurance_ProviderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Health_Insurance_Provider", true));
-            this.health_Insurance_ProviderTextBox.Location = new System.Drawing.Point(145, 39);
-            this.health_Insurance_ProviderTextBox.Name = "health_Insurance_ProviderTextBox";
-            this.health_Insurance_ProviderTextBox.Size = new System.Drawing.Size(135, 20);
-            this.health_Insurance_ProviderTextBox.TabIndex = 3;
-            // 
-            // health_Insurance_Contact_NumberLabel
-            // 
-            health_Insurance_Contact_NumberLabel.AutoSize = true;
-            health_Insurance_Contact_NumberLabel.Location = new System.Drawing.Point(6, 68);
-            health_Insurance_Contact_NumberLabel.Name = "health_Insurance_Contact_NumberLabel";
-            health_Insurance_Contact_NumberLabel.Size = new System.Drawing.Size(171, 13);
-            health_Insurance_Contact_NumberLabel.TabIndex = 4;
-            health_Insurance_Contact_NumberLabel.Text = "Health Insurance Contact Number:";
-            // 
-            // health_Insurance_Contact_NumberTextBox
-            // 
-            this.health_Insurance_Contact_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Health_Insurance_Contact_Number", true));
-            this.health_Insurance_Contact_NumberTextBox.Location = new System.Drawing.Point(183, 65);
-            this.health_Insurance_Contact_NumberTextBox.Name = "health_Insurance_Contact_NumberTextBox";
-            this.health_Insurance_Contact_NumberTextBox.Size = new System.Drawing.Size(97, 20);
-            this.health_Insurance_Contact_NumberTextBox.TabIndex = 5;
-            // 
-            // medical_HistoryLabel
-            // 
-            medical_HistoryLabel.AutoSize = true;
-            medical_HistoryLabel.Location = new System.Drawing.Point(300, 16);
-            medical_HistoryLabel.Name = "medical_HistoryLabel";
-            medical_HistoryLabel.Size = new System.Drawing.Size(82, 13);
-            medical_HistoryLabel.TabIndex = 6;
-            medical_HistoryLabel.Text = "Medical History:";
-            // 
-            // medical_HistoryTextBox
-            // 
-            this.medical_HistoryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Medical_History", true));
-            this.medical_HistoryTextBox.Location = new System.Drawing.Point(388, 13);
-            this.medical_HistoryTextBox.Multiline = true;
-            this.medical_HistoryTextBox.Name = "medical_HistoryTextBox";
-            this.medical_HistoryTextBox.Size = new System.Drawing.Size(178, 156);
-            this.medical_HistoryTextBox.TabIndex = 7;
-            // 
-            // is_SmokerLabel
-            // 
-            is_SmokerLabel.AutoSize = true;
-            is_SmokerLabel.Location = new System.Drawing.Point(204, 150);
-            is_SmokerLabel.Name = "is_SmokerLabel";
-            is_SmokerLabel.Size = new System.Drawing.Size(121, 13);
-            is_SmokerLabel.TabIndex = 8;
-            is_SmokerLabel.Text = "Is the Patient a smoker?";
-            // 
-            // is_SmokerCheckBox
-            // 
-            this.is_SmokerCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.patient_dataBindingSource1, "Is_Smoker", true));
-            this.is_SmokerCheckBox.Location = new System.Drawing.Point(183, 145);
-            this.is_SmokerCheckBox.Name = "is_SmokerCheckBox";
-            this.is_SmokerCheckBox.Size = new System.Drawing.Size(15, 24);
-            this.is_SmokerCheckBox.TabIndex = 9;
-            this.is_SmokerCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // is_Drug_UserLabel
-            // 
-            is_Drug_UserLabel.AutoSize = true;
-            is_Drug_UserLabel.Location = new System.Drawing.Point(30, 150);
-            is_Drug_UserLabel.Name = "is_Drug_UserLabel";
-            is_Drug_UserLabel.Size = new System.Drawing.Size(131, 13);
-            is_Drug_UserLabel.TabIndex = 10;
-            is_Drug_UserLabel.Text = "Is the Patient a drug user?";
-            // 
-            // is_Drug_UserCheckBox
-            // 
-            this.is_Drug_UserCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.patient_dataBindingSource1, "Is_Drug_User", true));
-            this.is_Drug_UserCheckBox.Location = new System.Drawing.Point(9, 145);
-            this.is_Drug_UserCheckBox.Name = "is_Drug_UserCheckBox";
-            this.is_Drug_UserCheckBox.Size = new System.Drawing.Size(15, 24);
-            this.is_Drug_UserCheckBox.TabIndex = 11;
-            this.is_Drug_UserCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // doctor_NameLabel
-            // 
-            doctor_NameLabel.AutoSize = true;
-            doctor_NameLabel.Location = new System.Drawing.Point(6, 96);
-            doctor_NameLabel.Name = "doctor_NameLabel";
-            doctor_NameLabel.Size = new System.Drawing.Size(73, 13);
-            doctor_NameLabel.TabIndex = 12;
-            doctor_NameLabel.Text = "Doctor Name:";
-            // 
-            // doctor_NameComboBox
-            // 
-            this.doctor_NameComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Doctor_Name", true));
-            this.doctor_NameComboBox.FormattingEnabled = true;
-            this.doctor_NameComboBox.Location = new System.Drawing.Point(85, 93);
-            this.doctor_NameComboBox.Name = "doctor_NameComboBox";
-            this.doctor_NameComboBox.Size = new System.Drawing.Size(195, 21);
-            this.doctor_NameComboBox.TabIndex = 13;
-            // 
-            // social_Security_NumberLabel
-            // 
-            social_Security_NumberLabel.AutoSize = true;
-            social_Security_NumberLabel.Location = new System.Drawing.Point(6, 123);
-            social_Security_NumberLabel.Name = "social_Security_NumberLabel";
-            social_Security_NumberLabel.Size = new System.Drawing.Size(120, 13);
-            social_Security_NumberLabel.TabIndex = 14;
-            social_Security_NumberLabel.Text = "Social Security Number:";
-            // 
-            // social_Security_NumberTextBox
-            // 
-            this.social_Security_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource1, "Social_Security_Number", true));
-            this.social_Security_NumberTextBox.Location = new System.Drawing.Point(132, 120);
-            this.social_Security_NumberTextBox.Name = "social_Security_NumberTextBox";
-            this.social_Security_NumberTextBox.Size = new System.Drawing.Size(148, 20);
-            this.social_Security_NumberTextBox.TabIndex = 15;
-            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -804,6 +804,7 @@
             this.groupBox2.PerformLayout();
             this.groupBoxMedicalInformation.ResumeLayout(false);
             this.groupBoxMedicalInformation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBoxUserInformation.ResumeLayout(false);
@@ -813,7 +814,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource1BindingNavigator)).EndInit();
             this.user_dataBindingSource1BindingNavigator.ResumeLayout(false);
             this.user_dataBindingSource1BindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.patient_dataBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
