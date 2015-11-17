@@ -28,13 +28,13 @@ namespace IPIMS_Group_9.Forms
         }
         private void searchForPatientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EmergencyAlert formEA = new EmergencyAlert();
-            formEA.Visible = true;
+           /* EmergencyAlert formEA = new EmergencyAlert();
+            formEA.Visible = true;*/
         }
         private void viewApptToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ViewAppointments formVA = new ViewAppointments();
-            formVA.Visible = true;
+            /*ViewAppointments formVA = new ViewAppointments();
+            formVA.Visible = true;*/
         }
         private void createNewEPrescribeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -43,8 +43,8 @@ namespace IPIMS_Group_9.Forms
         }
         private void scheduleApptToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ScheduleAppointment formSA = new ScheduleAppointment();
-            formSA.Visible = true;
+            /*ScheduleAppointment formSA = new ScheduleAppointment();
+            formSA.Visible = true;*/
         }
         private void viewExistingEPrescribeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -80,8 +80,8 @@ namespace IPIMS_Group_9.Forms
 
         private void editProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EditProfile formEditP = new EditProfile();
-            formEditP.Visible = true;
+           /* EditProfile formEditP = new EditProfile();
+            formEditP.Visible = true;*/
         }
 
         private void logoutOfIPIMSToolStripMenuItem_Click(object sender, EventArgs e)
