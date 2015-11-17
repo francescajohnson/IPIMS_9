@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Sql;
 using System.Data.OleDb;
-using System.Data.SqlClient;  
+using System.Data.SqlClient;
 
 namespace IPIMS_Group_9.Forms
 {
@@ -18,31 +18,29 @@ namespace IPIMS_Group_9.Forms
         // Declared local variables:
         private string classification, first_name, last_name, gender, social_security_number, street_address, city, state, zip_code, phone_number, email, username, password;
         private DateTime date_of_birth;
-        private string  insurance_Provider = "", insurance_Contact_Number = "", medical_history="", country_of_origin="", doctor="";
-        private int age=0;
-        private bool smoker=false, drug_user=false;
+        private string insurance_Provider = "", insurance_Contact_Number = "", medical_history = "", country_of_origin = "", doctor = "";
+        private int age = 0;
+        private bool smoker = false, drug_user = false;
 
         // Declared database variables for database calls
-        private SqlConnection con;
-        private SqlDataAdapter da;
-        private DataSet ds;
-        private int maxRows, inc = 0;
-        private SqlCommandBuilder cb;  
-
+        private SqlCommand cmd = new SqlCommand();
+        private SqlDataReader dr;
+        private string constring;
+        private SqlConnection cn;
+        //        private SqlConnection cn = new SqlConnection(@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI");
         public Registration()
         {
             InitializeComponent();
-            con = new SqlConnection();
-            ds = new DataSet();
-            con.ConnectionString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\IPIMS_9.mdf;Integrated Security=True;User Instance=True";
-            string sq1 = "SELECT * FROM user_data";
-            con.Open();
-            da = new SqlDataAdapter(sq1, con);
-            da.Fill(ds, "User");
-            cb = new SqlCommandBuilder(da);
-            maxRows = ds.Tables["Users"].Rows.Count;
-            con.Close();
-                   
+            //constring = "@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI";
+            cn = new SqlConnection(@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI");
+
+            if (cn.State != ConnectionState.Open)
+                cn.Open();
+
+            cmd.CommandText = "SELECT * FROM [dbo].[user_data]";
+            cmd.ExecuteNonQuery();
+            cmd.Clone();
+            cn.Close();
         }
         private void classificationComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
@@ -50,13 +48,14 @@ namespace IPIMS_Group_9.Forms
             {
                 groupBoxMedicalInformation.Visible = true;
             }
-            else if (classificationComboBox.Text == "Doctor" || classificationComboBox.Text == "Nurse" || classificationComboBox.Text == "Office Staff" || 
+            else if (classificationComboBox.Text == "Doctor" || classificationComboBox.Text == "Nurse" || classificationComboBox.Text == "Office Staff" ||
                 classificationComboBox.Text == "Lab Staff" || classificationComboBox.Text == "Research Staff")
                 groupBoxMedicalInformation.Visible = false;
         }
         private void is_SmokerCheckBox_CheckedChanged()
         {
-            if(is_SmokerCheckBox.Checked){
+            if (is_SmokerCheckBox.Checked)
+            {
                 smoker = true;
             } smoker = false;
         }
@@ -125,7 +124,7 @@ namespace IPIMS_Group_9.Forms
                     Welcome formW = new Welcome();
                     formW.Visible = true;
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     throw ex;
                 }
@@ -144,37 +143,19 @@ namespace IPIMS_Group_9.Forms
             // TODO: This line of code loads data into the 'iPIMS_9DataSet.patient_data' table. You can move, or remove it, as needed.
             // this.patient_dataTableAdapter.Fill(this.iPIMS_9DataSet.patient_data);
             // this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
+
+
+
         }
 
         // Function to call when the code should implement registration features
-        void Register()     
+        void Register()
         {
             try
             {
                 // Validate form and stop editing databinding source reader
                 this.Validate();
                 this.user_dataBindingSource1.EndEdit();
-                DataRow userDataRow = ds.Tables["Users"].NewRow();
-                userDataRow[1] = classification.ToString();
-                userDataRow[2] = first_name.ToString();
-                userDataRow[3] = last_name.ToString();
-                userDataRow[4] = gender.ToString();
-                userDataRow[5] = date_of_birth.Date;
-                userDataRow[6] = street_address.ToString();
-                userDataRow[7] = city.ToString();
-                userDataRow[8] = state.ToString();
-                userDataRow[9] = zip_code.ToString();
-                userDataRow[10] = phone_number.ToString();
-                userDataRow[11] = email.ToString();
-                userDataRow[12] = username.ToString();
-                userDataRow[13] = password.ToString();
-                userDataRow[14] = "000-00-0000";
-                ds.Tables["Users"].Rows.Add(userDataRow);
-                maxRows += 1;
-                inc = maxRows - 1;
-                da.Update(ds, "Users");
-
-
 
                 // Create a new row with the values from the form
                 // Create new row for user data and patient data tables
