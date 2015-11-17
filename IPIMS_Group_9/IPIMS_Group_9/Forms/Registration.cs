@@ -32,15 +32,15 @@ namespace IPIMS_Group_9.Forms
         {
             InitializeComponent();
             //constring = "@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI";
-            cn = new SqlConnection(@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI");
-
+            // cn = new SqlConnection(@"Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\fjohnso3\\Source\\Repos\\IPIMS_9\\IPIMS_Group_9\\IPIMS_Group_9\\IPIMS_9.mdf;Integrated Security=True");
+            /*cn = new SqlConnection(@"data source=.;initial catalog=IPIMS_9;Integrated Security=SSPI");   // ;User Id=[User];Password=");
             if (cn.State != ConnectionState.Open)
                 cn.Open();
-
+            // ;User ID=*****;Password=myPassword;
             cmd.CommandText = "SELECT * FROM [dbo].[user_data]";
             cmd.ExecuteNonQuery();
             cmd.Clone();
-            cn.Close();
+            cn.Close();*/
         }
         private void classificationComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {

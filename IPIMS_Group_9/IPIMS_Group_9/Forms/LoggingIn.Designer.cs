@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoggingIn));
             System.Windows.Forms.Label usernameLabel;
             System.Windows.Forms.Label passwordLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoggingIn));
             this.groupBoxLoginInformation = new System.Windows.Forms.GroupBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.user_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.labelPleaseLogin = new System.Windows.Forms.Label();
             this.checkBoxNewUser = new System.Windows.Forms.CheckBox();
             this.buttonContinue = new System.Windows.Forms.Button();
@@ -53,8 +55,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.user_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.scheduled_appointment_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.scheduled_appointment_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.scheduled_appointment_dataTableAdapter();
             usernameLabel = new System.Windows.Forms.Label();
             passwordLabel = new System.Windows.Forms.Label();
             this.groupBoxLoginInformation.SuspendLayout();
@@ -62,7 +64,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).BeginInit();
             this.user_dataBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // usernameLabel
+            // 
+            usernameLabel.AutoSize = true;
+            usernameLabel.Location = new System.Drawing.Point(6, 22);
+            usernameLabel.Name = "usernameLabel";
+            usernameLabel.Size = new System.Drawing.Size(58, 13);
+            usernameLabel.TabIndex = 27;
+            usernameLabel.Text = "Username:";
+            // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new System.Drawing.Point(8, 67);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new System.Drawing.Size(56, 13);
+            passwordLabel.TabIndex = 28;
+            passwordLabel.Text = "Password:";
             // 
             // groupBoxLoginInformation
             // 
@@ -77,6 +98,14 @@
             this.groupBoxLoginInformation.TabStop = false;
             this.groupBoxLoginInformation.Text = "Login Information:";
             // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Password", true));
+            this.passwordTextBox.Location = new System.Drawing.Point(70, 64);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(216, 20);
+            this.passwordTextBox.TabIndex = 29;
+            // 
             // user_dataBindingSource
             // 
             this.user_dataBindingSource.DataMember = "user_data";
@@ -86,6 +115,14 @@
             // 
             this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
             this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usernameTextBox
+            // 
+            this.usernameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Username", true));
+            this.usernameTextBox.Location = new System.Drawing.Point(70, 19);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(216, 20);
+            this.usernameTextBox.TabIndex = 28;
             // 
             // labelPleaseLogin
             // 
@@ -139,6 +176,7 @@
             this.user_dataBindingNavigator.BindingSource = this.user_dataBindingSource;
             this.user_dataBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.user_dataBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.user_dataBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.user_dataBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -257,39 +295,14 @@
             this.user_dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.user_dataBindingNavigatorSaveItem.Text = "Save Data";
             // 
-            // usernameLabel
+            // scheduled_appointment_dataBindingSource
             // 
-            usernameLabel.AutoSize = true;
-            usernameLabel.Location = new System.Drawing.Point(6, 22);
-            usernameLabel.Name = "usernameLabel";
-            usernameLabel.Size = new System.Drawing.Size(58, 13);
-            usernameLabel.TabIndex = 27;
-            usernameLabel.Text = "Username:";
+            this.scheduled_appointment_dataBindingSource.DataMember = "scheduled_appointment_data";
+            this.scheduled_appointment_dataBindingSource.DataSource = this.iPIMS_9DataSet;
             // 
-            // usernameTextBox
+            // scheduled_appointment_dataTableAdapter
             // 
-            this.usernameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Username", true));
-            this.usernameTextBox.Location = new System.Drawing.Point(70, 19);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(216, 20);
-            this.usernameTextBox.TabIndex = 28;
-            // 
-            // passwordLabel
-            // 
-            passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(8, 67);
-            passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(56, 13);
-            passwordLabel.TabIndex = 28;
-            passwordLabel.Text = "Password:";
-            // 
-            // passwordTextBox
-            // 
-            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Password", true));
-            this.passwordTextBox.Location = new System.Drawing.Point(70, 64);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(216, 20);
-            this.passwordTextBox.TabIndex = 29;
+            this.scheduled_appointment_dataTableAdapter.ClearBeforeFill = true;
             // 
             // LoggingIn
             // 
@@ -312,6 +325,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingNavigator)).EndInit();
             this.user_dataBindingNavigator.ResumeLayout(false);
             this.user_dataBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scheduled_appointment_dataBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -342,5 +356,7 @@
         private System.Windows.Forms.ToolStripButton user_dataBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.BindingSource scheduled_appointment_dataBindingSource;
+        private IPIMS_9DataSetTableAdapters.scheduled_appointment_dataTableAdapter scheduled_appointment_dataTableAdapter;
     }
 }
