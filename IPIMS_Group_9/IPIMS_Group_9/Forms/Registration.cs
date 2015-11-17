@@ -26,6 +26,11 @@ namespace IPIMS_Group_9.Forms
         {
             InitializeComponent();
         }
+
+        System.Data.SqlClient.SqlConnection con;
+        DataSet ds1;
+        System.Data.SqlClient.SqlDataAdapter da;
+
         private void classificationComboBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (classificationComboBox.Text == "Patient")
@@ -124,6 +129,14 @@ namespace IPIMS_Group_9.Forms
         }
         private void Registration_Load(object sender, EventArgs e)
         {
+            con = new System.Data.SqlClient.SqlConnection();
+            ds1 = new DataSet();
+
+            con.ConnectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\IPIMS_9.mdf;Integrated Security=True;User Instance=True";
+            
+            /*C:\USERS\E860536\SOURCE\GROUP_9\IPIMS_9\IPIMS_9\IPIMS_GROUP_9\IPIMS_GROUP_9\IPIMS_9.MDF*/
+            con.Open();
+
             // TODO: This line of code loads data into the 'iPIMS_9DataSet.patient_data' table. You can move, or remove it, as needed.
             this.patient_dataTableAdapter.Fill(this.iPIMS_9DataSet.patient_data);
             this.user_dataTableAdapter.Fill(this.iPIMS_9DataSet.user_data);
@@ -164,7 +177,7 @@ namespace IPIMS_Group_9.Forms
 
                 //Add the row to the user_data table
                 this.iPIMS_9DataSet.user_data.Rows.Add(newUserDataRow);
-
+                
                 //Save the new rows to the database
                 this.user_dataTableAdapter.Update(this.iPIMS_9DataSet.user_data);
 

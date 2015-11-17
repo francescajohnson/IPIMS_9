@@ -230,9 +230,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="IPIMS_9.mdf">
+    <None Include="IPIMS_9.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
     <Content Include="IPIMS_9_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>IPIMS_9.mdf</DependentUpon>
