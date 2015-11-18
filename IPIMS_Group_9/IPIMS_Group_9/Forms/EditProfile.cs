@@ -40,22 +40,22 @@ namespace IPIMS_Group_9
         {
             string password = "", newPassword = "", address = "", city = "", state = "", zip = "", phone = "", email = "";
             bool success = true;
-            if(passwordBox1.Text == passwordBox2.Text)
+            if (passwordTextBox.Text == passwordTextBox1.Text)
             {
-                newPassword = passwordBox1.Text;
+                newPassword = passwordTextBox.Text;
             }
             else
             {
                 success = false;
                 warningLabel.Text = "Password did not match";
             }
-            password = passwordBox1.Text;
-            address = addressBox.Text;
-            city = cityBox.Text;
-            state = stateBox.Text;
-            zip = zipCodeBox.Text;
-            phone = phoneBox.Text;
-            email = emailBox.Text;
+            password = passwordTextBox.Text;
+            address = street_AddressTextBox.Text;
+            city = cityTextBox.Text;
+            state = stateTextBox.Text;
+            zip = zip_CodeTextBox.Text;
+            phone = phone_NumberTextBox.Text;
+            email = emailTextBox.Text;
 
             if(password == "" || address == "" || city == "" || state == "" || zip == "" || phone == "" || email == "")
             {

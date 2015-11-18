@@ -30,32 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditProfile));
-            this.labelZipCode = new System.Windows.Forms.Label();
-            this.labelState = new System.Windows.Forms.Label();
-            this.labelCity = new System.Windows.Forms.Label();
-            this.labelEmailAddress = new System.Windows.Forms.Label();
-            this.labelPhoneNumber = new System.Windows.Forms.Label();
-            this.groupBoxLoginInformation = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.labelPassword = new System.Windows.Forms.Label();
-            this.labelConfirmPassword = new System.Windows.Forms.Label();
+            System.Windows.Forms.Label passwordLabel;
+            System.Windows.Forms.Label passwordLabel1;
+            System.Windows.Forms.Label street_AddressLabel;
+            System.Windows.Forms.Label cityLabel;
+            System.Windows.Forms.Label stateLabel;
+            System.Windows.Forms.Label zip_CodeLabel;
+            System.Windows.Forms.Label phone_NumberLabel;
+            System.Windows.Forms.Label emailLabel;
             this.buttonEditProfile = new System.Windows.Forms.Button();
             this.groupBoxContactInformation = new System.Windows.Forms.GroupBox();
-            this.emailBox = new System.Windows.Forms.TextBox();
-            this.phoneBox = new System.Windows.Forms.TextBox();
             this.labelEditProfile = new System.Windows.Forms.Label();
             this.groupBoxAddressInformation = new System.Windows.Forms.GroupBox();
-            this.stateBox = new System.Windows.Forms.TextBox();
-            this.cityBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.zipCodeBox = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.addressBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.labelStreetAddress = new System.Windows.Forms.Label();
             this.user_dataBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -75,13 +62,24 @@
             this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
             this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.passwordBox2 = new System.Windows.Forms.TextBox();
-            this.passwordBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.warningLabel = new System.Windows.Forms.Label();
             this.warningLabel2 = new System.Windows.Forms.Label();
-            this.groupBoxLoginInformation.SuspendLayout();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox1 = new System.Windows.Forms.TextBox();
+            this.street_AddressTextBox = new System.Windows.Forms.TextBox();
+            this.cityTextBox = new System.Windows.Forms.TextBox();
+            this.stateTextBox = new System.Windows.Forms.TextBox();
+            this.zip_CodeTextBox = new System.Windows.Forms.TextBox();
+            this.phone_NumberTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            passwordLabel = new System.Windows.Forms.Label();
+            passwordLabel1 = new System.Windows.Forms.Label();
+            street_AddressLabel = new System.Windows.Forms.Label();
+            cityLabel = new System.Windows.Forms.Label();
+            stateLabel = new System.Windows.Forms.Label();
+            zip_CodeLabel = new System.Windows.Forms.Label();
+            phone_NumberLabel = new System.Windows.Forms.Label();
+            emailLabel = new System.Windows.Forms.Label();
             this.groupBoxContactInformation.SuspendLayout();
             this.groupBoxAddressInformation.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -91,96 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // labelZipCode
-            // 
-            this.labelZipCode.AutoSize = true;
-            this.labelZipCode.Location = new System.Drawing.Point(336, 49);
-            this.labelZipCode.Name = "labelZipCode";
-            this.labelZipCode.Size = new System.Drawing.Size(53, 13);
-            this.labelZipCode.TabIndex = 13;
-            this.labelZipCode.Text = "Zip Code:";
-            // 
-            // labelState
-            // 
-            this.labelState.AutoSize = true;
-            this.labelState.Location = new System.Drawing.Point(186, 49);
-            this.labelState.Name = "labelState";
-            this.labelState.Size = new System.Drawing.Size(35, 13);
-            this.labelState.TabIndex = 8;
-            this.labelState.Text = "State:";
-            // 
-            // labelCity
-            // 
-            this.labelCity.AutoSize = true;
-            this.labelCity.Location = new System.Drawing.Point(59, 49);
-            this.labelCity.Name = "labelCity";
-            this.labelCity.Size = new System.Drawing.Size(27, 13);
-            this.labelCity.TabIndex = 6;
-            this.labelCity.Text = "City:";
-            // 
-            // labelEmailAddress
-            // 
-            this.labelEmailAddress.AutoSize = true;
-            this.labelEmailAddress.Location = new System.Drawing.Point(12, 49);
-            this.labelEmailAddress.Name = "labelEmailAddress";
-            this.labelEmailAddress.Size = new System.Drawing.Size(76, 13);
-            this.labelEmailAddress.TabIndex = 6;
-            this.labelEmailAddress.Text = "Email Address:";
-            // 
-            // labelPhoneNumber
-            // 
-            this.labelPhoneNumber.AutoSize = true;
-            this.labelPhoneNumber.Location = new System.Drawing.Point(7, 20);
-            this.labelPhoneNumber.Name = "labelPhoneNumber";
-            this.labelPhoneNumber.Size = new System.Drawing.Size(81, 13);
-            this.labelPhoneNumber.TabIndex = 0;
-            this.labelPhoneNumber.Text = "Phone Number:";
-            // 
-            // groupBoxLoginInformation
-            // 
-            this.groupBoxLoginInformation.Controls.Add(this.textBox2);
-            this.groupBoxLoginInformation.Controls.Add(this.textBox1);
-            this.groupBoxLoginInformation.Controls.Add(this.labelPassword);
-            this.groupBoxLoginInformation.Controls.Add(this.labelConfirmPassword);
-            this.groupBoxLoginInformation.Location = new System.Drawing.Point(12, 82);
-            this.groupBoxLoginInformation.Name = "groupBoxLoginInformation";
-            this.groupBoxLoginInformation.Size = new System.Drawing.Size(278, 84);
-            this.groupBoxLoginInformation.TabIndex = 36;
-            this.groupBoxLoginInformation.TabStop = false;
-            this.groupBoxLoginInformation.Text = "Login Information:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(108, 43);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(108, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 9;
-            // 
-            // labelPassword
-            // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(6, 20);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(96, 13);
-            this.labelPassword.TabIndex = 8;
-            this.labelPassword.Text = "Change Password:";
-            // 
-            // labelConfirmPassword
-            // 
-            this.labelConfirmPassword.AutoSize = true;
-            this.labelConfirmPassword.Location = new System.Drawing.Point(9, 49);
-            this.labelConfirmPassword.Name = "labelConfirmPassword";
-            this.labelConfirmPassword.Size = new System.Drawing.Size(94, 13);
-            this.labelConfirmPassword.TabIndex = 6;
-            this.labelConfirmPassword.Text = "Confirm Password:";
             // 
             // buttonEditProfile
             // 
@@ -195,36 +103,22 @@
             // 
             // groupBoxContactInformation
             // 
-            this.groupBoxContactInformation.Controls.Add(this.labelEmailAddress);
-            this.groupBoxContactInformation.Controls.Add(this.labelPhoneNumber);
-            this.groupBoxContactInformation.Controls.Add(this.emailBox);
-            this.groupBoxContactInformation.Controls.Add(this.phoneBox);
+            this.groupBoxContactInformation.Controls.Add(emailLabel);
+            this.groupBoxContactInformation.Controls.Add(this.emailTextBox);
+            this.groupBoxContactInformation.Controls.Add(phone_NumberLabel);
+            this.groupBoxContactInformation.Controls.Add(this.phone_NumberTextBox);
             this.groupBoxContactInformation.Location = new System.Drawing.Point(12, 262);
             this.groupBoxContactInformation.Name = "groupBoxContactInformation";
-            this.groupBoxContactInformation.Size = new System.Drawing.Size(278, 84);
+            this.groupBoxContactInformation.Size = new System.Drawing.Size(278, 99);
             this.groupBoxContactInformation.TabIndex = 35;
             this.groupBoxContactInformation.TabStop = false;
             this.groupBoxContactInformation.Text = "Contact Information:";
-            // 
-            // emailBox
-            // 
-            this.emailBox.Location = new System.Drawing.Point(94, 46);
-            this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(100, 20);
-            this.emailBox.TabIndex = 9;
-            // 
-            // phoneBox
-            // 
-            this.phoneBox.Location = new System.Drawing.Point(94, 17);
-            this.phoneBox.Name = "phoneBox";
-            this.phoneBox.Size = new System.Drawing.Size(100, 20);
-            this.phoneBox.TabIndex = 9;
             // 
             // labelEditProfile
             // 
             this.labelEditProfile.AutoSize = true;
             this.labelEditProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEditProfile.Location = new System.Drawing.Point(12, 43);
+            this.labelEditProfile.Location = new System.Drawing.Point(12, 20);
             this.labelEditProfile.Name = "labelEditProfile";
             this.labelEditProfile.Size = new System.Drawing.Size(160, 36);
             this.labelEditProfile.TabIndex = 33;
@@ -232,106 +126,31 @@
             // 
             // groupBoxAddressInformation
             // 
-            this.groupBoxAddressInformation.Controls.Add(this.stateBox);
-            this.groupBoxAddressInformation.Controls.Add(this.labelZipCode);
-            this.groupBoxAddressInformation.Controls.Add(this.labelState);
-            this.groupBoxAddressInformation.Controls.Add(this.labelCity);
             this.groupBoxAddressInformation.Controls.Add(this.groupBox2);
             this.groupBoxAddressInformation.Controls.Add(this.labelStreetAddress);
             this.groupBoxAddressInformation.Location = new System.Drawing.Point(12, 172);
             this.groupBoxAddressInformation.Name = "groupBoxAddressInformation";
-            this.groupBoxAddressInformation.Size = new System.Drawing.Size(564, 84);
+            this.groupBoxAddressInformation.Size = new System.Drawing.Size(564, 90);
             this.groupBoxAddressInformation.TabIndex = 34;
             this.groupBoxAddressInformation.TabStop = false;
             this.groupBoxAddressInformation.Text = "Address Information:";
             // 
-            // stateBox
-            // 
-            this.stateBox.Location = new System.Drawing.Point(227, 46);
-            this.stateBox.Name = "stateBox";
-            this.stateBox.Size = new System.Drawing.Size(100, 20);
-            this.stateBox.TabIndex = 9;
-            // 
-            // cityBox
-            // 
-            this.cityBox.Location = new System.Drawing.Point(92, 46);
-            this.cityBox.Name = "cityBox";
-            this.cityBox.Size = new System.Drawing.Size(100, 20);
-            this.cityBox.TabIndex = 9;
-            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.zipCodeBox);
-            this.groupBox2.Controls.Add(this.cityBox);
-            this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.addressBox);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(zip_CodeLabel);
+            this.groupBox2.Controls.Add(this.zip_CodeTextBox);
+            this.groupBox2.Controls.Add(stateLabel);
+            this.groupBox2.Controls.Add(this.stateTextBox);
+            this.groupBox2.Controls.Add(cityLabel);
+            this.groupBox2.Controls.Add(this.cityTextBox);
+            this.groupBox2.Controls.Add(street_AddressLabel);
+            this.groupBox2.Controls.Add(this.street_AddressTextBox);
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(564, 84);
+            this.groupBox2.Size = new System.Drawing.Size(564, 90);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Address Information:";
-            // 
-            // zipCodeBox
-            // 
-            this.zipCodeBox.Location = new System.Drawing.Point(395, 46);
-            this.zipCodeBox.Name = "zipCodeBox";
-            this.zipCodeBox.Size = new System.Drawing.Size(100, 20);
-            this.zipCodeBox.TabIndex = 9;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(227, 46);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 9;
-            // 
-            // addressBox
-            // 
-            this.addressBox.Location = new System.Drawing.Point(92, 17);
-            this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(418, 20);
-            this.addressBox.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(336, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Zip Code:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(186, 49);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "State:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(27, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "City:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 20);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Street Address:";
             // 
             // labelStreetAddress
             // 
@@ -494,48 +313,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.passwordBox2);
-            this.groupBox1.Controls.Add(this.passwordBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 82);
+            this.groupBox1.Controls.Add(passwordLabel1);
+            this.groupBox1.Controls.Add(this.passwordTextBox1);
+            this.groupBox1.Controls.Add(passwordLabel);
+            this.groupBox1.Controls.Add(this.passwordTextBox);
+            this.groupBox1.Location = new System.Drawing.Point(12, 59);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(278, 84);
+            this.groupBox1.Size = new System.Drawing.Size(232, 107);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login Information:";
-            // 
-            // passwordBox2
-            // 
-            this.passwordBox2.Location = new System.Drawing.Point(108, 43);
-            this.passwordBox2.Name = "passwordBox2";
-            this.passwordBox2.Size = new System.Drawing.Size(100, 20);
-            this.passwordBox2.TabIndex = 9;
-            // 
-            // passwordBox1
-            // 
-            this.passwordBox1.Location = new System.Drawing.Point(108, 17);
-            this.passwordBox1.Name = "passwordBox1";
-            this.passwordBox1.Size = new System.Drawing.Size(100, 20);
-            this.passwordBox1.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Change Password:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Confirm Password:";
             // 
             // warningLabel
             // 
@@ -553,6 +340,142 @@
             this.warningLabel2.Size = new System.Drawing.Size(0, 13);
             this.warningLabel2.TabIndex = 40;
             // 
+            // passwordLabel
+            // 
+            passwordLabel.AutoSize = true;
+            passwordLabel.Location = new System.Drawing.Point(6, 25);
+            passwordLabel.Name = "passwordLabel";
+            passwordLabel.Size = new System.Drawing.Size(96, 13);
+            passwordLabel.TabIndex = 8;
+            passwordLabel.Text = "Change Password:";
+            // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Password", true));
+            this.passwordTextBox.Location = new System.Drawing.Point(108, 22);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextBox.TabIndex = 9;
+            // 
+            // passwordLabel1
+            // 
+            passwordLabel1.AutoSize = true;
+            passwordLabel1.Location = new System.Drawing.Point(9, 62);
+            passwordLabel1.Name = "passwordLabel1";
+            passwordLabel1.Size = new System.Drawing.Size(94, 13);
+            passwordLabel1.TabIndex = 9;
+            passwordLabel1.Text = "Confirm Password:";
+            // 
+            // passwordTextBox1
+            // 
+            this.passwordTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Password", true));
+            this.passwordTextBox1.Location = new System.Drawing.Point(108, 62);
+            this.passwordTextBox1.Name = "passwordTextBox1";
+            this.passwordTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextBox1.TabIndex = 10;
+            // 
+            // street_AddressLabel
+            // 
+            street_AddressLabel.AutoSize = true;
+            street_AddressLabel.Location = new System.Drawing.Point(9, 23);
+            street_AddressLabel.Name = "street_AddressLabel";
+            street_AddressLabel.Size = new System.Drawing.Size(79, 13);
+            street_AddressLabel.TabIndex = 13;
+            street_AddressLabel.Text = "Street Address:";
+            // 
+            // street_AddressTextBox
+            // 
+            this.street_AddressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Street_Address", true));
+            this.street_AddressTextBox.Location = new System.Drawing.Point(94, 20);
+            this.street_AddressTextBox.Name = "street_AddressTextBox";
+            this.street_AddressTextBox.Size = new System.Drawing.Size(401, 20);
+            this.street_AddressTextBox.TabIndex = 14;
+            // 
+            // cityLabel
+            // 
+            cityLabel.AutoSize = true;
+            cityLabel.Location = new System.Drawing.Point(10, 53);
+            cityLabel.Name = "cityLabel";
+            cityLabel.Size = new System.Drawing.Size(27, 13);
+            cityLabel.TabIndex = 14;
+            cityLabel.Text = "City:";
+            // 
+            // cityTextBox
+            // 
+            this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "City", true));
+            this.cityTextBox.Location = new System.Drawing.Point(43, 50);
+            this.cityTextBox.Name = "cityTextBox";
+            this.cityTextBox.Size = new System.Drawing.Size(100, 20);
+            this.cityTextBox.TabIndex = 15;
+            // 
+            // stateLabel
+            // 
+            stateLabel.AutoSize = true;
+            stateLabel.Location = new System.Drawing.Point(167, 53);
+            stateLabel.Name = "stateLabel";
+            stateLabel.Size = new System.Drawing.Size(35, 13);
+            stateLabel.TabIndex = 15;
+            stateLabel.Text = "State:";
+            // 
+            // stateTextBox
+            // 
+            this.stateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "State", true));
+            this.stateTextBox.Location = new System.Drawing.Point(208, 50);
+            this.stateTextBox.Name = "stateTextBox";
+            this.stateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.stateTextBox.TabIndex = 16;
+            // 
+            // zip_CodeLabel
+            // 
+            zip_CodeLabel.AutoSize = true;
+            zip_CodeLabel.Location = new System.Drawing.Point(336, 53);
+            zip_CodeLabel.Name = "zip_CodeLabel";
+            zip_CodeLabel.Size = new System.Drawing.Size(53, 13);
+            zip_CodeLabel.TabIndex = 16;
+            zip_CodeLabel.Text = "Zip Code:";
+            // 
+            // zip_CodeTextBox
+            // 
+            this.zip_CodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Zip_Code", true));
+            this.zip_CodeTextBox.Location = new System.Drawing.Point(395, 50);
+            this.zip_CodeTextBox.Name = "zip_CodeTextBox";
+            this.zip_CodeTextBox.Size = new System.Drawing.Size(100, 20);
+            this.zip_CodeTextBox.TabIndex = 17;
+            // 
+            // phone_NumberLabel
+            // 
+            phone_NumberLabel.AutoSize = true;
+            phone_NumberLabel.Location = new System.Drawing.Point(5, 26);
+            phone_NumberLabel.Name = "phone_NumberLabel";
+            phone_NumberLabel.Size = new System.Drawing.Size(81, 13);
+            phone_NumberLabel.TabIndex = 0;
+            phone_NumberLabel.Text = "Phone Number:";
+            // 
+            // phone_NumberTextBox
+            // 
+            this.phone_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Phone_Number", true));
+            this.phone_NumberTextBox.Location = new System.Drawing.Point(92, 23);
+            this.phone_NumberTextBox.Name = "phone_NumberTextBox";
+            this.phone_NumberTextBox.Size = new System.Drawing.Size(100, 20);
+            this.phone_NumberTextBox.TabIndex = 1;
+            // 
+            // emailLabel
+            // 
+            emailLabel.AutoSize = true;
+            emailLabel.Location = new System.Drawing.Point(6, 64);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new System.Drawing.Size(76, 13);
+            emailLabel.TabIndex = 2;
+            emailLabel.Text = "Email Address:";
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.user_dataBindingSource, "Email", true));
+            this.emailTextBox.Location = new System.Drawing.Point(92, 61);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(100, 20);
+            this.emailTextBox.TabIndex = 3;
+            // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -562,7 +485,6 @@
             this.Controls.Add(this.warningLabel);
             this.Controls.Add(this.user_dataBindingNavigator);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBoxLoginInformation);
             this.Controls.Add(this.buttonEditProfile);
             this.Controls.Add(this.groupBoxContactInformation);
             this.Controls.Add(this.labelEditProfile);
@@ -571,8 +493,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
             this.Load += new System.EventHandler(this.EditProfile_Load);
-            this.groupBoxLoginInformation.ResumeLayout(false);
-            this.groupBoxLoginInformation.PerformLayout();
             this.groupBoxContactInformation.ResumeLayout(false);
             this.groupBoxContactInformation.PerformLayout();
             this.groupBoxAddressInformation.ResumeLayout(false);
@@ -593,14 +513,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label labelZipCode;
-        private System.Windows.Forms.Label labelState;
-        private System.Windows.Forms.Label labelCity;
-        private System.Windows.Forms.Label labelEmailAddress;
-        private System.Windows.Forms.Label labelPhoneNumber;
-        private System.Windows.Forms.GroupBox groupBoxLoginInformation;
-        private System.Windows.Forms.Label labelPassword;
-        private System.Windows.Forms.Label labelConfirmPassword;
         private System.Windows.Forms.Button buttonEditProfile;
         private System.Windows.Forms.GroupBox groupBoxContactInformation;
         private System.Windows.Forms.Label labelEditProfile;
@@ -623,26 +535,17 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton user_dataBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox emailBox;
-        private System.Windows.Forms.TextBox phoneBox;
-        private System.Windows.Forms.TextBox stateBox;
-        private System.Windows.Forms.TextBox cityBox;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox zipCodeBox;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox addressBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox passwordBox2;
-        private System.Windows.Forms.TextBox passwordBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label warningLabel;
         private System.Windows.Forms.Label warningLabel2;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox phone_NumberTextBox;
+        private System.Windows.Forms.TextBox zip_CodeTextBox;
+        private System.Windows.Forms.TextBox stateTextBox;
+        private System.Windows.Forms.TextBox cityTextBox;
+        private System.Windows.Forms.TextBox street_AddressTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox1;
+        private System.Windows.Forms.TextBox passwordTextBox;
     }
 }

@@ -12,7 +12,7 @@ namespace IPIMS_Group_9.Forms
 {
     public partial class Welcome : Form
     {
-        // private string username;
+        private string username;
         public Welcome()//string username)
         {
             InitializeComponent();
@@ -28,8 +28,8 @@ namespace IPIMS_Group_9.Forms
         }
         private void searchForPatientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           EmergencyAlert formEA = new EmergencyAlert();
-           formEA.Visible = true;
+            EmergencyAlert formEA = new EmergencyAlert();
+            formEA.Visible = true;
         }
         private void viewApptToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -60,7 +60,12 @@ namespace IPIMS_Group_9.Forms
         {
             EPrescription formEP = new EPrescription();
             formEP.Visible = true;
-        }        
+        }
+        private void viewPatientProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewPatientInformation formVPI = new ViewPatientInformation();
+            formVPI.Visible = true;
+        }
         private void searchRecordsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EPrescription formEP = new EPrescription();
@@ -85,6 +90,10 @@ namespace IPIMS_Group_9.Forms
             formEditP.Visible = true;
         }
 
+        private void createProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
         private void logoutOfIPIMSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string message = "Are you sure you want to logout of the system at this time?";
@@ -94,11 +103,18 @@ namespace IPIMS_Group_9.Forms
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
                 // Logout of system
+
             }
             else if(result == System.Windows.Forms.DialogResult.No)
             {
                 //Do Nothing
             }
+
         }
+
+
+
+
+
     }
 }

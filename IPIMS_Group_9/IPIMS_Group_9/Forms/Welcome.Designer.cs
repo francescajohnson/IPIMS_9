@@ -57,6 +57,8 @@
             this.searchForPatientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.createProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,14 +100,16 @@
             // editProfileToolStripMenuItem
             // 
             this.editProfileToolStripMenuItem.Name = "editProfileToolStripMenuItem";
-            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.editProfileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.editProfileToolStripMenuItem.Text = "Edit Profile";
             this.editProfileToolStripMenuItem.Click += new System.EventHandler(this.editProfileToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.editProfileToolStripMenuItem});
+            this.editProfileToolStripMenuItem,
+            this.createProfileToolStripMenuItem,
+            this.viewProfileToolStripMenuItem});
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.logoutToolStripMenuItem.Text = "Profile Tools";
@@ -187,24 +191,31 @@
             this.searchRecordsToolStripMenuItem.Text = "Add Lab Record";
             this.searchRecordsToolStripMenuItem.Click += new System.EventHandler(this.searchRecordsToolStripMenuItem_Click);
             // 
+            // viewPatientProfileToolStripMenuItem
+            // 
+            this.viewPatientProfileToolStripMenuItem.Name = "viewPatientProfileToolStripMenuItem";
+            this.viewPatientProfileToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
+            this.viewPatientProfileToolStripMenuItem.Text = "View Patient Profile Information";
+            this.viewPatientProfileToolStripMenuItem.Click += new System.EventHandler(this.viewPatientProfileToolStripMenuItem_Click);
+            // 
             // printExistingEPrescribeToolStripMenuItem
             // 
             this.printExistingEPrescribeToolStripMenuItem.Name = "printExistingEPrescribeToolStripMenuItem";
-            this.printExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.printExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.printExistingEPrescribeToolStripMenuItem.Text = "Print Existing";
             this.printExistingEPrescribeToolStripMenuItem.Click += new System.EventHandler(this.printExistingEPrescribeToolStripMenuItem_Click);
             // 
             // viewExistingEPrescribeToolStripMenuItem
             // 
             this.viewExistingEPrescribeToolStripMenuItem.Name = "viewExistingEPrescribeToolStripMenuItem";
-            this.viewExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.viewExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.viewExistingEPrescribeToolStripMenuItem.Text = "View Existing";
             this.viewExistingEPrescribeToolStripMenuItem.Click += new System.EventHandler(this.viewExistingEPrescribeToolStripMenuItem_Click);
             // 
             // createNewEPrescribeToolStripMenuItem
             // 
             this.createNewEPrescribeToolStripMenuItem.Name = "createNewEPrescribeToolStripMenuItem";
-            this.createNewEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.createNewEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.createNewEPrescribeToolStripMenuItem.Text = "Create New";
             this.createNewEPrescribeToolStripMenuItem.Click += new System.EventHandler(this.createNewEPrescribeToolStripMenuItem_Click);
             // 
@@ -222,21 +233,21 @@
             // editExistingEPrescribeToolStripMenuItem
             // 
             this.editExistingEPrescribeToolStripMenuItem.Name = "editExistingEPrescribeToolStripMenuItem";
-            this.editExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.editExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editExistingEPrescribeToolStripMenuItem.Text = "Edit Existing";
             this.editExistingEPrescribeToolStripMenuItem.Click += new System.EventHandler(this.editExistingEPrescribeToolStripMenuItem_Click);
             // 
             // scheduleApptToolStripMenuItem
             // 
             this.scheduleApptToolStripMenuItem.Name = "scheduleApptToolStripMenuItem";
-            this.scheduleApptToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.scheduleApptToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.scheduleApptToolStripMenuItem.Text = "Schedule";
             this.scheduleApptToolStripMenuItem.Click += new System.EventHandler(this.scheduleApptToolStripMenuItem_Click);
             // 
             // viewApptToolStripMenuItem
             // 
             this.viewApptToolStripMenuItem.Name = "viewApptToolStripMenuItem";
-            this.viewApptToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.viewApptToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.viewApptToolStripMenuItem.Text = "View";
             this.viewApptToolStripMenuItem.Click += new System.EventHandler(this.viewApptToolStripMenuItem_Click);
             // 
@@ -290,6 +301,19 @@
             this.menuStrip.TabIndex = 37;
             this.menuStrip.Text = "menuStrip1";
             // 
+            // createProfileToolStripMenuItem
+            // 
+            this.createProfileToolStripMenuItem.Name = "createProfileToolStripMenuItem";
+            this.createProfileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.createProfileToolStripMenuItem.Text = "Create Profile";
+            this.createProfileToolStripMenuItem.Click += new System.EventHandler(this.createProfileToolStripMenuItem_Click);
+            // 
+            // viewProfileToolStripMenuItem
+            // 
+            this.viewProfileToolStripMenuItem.Name = "viewProfileToolStripMenuItem";
+            this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.viewProfileToolStripMenuItem.Text = "View Patient Profile";
+            // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +364,8 @@
         private System.Windows.Forms.ToolStripMenuItem patientServicesToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem editExistingEPrescribeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createProfileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewProfileToolStripMenuItem;
     }
 }
 

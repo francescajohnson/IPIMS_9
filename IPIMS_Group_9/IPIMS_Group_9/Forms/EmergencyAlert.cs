@@ -44,18 +44,25 @@ namespace IPIMS_Group_9.Forms
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
-        {/*
-            textBoxSymptoms.Text = "";
-            checkBoxBloodUrine.Checked = false;
-            checkBoxChestPains.Checked = false;
-            checkBoxSuicide.Checked = false;
-            checkBoxTenderness.Checked = false;
-            checkBoxWeakness.Checked = false;
-            checkBoxWheezing.Checked = false;
-        */
+        {
+            first_NameTextBox.Text = "";
+            last_NameTextBox.Text = "";
+            date_of_BirthDateTimePicker.Value = DateTime.Today;
+            symptomsTextBox.Text = "";
+            has_Blood_in_UrineCheckBox.Checked = false;
+            has_Chest_PainsCheckBox.Checked = false;
+            is_SuicidalCheckBox.Checked = false;
+            has_Leg_PainCheckBox.Checked = false;
+            has_WeaknessCheckBox.Checked = false;
+            is_WheezingCheckBox.Checked = false;
         }
 
         private void EmergencyAlert_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void is_SuicidalCheckBox_CheckedChanged(object sender, EventArgs e)
         {
 
         }

@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Label date_of_BirthLabel;
+            System.Windows.Forms.Label last_NameLabel;
+            System.Windows.Forms.Label first_NameLabel;
+            System.Windows.Forms.Label symptomsLabel;
+            System.Windows.Forms.Label has_Blood_in_UrineLabel;
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.labelEmergencyAlert = new System.Windows.Forms.Label();
-            this.labelSymptoms = new System.Windows.Forms.Label();
             this.buttonClear = new System.Windows.Forms.Button();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.patientServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,15 +63,38 @@
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutOfIPIMSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.date_of_BirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.last_NameTextBox = new System.Windows.Forms.TextBox();
+            this.first_NameTextBox = new System.Windows.Forms.TextBox();
+            this.symptomsTextBox = new System.Windows.Forms.TextBox();
+            this.has_WeaknessCheckBox = new System.Windows.Forms.CheckBox();
+            this.has_Chest_PainsCheckBox = new System.Windows.Forms.CheckBox();
+            this.has_Leg_PainCheckBox = new System.Windows.Forms.CheckBox();
+            this.has_Blood_in_UrineCheckBox = new System.Windows.Forms.CheckBox();
+            this.is_WheezingCheckBox = new System.Windows.Forms.CheckBox();
+            this.is_SuicidalCheckBox = new System.Windows.Forms.CheckBox();
+            date_of_BirthLabel = new System.Windows.Forms.Label();
+            last_NameLabel = new System.Windows.Forms.Label();
+            first_NameLabel = new System.Windows.Forms.Label();
+            symptomsLabel = new System.Windows.Forms.Label();
+            has_Blood_in_UrineLabel = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.has_WeaknessCheckBox);
+            this.groupBox1.Controls.Add(this.has_Chest_PainsCheckBox);
+            this.groupBox1.Controls.Add(this.has_Leg_PainCheckBox);
+            this.groupBox1.Controls.Add(has_Blood_in_UrineLabel);
+            this.groupBox1.Controls.Add(this.has_Blood_in_UrineCheckBox);
+            this.groupBox1.Controls.Add(this.is_WheezingCheckBox);
+            this.groupBox1.Controls.Add(this.is_SuicidalCheckBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 301);
+            this.groupBox1.Location = new System.Drawing.Point(12, 264);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(424, 195);
+            this.groupBox1.Size = new System.Drawing.Size(424, 232);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Emergency Alert Conditions Include:";
@@ -92,17 +119,6 @@
             this.labelEmergencyAlert.Size = new System.Drawing.Size(408, 36);
             this.labelEmergencyAlert.TabIndex = 46;
             this.labelEmergencyAlert.Text = "Send Doctor Emergency Alert";
-            // 
-            // labelSymptoms
-            // 
-            this.labelSymptoms.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.labelSymptoms.Font = new System.Drawing.Font("Arial", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSymptoms.Location = new System.Drawing.Point(11, 91);
-            this.labelSymptoms.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelSymptoms.Name = "labelSymptoms";
-            this.labelSymptoms.Size = new System.Drawing.Size(75, 22);
-            this.labelSymptoms.TabIndex = 45;
-            this.labelSymptoms.Text = "Symptoms:";
             // 
             // buttonClear
             // 
@@ -307,21 +323,159 @@
             this.logoutOfIPIMSToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.logoutOfIPIMSToolStripMenuItem.Text = "Logout of IPIMS";
             // 
+            // date_of_BirthLabel
+            // 
+            date_of_BirthLabel.AutoSize = true;
+            date_of_BirthLabel.Location = new System.Drawing.Point(391, 103);
+            date_of_BirthLabel.Name = "date_of_BirthLabel";
+            date_of_BirthLabel.Size = new System.Drawing.Size(69, 13);
+            date_of_BirthLabel.TabIndex = 59;
+            date_of_BirthLabel.Text = "Date of Birth:";
+            // 
+            // date_of_BirthDateTimePicker
+            // 
+            this.date_of_BirthDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.date_of_BirthDateTimePicker.Location = new System.Drawing.Point(466, 100);
+            this.date_of_BirthDateTimePicker.Name = "date_of_BirthDateTimePicker";
+            this.date_of_BirthDateTimePicker.Size = new System.Drawing.Size(80, 20);
+            this.date_of_BirthDateTimePicker.TabIndex = 61;
+            // 
+            // last_NameLabel
+            // 
+            last_NameLabel.AutoSize = true;
+            last_NameLabel.Location = new System.Drawing.Point(198, 103);
+            last_NameLabel.Name = "last_NameLabel";
+            last_NameLabel.Size = new System.Drawing.Size(61, 13);
+            last_NameLabel.TabIndex = 57;
+            last_NameLabel.Text = "Last Name:";
+            // 
+            // last_NameTextBox
+            // 
+            this.last_NameTextBox.Location = new System.Drawing.Point(265, 100);
+            this.last_NameTextBox.Name = "last_NameTextBox";
+            this.last_NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.last_NameTextBox.TabIndex = 60;
+            // 
+            // first_NameLabel
+            // 
+            first_NameLabel.AutoSize = true;
+            first_NameLabel.Location = new System.Drawing.Point(18, 103);
+            first_NameLabel.Name = "first_NameLabel";
+            first_NameLabel.Size = new System.Drawing.Size(60, 13);
+            first_NameLabel.TabIndex = 55;
+            first_NameLabel.Text = "First Name:";
+            // 
+            // first_NameTextBox
+            // 
+            this.first_NameTextBox.Location = new System.Drawing.Point(83, 100);
+            this.first_NameTextBox.Name = "first_NameTextBox";
+            this.first_NameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.first_NameTextBox.TabIndex = 58;
+            // 
+            // symptomsLabel
+            // 
+            symptomsLabel.AutoSize = true;
+            symptomsLabel.Location = new System.Drawing.Point(20, 156);
+            symptomsLabel.Name = "symptomsLabel";
+            symptomsLabel.Size = new System.Drawing.Size(58, 13);
+            symptomsLabel.TabIndex = 54;
+            symptomsLabel.Text = "Symptoms:";
+            // 
+            // symptomsTextBox
+            // 
+            this.symptomsTextBox.Location = new System.Drawing.Point(83, 156);
+            this.symptomsTextBox.Multiline = true;
+            this.symptomsTextBox.Name = "symptomsTextBox";
+            this.symptomsTextBox.Size = new System.Drawing.Size(463, 87);
+            this.symptomsTextBox.TabIndex = 56;
+            // 
+            // has_WeaknessCheckBox
+            // 
+            this.has_WeaknessCheckBox.Location = new System.Drawing.Point(37, 158);
+            this.has_WeaknessCheckBox.Name = "has_WeaknessCheckBox";
+            this.has_WeaknessCheckBox.Size = new System.Drawing.Size(146, 35);
+            this.has_WeaknessCheckBox.TabIndex = 74;
+            this.has_WeaknessCheckBox.Text = "Weakness";
+            this.has_WeaknessCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // has_Chest_PainsCheckBox
+            // 
+            this.has_Chest_PainsCheckBox.Location = new System.Drawing.Point(189, 101);
+            this.has_Chest_PainsCheckBox.Name = "has_Chest_PainsCheckBox";
+            this.has_Chest_PainsCheckBox.Size = new System.Drawing.Size(149, 38);
+            this.has_Chest_PainsCheckBox.TabIndex = 73;
+            this.has_Chest_PainsCheckBox.Text = "Chest Pain";
+            this.has_Chest_PainsCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // has_Leg_PainCheckBox
+            // 
+            this.has_Leg_PainCheckBox.Location = new System.Drawing.Point(189, 52);
+            this.has_Leg_PainCheckBox.Name = "has_Leg_PainCheckBox";
+            this.has_Leg_PainCheckBox.Size = new System.Drawing.Size(102, 34);
+            this.has_Leg_PainCheckBox.TabIndex = 72;
+            this.has_Leg_PainCheckBox.Text = "Leg Pain";
+            this.has_Leg_PainCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // has_Blood_in_UrineLabel
+            // 
+            has_Blood_in_UrineLabel.AutoSize = true;
+            has_Blood_in_UrineLabel.Location = new System.Drawing.Point(233, 69);
+            has_Blood_in_UrineLabel.Name = "has_Blood_in_UrineLabel";
+            has_Blood_in_UrineLabel.Size = new System.Drawing.Size(0, 26);
+            has_Blood_in_UrineLabel.TabIndex = 69;
+            // 
+            // has_Blood_in_UrineCheckBox
+            // 
+            this.has_Blood_in_UrineCheckBox.Location = new System.Drawing.Point(189, 156);
+            this.has_Blood_in_UrineCheckBox.Name = "has_Blood_in_UrineCheckBox";
+            this.has_Blood_in_UrineCheckBox.Size = new System.Drawing.Size(275, 37);
+            this.has_Blood_in_UrineCheckBox.TabIndex = 71;
+            this.has_Blood_in_UrineCheckBox.Text = "Urinary Concerns";
+            this.has_Blood_in_UrineCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // is_WheezingCheckBox
+            // 
+            this.is_WheezingCheckBox.Location = new System.Drawing.Point(37, 101);
+            this.is_WheezingCheckBox.Name = "is_WheezingCheckBox";
+            this.is_WheezingCheckBox.Size = new System.Drawing.Size(150, 34);
+            this.is_WheezingCheckBox.TabIndex = 70;
+            this.is_WheezingCheckBox.Text = "Wheezing";
+            this.is_WheezingCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // is_SuicidalCheckBox
+            // 
+            this.is_SuicidalCheckBox.Location = new System.Drawing.Point(37, 52);
+            this.is_SuicidalCheckBox.Name = "is_SuicidalCheckBox";
+            this.is_SuicidalCheckBox.Size = new System.Drawing.Size(134, 34);
+            this.is_SuicidalCheckBox.TabIndex = 68;
+            this.is_SuicidalCheckBox.Text = "Suicidal";
+            this.is_SuicidalCheckBox.UseVisualStyleBackColor = true;
+            this.is_SuicidalCheckBox.CheckedChanged += new System.EventHandler(this.is_SuicidalCheckBox_CheckedChanged);
+            // 
             // EmergencyAlert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 502);
+            this.Controls.Add(date_of_BirthLabel);
+            this.Controls.Add(this.date_of_BirthDateTimePicker);
+            this.Controls.Add(last_NameLabel);
+            this.Controls.Add(this.last_NameTextBox);
+            this.Controls.Add(first_NameLabel);
+            this.Controls.Add(this.first_NameTextBox);
+            this.Controls.Add(symptomsLabel);
+            this.Controls.Add(this.symptomsTextBox);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.labelEmergencyAlert);
-            this.Controls.Add(this.labelSymptoms);
             this.Controls.Add(this.buttonClear);
             this.Name = "EmergencyAlert";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Interactive Patient Information System (IPIMS) - Group 9";
             this.Load += new System.EventHandler(this.EmergencyAlert_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -334,7 +488,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Label labelEmergencyAlert;
-        private System.Windows.Forms.Label labelSymptoms;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem patientServicesToolStripMenuItem;
@@ -362,5 +515,15 @@
         private System.Windows.Forms.ToolStripMenuItem editProfileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem logoutOfIPIMSToolStripMenuItem;
+        private System.Windows.Forms.DateTimePicker date_of_BirthDateTimePicker;
+        private System.Windows.Forms.TextBox last_NameTextBox;
+        private System.Windows.Forms.TextBox first_NameTextBox;
+        private System.Windows.Forms.TextBox symptomsTextBox;
+        private System.Windows.Forms.CheckBox has_WeaknessCheckBox;
+        private System.Windows.Forms.CheckBox has_Chest_PainsCheckBox;
+        private System.Windows.Forms.CheckBox has_Leg_PainCheckBox;
+        private System.Windows.Forms.CheckBox has_Blood_in_UrineCheckBox;
+        private System.Windows.Forms.CheckBox is_WheezingCheckBox;
+        private System.Windows.Forms.CheckBox is_SuicidalCheckBox;
     }
 }

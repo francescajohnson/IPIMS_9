@@ -16,9 +16,15 @@ namespace IPIMS_Group_9.Forms
         {
             InitializeComponent();
         }
+       
+
+ 
 
         private void buttonScheduleAppointment_Click(object sender, EventArgs e)
-        {/*
+        {
+
+          MessageBox.Show("The appointment has been scheduled");
+            /*
             if (textBoxSymptoms.Text != "")
             {
                 MessageBox.Show("The appointment has been scheduled and health conditions updated.");
@@ -40,8 +46,44 @@ namespace IPIMS_Group_9.Forms
             {
                 MessageBox.Show("Please enter a description of the symptoms.");
             }*/
+           
+           
         }
+    
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void appointment_DateDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void appointment_DateLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void appointment_TimeDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
 
         
     }
+    
 }
