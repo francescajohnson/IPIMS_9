@@ -47,14 +47,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IPIMS_Group_9.exe" size="297472">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IPIMS_Group_9.exe" size="292864">
       <assemblyIdentity name="IPIMS_Group_9" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jtwgbf4GRgZfBSzANUFl2Wey+ox3l0e4GnCfteCdCBA=</dsig:DigestValue>
+        <dsig:DigestValue>G6LiA7hWYlollJslJZaivT1avhoE+96WSqj+xJ3E7RM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -64,7 +64,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>rsZth1p6KhC5zJDJaoSmh7A+ZH3D698qVybVCuktDhM=</dsig:DigestValue>
+      <dsig:DigestValue>RnuXwn3Qi4kkAbOG0thotLtIvOzvP0ZAEyyCCGNQrJk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="IPIMS_Group_9.exe.config" size="547">

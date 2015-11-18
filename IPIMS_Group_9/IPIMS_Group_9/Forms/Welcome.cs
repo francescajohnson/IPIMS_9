@@ -117,6 +117,7 @@ namespace IPIMS_Group_9.Forms
         {
             Reporting formReport = new Reporting();
             formReport.Visible = true;
+            
         }
 
         private void report2ToolStripMenuItem_Click(object sender, EventArgs e)

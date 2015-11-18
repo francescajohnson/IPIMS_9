@@ -85,10 +85,15 @@ namespace IPIMS_Group_9.Forms
                         //con.Close();
                     }
                 }
+                this.Close();
+                Welcome formW2 = new Welcome();
+                formW2.Visible = true;
             }
+         
+             
             catch (Exception ex)
             {
-                throw ex;
+                //throw ex;
             }
         }
     }
