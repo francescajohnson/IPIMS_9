@@ -36,6 +36,8 @@
             this.labelViewAppointment = new System.Windows.Forms.Label();
             this.scheduled_appointment_dataBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.scheduled_appointment_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -47,8 +49,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.scheduled_appointment_dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.scheduled_appointment_dataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iPIMS_9DataSet = new IPIMS_Group_9.IPIMS_9DataSet();
             this.scheduled_appointment_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.scheduled_appointment_dataTableAdapter();
             this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
             this.scheduled_appointment_dataDataGridView = new System.Windows.Forms.DataGridView();
@@ -116,6 +116,7 @@
             this.scheduled_appointment_dataBindingNavigator.Size = new System.Drawing.Size(622, 25);
             this.scheduled_appointment_dataBindingNavigator.TabIndex = 36;
             this.scheduled_appointment_dataBindingNavigator.Text = "bindingNavigator1";
+            this.scheduled_appointment_dataBindingNavigator.Visible = false;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -125,6 +126,16 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // scheduled_appointment_dataBindingSource
+            // 
+            this.scheduled_appointment_dataBindingSource.DataMember = "scheduled_appointment_data";
+            this.scheduled_appointment_dataBindingSource.DataSource = this.iPIMS_9DataSet;
+            // 
+            // iPIMS_9DataSet
+            // 
+            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
+            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -210,16 +221,6 @@
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Text = "Save Data";
             this.scheduled_appointment_dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.scheduled_appointment_dataBindingNavigatorSaveItem_Click);
-            // 
-            // scheduled_appointment_dataBindingSource
-            // 
-            this.scheduled_appointment_dataBindingSource.DataMember = "scheduled_appointment_data";
-            this.scheduled_appointment_dataBindingSource.DataSource = this.iPIMS_9DataSet;
-            // 
-            // iPIMS_9DataSet
-            // 
-            this.iPIMS_9DataSet.DataSetName = "IPIMS_9DataSet";
-            this.iPIMS_9DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // scheduled_appointment_dataTableAdapter
             // 

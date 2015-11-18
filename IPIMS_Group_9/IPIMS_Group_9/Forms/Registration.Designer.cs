@@ -32,7 +32,6 @@
             System.Windows.Forms.Label first_NameLabel;
             System.Windows.Forms.Label last_NameLabel;
             System.Windows.Forms.Label genderLabel;
-            System.Windows.Forms.Label date_of_BirthLabel;
             System.Windows.Forms.Label street_AddressLabel;
             System.Windows.Forms.Label cityLabel;
             System.Windows.Forms.Label stateLabel;
@@ -50,6 +49,7 @@
             System.Windows.Forms.Label doctor_NameLabel;
             System.Windows.Forms.Label social_Security_NumberLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
+            System.Windows.Forms.Label ageLabel;
             this.groupBoxContactInformation = new System.Windows.Forms.GroupBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.user_dataBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -73,7 +73,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.classificationComboBox = new System.Windows.Forms.ComboBox();
             this.groupBoxUserInformation = new System.Windows.Forms.GroupBox();
-            this.date_of_BirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.genderComboBox = new System.Windows.Forms.ComboBox();
             this.last_NameTextBox = new System.Windows.Forms.TextBox();
             this.first_NameTextBox = new System.Windows.Forms.TextBox();
@@ -99,10 +98,10 @@
             this.user_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.user_dataTableAdapter();
             this.tableAdapterManager = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.TableAdapterManager();
             this.patient_dataTableAdapter = new IPIMS_Group_9.IPIMS_9DataSetTableAdapters.patient_dataTableAdapter();
+            this.ageTextBox = new System.Windows.Forms.TextBox();
             first_NameLabel = new System.Windows.Forms.Label();
             last_NameLabel = new System.Windows.Forms.Label();
             genderLabel = new System.Windows.Forms.Label();
-            date_of_BirthLabel = new System.Windows.Forms.Label();
             street_AddressLabel = new System.Windows.Forms.Label();
             cityLabel = new System.Windows.Forms.Label();
             stateLabel = new System.Windows.Forms.Label();
@@ -119,6 +118,7 @@
             is_Drug_UserLabel = new System.Windows.Forms.Label();
             doctor_NameLabel = new System.Windows.Forms.Label();
             social_Security_NumberLabel = new System.Windows.Forms.Label();
+            ageLabel = new System.Windows.Forms.Label();
             this.groupBoxContactInformation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user_dataBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPIMS_9DataSet)).BeginInit();
@@ -159,15 +159,6 @@
             genderLabel.Size = new System.Drawing.Size(45, 13);
             genderLabel.TabIndex = 4;
             genderLabel.Text = "Gender:";
-            // 
-            // date_of_BirthLabel
-            // 
-            date_of_BirthLabel.AutoSize = true;
-            date_of_BirthLabel.Location = new System.Drawing.Point(147, 42);
-            date_of_BirthLabel.Name = "date_of_BirthLabel";
-            date_of_BirthLabel.Size = new System.Drawing.Size(69, 13);
-            date_of_BirthLabel.TabIndex = 6;
-            date_of_BirthLabel.Text = "Date of Birth:";
             // 
             // street_AddressLabel
             // 
@@ -383,7 +374,9 @@
             // 
             // groupBoxMedicalInformation
             // 
+            this.groupBoxMedicalInformation.Controls.Add(ageLabel);
             this.groupBoxMedicalInformation.Controls.Add(social_Security_NumberLabel);
+            this.groupBoxMedicalInformation.Controls.Add(this.ageTextBox);
             this.groupBoxMedicalInformation.Controls.Add(this.social_Security_NumberTextBox);
             this.groupBoxMedicalInformation.Controls.Add(doctor_NameLabel);
             this.groupBoxMedicalInformation.Controls.Add(this.doctor_NameComboBox);
@@ -524,8 +517,6 @@
             // 
             // groupBoxUserInformation
             // 
-            this.groupBoxUserInformation.Controls.Add(date_of_BirthLabel);
-            this.groupBoxUserInformation.Controls.Add(this.date_of_BirthDateTimePicker);
             this.groupBoxUserInformation.Controls.Add(genderLabel);
             this.groupBoxUserInformation.Controls.Add(this.genderComboBox);
             this.groupBoxUserInformation.Controls.Add(last_NameLabel);
@@ -534,19 +525,10 @@
             this.groupBoxUserInformation.Controls.Add(this.first_NameTextBox);
             this.groupBoxUserInformation.Location = new System.Drawing.Point(12, 58);
             this.groupBoxUserInformation.Name = "groupBoxUserInformation";
-            this.groupBoxUserInformation.Size = new System.Drawing.Size(570, 67);
+            this.groupBoxUserInformation.Size = new System.Drawing.Size(584, 67);
             this.groupBoxUserInformation.TabIndex = 20;
             this.groupBoxUserInformation.TabStop = false;
             this.groupBoxUserInformation.Text = "User Information:";
-            // 
-            // date_of_BirthDateTimePicker
-            // 
-            this.date_of_BirthDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.user_dataBindingSource1, "Date_of_Birth", true));
-            this.date_of_BirthDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.date_of_BirthDateTimePicker.Location = new System.Drawing.Point(222, 39);
-            this.date_of_BirthDateTimePicker.Name = "date_of_BirthDateTimePicker";
-            this.date_of_BirthDateTimePicker.Size = new System.Drawing.Size(101, 20);
-            this.date_of_BirthDateTimePicker.TabIndex = 7;
             // 
             // genderComboBox
             // 
@@ -779,6 +761,23 @@
             // 
             this.patient_dataTableAdapter.ClearBeforeFill = true;
             // 
+            // ageLabel
+            // 
+            ageLabel.AutoSize = true;
+            ageLabel.Location = new System.Drawing.Point(292, 42);
+            ageLabel.Name = "ageLabel";
+            ageLabel.Size = new System.Drawing.Size(29, 13);
+            ageLabel.TabIndex = 6;
+            ageLabel.Text = "Age:";
+            // 
+            // ageTextBox
+            // 
+            this.ageTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patient_dataBindingSource1, "Age", true));
+            this.ageTextBox.Location = new System.Drawing.Point(327, 39);
+            this.ageTextBox.Name = "ageTextBox";
+            this.ageTextBox.Size = new System.Drawing.Size(55, 20);
+            this.ageTextBox.TabIndex = 7;
+            // 
             // Registration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -847,7 +846,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton user_dataBindingSource1BindingNavigatorSaveItem;
         private System.Windows.Forms.ComboBox classificationComboBox;
-        private System.Windows.Forms.DateTimePicker date_of_BirthDateTimePicker;
         private System.Windows.Forms.ComboBox genderComboBox;
         private System.Windows.Forms.TextBox last_NameTextBox;
         private System.Windows.Forms.TextBox first_NameTextBox;
@@ -870,5 +868,6 @@
         private System.Windows.Forms.TextBox health_Insurance_ProviderTextBox;
         private System.Windows.Forms.TextBox country_of_OriginTextBox;
         private System.Windows.Forms.TextBox social_Security_NumberTextBox;
+        private System.Windows.Forms.TextBox ageTextBox;
     }
 }

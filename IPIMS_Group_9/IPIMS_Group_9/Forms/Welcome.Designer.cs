@@ -34,6 +34,8 @@
             this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analysisOfPatientPopulationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analysisOfTypeOfPatientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.report2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,8 +59,6 @@
             this.searchForPatientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientServicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.createProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,29 +114,47 @@
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.logoutToolStripMenuItem.Text = "Profile Tools";
             // 
+            // createProfileToolStripMenuItem
+            // 
+            this.createProfileToolStripMenuItem.Name = "createProfileToolStripMenuItem";
+            this.createProfileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.createProfileToolStripMenuItem.Text = "Create Profile";
+            this.createProfileToolStripMenuItem.Click += new System.EventHandler(this.createProfileToolStripMenuItem_Click);
+            // 
+            // viewProfileToolStripMenuItem
+            // 
+            this.viewProfileToolStripMenuItem.Name = "viewProfileToolStripMenuItem";
+            this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.viewProfileToolStripMenuItem.Text = "View Patient Profile";
+            this.viewProfileToolStripMenuItem.Click += new System.EventHandler(this.viewProfileToolStripMenuItem_Click);
+            // 
             // analysisOfPatientPopulationToolStripMenuItem
             // 
             this.analysisOfPatientPopulationToolStripMenuItem.Name = "analysisOfPatientPopulationToolStripMenuItem";
             this.analysisOfPatientPopulationToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.analysisOfPatientPopulationToolStripMenuItem.Text = "Analysis of patient population";
+            this.analysisOfPatientPopulationToolStripMenuItem.Click += new System.EventHandler(this.analysisOfPatientPopulationToolStripMenuItem_Click);
             // 
             // analysisOfTypeOfPatientsToolStripMenuItem
             // 
             this.analysisOfTypeOfPatientsToolStripMenuItem.Name = "analysisOfTypeOfPatientsToolStripMenuItem";
             this.analysisOfTypeOfPatientsToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.analysisOfTypeOfPatientsToolStripMenuItem.Text = "Analysis of type of patients";
+            this.analysisOfTypeOfPatientsToolStripMenuItem.Click += new System.EventHandler(this.analysisOfTypeOfPatientsToolStripMenuItem_Click);
             // 
             // report2ToolStripMenuItem
             // 
             this.report2ToolStripMenuItem.Name = "report2ToolStripMenuItem";
             this.report2ToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.report2ToolStripMenuItem.Text = "Tracking of the admission rates";
+            this.report2ToolStripMenuItem.Click += new System.EventHandler(this.report2ToolStripMenuItem_Click);
             // 
             // editProfileInformationToolStripMenuItem
             // 
             this.editProfileInformationToolStripMenuItem.Name = "editProfileInformationToolStripMenuItem";
             this.editProfileInformationToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.editProfileInformationToolStripMenuItem.Text = "Analysis of health outcomes";
+            this.editProfileInformationToolStripMenuItem.Click += new System.EventHandler(this.editProfileInformationToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
@@ -201,21 +219,21 @@
             // printExistingEPrescribeToolStripMenuItem
             // 
             this.printExistingEPrescribeToolStripMenuItem.Name = "printExistingEPrescribeToolStripMenuItem";
-            this.printExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.printExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.printExistingEPrescribeToolStripMenuItem.Text = "Print Existing";
             this.printExistingEPrescribeToolStripMenuItem.Click += new System.EventHandler(this.printExistingEPrescribeToolStripMenuItem_Click);
             // 
             // viewExistingEPrescribeToolStripMenuItem
             // 
             this.viewExistingEPrescribeToolStripMenuItem.Name = "viewExistingEPrescribeToolStripMenuItem";
-            this.viewExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.viewExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.viewExistingEPrescribeToolStripMenuItem.Text = "View Existing";
             this.viewExistingEPrescribeToolStripMenuItem.Click += new System.EventHandler(this.viewExistingEPrescribeToolStripMenuItem_Click);
             // 
             // createNewEPrescribeToolStripMenuItem
             // 
             this.createNewEPrescribeToolStripMenuItem.Name = "createNewEPrescribeToolStripMenuItem";
-            this.createNewEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.createNewEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.createNewEPrescribeToolStripMenuItem.Text = "Create New";
             this.createNewEPrescribeToolStripMenuItem.Click += new System.EventHandler(this.createNewEPrescribeToolStripMenuItem_Click);
             // 
@@ -233,21 +251,21 @@
             // editExistingEPrescribeToolStripMenuItem
             // 
             this.editExistingEPrescribeToolStripMenuItem.Name = "editExistingEPrescribeToolStripMenuItem";
-            this.editExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editExistingEPrescribeToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.editExistingEPrescribeToolStripMenuItem.Text = "Edit Existing";
             this.editExistingEPrescribeToolStripMenuItem.Click += new System.EventHandler(this.editExistingEPrescribeToolStripMenuItem_Click);
             // 
             // scheduleApptToolStripMenuItem
             // 
             this.scheduleApptToolStripMenuItem.Name = "scheduleApptToolStripMenuItem";
-            this.scheduleApptToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.scheduleApptToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.scheduleApptToolStripMenuItem.Text = "Schedule";
             this.scheduleApptToolStripMenuItem.Click += new System.EventHandler(this.scheduleApptToolStripMenuItem_Click);
             // 
             // viewApptToolStripMenuItem
             // 
             this.viewApptToolStripMenuItem.Name = "viewApptToolStripMenuItem";
-            this.viewApptToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.viewApptToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.viewApptToolStripMenuItem.Text = "View";
             this.viewApptToolStripMenuItem.Click += new System.EventHandler(this.viewApptToolStripMenuItem_Click);
             // 
@@ -300,19 +318,6 @@
             this.menuStrip.Size = new System.Drawing.Size(594, 24);
             this.menuStrip.TabIndex = 37;
             this.menuStrip.Text = "menuStrip1";
-            // 
-            // createProfileToolStripMenuItem
-            // 
-            this.createProfileToolStripMenuItem.Name = "createProfileToolStripMenuItem";
-            this.createProfileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.createProfileToolStripMenuItem.Text = "Create Profile";
-            this.createProfileToolStripMenuItem.Click += new System.EventHandler(this.createProfileToolStripMenuItem_Click);
-            // 
-            // viewProfileToolStripMenuItem
-            // 
-            this.viewProfileToolStripMenuItem.Name = "viewProfileToolStripMenuItem";
-            this.viewProfileToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.viewProfileToolStripMenuItem.Text = "View Patient Profile";
             // 
             // Welcome
             // 

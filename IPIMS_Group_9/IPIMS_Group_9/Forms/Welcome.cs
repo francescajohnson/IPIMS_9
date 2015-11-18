@@ -92,7 +92,8 @@ namespace IPIMS_Group_9.Forms
 
         private void createProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Registration formReg = new Registration();
+            formReg.Visible = true;
         }
         private void logoutOfIPIMSToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -103,7 +104,7 @@ namespace IPIMS_Group_9.Forms
             if (result == System.Windows.Forms.DialogResult.Yes)
             {
                 // Logout of system
-
+                this.Close();
             }
             else if(result == System.Windows.Forms.DialogResult.No)
             {
@@ -112,9 +113,34 @@ namespace IPIMS_Group_9.Forms
 
         }
 
+        private void editProfileInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporting formReport = new Reporting();
+            formReport.Visible = true;
+        }
 
+        private void report2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporting formReport = new Reporting();
+            formReport.Visible = true;
+        }
 
+        private void analysisOfTypeOfPatientsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporting formReport = new Reporting();
+            formReport.Visible = true;
+        }
 
+        private void analysisOfPatientPopulationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporting formReport = new Reporting();
+            formReport.Visible = true;
+        }
 
+        private void viewProfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PatientSearch formPatSearch = new PatientSearch();
+            formPatSearch.Visible = true;
+        }
     }
 }

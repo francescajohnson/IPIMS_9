@@ -24,12 +24,12 @@ namespace IPIMS_Group_9.Forms
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EPrescription());
-            // Application.Run(new LoggingIn());
-            // Application.Run(new Reporting());
-            // Application.Run(new ViewAppointments());
-            // Application.Run(new Reporting());
-            // Application.Run(new Welcome());
+            // Application.Run(new EPrescription());
+            Application.Run(new LoggingIn());
+            //Application.Run(new Reporting());
+            //Application.Run(new ViewAppointments());
+            //Application.Run(new Reporting());
+            Application.Run(new Welcome());
         }
     }
 }

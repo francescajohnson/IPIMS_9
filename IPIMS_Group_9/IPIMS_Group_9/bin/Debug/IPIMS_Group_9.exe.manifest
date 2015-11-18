@@ -54,7 +54,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9DxwT3bEpR7xJo5jGNQTeTHJvlNjFAHt/QG7XTN2ENk=</dsig:DigestValue>
+        <dsig:DigestValue>jtwgbf4GRgZfBSzANUFl2Wey+ox3l0e4GnCfteCdCBA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -64,7 +64,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Vd5cMycVQ31axmu6izSx96bFskPEndpxtbPziF+mPgM=</dsig:DigestValue>
+      <dsig:DigestValue>rsZth1p6KhC5zJDJaoSmh7A+ZH3D698qVybVCuktDhM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="IPIMS_Group_9.exe.config" size="547">

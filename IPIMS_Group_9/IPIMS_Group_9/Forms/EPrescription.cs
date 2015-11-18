@@ -61,7 +61,7 @@ namespace IPIMS_Group_9.Forms
         private void buttonCreate_Click(object sender, EventArgs e)
         {
             //  Set variables with the values from the textboxes
-           /* first_name = first_NameTextBox.Text;
+            string first_name = first_NameTextBox.Text;/*
             last_name = last_NameTextBox.Text;
             date_of_birth = date_of_BirthDateTimePicker.Value.Date;
             medicine_name = medicine_NameTextBox.Text;
@@ -77,7 +77,7 @@ namespace IPIMS_Group_9.Forms
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = connection;
                 cmd.Parameters.AddWithValue("@Patient_Id", patient_IdTextBox.Text);
-                cmd.Parameters.AddWithValue("@First_Name", first_NameTextBox.Text);
+                cmd.Parameters.AddWithValue("@First_Name", first_name.ToString());
                 cmd.Parameters.AddWithValue("@Last_Name", last_NameTextBox.Text);
              //   cmd.Parameters.AddWithValue("@Date_of_Birth", date_of_BirthDateTimePicker.Value.Date);
                 cmd.Parameters.AddWithValue("@Prescription_Name", prescription_NameTextBox.Text);

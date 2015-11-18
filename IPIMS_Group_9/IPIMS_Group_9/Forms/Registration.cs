@@ -72,7 +72,7 @@ namespace IPIMS_Group_9.Forms
             classification = classificationComboBox.Text;
             first_name = first_NameTextBox.Text;
             last_name = last_NameTextBox.Text;
-            date_of_birth = date_of_BirthDateTimePicker.Value.Date;
+            // date_of_birth = date_of_BirthDateTimePicker.Value.Date;
             gender = genderComboBox.Text;
             street_address = street_AddressTextBox.Text;
             city = cityTextBox.Text;
@@ -86,10 +86,10 @@ namespace IPIMS_Group_9.Forms
             if (classification == "Patient")
             {
                 social_security_number = social_Security_NumberTextBox.Text;
-                //age = int.Parse(ageTextBox.Text);
+                age = int.Parse(ageTextBox.Text);
                 // need to calculate the age...
                 // for testing 
-                age = 12;
+                // age = ageTextBox.Text;
                 country_of_origin = country_of_OriginTextBox.Text;
                 insurance_Provider = health_Insurance_ProviderTextBox.Text;
                 insurance_Contact_Number = health_Insurance_Contact_NumberTextBox.Text;
@@ -156,6 +156,55 @@ namespace IPIMS_Group_9.Forms
                 // Validate form and stop editing databinding source reader
                 this.Validate();
                 this.user_dataBindingSource1.EndEdit();
+
+                string connectionString = (@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\E860536\Source\Group_9\IPIMS_9\IPIMS_9\IPIMS_Group_9\IPIMS_Group_9\IPIMS_9.mdf;Integrated Security=True");
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO user_data (Classification,First_Name,Last_Name,Gender,Social_Security_Number,Street_Address,City,State,Zip_Code,Phone_Number,Email,Username,Password) VALUES (@Classification, @First_Name, @Last_Name, @Gender, @Social_Security_Number, @Street_Address, @City, @State, @Zip_Code, @Phone_Number, @Email, @Username, @Password)");
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = connection;
+             
+                cmd.Parameters.AddWithValue("@Classification", classification.ToString());
+                cmd.Parameters.AddWithValue("@First_Name", first_name.ToString());
+                cmd.Parameters.AddWithValue("@Last_Name", last_NameTextBox.Text);
+                    cmd.Parameters.AddWithValue("@Gender", gender.ToString());
+                cmd.Parameters.AddWithValue("@Social_Security_Number", social_security_number.ToString());
+            
+                cmd.Parameters.AddWithValue("@Street_Address", street_address.ToString());
+                cmd.Parameters.AddWithValue("@City", city.ToString());
+                cmd.Parameters.AddWithValue("@State", state.ToString());
+                cmd.Parameters.AddWithValue("@Zip_Code", zip_code.ToString());
+                cmd.Parameters.AddWithValue("@Phone_Number", phone_number.ToString());
+                cmd.Parameters.AddWithValue("@Email", email.ToString());
+                 cmd.Parameters.AddWithValue("@Username", username.ToString());
+                cmd.Parameters.AddWithValue("@Password", password.ToString());
+
+                
+                connection.Open();
+                cmd.ExecuteNonQuery();
+            }
+                
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+
+                SqlCommand cmdPatient = new SqlCommand("INSERT INTO patient_data (Classification,First_Name,Last_Name,Age,Country_of_Origin,Health_Insurance_Provider,Health_Insurance_Contact_Number,Medical_History,Is_Smoker,Is_Drug_User,Doctor_Name) VALUES (@Classification, @First_Name, @Last_Name, @Age, @Country_of_Origin, @Health_Insurance_Provider, @Health_Insurance_Contact_Number, @Medical_History, @Is_Smoker, @Is_Drug_User, @Doctor_Name)");
+                cmdPatient.CommandType = CommandType.Text;
+                cmdPatient.Connection = connection;
+             
+                cmdPatient.Parameters.AddWithValue("@Classification", classification.ToString());
+                cmdPatient.Parameters.AddWithValue("@First_Name", first_name.ToString());
+                cmdPatient.Parameters.AddWithValue("@Last_Name", last_NameTextBox.Text);
+                cmdPatient.Parameters.AddWithValue("@Age", age);
+                cmdPatient.Parameters.AddWithValue("@Country_of_Origin", country_of_origin.ToString());
+                cmdPatient.Parameters.AddWithValue("@Health_Insurance_Provider", health_Insurance_ProviderTextBox.Text);
+                cmdPatient.Parameters.AddWithValue("@Health_Insurance_Contact_Number",health_Insurance_Contact_NumberTextBox.Text);
+                cmdPatient.Parameters.AddWithValue("@Medical_History", medical_history.ToString());
+                cmdPatient.Parameters.AddWithValue("@Is_Smoker", is_SmokerCheckBox.CheckState.ToString());
+                cmdPatient.Parameters.AddWithValue("@Is_Drug_User", is_Drug_UserCheckBox.CheckState.ToString());
+                cmdPatient.Parameters.AddWithValue("@Doctor_Name", doctor.ToString());                                
+                connection.Open();
+                cmdPatient.ExecuteNonQuery();
+            }
 
                 // Create a new row with the values from the form
                 // Create new row for user data and patient data tables

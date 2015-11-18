@@ -15,12 +15,12 @@ namespace IPIMS_Group_9.Forms
 {
     public partial class LoggingIn : Form
     {
-        private SqlConnection con;
+        //private SqlConnection con;
         public LoggingIn()
         {
             InitializeComponent();
-            con = new SqlConnection(@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI");
-            con.Open();
+          /*  con = new SqlConnection(@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI");
+            con.Open();*/
         }
 
         private void user_dataBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -52,16 +52,27 @@ namespace IPIMS_Group_9.Forms
                 if (!(usernameTextBox.Text == string.Empty))
                 {
                     if (!(passwordTextBox.Text == string.Empty))
+
                     {
-                        con = new SqlConnection(@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI");
-                        con.Open();
-                        string userid = usernameTextBox.Text;
-                        string password = passwordTextBox.Text;
-                        SqlCommand cmd = new SqlCommand("select userid,password from login where userid='" + usernameTextBox.Text + "'and password='" + passwordTextBox.Text + "'", con);
+                        string connectionString = (@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\E860536\Source\Group_9\IPIMS_9\IPIMS_9\IPIMS_Group_9\IPIMS_Group_9\IPIMS_9.mdf;Integrated Security=True");
+                        using (SqlConnection connection = new SqlConnection(connectionString))
+                        {
+                            SqlCommand cmdLogin = new SqlCommand("SELECT (Username,Password) FROM user_data where Username = '"+usernameTextBox.Text+"' and Password = '"+passwordTextBox.Text+"'");
+                            connection.Open();
+                            cmdLogin.ExecuteNonQuery();
+                            
+                        }
+                        this.Close();
+                        Welcome formW = new Welcome();
+                        formW.Visible = true;
+                        
+                        /*con = new SqlConnection(@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI");
+                        con.Open();*/
+                        /*SqlCommand cmd = new SqlCommand("select userid,password from login where userid='" + usernameTextBox.Text + "'and password='" + passwordTextBox.Text + "'", con);
                         SqlDataAdapter da = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable();
-                        da.Fill(dt);
-                        if (dt.Rows.Count > 0 && dt.Rows.Count < 2)
+                        da.Fill(dt);*/
+                        /*if (dt.Rows.Count > 0 && dt.Rows.Count < 2)
                         {
                             this.Close();
                             Welcome formW = new Welcome();
@@ -70,8 +81,8 @@ namespace IPIMS_Group_9.Forms
                         else
                         {
                             MessageBox.Show("Invalid Login please check username and password, and try again.");
-                        }
-                        con.Close();
+                        }*/
+                        //con.Close();
                     }
                 }
             }
