@@ -68,6 +68,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditProfile.Designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmergencyAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmergencyAlert.Designer.cs">
+      <DependentUpon>EmergencyAlert.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EPrescription.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +91,12 @@
     </Compile>
     <Compile Include="Forms\LoggingIn.Designer.cs">
       <DependentUpon>LoggingIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PatientSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PatientSearch.Designer.cs">
+      <DependentUpon>PatientSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Registration.cs">
       <SubType>Form</SubType>
@@ -92,11 +110,21 @@
     <Compile Include="Forms\Reporting.Designer.cs">
       <DependentUpon>Reporting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ScheduleAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScheduleAppointment.Designer.cs">
+      <DependentUpon>ScheduleAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UpdateHealthcareCondition.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\UpdateHealthcareCondition.Designer.cs">
       <DependentUpon>UpdateHealthcareCondition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewAppointments.cs" />
+    <Compile Include="Forms\ViewAppointments.Designer.cs">
+      <DependentUpon>ViewAppointments.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Welcome.cs">
       <SubType>Form</SubType>
@@ -115,11 +143,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\EditProfile.resx">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EmergencyAlert.resx">
+      <DependentUpon>EmergencyAlert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EPrescription.resx">
       <DependentUpon>EPrescription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoggingIn.resx">
       <DependentUpon>LoggingIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PatientSearch.resx">
+      <DependentUpon>PatientSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
@@ -127,8 +164,14 @@
     <EmbeddedResource Include="Forms\Reporting.resx">
       <DependentUpon>Reporting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScheduleAppointment.resx">
+      <DependentUpon>ScheduleAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UpdateHealthcareCondition.resx">
       <DependentUpon>UpdateHealthcareCondition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewAppointments.resx">
+      <DependentUpon>ViewAppointments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>

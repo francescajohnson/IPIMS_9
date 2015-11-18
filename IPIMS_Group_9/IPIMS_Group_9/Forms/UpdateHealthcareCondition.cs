@@ -12,10 +12,6 @@ namespace IPIMS_Group_9.Forms
 {
     public partial class UpdateHealthcareCondition : Form
     {
-        string first_name, last_name, symptoms;
-        bool blood_in_urine, chest_pains, suicidal, leg_pain, weakness, wheezing;
-        private DateTime date_of_birth;
-
         public UpdateHealthcareCondition()
         {
             InitializeComponent();
@@ -23,33 +19,20 @@ namespace IPIMS_Group_9.Forms
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
-            first_NameTextBox.Text = "";
-            last_NameTextBox.Text = "";
-            date_of_BirthDateTimePicker.Value = DateTime.Today;
-            symptomsTextBox.Text = "";
-            has_Blood_in_UrineCheckBox.Checked = false;
-            has_Chest_PainsCheckBox.Checked = false;
-            is_SuicidalCheckBox.Checked = false;
-            has_Leg_PainCheckBox.Checked = false;
-            has_WeaknessCheckBox.Checked = false;
-            is_WheezingCheckBox.Checked = false;
+            /*textBoxFirstName.Text = "";
+            textBoxLastName.Text = "";
+            textBoxDateOfBirth.Text = "";
+            textBoxSymptoms.Text = "";
+            checkBoxBloodUrine.Checked = false;
+            checkBoxChestPains.Checked = false;
+            checkBoxSuicide.Checked = false;
+            checkBoxTenderness.Checked = false;
+            checkBoxWeakness.Checked = false;
+            checkBoxWheezing.Checked = false;*/
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
-        {
-            first_name = first_NameTextBox.Text;
-            last_name = last_NameTextBox.Text;
-            date_of_birth = date_of_BirthDateTimePicker.Value.Date;
-            symptoms = symptomsTextBox.Text;
-            blood_in_urine = has_Blood_in_UrineCheckBox.Checked;
-            chest_pains = has_Chest_PainsCheckBox.Checked;
-            suicidal = is_SuicidalCheckBox.Checked;
-            leg_pain = has_Chest_PainsCheckBox.Checked;
-            weakness = has_WeaknessCheckBox.Checked;
-            wheezing = is_WheezingCheckBox.Checked;
-
-          
-            /*
+        {/*
             if (textBoxSymptoms.Text != "")
             {
                 MessageBox.Show("Thank you for updating the health conditions.");
@@ -71,33 +54,6 @@ namespace IPIMS_Group_9.Forms
             {
                 MessageBox.Show("Please enter a description of the symptoms.");
             }*/
-        }
-
-        private void groupBoxPersonalInformation_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UpdateHealthcareCondition_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'iPIMS_9DataSet.update_healthcare_data' table. You can move, or remove it, as needed.
-            this.update_healthcare_dataTableAdapter.Fill(this.iPIMS_9DataSet.update_healthcare_data);
-
-        }
-
-        private void symptomsTextBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

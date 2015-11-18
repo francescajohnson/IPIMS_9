@@ -16,11 +16,7 @@ namespace IPIMS_Group_9.Forms
 {
     public partial class EPrescription : Form
     {
-        //declared local variables
-        string first_name, last_name,medicine_name, dosage, quantity,lab_description, instruction, prescription_id;
-        private DateTime date_of_birth;
-        
-            
+       
         public EPrescription()
         {
             InitializeComponent();
@@ -61,11 +57,11 @@ namespace IPIMS_Group_9.Forms
             //do nothing
         }
 
-     
+
         private void buttonCreate_Click(object sender, EventArgs e)
         {
             //  Set variables with the values from the textboxes
-           first_name = first_NameTextBox.Text;
+           /* first_name = first_NameTextBox.Text;
             last_name = last_NameTextBox.Text;
             date_of_birth = date_of_BirthDateTimePicker.Value.Date;
             medicine_name = medicine_NameTextBox.Text;
@@ -73,62 +69,33 @@ namespace IPIMS_Group_9.Forms
             quantity = quantityTextBox.Text;
             lab_description = lab_DescriptionTextBox.Text;
             instruction = instructionTextBox.Text;
-            prescription_id = prescription_IdTextBox.Text;
-
-
-            string message = "Prescription created, do you want to create another prescription?";
-            string title = "Prescription";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNoCancel;
-            DialogResult result = MessageBox.Show(message, title, buttons);
-            if (result == System.Windows.Forms.DialogResult.Yes)
+            prescription_id = prescription_IdTextBox.Text;*/
+            string connectionString = (@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\AMINA\Documents\IPIMS_Group_9\IPIMS_Group_9\IPIMS_9.mdf;Integrated Security=True");
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                //create prescription
-                Prescription();
+                SqlCommand cmd = new SqlCommand("INSERT INTO e_prescription_data (Patient_Id,First_Name, Last_Name,Dosage,Prescription_Name,Medicine_Name,Quantity,Lab_Description,Doctor_Name,Instruction) VALUES (@Patient_Id, @First_Name, @Last_Name,@Prescription_Name, @Dosage, @Medicine_Name, @Quantity, @Lab_Description, @Doctor_Name, @Instruction)");
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = connection;
+                cmd.Parameters.AddWithValue("@Patient_Id", patient_IdTextBox.Text);
+                cmd.Parameters.AddWithValue("@First_Name", first_NameTextBox.Text);
+                cmd.Parameters.AddWithValue("@Last_Name", last_NameTextBox.Text);
+             //   cmd.Parameters.AddWithValue("@Date_of_Birth", date_of_BirthDateTimePicker.Value.Date);
+                cmd.Parameters.AddWithValue("@Prescription_Name", prescription_NameTextBox.Text);
+              //  cmd.Parameters.AddWithValue("@Prescription_Date", prescription_DateDateTimePicker.Value.Date);
+                cmd.Parameters.AddWithValue("@Dosage", dosageTextBox.Text);
+                cmd.Parameters.AddWithValue("@Medicine_Name", medicine_NameTextBox.Text);
+                cmd.Parameters.AddWithValue("@Quantity", quantityTextBox.Text);
+                cmd.Parameters.AddWithValue("@Lab_Description", lab_DescriptionTextBox.Text);
+                cmd.Parameters.AddWithValue("@Doctor_Name", doctor_NameTextBox.Text);
+                 cmd.Parameters.AddWithValue("@Instruction", instructionTextBox.Text);
 
-                //close the form
-                this.Close();
+                
+                connection.Open();
+                cmd.ExecuteNonQuery();
             }
+
+
         }
-        void Prescription()
-        {
-            try
-            {
-                // Validate form and stop editing databinding source reader
-                this.Validate();
-                this.e_prescription_dataBindingSource1.EndEdit();
-
-                // create new rows for prescription data
-               // IPIMS_9DataSet.user_dataRow newUserDataRow;
-               // IPIMS_9DataSet.patient_dataRow newPatientDataRow;
-                IPIMS_9DataSet.e_prescription_dataRow newPrescriptionDataRow;
-                newPrescriptionDataRow = iPIMS_9DataSet.e_prescription_data.Newe_prescription_dataRow();
-               // newUserDataRow = iPIMS_9DataSet.user_data.Newuser_dataRow();
-               // newPatientDataRow = iPIMS_9DataSet.patient_data.Newpatient_dataRow();
-
-                // Fill the prescription data row with the variable data
-
-                newPrescriptionDataRow.First_Name = first_name.ToString();
-                newPrescriptionDataRow.Last_Name = last_name.ToString();
-                newPrescriptionDataRow.Date_of_Birth = date_of_birth.Date;
-                newPrescriptionDataRow.Medicine_Name = medicine_name.ToString();
-                newPrescriptionDataRow.Dosage = int.Parse(dosage);
-                newPrescriptionDataRow.Quantity = quantity.ToString();
-                newPrescriptionDataRow.Lab_Description = lab_description.ToString();
-                newPrescriptionDataRow.Instruction = instruction.ToString();
-                newPrescriptionDataRow.Prescription_Id = int.Parse(prescription_id);
-               
-                //Add the row to the e_prescription_data table
-                this.iPIMS_9DataSet.e_prescription_data.Rows.Add(newPrescriptionDataRow);
-
-                //save the new rows to the database
-                this.e_prescription_dataTableAdapter.Update(this.iPIMS_9DataSet.e_prescription_data);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
         private void view2ToolStripButton_Click(object sender, EventArgs e)
         {
             try
