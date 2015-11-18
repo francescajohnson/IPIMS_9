@@ -63,7 +63,7 @@ namespace IPIMS_Group_9.Forms
         }
         private void viewPatientProfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ViewPatientInformation formVPI = new ViewPatientInformation();
+            PatientSearch formVPI = new PatientSearch();
             formVPI.Visible = true;
         }
         private void searchRecordsToolStripMenuItem_Click(object sender, EventArgs e)
