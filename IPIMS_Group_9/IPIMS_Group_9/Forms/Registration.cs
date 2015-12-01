@@ -282,7 +282,10 @@ namespace IPIMS_Group_9.Forms
             }
             catch (Exception ex)
             {
-                throw ex;
+                //throw ex;
+                this.Close();
+                LoggingIn formLog = new LoggingIn();
+                formLog.Visible = true;
             }
         }
     }
