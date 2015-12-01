@@ -15,6 +15,9 @@ namespace IPIMS_Group_9.Forms
 {
     public partial class Registration : Form
     {
+        
+
+
         // Declared local variables:
         private string classification, first_name, last_name, gender, social_security_number, street_address, city, state, zip_code, phone_number, email, username, password;
         private DateTime date_of_birth;

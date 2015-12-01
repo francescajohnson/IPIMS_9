@@ -40,61 +40,66 @@ namespace IPIMS_Group_9.Forms
 
         private void buttonContinue_Click(object sender, EventArgs e)
         {
-            if (checkBoxNewUser.Checked == true)
+            /*if (checkBoxNewUser.CheckedChanged)
             {
-                // Must go to the registration page first
-                this.Close();
-                Registration formR = new Registration();
-                formR.Visible = true;
+               
             }
-            try
-            {
-                if (!(usernameTextBox.Text == string.Empty))
+            else
+            {*/
+                try
                 {
-                    if (!(passwordTextBox.Text == string.Empty))
-
+                    if (!(usernameTextBox.Text == string.Empty))
                     {
-                        string connectionString = (@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\E860536\Source\Group_9\IPIMS_9\IPIMS_9\IPIMS_Group_9\IPIMS_Group_9\IPIMS_9.mdf;Integrated Security=True");
-                        using (SqlConnection connection = new SqlConnection(connectionString))
-                        {
-                            SqlCommand cmdLogin = new SqlCommand("SELECT (Username,Password) FROM user_data where Username = '"+usernameTextBox.Text+"' and Password = '"+passwordTextBox.Text+"'");
-                            connection.Open();
-                            cmdLogin.ExecuteNonQuery();
-                            
-                        }
-                        this.Close();
-                        Welcome formW = new Welcome();
-                        formW.Visible = true;
-                        
-                        /*con = new SqlConnection(@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI");
-                        con.Open();*/
-                        /*SqlCommand cmd = new SqlCommand("select userid,password from login where userid='" + usernameTextBox.Text + "'and password='" + passwordTextBox.Text + "'", con);
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
-                        DataTable dt = new DataTable();
-                        da.Fill(dt);*/
-                        /*if (dt.Rows.Count > 0 && dt.Rows.Count < 2)
+                        if (!(passwordTextBox.Text == string.Empty))
                         {
                             this.Close();
                             Welcome formW = new Welcome();
                             formW.Visible = true;
+
+                            string connectionString = (@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\E860536\Source\Group_9\IPIMS_9\IPIMS_9\IPIMS_Group_9\IPIMS_Group_9\IPIMS_9.mdf;Integrated Security=True");
+                            using (SqlConnection connection = new SqlConnection(connectionString))
+                            {
+                                SqlCommand cmdLogin = new SqlCommand("SELECT (Username,Password) FROM user_data where Username = '" + usernameTextBox.Text + "' and Password = '" + passwordTextBox.Text + "'");
+                                connection.Open();
+                                cmdLogin.ExecuteNonQuery();
+
+                            }
+
+                            /*con = new SqlConnection(@"data source=(localdb)\v11.0;initial catalog=IPIMS_9;Integrated Security=SSPI");
+                            con.Open();*/
+                            /*SqlCommand cmd = new SqlCommand("select userid,password from login where userid='" + usernameTextBox.Text + "'and password='" + passwordTextBox.Text + "'", con);
+                            SqlDataAdapter da = new SqlDataAdapter(cmd);
+                            DataTable dt = new DataTable();
+                            da.Fill(dt);*/
+                            /*if (dt.Rows.Count > 0 && dt.Rows.Count < 2)
+                            {
+                                this.Close();
+                                Welcome formW = new Welcome();
+                                formW.Visible = true;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid Login please check username and password, and try again.");
+                            }*/
+                            //con.Close();
                         }
-                        else
-                        {
-                            MessageBox.Show("Invalid Login please check username and password, and try again.");
-                        }*/
-                        //con.Close();
                     }
                 }
-                this.Close();
-                Welcome formW2 = new Welcome();
-                formW2.Visible = true;
-            }
-         
-             
-            catch (Exception ex)
-            {
-                //throw ex;
-            }
+
+
+                catch (Exception ex)
+                {
+                    //throw ex;
+                }
+            
+        }
+
+        private void checkBoxNewUser_CheckedChanged(object sender, EventArgs e)
+        {
+            // Must go to the registration page first
+            this.Close();
+            Registration formReg = new Registration();
+            formReg.Visible = true;
         }
     }
 }

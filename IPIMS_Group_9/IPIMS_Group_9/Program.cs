@@ -12,24 +12,23 @@ namespace IPIMS_Group_9.Forms
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-
-       /* internal static class Globals
-        {
-            public string currentUser;
-            public string name;
-        }*/
-
         static void Main()
         {
-            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new EPrescription());
+            //Application.Run(new Registration());
             Application.Run(new LoggingIn());
+            Application.Run(new Welcome());
+            //Application.Run(new EPrescription());
             //Application.Run(new Reporting());
             //Application.Run(new ViewAppointments());
             //Application.Run(new Reporting());
-            Application.Run(new Welcome());
+
+            /* internal static class Globals
+             {
+                 public string currentUser;
+                 public string name;
+             }*/
         }
     }
 }

@@ -184,6 +184,7 @@
             this.labelEmergencyAlerts.Size = new System.Drawing.Size(452, 22);
             this.labelEmergencyAlerts.TabIndex = 40;
             this.labelEmergencyAlerts.Text = "Display Emergency Alerts";
+            this.labelEmergencyAlerts.Visible = false;
             // 
             // editLabRequestToolStripMenuItem
             // 

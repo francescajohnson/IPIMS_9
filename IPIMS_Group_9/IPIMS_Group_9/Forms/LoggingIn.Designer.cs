@@ -144,6 +144,7 @@
             this.checkBoxNewUser.TabIndex = 26;
             this.checkBoxNewUser.Text = "New user?\r\nSelect Check Box to Register, please.";
             this.checkBoxNewUser.UseVisualStyleBackColor = true;
+            this.checkBoxNewUser.CheckedChanged += new System.EventHandler(this.checkBoxNewUser_CheckedChanged);
             // 
             // buttonContinue
             // 
